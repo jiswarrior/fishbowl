@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Core Skills Overview – Palia Guide Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paliaBg: '#fcf8f0',
+            paliaPrimary: '#7f9a6e',
+            paliaPrimaryDeep: '#5f7a4e',
+            paliaAccent: '#e2b181',
+            paliaText: '#3c2f2a',
+            paliaCard: '#ffffff',
+            paliaMuted: '#e9e1d4',
+          },
+          fontFamily: { 'sans': ['Inter', 'system-ui', 'Segoe UI', 'Noto Sans SC', 'sans-serif'] },
+          borderRadius: { 'xl': '1rem', '2xl': '1.5rem' },
+        }
+      }
+    }
+  </script>
+  <style>
+    body { scroll-behavior: smooth; }
+    .section-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .section-card:hover { transform: translateY(-3px); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body class="bg-paliaBg text-paliaText font-sans antialiased">
+
+<!-- Header with back link -->
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-paliaAccent/20 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 lg:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+    <div class="flex items-center gap-3">
+      <div class="bg-paliaPrimary/10 p-2 rounded-2xl"><i class="fa fa-cogs text-paliaPrimary text-2xl"></i></div>
+      <div>
+        <h1 class="text-xl md:text-2xl font-bold tracking-tight text-paliaPrimaryDeep">Core Skills</h1>
+        <p class="text-xs text-paliaText/70">Complete guide to all 7 skills · Tools · Leveling · Rewards</p>
+      </div>
+    </div>
+    <a href="index.html" class="text-paliaPrimary hover:underline text-sm flex items-center gap-1"><i class="fa fa-arrow-left"></i> Back to Main Hub</a>
+  </div>
+</header>
+
+<main class="max-w-6xl mx-auto px-4 py-10 space-y-8">
+  <!-- Introduction -->
+  <div class="bg-paliaCard rounded-2xl shadow-card p-6 md:p-8">
+    <div class="flex items-center gap-3 border-b border-paliaMuted pb-4 mb-5">
+      <i class="fa fa-star text-paliaPrimary text-3xl"></i>
+      <h2 class="text-2xl font-bold">7 Core Skills in Palia</h2>
+    </div>
+    <p class="text-paliaText/80 leading-relaxed">Mastering these skills is essential for crafting, earning gold, and progressing through the game. Each skill has its own experience bar, tools upgrades, and unique rewards. Below you'll find everything you need to know about Gardening, Fishing, Mining, Hunting, Foraging, Bug Catching, and Furniture Making.</p>
+  </div>
+
+  <!-- Skill Grid -->
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- Gardening -->
+    <div class="section-card bg-paliaCard rounded-xl p-5 shadow-card">
+      <div class="flex items-center gap-2 mb-3"><i class="fa fa-pagelines text-paliaPrimary text-2xl"></i><h3 class="text-xl font-bold">Gardening</h3></div>
+      <ul class="space-y-1 text-sm list-disc pl-4">
+        <li><strong>Unlock:</strong> First farming quest (early)</li>
+        <li><strong>Tools:</strong> Watering Can (upgrades at lv5, 10, 15)</li>
+        <li><strong>Main activities:</strong> Plant seeds, water, harvest crops</li>
+        <li><strong>Pro tip:</strong> Use fertilizer for star-quality crops; focus on high-profit crops like tomatoes or cotton.</li>
+      </ul>
+    </div>
+    <!-- Fishing -->
+    <div class="section-card bg-paliaCard rounded-xl p-5 shadow-card">
+      <div class="flex items-center gap-2 mb-3"><i class="fa fa-fish text-paliaPrimary text-2xl"></i><h3 class="text-xl font-bold">Fishing</h3></div>
+      <ul class="space-y-1 text-sm list-disc pl-4">
+        <li><strong>Unlock:</strong> Fisherman NPC quest</li>
+        <li><strong>Tools:</strong> Fishing Rod (upgrades at lv5, 10, 15)</li>
+        <li><strong>Main activities:</strong> Catch fish from rivers, ponds, and ocean</li>
+        <li><strong>Pro tip:</strong> Use different baits (worm, glow worm) for rare fish; fish during specific times.</li>
+      </ul>
+    </div>
+    <!-- Mining -->
+    <div class="section-card bg-paliaCard rounded-xl p-5 shadow-card">
+      <div class="flex items-center gap-2 mb-3"><i class="fa fa-diamond text-paliaPrimary text-2xl"></i><h3 class="text-xl font-bold">Mining</h3></div>
+      <ul class="space-y-1 text-sm list-disc pl-4">
+        <li><strong>Unlock:</strong> After tutorial, get Pickaxe</li>
+        <li><strong>Tools:</strong> Pickaxe (upgrades at lv5, 10, 15)</li>
+        <li><strong>Main activities:</strong> Mine stone, clay, copper, iron, palium</li>
+        <li><strong>Pro tip:</strong> Higher tier pickaxe lets you mine rare nodes faster; focus on Bahari Bay for iron/palium.</li>
+      </ul>
+    </div>
+    <!-- Hunting -->
+    <div class="section-card bg-paliaCard rounded-xl p-5 shadow-card">
+      <div class="flex items-center gap-2 mb-3"><i class="fa fa-crosshairs text-paliaPrimary text-2xl"></i><h3 class="text-xl font-bold">Hunting</h3></div>
+      <ul class="space-y-1 text-sm list-disc pl-4">
+        <li><strong>Unlock:</strong> Join Hunting Guild (early access)</li>
+        <li><strong>Tools:</strong> Bow (upgrades at lv5, 10, 15)</li>
+        <li><strong>Main activities:</strong> Hunt deer, chapaa, sernuk, and magical creatures</li>
+        <li><strong>Pro tip:</strong> Aim for headshots; use smoke bombs to scare prey towards you.</li>
+      </ul>
+    </div>
+    <!-- Foraging -->
+    <div class="section-card bg-paliaCard rounded-xl p-5 shadow-card">
+      <div class="flex items-center gap-2 mb-3"><i class="fa fa-leaf text-paliaPrimary text-2xl"></i><h3 class="text-xl font-bold">Foraging</h3></div>
+      <ul class="space-y-1 text-sm list-disc pl-4">
+        <li><strong>Unlock:</strong> Automatically available</li>
+        <li><strong>Tools:</strong> None (just pick up)</li>
+        <li><strong>Main activities:</strong> Gather mushrooms, berries, sweet leaf, wild herbs</li>
+        <li><strong>Pro tip:</strong> Foraging nodes respawn daily; focus on rare mushrooms (morel, truffle) for high gold.</li>
+      </ul>
+    </div>
+    <!-- Bug Catching -->
+    <div class="section-card bg-paliaCard rounded-xl p-5 shadow-card">
+      <div class="flex items-center gap-2 mb-3"><i class="fa fa-bug text-paliaPrimary text-2xl"></i><h3 class="text-xl font-bold">Bug Catching</h3></div>
+      <ul class="space-y-1 text-sm list-disc pl-4">
+        <li><strong>Unlock:</strong> Quest "Introduction to Entomology"</li>
+        <li><strong>Tools:</strong> Bug Net (upgrades at lv5, 10, 15)</li>
+        <li><strong>Main activities:</strong> Catch butterflies, beetles, glow bugs</li>
+        <li><strong>Pro tip:</strong> Use smoke candles to avoid scaring bugs; rare bugs appear at night or during rain.</li>
+      </ul>
+    </div>
+    <!-- Furniture Making -->
+    <div class="section-card bg-paliaCard rounded-xl p-5 shadow-card">
+      <div class="flex items-center gap-2 mb-3"><i class="fa fa-cube text-paliaPrimary text-2xl"></i><h3 class="text-xl font-bold">Furniture Making</h3></div>
+      <ul class="space-y-1 text-sm list-disc pl-4">
+        <li><strong>Unlock:</strong> Build Workbench at home</li>
+        <li><strong>Tools:</strong> Workbench, Sawmill, etc.</li>
+        <li><strong>Main activities:</strong> Craft furniture from wood, stone, fiber, and rare drops</li>
+        <li><strong>Pro tip:</strong> High-level furniture can be sold for good gold or gifted to NPCs for friendship points.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Level Unlock Table -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-level-up text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">Tool Upgrade & Unlock Levels</h2></div>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl overflow-hidden shadow-sm">
+        <thead class="bg-paliaMuted/50">
+          <tr><th class="px-4 py-2 text-left">Skill Level</th><th class="px-4 py-2 text-left">Gardening</th><th class="px-4 py-2 text-left">Fishing</th><th class="px-4 py-2 text-left">Mining</th><th class="px-4 py-2 text-left">Hunting</th><th class="px-4 py-2 text-left">Bug Catching</th><th class="px-4 py-2 text-left">Furniture Making</th></tr>
+        </thead>
+        <tbody class="divide-y">
+          <tr><td class="px-4 py-2 font-medium">5</td><td>Copper Watering Can</td><td>Copper Rod</td><td>Copper Pickaxe</td><td>Copper Bow</td><td>Copper Net</td><td>Basic Workbench</td></tr>
+          <tr><td class="px-4 py-2 font-medium">10</td><td>Iron Watering Can</td><td>Iron Rod</td><td>Iron Pickaxe</td><td>Iron Bow</td><td>Iron Net</td><td>Sawmill</td></tr>
+          <tr><td class="px-4 py-2 font-medium">15</td><td>Palium Watering Can</td><td>Palium Rod</td><td>Palium Pickaxe</td><td>Palium Bow</td><td>Palium Net</td><td>Advanced Workbench</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="mt-3 text-sm text-paliaText/70">Higher level tools increase efficiency, reduce energy cost, and allow gathering of rare resources (e.g., Palium ore, epic fish).</p>
+  </div>
+
+  <!-- Skill Coins & Rewards -->
+  <div class="grid md:grid-cols-2 gap-6">
+    <div class="section-card bg-paliaCard rounded-xl p-5">
+      <i class="fa fa-money text-paliaPrimary text-xl mb-2 block"></i>
+      <h3 class="font-bold text-lg">Skill Coins Exchange</h3>
+      <p class="text-sm mt-1">Each skill level grants Skill Coins (1 per level after level 5). Exchange them at the corresponding guild store for:</p>
+      <ul class="list-disc pl-5 text-sm mt-2">
+        <li>Rare recipes / blueprints</li>
+        <li>Exclusive furniture sets</li>
+        <li>Special bait / fertilizer</li>
+        <li>Outfit pieces</li>
+      </ul>
+    </div>
+    <div class="section-card bg-paliaCard rounded-xl p-5">
+      <i class="fa fa-trophy text-paliaPrimary text-xl mb-2 block"></i>
+      <h3 class="font-bold text-lg">Achievements & Hidden Rewards</h3>
+      <ul class="list-disc pl-5 text-sm mt-2">
+        <li>Reaching level 25 in any skill → Silver achievement + title</li>
+        <li>Reaching level 50 → Gold achievement + exclusive emote</li>
+        <li>Hidden rewards: Complete all weekly skill challenges for bonus coins</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Fast Leveling Tips -->
+  <div class="bg-paliaPrimary/5 rounded-2xl p-6 text-center border border-paliaAccent/20">
+    <i class="fa fa-bolt text-3xl text-paliaPrimary mb-2 block"></i>
+    <h3 class="text-xl font-bold mb-2">Fast Leveling Tips</h3>
+    <p class="text-paliaText/80">• Keep your <strong>Focus bar full</strong> (eat cooked food) to gain bonus XP.<br>• Focus on <strong>bulk crafting / farming</strong> for XP farming.<br>• Use <strong>experience boosters</strong> from the guild store or events.<br>• Team up for hunting/fishing – shared loot still grants XP.</p>
+    <div class="mt-4">
+      <a href="index.html" class="inline-block bg-paliaPrimary text-white px-5 py-2 rounded-full hover:bg-paliaPrimaryDeep transition">Back to Main Hub</a>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-white/70 border-t border-paliaAccent/20 mt-12 py-6 text-center text-sm text-paliaText/70">
+  <p>Palia Guide Hub · Core Skills Guide · Based on open game data</p>
+  <p class="mt-1"><i class="fa fa-leaf text-paliaPrimary"></i> Keep growing your skills in Palia!</p>
+</footer>
+
+<script>
+  // Optional: ensure external links work
+  console.log("Skills subpage loaded");
+</script>
+</body>
+</html>
