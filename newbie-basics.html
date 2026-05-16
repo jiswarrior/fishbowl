@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Newbie Basics - Character & Tools | Palia Guide Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paliaBg: '#fcf8f0',
+            paliaPrimary: '#7f9a6e',
+            paliaPrimaryDeep: '#5f7a4e',
+            paliaAccent: '#e2b181',
+            paliaText: '#3c2f2a',
+            paliaCard: '#ffffff',
+            paliaMuted: '#e9e1d4',
+          },
+          fontFamily: { 'sans': ['Inter', 'system-ui', 'Segoe UI', 'Noto Sans SC', 'sans-serif'] },
+          borderRadius: { 'xl': '1rem', '2xl': '1.5rem' },
+        }
+      }
+    }
+  </script>
+  <style>
+    body { scroll-behavior: smooth; }
+    .section-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .section-card:hover { transform: translateY(-3px); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body class="bg-paliaBg text-paliaText font-sans antialiased">
+
+<!-- Header with back link to main hub -->
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-paliaAccent/20 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 lg:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+    <div class="flex items-center gap-3">
+      <div class="bg-paliaPrimary/10 p-2 rounded-2xl"><i class="fa fa-leaf text-paliaPrimary text-2xl"></i></div>
+      <div>
+        <h1 class="text-xl md:text-2xl font-bold tracking-tight text-paliaPrimaryDeep">Newbie Basics</h1>
+        <p class="text-xs text-paliaText/70">Character Creation · Tool Unlocks · Home Plot · Fast Travel</p>
+      </div>
+    </div>
+    <a href="#" onclick="window.location.href='index.html'; return false;" class="text-paliaPrimary hover:underline text-sm flex items-center gap-1"><i class="fa fa-arrow-left"></i> Back to Main Hub</a>
+    <!-- Note: Replace 'index.html' with your main page filename if different -->
+  </div>
+</header>
+
+<main class="max-w-5xl mx-auto px-4 py-10 space-y-8">
+  <!-- Welcome card -->
+  <div class="bg-paliaCard rounded-2xl shadow-card p-6 md:p-8 gradient-border">
+    <div class="flex items-center gap-3 border-b border-paliaMuted pb-4 mb-5">
+      <i class="fa fa-flag-checkered text-paliaPrimary text-3xl"></i>
+      <h2 class="text-2xl font-bold">Your First Steps in Palia</h2>
+    </div>
+    <p class="text-paliaText/80 leading-relaxed">When you first arrive in Palia, you'll start from a cozy camp. This guide walks you through customizing your character, unlocking essential tools, claiming your home plot, and mastering the fast travel network — so you can explore Kilima Valley and Bahari Bay with ease.</p>
+  </div>
+
+  <!-- Character Creation -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-user-plus text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🎨 Character Creation</h2></div>
+    <ul class="space-y-2 list-disc pl-5 marker:text-paliaPrimary">
+      <li><strong>Appearance Customization</strong>: Choose hairstyle, hair color, skin tone, eye shape, facial details. You can change some aspects later in-game (may cost Renown).</li>
+      <li><strong>Starter Outfits</strong>: Several basic color sets are available; more outfits can be obtained from events, the store, or Renown rewards.</li>
+      <li><strong>Character Name</strong>: Unique and permanent (choose wisely). It appears in friend lists and the community.</li>
+      <li><strong>Tutorial</strong>: After creation, a short story quest teaches basic controls (movement, interaction, tool wheel).</li>
+    </ul>
+    <div class="mt-4 bg-paliaPrimary/10 rounded-xl p-3 text-sm"><i class="fa fa-lightbulb-o text-paliaPrimary mr-2"></i> 💡 Tip: There are no races or classes — you can learn every skill freely, so just pick the look you like.</div>
+  </div>
+
+  <!-- Tool Unlocks -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-wrench text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🔧 Tool Unlocks & Upgrades</h2></div>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl overflow-hidden shadow-sm">
+        <thead class="bg-paliaMuted/50"><tr><th class="px-4 py-2 text-left">Tool</th><th class="px-4 py-2 text-left">Unlock Condition</th><th class="px-4 py-2 text-left">Initial Use</th></tr></thead>
+        <tbody class="divide-y">
+          <tr><td class="px-4 py-2 font-medium">⛏️ Pickaxe</td><td class="px-4 py-2">After tutorial</td><td class="px-4 py-2">Mine stone, clay, copper ore</td></tr>
+          <tr><td class="px-4 py-2 font-medium">🪓 Axe</td><td class="px-4 py-2">Early quest "Collect Wood"</td><td class="px-4 py-2">Chop trees for softwood, resin</td></tr>
+          <tr><td class="px-4 py-2 font-medium">🎣 Fishing Rod</td><td class="px-4 py-2">Talk to fisherman NPC, complete fishing intro</td><td class="px-4 py-2">Fish in any water body</td></tr>
+          <tr><td class="px-4 py-2 font-medium">🐞 Bug Net</td><td class="px-4 py-2">Quest "Introduction to Entomology"</td><td class="px-4 py-2">Catch butterflies, beetles</td></tr>
+          <tr><td class="px-4 py-2 font-medium">🏹 Bow (Hunting)</td><td class="px-4 py-2">Join hunting guild, complete first hunt</td><td class="px-4 py-2">Hunt wildlife for meat and hide</td></tr>
+          <tr><td class="px-4 py-2 font-medium">💧 Watering Can</td><td class="px-4 py-2">Unlocked with Gardening skill</td><td class="px-4 py-2">Water crops</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="mt-3 text-sm text-paliaText/70">All tools can be upgraded (by leveling the corresponding skill and using metal bars, etc.) to increase efficiency, durability, and the ability to gather rare resources.</p>
+  </div>
+
+  <!-- Home Plot Unlock -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-home text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🏡 Home Plot Unlock & Expansion</h2></div>
+    <ul class="space-y-2">
+      <li>✔ <strong>First Home Plot</strong>: Complete the early main quest "Your Little Plot of Land" – talk to the town hall NPC to get your first housing foundation for free.</li>
+      <li>✔ <strong>Layout & Building</strong>: Place your house, workshops, animal barns, crop fields, and decorations. Initial build limits increase as you gain Renown.</li>
+      <li>✔ <strong>Buying Additional Plots</strong>: Purchase extra plots (e.g., second farm area, orchard) from the town hall with gold. Prices range from 2,000 to 10,000 gold.</li>
+      <li>✔ <strong>Decoration & Moving</strong>: Press 'H' to enter build mode and freely move structures. Most furniture can be crafted at workbenches or bought from stores.</li>
+    </ul>
+    <div class="mt-4 bg-paliaPrimary/10 rounded-xl p-3 text-sm"><i class="fa fa-map-marker text-paliaPrimary mr-2"></i> 🏠 Pro tip: Your home plot has a fast travel point (Home Shrine) that you can use to return at any time.</div>
+  </div>
+
+  <!-- Fast Travel -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-map-signs text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">⛩️ Fast Travel Network</h2></div>
+    <p>Major areas in Palia have <strong>Fast Travel Boards</strong> (standing wooden signposts). Once activated, you can instantly teleport between them for a small gold fee (or sometimes free).</p>
+    <ul class="mt-3 space-y-2 list-disc pl-5">
+      <li><strong>Kilima Valley</strong>: Town Hall Square, Fisherman's Dock, Central Orchard, Mountain Lookout.</li>
+      <li><strong>Bahari Bay</strong>: Beach Entrance, Mining Camp, Ruins, Lighthouse.</li>
+      <li><strong>Your Home Plot</strong>: Always available at your housing entrance.</li>
+      <li><strong>Fast Travel Costs</strong>: 10-50 gold for same-map travel; 50-100 gold for cross-map (Valley ↔ Bahari). Completing certain NPC quests can unlock discounts.</li>
+    </ul>
+    <div class="grid md:grid-cols-2 gap-3 mt-4 text-sm bg-paliaMuted/30 p-4 rounded-xl">
+      <div><i class="fa fa-clock-o text-paliaPrimary mr-1"></i> First return home each day is free</div>
+      <div><i class="fa fa-users text-paliaPrimary mr-1"></i> In a party, you can use your leader's travel boards</div>
+    </div>
+  </div>
+
+  <!-- Summary & next step -->
+  <div class="bg-paliaPrimary/5 rounded-2xl p-6 text-center border border-paliaAccent/20">
+    <i class="fa fa-graduation-cap text-3xl text-paliaPrimary mb-2 block"></i>
+    <p class="text-paliaText/80">You now know the essentials: character creation, core tools, housing, and travel. Next, dive into <span class="font-semibold">core mechanics (Focus / time management)</span> or start your first money-making route.</p>
+    <div class="mt-4 flex justify-center gap-3">
+      <a href="#" onclick="window.location.href='index.html'; return false;" class="bg-paliaPrimary text-white px-5 py-2 rounded-full hover:bg-paliaPrimaryDeep transition">Back to Main Hub</a>
+      <button id="nextBtn" class="border border-paliaPrimary text-paliaPrimary px-5 py-2 rounded-full hover:bg-paliaPrimary/10">📖 Next: Core Mechanics</button>
+    </div>
+    <p class="text-xs text-paliaText/50 mt-3">* Sub‑pages are being created. Click "Next" to go to the next guide (once available).</p>
+  </div>
+</main>
+
+<footer class="bg-white/70 border-t border-paliaAccent/20 mt-12 py-6 text-center text-sm text-paliaText/70">
+  <p>Palia Guide Hub · Newbie Special · Based on publicly available game info</p>
+  <p class="mt-1"><i class="fa fa-leaf text-paliaPrimary"></i> Wishing you a cozy journey in Palia</p>
+</footer>
+
+<script>
+  document.getElementById('nextBtn')?.addEventListener('click', () => {
+    alert('The next subpage (Core Mechanics) is not yet created. Please return to the main hub and request creation of the next guide.');
+  });
+  // Adjust back link if needed
+  const backLinks = document.querySelectorAll('a[href*="index.html"]');
+  backLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      // If the main page is not named index.html, modify accordingly
+      window.location.href = 'index.html';
+    });
+  });
+</script>
+</body>
+</html>
