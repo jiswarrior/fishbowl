@@ -40,25 +40,8 @@
     .nav-link:hover::after { width: 100%; }
     .lang-btn.active { background-color: #7f9a6e; color: white; border-color: #7f9a6e; }
     .gradient-border { background: linear-gradient(145deg, #ffffff, #fef7ed); border: 1px solid rgba(226,177,129,0.3); }
-    /* 新增：链接文字样式（保持和原有文字视觉一致，仅添加下划线hover效果） */
-    .content-link { 
-      color: inherit; 
-      text-decoration: none; 
-      position: relative;
-    }
-    .content-link::after {
-      content: '';
-      position: absolute;
-      bottom: -1px;
-      left: 0;
-      width: 0;
-      height: 1px;
-      background: #7f9a6e;
-      transition: width 0.2s ease;
-    }
-    .content-link:hover::after {
-      width: 100%;
-    }
+    /* 新增：链接卡片hover效果增强（仅视觉优化，不改变原有样式） */
+    .link-card { cursor: pointer; }
   </style>
 </head>
 <body class="bg-paliaBg text-paliaText font-sans antialiased">
@@ -81,21 +64,22 @@
   <div class="border-t border-paliaAccent/10 bg-white/40">
     <div class="max-w-7xl mx-auto px-4 lg:px-6 overflow-x-auto hide-scrollbar py-2">
       <div class="flex gap-1 text-sm font-medium">
-        <a href="#newbie" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="newbie">新手</a>
-        <a href="#skills" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="skills">技能</a>
-        <a href="#cooking" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="cooking">烹饪</a>
-        <a href="#wiki" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="wiki">百科</a>
-        <a href="#homebuild" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="homebuild">家园</a>
-        <a href="#npc" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="npc">恋爱</a>
-        <a href="#economy" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="economy">赚钱</a>
-        <a href="#quest" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="quest">解谜</a>
-        <a href="#event" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="event">活动</a>
-        <a href="#advanced" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="advanced">进阶</a>
-        <a href="#tools" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="tools">工具</a>
-        <a href="#faq" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="faq">FAQ</a>
-        <a href="#platform" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="platform">平台</a>
-        <a href="#dev" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="dev">动态</a>
-        <a href="#community" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="community">社区</a>
+        <!-- 导航栏链接也同步指向子网页（新标签页） -->
+        <a href="newbie.html" target="_blank" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="newbie">新手</a>
+        <a href="skills.html" target="_blank" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="skills">技能</a>
+        <a href="cooking.html" target="_blank" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="cooking">烹饪</a>
+        <a href="wiki.html" target="_blank" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="wiki">百科</a>
+        <a href="homebuild.html" target="_blank" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="homebuild">家园</a>
+        <a href="npc.html" target="_blank" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="npc">恋爱</a>
+        <a href="economy.html" target="_blank" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="economy">赚钱</a>
+        <a href="quest.html" target="_blank" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="quest">解谜</a>
+        <a href="event.html" target="_blank" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="event">活动</a>
+        <a href="advanced.html" target="_blank" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="advanced">进阶</a>
+        <a href="tools.html" target="_blank" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="tools">工具</a>
+        <a href="faq.html" target="_blank" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="faq">FAQ</a>
+        <a href="platform.html" target="_blank" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="platform">平台</a>
+        <a href="dev.html" target="_blank" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="dev">动态</a>
+        <a href="community.html" target="_blank" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="community">社区</a>
       </div>
     </div>
   </div>
@@ -227,61 +211,6 @@ const contentMap = {
   }
 };
 
-// ---------- 新增：链接配置（你可以自定义每个子主题的跳转链接） ----------
-const linkConfig = {
-  // 核心板块标题链接
-  newbie: "newbie-guide.html",
-  skills: "skills-guide.html",
-  cooking: "cooking-guide.html",
-  wiki: "wiki-database.html",
-  homebuild: "home-ranch.html",
-  npc: "npc-romance.html",
-  economy: "money-making.html",
-  quest: "quest-puzzles.html",
-  event: "seasonal-events.html",
-  advanced: "advanced-tips.html",
-  tools: "tools-resources.html",
-  faq: "faq.html",
-  platform: "platform-guide.html",
-  dev: "dev-updates.html",
-  community: "community-picks.html",
-  
-  // 技能子项链接（七大核心技能）
-  skillItems: {
-    Gardening: "skills/gardening.html",
-    Fishing: "skills/fishing.html",
-    Mining: "skills/mining.html",
-    Hunting: "skills/hunting.html",
-    Foraging: "skills/foraging.html",
-    "Bug Catching": "skills/bug-catching.html",
-    "Furniture Making": "skills/furniture-making.html",
-    // 中文对应（确保多语言下链接生效）
-    园艺: "skills/gardening.html",
-    钓鱼: "skills/fishing.html",
-    采矿: "skills/mining.html",
-    狩猎: "skills/hunting.html",
-    采集: "skills/foraging.html",
-    捕虫: "skills/bug-catching.html",
-    家具制作: "skills/furniture-making.html",
-    // 日语对应
-    ガーデニング: "skills/gardening.html",
-    フィッシング: "skills/fishing.html",
-    マイニング: "skills/mining.html",
-    ハンティング: "skills/hunting.html",
-    フォレイジング: "skills/foraging.html",
-    バグキャッチ: "skills/bug-catching.html",
-    家具製作: "skills/furniture-making.html",
-    // 韩语对应
-    원예: "skills/gardening.html",
-    낚시: "skills/fishing.html",
-    채광: "skills/mining.html",
-    사냥: "skills/hunting.html",
-    채집: "skills/foraging.html",
-    벌레 채집: "skills/bug-catching.html",
-    가구 제작: "skills/furniture-making.html"
-  }
-};
-
 let currentLang = "zh_CN";
 function applyLanguage(lang) {
   if(!contentMap[lang]) lang = "en";
@@ -310,54 +239,84 @@ function renderDynamicContent(t) {
   if(!container) return;
   // 八大核心技能板块使用第一版图标网格样式（钓鱼图标 fa-fish 完整显示）
   container.innerHTML = `
-    <!-- 新手入门 -->
-    <div id="newbie" class="section-card bg-paliaCard rounded-2xl shadow-card p-6 md:p-7 transition-all scroll-mt-24 gradient-border">
-      <div class="flex items-center gap-3 border-b border-paliaMuted pb-3 mb-4"><i class="fa fa-compass text-2xl text-paliaPrimary"></i><h2 class="text-2xl font-bold"><a href="${linkConfig.newbie}" class="content-link">${t.newbie.title}</a></h2></div>
-      <div class="grid md:grid-cols-2 gap-4"><ul class="space-y-2.5">${t.newbie.list.map(item => `<li class="flex gap-2"><i class="fa fa-check-circle text-paliaPrimary mt-1"></i>${item}</li>`).join('')}</ul></div>
-    </div>
-    <!-- 八大核心技能板块 - 第一版样式（含钓鱼图标 fa-fish） -->
-    <div id="skills" class="section-card bg-paliaCard rounded-2xl shadow-card p-6 scroll-mt-24">
-      <div class="flex items-center gap-3 border-b border-paliaMuted pb-3 mb-5"><i class="fa fa-cogs text-2xl text-paliaPrimary"></i><h2 class="text-2xl font-bold"><a href="${linkConfig.skills}" class="content-link">${t.skills.title}</a></h2></div>
-      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
-        <div class="bg-paliaMuted/30 rounded-xl p-3 text-center"><i class="fa fa-pagelines text-paliaPrimary text-xl"></i><p class="font-medium mt-1"><a href="${linkConfig.skillItems[t.skills.skillNames[0]]}" class="content-link">${t.skills.skillNames[0]}</a></p></div>
-        <div class="bg-paliaMuted/30 rounded-xl p-3 text-center"><i class="fa fa-fish text-paliaPrimary text-xl"></i><p class="font-medium mt-1"><a href="${linkConfig.skillItems[t.skills.skillNames[1]]}" class="content-link">${t.skills.skillNames[1]}</a></p></div>
-        <div class="bg-paliaMuted/30 rounded-xl p-3 text-center"><i class="fa fa-diamond text-paliaPrimary text-xl"></i><p class="font-medium mt-1"><a href="${linkConfig.skillItems[t.skills.skillNames[2]]}" class="content-link">${t.skills.skillNames[2]}</a></p></div>
-        <div class="bg-paliaMuted/30 rounded-xl p-3 text-center"><i class="fa fa-crosshairs text-paliaPrimary text-xl"></i><p class="font-medium mt-1"><a href="${linkConfig.skillItems[t.skills.skillNames[3]]}" class="content-link">${t.skills.skillNames[3]}</a></p></div>
-        <div class="bg-paliaMuted/30 rounded-xl p-3 text-center"><i class="fa fa-leaf text-paliaPrimary text-xl"></i><p class="font-medium mt-1"><a href="${linkConfig.skillItems[t.skills.skillNames[4]]}" class="content-link">${t.skills.skillNames[4]}</a></p></div>
-        <div class="bg-paliaMuted/30 rounded-xl p-3 text-center"><i class="fa fa-bug text-paliaPrimary text-xl"></i><p class="font-medium mt-1"><a href="${linkConfig.skillItems[t.skills.skillNames[5]]}" class="content-link">${t.skills.skillNames[5]}</a></p></div>
-        <div class="bg-paliaMuted/30 rounded-xl p-3 text-center"><i class="fa fa-cube text-paliaPrimary text-xl"></i><p class="font-medium mt-1"><a href="${linkConfig.skillItems[t.skills.skillNames[6]]}" class="content-link">${t.skills.skillNames[6]}</a></p></div>
+    <!-- 新手入门 - 添加链接 -->
+    <a href="newbie.html" target="_blank" class="block no-underline">
+      <div id="newbie" class="section-card link-card bg-paliaCard rounded-2xl shadow-card p-6 md:p-7 transition-all scroll-mt-24 gradient-border">
+        <div class="flex items-center gap-3 border-b border-paliaMuted pb-3 mb-4"><i class="fa fa-compass text-2xl text-paliaPrimary"></i><h2 class="text-2xl font-bold">${t.newbie.title}</h2></div>
+        <div class="grid md:grid-cols-2 gap-4"><ul class="space-y-2.5">${t.newbie.list.map(item => `<li class="flex gap-2"><i class="fa fa-check-circle text-paliaPrimary mt-1"></i>${item}</li>`).join('')}</ul></div>
       </div>
-      <ul class="space-y-2 list-disc pl-5 marker:text-paliaPrimary">${t.skills.list.map(item => `<li>${item}</li>`).join('')}</ul>
-    </div>
-    <!-- 双栏：烹饪+百科 -->
+    </a>
+    <!-- 八大核心技能板块 - 第一版样式（含钓鱼图标 fa-fish）- 添加链接 -->
+    <a href="skills.html" target="_blank" class="block no-underline">
+      <div id="skills" class="section-card link-card bg-paliaCard rounded-2xl shadow-card p-6 scroll-mt-24">
+        <div class="flex items-center gap-3 border-b border-paliaMuted pb-3 mb-5"><i class="fa fa-cogs text-2xl text-paliaPrimary"></i><h2 class="text-2xl font-bold">${t.skills.title}</h2></div>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
+          <div class="bg-paliaMuted/30 rounded-xl p-3 text-center"><i class="fa fa-pagelines text-paliaPrimary text-xl"></i><p class="font-medium mt-1">${t.skills.skillNames[0]}</p></div>
+          <div class="bg-paliaMuted/30 rounded-xl p-3 text-center"><i class="fa fa-fish text-paliaPrimary text-xl"></i><p class="font-medium mt-1">${t.skills.skillNames[1]}</p></div>
+          <div class="bg-paliaMuted/30 rounded-xl p-3 text-center"><i class="fa fa-diamond text-paliaPrimary text-xl"></i><p class="font-medium mt-1">${t.skills.skillNames[2]}</p></div>
+          <div class="bg-paliaMuted/30 rounded-xl p-3 text-center"><i class="fa fa-crosshairs text-paliaPrimary text-xl"></i><p class="font-medium mt-1">${t.skills.skillNames[3]}</p></div>
+          <div class="bg-paliaMuted/30 rounded-xl p-3 text-center"><i class="fa fa-leaf text-paliaPrimary text-xl"></i><p class="font-medium mt-1">${t.skills.skillNames[4]}</p></div>
+          <div class="bg-paliaMuted/30 rounded-xl p-3 text-center"><i class="fa fa-bug text-paliaPrimary text-xl"></i><p class="font-medium mt-1">${t.skills.skillNames[5]}</p></div>
+          <div class="bg-paliaMuted/30 rounded-xl p-3 text-center"><i class="fa fa-cube text-paliaPrimary text-xl"></i><p class="font-medium mt-1">${t.skills.skillNames[6]}</p></div>
+        </div>
+        <ul class="space-y-2 list-disc pl-5 marker:text-paliaPrimary">${t.skills.list.map(item => `<li>${item}</li>`).join('')}</ul>
+      </div>
+    </a>
+    <!-- 双栏：烹饪+百科 - 添加链接 -->
     <div class="grid md:grid-cols-2 gap-6">
-      <div id="cooking" class="section-card bg-paliaCard rounded-2xl shadow-card p-6 scroll-mt-24"><div class="flex items-center gap-3 mb-3"><i class="fa fa-cutlery text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold"><a href="${linkConfig.cooking}" class="content-link">${t.cooking.title}</a></h2></div><ul class="space-y-2 text-sm">${t.cooking.list.map(i=>`<li>✔ ${i}</li>`).join('')}</ul></div>
-      <div id="wiki" class="section-card bg-paliaCard rounded-2xl shadow-card p-6 scroll-mt-24"><div class="flex items-center gap-3 mb-3"><i class="fa fa-book text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold"><a href="${linkConfig.wiki}" class="content-link">${t.wiki.title}</a></h2></div><ul class="space-y-2 text-sm">${t.wiki.list.map(i=>`<li>📘 ${i}</li>`).join('')}</ul></div>
+      <a href="cooking.html" target="_blank" class="block no-underline">
+        <div id="cooking" class="section-card link-card bg-paliaCard rounded-2xl shadow-card p-6 scroll-mt-24"><div class="flex items-center gap-3 mb-3"><i class="fa fa-cutlery text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">${t.cooking.title}</h2></div><ul class="space-y-2 text-sm">${t.cooking.list.map(i=>`<li>✔ ${i}</li>`).join('')}</ul></div>
+      </a>
+      <a href="wiki.html" target="_blank" class="block no-underline">
+        <div id="wiki" class="section-card link-card bg-paliaCard rounded-2xl shadow-card p-6 scroll-mt-24"><div class="flex items-center gap-3 mb-3"><i class="fa fa-book text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">${t.wiki.title}</h2></div><ul class="space-y-2 text-sm">${t.wiki.list.map(i=>`<li>📘 ${i}</li>`).join('')}</ul></div>
+      </a>
     </div>
-    <!-- 家园+恋爱 -->
+    <!-- 家园+恋爱 - 添加链接 -->
     <div class="grid md:grid-cols-2 gap-6">
-      <div id="homebuild" class="section-card bg-paliaCard rounded-2xl shadow-card p-6"><div class="flex items-center gap-3 mb-3"><i class="fa fa-home text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold"><a href="${linkConfig.homebuild}" class="content-link">${t.homebuild.title}</a></h2></div><ul class="space-y-2">${t.homebuild.list.map(i=>`<li>◈ ${i}</li>`).join('')}</ul></div>
-      <div id="npc" class="section-card bg-paliaCard rounded-2xl shadow-card p-6"><div class="flex items-center gap-3 mb-3"><i class="fa fa-heart text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold"><a href="${linkConfig.npc}" class="content-link">${t.npc.title}</a></h2></div><ul class="space-y-2">${t.npc.list.map(i=>`<li>💬 ${i}</li>`).join('')}</ul></div>
+      <a href="homebuild.html" target="_blank" class="block no-underline">
+        <div id="homebuild" class="section-card link-card bg-paliaCard rounded-2xl shadow-card p-6"><div class="flex items-center gap-3 mb-3"><i class="fa fa-home text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">${t.homebuild.title}</h2></div><ul class="space-y-2">${t.homebuild.list.map(i=>`<li>◈ ${i}</li>`).join('')}</ul></div>
+      </a>
+      <a href="npc.html" target="_blank" class="block no-underline">
+        <div id="npc" class="section-card link-card bg-paliaCard rounded-2xl shadow-card p-6"><div class="flex items-center gap-3 mb-3"><i class="fa fa-heart text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">${t.npc.title}</h2></div><ul class="space-y-2">${t.npc.list.map(i=>`<li>💬 ${i}</li>`).join('')}</ul></div>
+      </a>
     </div>
-    <!-- 经济+任务 -->
+    <!-- 经济+任务 - 添加链接 -->
     <div class="grid md:grid-cols-2 gap-6">
-      <div id="economy" class="section-card bg-paliaCard rounded-2xl shadow-card p-6"><div class="flex items-center gap-3 mb-3"><i class="fa fa-line-chart text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold"><a href="${linkConfig.economy}" class="content-link">${t.economy.title}</a></h2></div><p class="bg-paliaPrimary/10 p-3 rounded-xl text-sm italic mb-2">💡 ${t.economy.tip}</p><ul class="space-y-1 text-sm">${t.economy.list.map(i=>`<li>✓ ${i}</li>`).join('')}</ul></div>
-      <div id="quest" class="section-card bg-paliaCard rounded-2xl shadow-card p-6"><div class="flex items-center gap-3 mb-3"><i class="fa fa-puzzle-piece text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold"><a href="${linkConfig.quest}" class="content-link">${t.quest.title}</a></h2></div><ul class="space-y-1 text-sm">${t.quest.list.map(i=>`<li>🌟 ${i}</li>`).join('')}</ul></div>
+      <a href="economy.html" target="_blank" class="block no-underline">
+        <div id="economy" class="section-card link-card bg-paliaCard rounded-2xl shadow-card p-6"><div class="flex items-center gap-3 mb-3"><i class="fa fa-line-chart text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">${t.economy.title}</h2></div><p class="bg-paliaPrimary/10 p-3 rounded-xl text-sm italic mb-2">💡 ${t.economy.tip}</p><ul class="space-y-1 text-sm">${t.economy.list.map(i=>`<li>✓ ${i}</li>`).join('')}</ul></div>
+      </a>
+      <a href="quest.html" target="_blank" class="block no-underline">
+        <div id="quest" class="section-card link-card bg-paliaCard rounded-2xl shadow-card p-6"><div class="flex items-center gap-3 mb-3"><i class="fa fa-puzzle-piece text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">${t.quest.title}</h2></div><ul class="space-y-1 text-sm">${t.quest.list.map(i=>`<li>🌟 ${i}</li>`).join('')}</ul></div>
+      </a>
     </div>
-    <!-- 活动 进阶 工具 FAQ 网格 -->
+    <!-- 活动 进阶 工具 FAQ 网格 - 添加链接 -->
     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
-      <div class="section-card bg-paliaCard rounded-xl p-5 shadow-card"><i class="fa fa-calendar-check-o text-paliaPrimary text-xl mb-2 block"></i><h3 class="font-bold text-lg"><a href="${linkConfig.event}" class="content-link">${t.event.title}</a></h3><ul class="text-sm mt-1 space-y-1">${t.event.list.map(i=>`<li>• ${i}</li>`).join('')}</ul></div>
-      <div class="section-card bg-paliaCard rounded-xl p-5 shadow-card"><i class="fa fa-star-half-o text-paliaPrimary text-xl mb-2 block"></i><h3 class="font-bold text-lg"><a href="${linkConfig.advanced}" class="content-link">${t.advanced.title}</a></h3><ul class="text-sm mt-1 space-y-1">${t.advanced.list.map(i=>`<li>✨ ${i}</li>`).join('')}</ul></div>
-      <div class="section-card bg-paliaCard rounded-xl p-5 shadow-card"><i class="fa fa-wrench text-paliaPrimary text-xl mb-2 block"></i><h3 class="font-bold text-lg"><a href="${linkConfig.tools}" class="content-link">${t.tools.title}</a></h3><ul class="text-sm mt-1 space-y-1">${t.tools.list.map(i=>`<li>🛠️ ${i}</li>`).join('')}</ul></div>
-      <div class="section-card bg-paliaCard rounded-xl p-5 shadow-card"><i class="fa fa-question-circle text-paliaPrimary text-xl mb-2 block"></i><h3 class="font-bold text-lg"><a href="${linkConfig.faq}" class="content-link">${t.faq.title}</a></h3><ul class="text-sm mt-1 space-y-1">${t.faq.list.map(i=>`<li>❓ ${i}</li>`).join('')}</ul></div>
+      <a href="event.html" target="_blank" class="block no-underline">
+        <div class="section-card link-card bg-paliaCard rounded-xl p-5 shadow-card"><i class="fa fa-calendar-check-o text-paliaPrimary text-xl mb-2 block"></i><h3 class="font-bold text-lg">${t.event.title}</h3><ul class="text-sm mt-1 space-y-1">${t.event.list.map(i=>`<li>• ${i}</li>`).join('')}</ul></div>
+      </a>
+      <a href="advanced.html" target="_blank" class="block no-underline">
+        <div class="section-card link-card bg-paliaCard rounded-xl p-5 shadow-card"><i class="fa fa-star-half-o text-paliaPrimary text-xl mb-2 block"></i><h3 class="font-bold text-lg">${t.advanced.title}</h3><ul class="text-sm mt-1 space-y-1">${t.advanced.list.map(i=>`<li>✨ ${i}</li>`).join('')}</ul></div>
+      </a>
+      <a href="tools.html" target="_blank" class="block no-underline">
+        <div class="section-card link-card bg-paliaCard rounded-xl p-5 shadow-card"><i class="fa fa-wrench text-paliaPrimary text-xl mb-2 block"></i><h3 class="font-bold text-lg">${t.tools.title}</h3><ul class="text-sm mt-1 space-y-1">${t.tools.list.map(i=>`<li>🛠️ ${i}</li>`).join('')}</ul></div>
+      </a>
+      <a href="faq.html" target="_blank" class="block no-underline">
+        <div class="section-card link-card bg-paliaCard rounded-xl p-5 shadow-card"><i class="fa fa-question-circle text-paliaPrimary text-xl mb-2 block"></i><h3 class="font-bold text-lg">${t.faq.title}</h3><ul class="text-sm mt-1 space-y-1">${t.faq.list.map(i=>`<li>❓ ${i}</li>`).join('')}</ul></div>
+      </a>
     </div>
-    <!-- 平台+官方动态 -->
+    <!-- 平台+官方动态 - 添加链接 -->
     <div class="grid md:grid-cols-2 gap-6">
-      <div class="section-card bg-paliaCard rounded-2xl p-6"><i class="fa fa-gamepad text-paliaPrimary text-2xl mr-2"></i><h2 class="text-xl font-bold inline-block"><a href="${linkConfig.platform}" class="content-link">${t.platform.title}</a></h2><ul class="mt-3 space-y-1">${t.platform.list.map(i=>`<li>▪ ${i}</li>`).join('')}</ul></div>
-      <div class="section-card bg-paliaCard rounded-2xl p-6"><i class="fa fa-code-fork text-paliaPrimary text-2xl mr-2"></i><h2 class="text-xl font-bold inline-block"><a href="${linkConfig.dev}" class="content-link">${t.dev.title}</a></h2><ul class="mt-3 space-y-1">${t.dev.list.map(i=>`<li>🔔 ${i}</li>`).join('')}</ul></div>
+      <a href="platform.html" target="_blank" class="block no-underline">
+        <div class="section-card link-card bg-paliaCard rounded-2xl p-6"><i class="fa fa-gamepad text-paliaPrimary text-2xl mr-2"></i><h2 class="text-xl font-bold inline-block">${t.platform.title}</h2><ul class="mt-3 space-y-1">${t.platform.list.map(i=>`<li>▪ ${i}</li>`).join('')}</ul></div>
+      </a>
+      <a href="dev.html" target="_blank" class="block no-underline">
+        <div class="section-card link-card bg-paliaCard rounded-2xl p-6"><i class="fa fa-code-fork text-paliaPrimary text-2xl mr-2"></i><h2 class="text-xl font-bold inline-block">${t.dev.title}</h2><ul class="mt-3 space-y-1">${t.dev.list.map(i=>`<li>🔔 ${i}</li>`).join('')}</ul></div>
+      </a>
     </div>
-    <!-- 社区精选 -->
-    <div class="section-card bg-gradient-to-r from-paliaCard to-paliaMuted/30 rounded-2xl p-6 border-l-8 border-paliaAccent"><div class="flex items-center gap-3 mb-4"><i class="fa fa-users text-paliaPrimary text-2xl"></i><h2 class="text-2xl font-bold"><a href="${linkConfig.community}" class="content-link">${t.community.title}</a></h2></div><div class="flex flex-wrap gap-3 mb-3">${t.community.list.map(i=>`<span class="bg-white rounded-full px-4 py-1 shadow-sm text-sm">🏆 ${i}</span>`).join('')}</div></div>
+    <!-- 社区精选 - 添加链接 -->
+    <a href="community.html" target="_blank" class="block no-underline">
+      <div class="section-card link-card bg-gradient-to-r from-paliaCard to-paliaMuted/30 rounded-2xl p-6 border-l-8 border-paliaAccent"><div class="flex items-center gap-3 mb-4"><i class="fa fa-users text-paliaPrimary text-2xl"></i><h2 class="text-2xl font-bold">${t.community.title}</h2></div><div class="flex flex-wrap gap-3 mb-3">${t.community.list.map(i=>`<span class="bg-white rounded-full px-4 py-1 shadow-sm text-sm">🏆 ${i}</span>`).join('')}</div></div>
+    </a>
   `;
 }
 
