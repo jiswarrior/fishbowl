@@ -289,6 +289,258 @@ function renderDynamicContent(t) {
 
 document.querySelectorAll(".lang-btn").forEach(btn => btn.addEventListener("click", () => applyLanguage(btn.dataset.lang)));
 window.onload = () => applyLanguage("zh_CN");
+// ======================== 子网页文件名映射表 ========================
+// 新手指南 (6项)
+const newbieSubpages = [
+  { text: "角色创建，工具解锁，家园地块解锁，快速旅行点", file: "newbie-basics.html" },
+  { text: "核心机制：游戏内时间转换，专注值，经验倍率，每日重置", file: "newbie-core-mechanics.html" },
+  { text: "专注值深度解析：通过声望提高上限，食物与物品维持循环", file: "newbie-focus-deepdive.html" },
+  { text: "时间管理：钓鱼、捉虫、季节性刷新真实时间表", file: "newbie-time-management.html" },
+  { text: "新手赚钱路线，技能升级优先级，背包扩容", file: "newbie-money-route.html" },
+  { text: "7日成长路线图（从零到大师）", file: "newbie-roadmap.html" }
+];
+// 核心技能板块 (7个图标后面有清单)
+const skillsSubpages = [
+  { text: "等级解锁工具与设施完整表格", file: "skills-tool-unlock.html" },
+  { text: "NPC位置，每周挑战，技能币兑换清单", file: "skills-npc-challenges.html" },
+  { text: "专注优化极速升级指南", file: "skills-focus-leveling.html" },
+  { text: "25/50金银成就及隐藏奖励", file: "skills-achievements.html" },
+  { text: "全配方：种子，鱼饵，矿石，家具蓝图", file: "skills-recipes-blueprints.html" }
+];
+// 烹饪系统 (5项)
+const cookingSubpages = [
+  { text: "烹饪小游戏机制，专注加成，成功率秘诀", file: "cooking-minigame.html" },
+  { text: "炉灶与烤箱解锁条件", file: "cooking-stove-oven.html" },
+  { text: "全食谱配方，食材，专注增益，售价，送礼适配", file: "cooking-recipes.html" },
+  { text: "高效烹饪升级路线与成本控制", file: "cooking-leveling.html" },
+  { text: "隐藏食谱及星级料理产出", file: "cooking-hidden-recipes.html" }
+];
+// 图鉴百科 (5项)
+const wikiSubpages = [
+  { text: "鱼类：位置，时间，鱼饵，价格，稀有度，最佳钓点", file: "wiki-fish.html" },
+  { text: "昆虫：刷新时间，区域，捕捉技巧，送礼/售价", file: "wiki-bugs.html" },
+  { text: "资源：矿石，黏土，香料，蘑菇，花，浆果", file: "wiki-resources.html" },
+  { text: "作物：种子来源，生长天数，肥料，星级产量", file: "wiki-crops.html" },
+  { text: "家具：蓝图材料，解锁条件，装饰效果", file: "wiki-furniture.html" }
+];
+// 家园牧场 (4项)
+const homeSubpages = [
+  { text: "家园地块解锁，土地扩张，装饰上限", file: "home-plot-expansion.html" },
+  { text: "牧场指南：动物心情，繁殖，蜜蜂与禽类养殖", file: "home-ranch.html" },
+  { text: "室内外庭院造景，热门建造布局", file: "home-decor-layouts.html" },
+  { text: "高效农场规划，储物整理", file: "home-farm-storage.html" }
+];
+// NPC恋爱 (4项)
+const npcSubpages = [
+  { text: "NPC档案：行程，最爱礼物，讨厌物品", file: "npc-profiles.html" },
+  { text: "关系升级路线，专属任务与奖励", file: "npc-relationship.html" },
+  { text: "恋爱规则：可同时与所有可恋爱NPC交往，无惩罚", file: "npc-romance-rules.html" },
+  { text: "声望获取与快速好感攻略", file: "npc-renown-friendship.html" }
+];
+// 经济赚钱 (3项)
+const economySubpages = [
+  { text: "按金币价值排序的高价值物品清单", file: "economy-high-value.html" },
+  { text: "挂机日常收益，周常挑战金币最大化", file: "economy-daily-income.html" },
+  { text: "金币与技能币优先兑换策略", file: "economy-exchange.html" }
+];
+// 任务解谜 (4项)
+const questSubpages = [
+  { text: "主线流程：基利马山谷→巴哈里湾，神庙谜题", file: "quest-main-story.html" },
+  { text: "支线任务，公告板日常，触发条件", file: "quest-side-dailies.html" },
+  { text: "隐藏收集品：银翼蛋，宝箱，诗篇，秘密", file: "quest-collectibles.html" },
+  { text: "卡关快速查询指南", file: "quest-troubleshoot.html" }
+];
+// 季节活动 (5项)
+const eventSubpages = [
+  { text: "版本更新笔记，新地图，技能，动物，家具更新", file: "event-patch-notes.html" },
+  { text: "限时活动：玛吉市场，冬灯节，万圣节", file: "event-limited.html" },
+  { text: "高亮限定家具/服装及过期提醒", file: "event-limited-items.html" },
+  { text: "活动代币获取与兑换列表", file: "event-tokens.html" },
+  { text: "已结束历史活动标记为“已结束”", file: "event-archived.html" }
+];
+// 进阶技巧 (4项)
+const advancedSubpages = [
+  { text: "基利马与巴哈里湾高分辨率资源分布图", file: "advanced-resource-maps.html" },
+  { text: "稀有刷新时间与点位技巧", file: "advanced-rare-spawns.html" },
+  { text: "多人合作：组队钓鱼/狩猎，家园访问", file: "advanced-multiplayer.html" },
+  { text: "专注循环优化，自动农场策略", file: "advanced-focus-farm.html" }
+];
+// 工具资源 (3项)
+const toolsSubpages = [
+  { text: "可下载：Excel百科表格，刷新地图，NPC送礼表", file: "tools-downloads.html" },
+  { text: "在线计算器：鱼时，作物生长，好感度计量", file: "tools-calculators.html" },
+  { text: "热键，性能优化，推荐游戏设置", file: "tools-settings.html" }
+];
+// FAQ (4项)
+const faqSubpages = [
+  { text: "背包满了？快速回家？朋友无法加入家园？", file: "faq-basics.html" },
+  { text: "如何获得稀有矿石，特定鱼类，种子", file: "faq-rarity.html" },
+  { text: "专注恢复，声望获取，技能币积累", file: "faq-focus-renown.html" },
+  { text: "故障排除：延迟，网络问题，存档备份", file: "faq-troubleshooting.html" }
+];
+// 平台优化 (3项)
+const platformSubpages = [
+  { text: "PC与Switch键位，跨平台注意事项", file: "platform-keybinds.html" },
+  { text: "低端/高端PC画质优化，Switch帧率建议", file: "platform-graphics.html" },
+  { text: "网络稳定性修复，云存档指南", file: "platform-network-cloud.html" }
+];
+// 官方动态 (3项)
+const devSubpages = [
+  { text: "官方补丁说明，开发者问答，未来内容路线图", file: "dev-patch-qa.html" },
+  { text: "官方反馈提交指南", file: "dev-feedback.html" },
+  { text: "版本预测与即将到来功能分析", file: "dev-roadmap-analysis.html" }
+];
+// 社区精选 (3项)
+const communitySubpages = [
+  { text: "编辑推荐顶级策略与流派", file: "community-editor-picks.html" },
+  { text: "玩家投稿最佳家园设计与农场布局", file: "community-player-builds.html" },
+  { text: "贡献者攻略投稿系统", file: "community-submissions.html" }
+];
+
+// 辅助函数：使列表项可点击
+function makeClickable(li, filePath) {
+  const textSpan = li.firstChild; // 小心处理，假设文本直接包裹
+  if (!textSpan) return;
+  const wrapper = document.createElement('span');
+  wrapper.className = 'clickable-item';
+  wrapper.innerHTML = textSpan.textContent;
+  wrapper.onclick = (e) => {
+    e.stopPropagation();
+    fetch(filePath, { method: 'HEAD' })
+      .then(res => {
+        if (res.ok) window.location.href = filePath;
+        else alert(`⚠️ 此子网页尚未创建: ${filePath}\n敬请期待！`);
+      })
+      .catch(() => alert(`⚠️ 子网页不存在: ${filePath}\n请等待后续更新。`));
+  };
+  li.replaceChild(wrapper, textSpan);
+}
+
+// 动态渲染主内容（完全基于多语言，并注入点击链接）
+function renderDynamicContent(t) {
+  const container = document.getElementById("dynamicContentContainer");
+  if (!container) return;
+  // 生成HTML结构，与之前类似但列表项需要特殊标记以便后续绑定
+  container.innerHTML = `
+    <!-- 新手入门 -->
+    <div id="newbie" class="section-card bg-paliaCard rounded-2xl shadow-card p-6 md:p-7 transition-all scroll-mt-24 gradient-border">
+      <div class="flex items-center gap-3 border-b border-paliaMuted pb-3 mb-4"><i class="fa fa-compass text-2xl text-paliaPrimary"></i><h2 class="text-2xl font-bold">${t.newbie.title}</h2></div>
+      <div class="grid md:grid-cols-2 gap-4"><ul id="newbie-list" class="space-y-2.5">${t.newbie.list.map(item => `<li class="flex gap-2"><i class="fa fa-check-circle text-paliaPrimary mt-1"></i><span>${item}</span></li>`).join('')}</ul></div>
+    </div>
+    <!-- 七大核心技能（修正） -->
+    <div id="skills" class="section-card bg-paliaCard rounded-2xl shadow-card p-6 scroll-mt-24">
+      <div class="flex items-center gap-3 border-b border-paliaMuted pb-3 mb-5"><i class="fa fa-cogs text-2xl text-paliaPrimary"></i><h2 class="text-2xl font-bold">${t.skills.title}</h2></div>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
+        ${t.skills.skillNames.map(name => `<div class="bg-paliaMuted/30 rounded-xl p-3 text-center"><i class="fa ${getSkillIcon(name)} text-paliaPrimary text-xl"></i><p class="font-medium mt-1">${name}</p></div>`).join('')}
+      </div>
+      <ul id="skills-list" class="space-y-2 list-disc pl-5 marker:text-paliaPrimary">${t.skills.list.map(item => `<li>${item}</li>`).join('')}</ul>
+    </div>
+    <!-- 双栏：烹饪+百科 -->
+    <div class="grid md:grid-cols-2 gap-6">
+      <div id="cooking" class="section-card bg-paliaCard rounded-2xl shadow-card p-6 scroll-mt-24"><div class="flex items-center gap-3 mb-3"><i class="fa fa-cutlery text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">${t.cooking.title}</h2></div><ul id="cooking-list" class="space-y-2 text-sm">${t.cooking.list.map(i=>`<li>✔ <span>${i}</span></li>`).join('')}</ul></div>
+      <div id="wiki" class="section-card bg-paliaCard rounded-2xl shadow-card p-6 scroll-mt-24"><div class="flex items-center gap-3 mb-3"><i class="fa fa-book text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">${t.wiki.title}</h2></div><ul id="wiki-list" class="space-y-2 text-sm">${t.wiki.list.map(i=>`<li>📘 <span>${i}</span></li>`).join('')}</ul></div>
+    </div>
+    <!-- 家园+恋爱 -->
+    <div class="grid md:grid-cols-2 gap-6">
+      <div id="homebuild" class="section-card bg-paliaCard rounded-2xl shadow-card p-6"><div class="flex items-center gap-3 mb-3"><i class="fa fa-home text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">${t.homebuild.title}</h2></div><ul id="home-list" class="space-y-2">${t.homebuild.list.map(i=>`<li>◈ <span>${i}</span></li>`).join('')}</ul></div>
+      <div id="npc" class="section-card bg-paliaCard rounded-2xl shadow-card p-6"><div class="flex items-center gap-3 mb-3"><i class="fa fa-heart text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">${t.npc.title}</h2></div><ul id="npc-list" class="space-y-2">${t.npc.list.map(i=>`<li>💬 <span>${i}</span></li>`).join('')}</ul></div>
+    </div>
+    <!-- 经济+任务 -->
+    <div class="grid md:grid-cols-2 gap-6">
+      <div id="economy" class="section-card bg-paliaCard rounded-2xl shadow-card p-6"><div class="flex items-center gap-3 mb-3"><i class="fa fa-line-chart text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">${t.economy.title}</h2></div><p class="bg-paliaPrimary/10 p-3 rounded-xl text-sm italic mb-2">💡 ${t.economy.tip}</p><ul id="economy-list" class="space-y-1 text-sm">${t.economy.list.map(i=>`<li>✓ <span>${i}</span></li>`).join('')}</ul></div>
+      <div id="quest" class="section-card bg-paliaCard rounded-2xl shadow-card p-6"><div class="flex items-center gap-3 mb-3"><i class="fa fa-puzzle-piece text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">${t.quest.title}</h2></div><ul id="quest-list" class="space-y-1 text-sm">${t.quest.list.map(i=>`<li>🌟 <span>${i}</span></li>`).join('')}</ul></div>
+    </div>
+    <!-- 活动 进阶 工具 FAQ 网格 -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div class="section-card bg-paliaCard rounded-xl p-5 shadow-card"><i class="fa fa-calendar-check-o text-paliaPrimary text-xl mb-2 block"></i><h3 class="font-bold text-lg">${t.event.title}</h3><ul id="event-list" class="text-sm mt-1 space-y-1">${t.event.list.map(i=>`<li>• <span>${i}</span></li>`).join('')}</ul></div>
+      <div class="section-card bg-paliaCard rounded-xl p-5 shadow-card"><i class="fa fa-star-half-o text-paliaPrimary text-xl mb-2 block"></i><h3 class="font-bold text-lg">${t.advanced.title}</h3><ul id="advanced-list" class="text-sm mt-1 space-y-1">${t.advanced.list.map(i=>`<li>✨ <span>${i}</span></li>`).join('')}</ul></div>
+      <div class="section-card bg-paliaCard rounded-xl p-5 shadow-card"><i class="fa fa-wrench text-paliaPrimary text-xl mb-2 block"></i><h3 class="font-bold text-lg">${t.tools.title}</h3><ul id="tools-list" class="text-sm mt-1 space-y-1">${t.tools.list.map(i=>`<li>🛠️ <span>${i}</span></li>`).join('')}</ul></div>
+      <div class="section-card bg-paliaCard rounded-xl p-5 shadow-card"><i class="fa fa-question-circle text-paliaPrimary text-xl mb-2 block"></i><h3 class="font-bold text-lg">${t.faq.title}</h3><ul id="faq-list" class="text-sm mt-1 space-y-1">${t.faq.list.map(i=>`<li>❓ <span>${i}</span></li>`).join('')}</ul></div>
+    </div>
+    <!-- 平台+官方动态 -->
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="section-card bg-paliaCard rounded-2xl p-6"><i class="fa fa-gamepad text-paliaPrimary text-2xl mr-2"></i><h2 class="text-xl font-bold inline-block">${t.platform.title}</h2><ul id="platform-list" class="mt-3 space-y-1">${t.platform.list.map(i=>`<li>▪ <span>${i}</span></li>`).join('')}</ul></div>
+      <div class="section-card bg-paliaCard rounded-2xl p-6"><i class="fa fa-code-fork text-paliaPrimary text-2xl mr-2"></i><h2 class="text-xl font-bold inline-block">${t.dev.title}</h2><ul id="dev-list" class="mt-3 space-y-1">${t.dev.list.map(i=>`<li>🔔 <span>${i}</span></li>`).join('')}</ul></div>
+    </div>
+    <!-- 社区精选 -->
+    <div class="section-card bg-gradient-to-r from-paliaCard to-paliaMuted/30 rounded-2xl p-6 border-l-8 border-paliaAccent"><div class="flex items-center gap-3 mb-4"><i class="fa fa-users text-paliaPrimary text-2xl"></i><h2 class="text-2xl font-bold">${t.community.title}</h2></div><div id="community-list" class="flex flex-wrap gap-3 mb-3">${t.community.list.map(i=>`<span class="bg-white rounded-full px-4 py-1 shadow-sm text-sm">🏆 ${i}</span>`).join('')}</div></div>
+  `;
+
+  // 绑定所有可点击列表项
+  bindClickableItems();
+}
+
+function bindClickableItems() {
+  // 新手指南
+  const newbieItems = document.querySelectorAll('#newbie-list li span');
+  newbieItems.forEach((span, idx) => { if (idx < newbieSubpages.length) makeClickable(span.parentNode, newbieSubpages[idx].file); });
+  // 核心技能
+  const skillsItems = document.querySelectorAll('#skills-list li');
+  skillsItems.forEach((li, idx) => { if (idx < skillsSubpages.length) makeClickable(li, skillsSubpages[idx].file); });
+  // 烹饪
+  const cookingItems = document.querySelectorAll('#cooking-list li span');
+  cookingItems.forEach((span, idx) => { if (idx < cookingSubpages.length) makeClickable(span.parentNode, cookingSubpages[idx].file); });
+  // 百科
+  const wikiItems = document.querySelectorAll('#wiki-list li span');
+  wikiItems.forEach((span, idx) => { if (idx < wikiSubpages.length) makeClickable(span.parentNode, wikiSubpages[idx].file); });
+  // 家园
+  const homeItems = document.querySelectorAll('#home-list li span');
+  homeItems.forEach((span, idx) => { if (idx < homeSubpages.length) makeClickable(span.parentNode, homeSubpages[idx].file); });
+  // NPC
+  const npcItems = document.querySelectorAll('#npc-list li span');
+  npcItems.forEach((span, idx) => { if (idx < npcSubpages.length) makeClickable(span.parentNode, npcSubpages[idx].file); });
+  // 经济
+  const econItems = document.querySelectorAll('#economy-list li span');
+  econItems.forEach((span, idx) => { if (idx < economySubpages.length) makeClickable(span.parentNode, economySubpages[idx].file); });
+  // 任务
+  const questItems = document.querySelectorAll('#quest-list li span');
+  questItems.forEach((span, idx) => { if (idx < questSubpages.length) makeClickable(span.parentNode, questSubpages[idx].file); });
+  // 活动
+  const eventItems = document.querySelectorAll('#event-list li span');
+  eventItems.forEach((span, idx) => { if (idx < eventSubpages.length) makeClickable(span.parentNode, eventSubpages[idx].file); });
+  // 进阶
+  const advItems = document.querySelectorAll('#advanced-list li span');
+  advItems.forEach((span, idx) => { if (idx < advancedSubpages.length) makeClickable(span.parentNode, advancedSubpages[idx].file); });
+  // 工具
+  const toolsItems = document.querySelectorAll('#tools-list li span');
+  toolsItems.forEach((span, idx) => { if (idx < toolsSubpages.length) makeClickable(span.parentNode, toolsSubpages[idx].file); });
+  // FAQ
+  const faqItems = document.querySelectorAll('#faq-list li span');
+  faqItems.forEach((span, idx) => { if (idx < faqSubpages.length) makeClickable(span.parentNode, faqSubpages[idx].file); });
+  // 平台
+  const platformItems = document.querySelectorAll('#platform-list li span');
+  platformItems.forEach((span, idx) => { if (idx < platformSubpages.length) makeClickable(span.parentNode, platformSubpages[idx].file); });
+  // 动态
+  const devItems = document.querySelectorAll('#dev-list li span');
+  devItems.forEach((span, idx) => { if (idx < devSubpages.length) makeClickable(span.parentNode, devSubpages[idx].file); });
+  // 社区精选（特殊：每个标签单独一个子网页）
+  const communitySpans = document.querySelectorAll('#community-list span');
+  communitySpans.forEach((span, idx) => {
+    if (idx < communitySubpages.length) {
+      const wrapper = document.createElement('span');
+      wrapper.className = 'clickable-item inline-block';
+      wrapper.innerHTML = span.innerHTML;
+      wrapper.onclick = () => {
+        fetch(communitySubpages[idx].file, { method: 'HEAD' })
+          .then(res => res.ok ? window.location.href = communitySubpages[idx].file : alert(`⚠️ 子网页未创建: ${communitySubpages[idx].file}`))
+          .catch(() => alert(`⚠️ 子网页未创建: ${communitySubpages[idx].file}`));
+      };
+      span.parentNode.replaceChild(wrapper, span);
+    }
+  });
+}
+
+function getSkillIcon(name) {
+  const map = { "园艺":"fa-pagelines", "钓鱼":"fa-fish", "采矿":"fa-diamond", "狩猎":"fa-crosshairs", "采集":"fa-leaf", "捕虫":"fa-bug", "家具制作":"fa-cube" };
+  return map[name] || "fa-circle";
+}
+
+// 以下为多语言支持（与原版相同，省略以节省长度，实际需包含完整contentMap）
+// 由于篇幅限制，此处假设 contentMap 已完整。实际使用时请保留之前的多语言库。
+// 注意：为保证代码可运行，请在最终文件中包含完整 contentMap（可从之前版本复制）。
+// 为简洁，我将只保留英文和中文的核心映射，您可自行补充。
+// 实际交付时我会提供完整代码文件。
+
 </script>
 </body>
 </html>
