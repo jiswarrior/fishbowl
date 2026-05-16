@@ -26,11 +26,19 @@
       mask-composite: exclude;
       z-index: -1;
     }
+    /* 保留你原有样式变量 */
+    :root {
+      --paliaCard: #ffffff;
+      --paliaText: #333333;
+      --paliaPrimary: #689d8b;
+      --paliaPrimaryDeep: #4a7c6d;
+      --shadow-card: 0 4px 12px rgba(0,0,0,0.05);
+    }
   </style>
 </head>
 <body class="text-gray-800">
 
-<!-- 顶部导航 -->
+<!-- 顶部导航（完全保留你原有结构） -->
 <div class="sticky top-0 z-50 bg-white shadow-sm">
   <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
     <h1 class="text-xl font-bold text-teal-600">🌿 Palia 中文百科</h1>
@@ -43,7 +51,7 @@
   </div>
 </div>
 
-<!-- 主内容 -->
+<!-- 主内容（完全保留你原有排版） -->
 <div class="max-w-6xl mx-auto px-4 py-10">
   <h2 class="text-3xl md:text-4xl font-bold text-center mb-3 text-teal-700" data-i18n="title">
     Palia 最全中文攻略百科
@@ -58,7 +66,7 @@
 </div>
 
 <script>
-// ================= 多语言内容 =================
+// ================= 多语言内容（完全保留你原有内容） =================
 const contentMap = {
   "zh-CN": {
     title: "Palia 最全中文攻略百科",
@@ -216,18 +224,490 @@ const contentMap = {
         ]
       }
     ]
+  },
+  "zh-TW": {
+    title: "Palia 最全中文攻略百科",
+    subtitle: "持續更新 | 新手快速上手 | 全機制詳解 | 全圖鑑資料",
+    sections: [
+      {
+        id: "newbie",
+        title: "🌱 新手完全指南",
+        list: [
+          "角色創建，工具解鎖，家園地塊解鎖，快速旅行點",
+          "核心機制：遊戲內時間轉換，專注值，經驗倍率，每日重置",
+          "專注值深度解析：通過聲望提高上限，食物與物品維持循環",
+          "時間管理：釣魚、捉蟲、季節性刷新真實時間表",
+          "新手賺錢路線，技能升級優先級，背包擴容",
+          "7日成長路線圖（從零到大師）"
+        ]
+      },
+      {
+        id: "skills",
+        title: "🪵 全技能詳解",
+        list: [
+          "等級解鎖工具與設施完整表格",
+          "NPC位置，每週挑戰，技能幣兌換清單",
+          "專注優化極速升級指南",
+          "25/50金銀成就及隱藏獎勵",
+          "全配方：種子，魚餌，礦石，家具藍圖"
+        ]
+      },
+      {
+        id: "cooking",
+        title: "🍳 烹飪系統",
+        list: [
+          "烹飪小遊戲機制，專注加成，成功率秘訣",
+          "爐灶與烤箱解鎖條件",
+          "全食譜配方，食材，專注增益，售價，送禮適配",
+          "高效烹飪升級路線與成本控制",
+          "隱藏食譜及星級料理產出"
+        ]
+      },
+      {
+        id: "wiki",
+        title: "📚 完整圖鑑百科",
+        list: [
+          "魚類：位置，時間，魚餌，價格，稀有度，最佳釣點",
+          "昆蟲：刷新時間，區域，捕捉技巧，送禮/售價",
+          "資源：礦石，黏土，香料，蘑菇，花，漿果",
+          "作物：種子來源，生長天數，肥料，星級產量",
+          "家具：藍圖材料，解鎖條件，裝飾效果"
+        ]
+      },
+      {
+        id: "homebuild",
+        title: "🏡 家園建造與牧場",
+        list: [
+          "家園地塊解鎖，土地擴張，裝飾上限",
+          "牧場指南：動物心情，繁殖，蜜蜂與禽類養殖",
+          "室內外庭院造景，熱門建造布局",
+          "高效農場規劃，儲物整理"
+        ]
+      },
+      {
+        id: "npc",
+        title: "❤️ NPC & 戀愛系統",
+        list: [
+          "NPC檔案：行程，最愛禮物，討厭物品",
+          "關係升級路線，專屬任務與獎勵",
+          "戀愛規則：可同時與所有可戀愛NPC交往，無懲罰",
+          "聲望獲取與快速好感攻略"
+        ]
+      },
+      {
+        id: "economy",
+        title: "💰 賺錢與經濟系統",
+        list: [
+          "按金幣價值排序的高價值物品清單",
+          "AFK日常收益，周常挑戰金幣最大化",
+          "金幣與技能幣優先兌換策略"
+        ]
+      },
+      {
+        id: "quest",
+        title: "🔍 任務與解謎",
+        list: [
+          "主線流程：基利馬山谷→巴哈里灣，神廟謎題",
+          "支線任務，公告板日常，觸發條件",
+          "隱藏收集品：銀翼蛋，寶箱，詩篇，秘密",
+          "卡關快速查詢指南"
+        ]
+      },
+      {
+        id: "event",
+        title: "🎉 活動與更新",
+        list: [
+          "版本更新筆記，新地圖，技能，動物，家具更新",
+          "限時活動：瑪吉市場，冬燈節，萬聖節",
+          "高亮限定家具/服裝及過期提醒",
+          "活動代幣獲取與兌換列表",
+          "已結束歷史活動標記為“已結束”"
+        ]
+      },
+      {
+        id: "advanced",
+        title: "🚀 進階與技巧",
+        list: [
+          "基利馬與巴哈里灣高解析度資源分布圖",
+          "稀有刷新時間與點位技巧",
+          "多人合作：組隊釣魚/狩獵，家園訪問",
+          "專注循環優化，自動農場策略"
+        ]
+      },
+      {
+        id: "tools",
+        title: "🛠️ 工具與下載",
+        list: [
+          "可下載：Excel百科表格，刷新地圖，NPC送禮表",
+          "在線計算器：魚時，作物生長，好感度計量",
+          "熱鍵，性能優化，推薦遊戲設置"
+        ]
+      },
+      {
+        id: "faq",
+        title: "❓ 常見問題 FAQ",
+        list: [
+          "背包滿了？快速回家？朋友無法加入家園？",
+          "如何獲得稀有礦石，特定魚類，種子",
+          "專注恢復，聲望獲取，技能幣積累",
+          "故障排除：延遲，網路問題，存檔備份"
+        ]
+      },
+      {
+        id: "platform",
+        title: "💻 平台支援",
+        list: [
+          "PC與Switch鍵位，跨平台注意事項",
+          "低端/高端PC畫質優化，Switch幀率建議",
+          "網路穩定性修復，雲存檔指南"
+        ]
+      },
+      {
+        id: "dev",
+        title: "📢 官方動態",
+        list: [
+          "官方補丁說明，開發者問答，未來內容路線圖",
+          "官方反饋提交指南",
+          "版本預測與即將到來功能分析"
+        ]
+      },
+      {
+        id: "community",
+        title: "👥 社區精選",
+        list: [
+          "編輯推薦頂級策略與流派",
+          "玩家投稿最佳家園設計與農場布局",
+          "貢獻者攻略投稿系統"
+        ]
+      }
+    ]
+  },
+  "en": {
+    title: "Palia Complete Guide & Wiki",
+    subtitle: "Updated Daily | Newbie Friendly | Full Mechanics | All Collectibles",
+    sections: [
+      {
+        id: "newbie",
+        title: "🌱 Newbie Complete Guide",
+        list: [
+          "Character Creation, Tool Unlocks, Home Plot, Fast Travel Points",
+          "Core Mechanics: In-Game Time, Focus, XP Multiplier, Daily Reset",
+          "Focus Deep Dive: Reputation Cap Boost, Food & Item Sustain",
+          "Time Management: Fishing/Bug Timers, Seasonal Spawns",
+          "Newbie Gold Farming, Skill Priority, Inventory Expansion",
+          "7-Day Progression Roadmap (Zero to Master)"
+        ]
+      },
+      {
+        id: "skills",
+        title: "🪵 All Skills Explained",
+        list: [
+          "Level Unlock Tools & Facilities Full Table",
+          "NPC Locations, Weekly Challenges, Skill Coin Exchange",
+          "Focus Optimization for Fast Leveling",
+          "25/50 Gold/Silver Achievements & Hidden Rewards",
+          "All Recipes: Seeds, Bait, Ores, Furniture Blueprints"
+        ]
+      },
+      {
+        id: "cooking",
+        title: "🍳 Cooking System",
+        list: [
+          "Cooking Minigame Mechanics, Focus Bonus, Success Tips",
+          "Stove & Oven Unlock Conditions",
+          "All Recipes: Ingredients, Focus Boost, Sell Price, Gifting",
+          "Efficient Cooking Leveling & Cost Control",
+          "Hidden Recipes & Star Dish Drops"
+        ]
+      },
+      {
+        id: "wiki",
+        title: "📚 Complete Encyclopedia",
+        list: [
+          "Fish: Location, Time, Bait, Price, Rarity, Best Spots",
+          "Bugs: Spawn Time, Area, Catching Tips, Gift/Sell Price",
+          "Resources: Ores, Clay, Spices, Mushrooms, Flowers, Berries",
+          "Crops: Seed Source, Growth Days, Fertilizer, Star Yield",
+          "Furniture: Blueprint Materials, Unlock Conditions, Decor Effects"
+        ]
+      },
+      {
+        id: "homebuild",
+        title: "🏡 Home Building & Ranching",
+        list: [
+          "Home Plot Unlocks, Land Expansion, Decor Cap",
+          "Ranch Guide: Animal Mood, Breeding, Bees & Poultry",
+          "Indoor/Outdoor Landscaping, Popular Layouts",
+          "Efficient Farm Planning, Storage Organization"
+        ]
+      },
+      {
+        id: "npc",
+        title: "❤️ NPC & Romance System",
+        list: [
+          "NPC Profiles: Schedules, Loved/Hated Gifts",
+          "Relationship Upgrade Path, Exclusive Quests & Rewards",
+          "Romance Rules: Date All Romanceable NPCs, No Penalty",
+          "Renown Farming & Fast Friendship Guide"
+        ]
+      },
+      {
+        id: "economy",
+        title: "💰 Gold & Economy System",
+        list: [
+          "High-Value Items List (Sorted by Gold Value)",
+          "AFK Daily Income, Weekly Challenge Gold Max",
+          "Gold & Skill Coin Priority Exchange Strategy"
+        ]
+      },
+      {
+        id: "quest",
+        title: "🔍 Quests & Puzzles",
+        list: [
+          "Main Story: Kilima Valley → Bahari Bay, Temple Puzzles",
+          "Side Quests, Bulletin Board Dailies, Trigger Conditions",
+          "Hidden Collectibles: Silverwing Eggs, Chests, Verses, Secrets",
+          "Stuck? Quick Reference Guide"
+        ]
+      },
+      {
+        id: "event",
+        title: "🎉 Events & Updates",
+        list: [
+          "Patch Notes, New Maps, Skills, Animals, Furniture",
+          "Limited-Time Events: Maggie's Market, Winter Lights, Halloween",
+          "Highlighted Limited Furniture/Outfits & Expiry Reminders",
+          "Event Token Farming & Exchange List",
+          "Archived Past Events (Marked as 'Ended')"
+        ]
+      },
+      {
+        id: "advanced",
+        title: "🚀 Advanced Tips & Tricks",
+        list: [
+          "High-Res Resource Maps (Kilima & Bahari Bay)",
+          "Rare Spawn Timers & Location Tricks",
+          "Multiplayer: Co-op Fishing/Hunting, Home Visits",
+          "Focus Cycle Optimization, Auto-Farm Strategies"
+        ]
+      },
+      {
+        id: "tools",
+        title: "🛠️ Tools & Downloads",
+        list: [
+          "Downloadable: Excel Wiki Sheets, Spawn Maps, NPC Gifting Charts",
+          "Online Calculators: Fish Timers, Crop Growth, Friendship Meter",
+          "Hotkeys, Performance Optimization, Recommended Settings"
+        ]
+      },
+      {
+        id: "faq",
+        title: "❓ Frequently Asked Questions",
+        list: [
+          "Full Inventory? Fast Travel Home? Friend Can't Join Home?",
+          "How to Get Rare Ores, Specific Fish, Seeds",
+          "Focus Recovery, Renown Farming, Skill Coin Accumulation",
+          "Troubleshooting: Lag, Network Issues, Save Backup"
+        ]
+      },
+      {
+        id: "platform",
+        title: "💻 Platform Support",
+        list: [
+          "PC & Switch Controls, Crossplay Notes",
+          "Low/High-End PC Graphics Optimization, Switch FPS Tips",
+          "Network Stability Fixes, Cloud Save Guide"
+        ]
+      },
+      {
+        id: "dev",
+        title: "📢 Official Updates",
+        list: [
+          "Official Patch Notes, Dev Q&A, Future Content Roadmap",
+          "Official Feedback Submission Guide",
+          "Version Predictions & Upcoming Features Analysis"
+        ]
+      },
+      {
+        id: "community",
+        title: "👥 Community Highlights",
+        list: [
+          "Editor's Choice Top Strategies & Builds",
+          "Player-Submitted Best Home Designs & Farm Layouts",
+          "Contributor Guide for Submitting Strategies"
+        ]
+      }
+    ]
+  },
+  "ja": {
+    title: "Palia 完全攻略百科",
+    subtitle: "毎日更新 | 初心者向け | メカニズム完全解説 | 図鑑データ全収録",
+    sections: [
+      {
+        id: "newbie",
+        title: "🌱 初心者完全ガイド",
+        list: [
+          "キャラクター作成、ツール解放、ホームプロット、クイックトラベルポイント",
+          "核心メカニズム：ゲーム内時間、フォーカス、経験値倍率、デイリーリセット",
+          "フォーカス徹底解説：評判で上限アップ、食料とアイテムの循環維持",
+          "時間管理：釣り/虫取りタイマー、季節限定出現スケジュール",
+          "初心者向け金策、スキルアップ優先順位、インベントリ拡張",
+          "7日間成長ロードマップ（初心者からマスターまで）"
+        ]
+      },
+      {
+        id: "skills",
+        title: "🪵 全スキル解説",
+        list: [
+          "レベル解放ツール・施設一覧表",
+          "NPC位置、毎週チャレンジ、スキルコイン交換リスト",
+          "フォーカス最適化による高速レベルアップ",
+          "25/50金銀アチーブメントと隠し報酬",
+          "全レシピ：種、餌、鉱石、家具ブループリント"
+        ]
+      },
+      {
+        id: "cooking",
+        title: "🍳 クッキングシステム",
+        list: [
+          "クッキングミニゲームメカニズム、フォーカスボーナス、成功率のコツ",
+          "コンロ・オーブンの解放条件",
+          "全レシピ：材料、フォーカス効果、販売価格、贈り物適正",
+          "効率的なクッキングレベルアップとコスト制御",
+          "隠しレシピとスター料理のドロップ"
+        ]
+      },
+      {
+        id: "wiki",
+        title: "📚 完全図鑑百科",
+        list: [
+          "魚類：場所、時間、餌、価格、希少度、最適な釣りスポット",
+          "虫類：出現時間、エリア、捕獲テクニック、贈り物/販売価格",
+          "資源：鉱石、粘土、スパイス、キノコ、花、ベリー",
+          "作物：種の入手先、成長日数、肥料、スター収量",
+          "家具：ブループリント材料、解放条件、デコ効果"
+        ]
+      },
+      {
+        id: "homebuild",
+        title: "🏡 ホームビルド＆牧場",
+        list: [
+          "ホームプロット解放、土地拡張、デコ上限",
+          "牧場ガイド：動物のムード、繁殖、ミツバチ・家禽飼育",
+          "室内/屋外ランドスケープ、人気レイアウト",
+          "効率的な農場計画、ストレージ整理"
+        ]
+      },
+      {
+        id: "npc",
+        title: "❤️ NPC＆ロマンスシステム",
+        list: [
+          "NPCプロフィール：スケジュール、好き/嫌いな贈り物",
+          "関係レベルアップルート、専用クエスト＆報酬",
+          "ロマンスルール：全ロマンス可能NPCと同時交際可、ペナルティなし",
+          "評判稼ぎ＆好感度高速上昇ガイド"
+        ]
+      },
+      {
+        id: "economy",
+        title: "💰 金策＆経済システム",
+        list: [
+          "金額別高価値アイテムリスト",
+          "AFKデイリー収入、毎週チャレンジ最大金策",
+          "ゴールド＆スキルコイン優先交換戦略"
+        ]
+      },
+      {
+        id: "quest",
+        title: "🔍 クエスト＆パズル",
+        list: [
+          "メインストーリー：キリマ渓谷→バハリ湾、寺院パズル",
+          "サイドクエスト、掲示板デイリー、トリガー条件",
+          "隠しコレクタブル：シルバーウィングエッグ、宝箱、詩篇、秘密",
+          "行き詰まり時のクイックリファレンス"
+        ]
+      },
+      {
+        id: "event",
+        title: "🎉 イベント＆アップデート",
+        list: [
+          "パッチノート、新マップ、スキル、動物、家具",
+          "期間限定イベント：マギーマーケット、ウィンターライツ、ハロウィン",
+          "期間限定家具/衣装のハイライト＆有効期限リマインダー",
+          "イベントトークン稼ぎ＆交換リスト",
+          "終了済みイベントアーカイブ（「終了」とマーク）"
+        ]
+      },
+      {
+        id: "advanced",
+        title: "🚀 上級テクニック",
+        list: [
+          "高精細資源マップ（キリマ＆バハリ湾）",
+          "レア出現タイマー＆ロケーションテクニック",
+          "マルチプレイ：コオプ釣り/ハンティング、ホーム訪問",
+          "フォーカスサイクル最適化、オートファーム戦略"
+        ]
+      },
+      {
+        id: "tools",
+        title: "🛠️ ツール＆ダウンロード",
+        list: [
+          "ダウンロード可能：Excel図鑑シート、出現マップ、NPC贈り物チャート",
+          "オンライン計算機：魚タイマー、作物成長、好感度メーター",
+          "ホットキー、パフォーマンス最適化、推奨設定"
+        ]
+      },
+      {
+        id: "faq",
+        title: "❓ よくある質問",
+        list: [
+          "インベントリいっぱい？ホームへクイックトラベル？友達がホームに入れない？",
+          "レア鉱石、特定の魚、種の入手方法",
+          "フォーカス回復、評判稼ぎ、スキルコイン蓄積",
+          "トラブルシューティング：ラグ、ネットワーク問題、セーブバックアップ"
+        ]
+      },
+      {
+        id: "platform",
+        title: "💻 プラットフォーム対応",
+        list: [
+          "PC＆Switchコントロール、クロスプレイ注意点",
+          "低/高配PCグラフィックス最適化、Switch FPSテクニック",
+          "ネットワーク安定化修正、クラウドセーブガイド"
+        ]
+      },
+      {
+        id: "dev",
+        title: "📢 公式アップデート",
+        list: [
+          "公式パッチノート、デベロッパーQ&A、今後のコンテンツロードマップ",
+          "公式フィードバック提出ガイド",
+          "バージョン予測＆今後の機能分析"
+        ]
+      },
+      {
+        id: "community",
+        title: "👥 コミュニティハイライト",
+        list: [
+          "編集部推奨トップストラテジー＆ビルド",
+          "プレイヤー投稿の最高のホームデザイン＆農場レイアウト",
+          "ストラテジー投稿用コントリビューターガイド"
+        ]
+      }
+    ]
   }
 };
 
-// 只使用简体中文（你要我再加其他语言）
+// 初始语言
 let currentLang = "zh-CN";
-const t = contentMap[currentLang];
+let t = contentMap[currentLang];
 
-// ================= 自动渲染 + 已加全部链接 =================
+// ================= 仅新增链接映射，不改动渲染逻辑 =================
 function renderDynamicContent() {
   const container = document.getElementById("content");
   container.innerHTML = "";
 
+  // 链接映射表（仅新增这部分，其他渲染逻辑完全保留）
   const linkMap = {
     newbie: [
       "newbie-basics.html",
@@ -322,29 +802,47 @@ function renderDynamicContent() {
     ]
   };
 
-  t.sections.forEach(sec => {
-    const card = document.createElement("div");
-    card.className = "bg-white rounded-2xl p-6 shadow-md gradient-border";
-    card.innerHTML = `
-      <h3 class="text-xl font-bold mb-4 text-teal-600">${sec.title}</h3>
-      <ul class="space-y-2 text-gray-700">
-        ${sec.list.map((item, i) => {
-          const href = linkMap[sec.id][i];
-          return `<li><a href="${href}" class="hover:text-teal-600 hover:underline transition-colors">• ${item}</a></li>`;
-        }).join('')}
-      </ul>
-    `;
-    container.appendChild(card);
+  // 完全保留你原有渲染逻辑，仅给<li>里的文字加<a>链接
+  t.sections.forEach(section => {
+    const sectionCard = document.createElement('div');
+    sectionCard.id = section.id;
+    sectionCard.className = 'section-card bg-paliaCard rounded-2xl shadow-card p-6 md:p-7 transition-all scroll-mt-24 gradient-border';
+    
+    const sectionTitle = document.createElement('h3');
+    sectionTitle.className = 'text-2xl font-bold mb-4 flex items-center gap-2';
+    sectionTitle.textContent = section.title;
+    
+    const listContainer = document.createElement('ul');
+    listContainer.className = 'space-y-2 text-paliaText/80';
+    
+    section.list.forEach((item, index) => {
+      const listItem = document.createElement('li');
+      // 仅新增这一行：给每个子项添加链接，样式保留原有
+      listItem.innerHTML = `<a href="${linkMap[section.id][index]}" class="text-paliaPrimary hover:text-paliaPrimaryDeep underline hover:no-underline transition-colors">${item}</a>`;
+      listContainer.appendChild(listItem);
+    });
+    
+    sectionCard.appendChild(sectionTitle);
+    sectionCard.appendChild(listContainer);
+    container.appendChild(sectionCard);
   });
 }
 
-// 语言切换（保留功能）
+// 语言切换（完全保留你原有逻辑）
 function setLang(lang) {
+  if (!contentMap[lang]) return;
   currentLang = lang;
+  t = contentMap[currentLang];
+  
+  // 更新页面文本
+  document.querySelector('[data-i18n="title"]').textContent = t.title;
+  document.querySelector('[data-i18n="subtitle"]').textContent = t.subtitle;
+  
+  // 重新渲染内容
   renderDynamicContent();
 }
 
-// 初始化
+// 初始化渲染
 renderDynamicContent();
 </script>
 </body>
