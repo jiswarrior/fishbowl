@@ -35,7 +35,7 @@
     body { scroll-behavior: smooth; }
     .section-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
     .section-card:hover { transform: translateY(-3px); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1); }
-    .nav-link { transition: all 0.2s; position: relative; }
+    .nav-link { transition: all 0.2s; position: relative; cursor: pointer; }
     .nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: #7f9a6e; transition: width 0.2s; border-radius: 2px; }
     .nav-link:hover::after { width: 100%; }
     .lang-btn.active { background-color: #7f9a6e; color: white; border-color: #7f9a6e; }
@@ -49,11 +49,13 @@
       color: #7f9a6e;
       text-decoration: underline;
     }
+    /* 导航滚动偏移，避开顶部固定栏 */
+    html { scroll-padding-top: 120px; }
   </style>
 </head>
 <body class="bg-paliaBg text-paliaText font-sans antialiased">
 
-<!-- 顶部导航 -->
+<!-- 顶部导航（改为锚点，本页滚动，不新开页面） -->
 <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-paliaAccent/20 shadow-sm">
   <div class="max-w-7xl mx-auto px-4 lg:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
     <div class="flex items-center gap-3">
@@ -69,21 +71,22 @@
   <div class="border-t border-paliaAccent/10 bg-white/40">
     <div class="max-w-7xl mx-auto px-4 lg:px-6 overflow-x-auto hide-scrollbar py-2">
       <div class="flex gap-1 text-sm font-medium">
-        <a href="newbie.html" target="_blank" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="newbie">新手</a>
-        <a href="skills.html" target="_blank" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="skills">技能</a>
-        <a href="cooking.html" target="_blank" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="cooking">烹饪</a>
-        <a href="wiki.html" target="_blank" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="wiki">百科</a>
-        <a href="homebuild.html" target="_blank" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="homebuild">家园</a>
-        <a href="npc.html" target="_blank" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="npc">恋爱</a>
-        <a href="economy.html" target="_blank" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="economy">赚钱</a>
-        <a href="quest.html" target="_blank" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="quest">解谜</a>
-        <a href="event.html" target="_blank" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="event">活动</a>
-        <a href="advanced.html" target="_blank" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="advanced">进阶</a>
-        <a href="tools.html" target="_blank" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="tools">工具</a>
-        <a href="faq.html" target="_blank" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="faq">FAQ</a>
-        <a href="platform.html" target="_blank" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="platform">平台</a>
-        <a href="dev.html" target="_blank" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="dev">动态</a>
-        <a href="community.html" target="_blank" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="community">社区</a>
+        <!-- 核心修改：href改为#对应板块ID，target="_self"，实现本页滚动 -->
+        <a href="#newbie" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="newbie">新手</a>
+        <a href="#skills" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="skills">技能</a>
+        <a href="#cooking" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="cooking">烹饪</a>
+        <a href="#wiki" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="wiki">百科</a>
+        <a href="#homebuild" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="homebuild">家园</a>
+        <a href="#npc" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="npc">恋爱</a>
+        <a href="#economy" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="economy">赚钱</a>
+        <a href="#quest" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="quest">解谜</a>
+        <a href="#event" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="event">活动</a>
+        <a href="#advanced" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="advanced">进阶</a>
+        <a href="#tools" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="tools">工具</a>
+        <a href="#faq" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="faq">问答</a>
+        <a href="#platform" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="platform">平台</a>
+        <a href="#dev" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="dev">动态</a>
+        <a href="#community" class="nav-link px-3 py-1.5 rounded-full hover:bg-paliaPrimary/10" data-nav-key="community">社区</a>
       </div>
     </div>
   </div>
@@ -108,7 +111,7 @@
   <div class="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-paliaBg to-transparent"></div>
 </section>
 
-<!-- 主内容区 -->
+<!-- 主内容区（板块id不变，用于锚点滚动） -->
 <main class="max-w-7xl mx-auto px-4 py-12 space-y-8" id="dynamicContentContainer"></main>
 
 <footer class="bg-white/70 border-t border-paliaAccent/20 mt-16 py-8 text-center text-sm text-paliaText/70">
@@ -544,28 +547,28 @@ function renderDynamicContent(t) {
 
     <!-- 活动 进阶 工具 FAQ 网格（每个子项独立链接） -->
     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
-      <div class="section-card bg-paliaCard rounded-xl p-5 shadow-card">
+      <div id="event" class="section-card bg-paliaCard rounded-xl p-5 shadow-card">
         <i class="fa fa-calendar-check-o text-paliaPrimary text-xl mb-2 block"></i>
         <h3 class="font-bold text-lg">${t.event.title}</h3>
         <ul class="text-sm mt-1 space-y-1">
           ${t.event.items.map(item=>`<li>• <a href="${item.link}" target="_blank" class="text-link">${item.text}</a></li>`).join('')}
         </ul>
       </div>
-      <div class="section-card bg-paliaCard rounded-xl p-5 shadow-card">
+      <div id="advanced" class="section-card bg-paliaCard rounded-xl p-5 shadow-card">
         <i class="fa fa-star-half-o text-paliaPrimary text-xl mb-2 block"></i>
         <h3 class="font-bold text-lg">${t.advanced.title}</h3>
         <ul class="text-sm mt-1 space-y-1">
           ${t.advanced.items.map(item=>`<li>✨ <a href="${item.link}" target="_blank" class="text-link">${item.text}</a></li>`).join('')}
         </ul>
       </div>
-      <div class="section-card bg-paliaCard rounded-xl p-5 shadow-card">
+      <div id="tools" class="section-card bg-paliaCard rounded-xl p-5 shadow-card">
         <i class="fa fa-wrench text-paliaPrimary text-xl mb-2 block"></i>
         <h3 class="font-bold text-lg">${t.tools.title}</h3>
         <ul class="text-sm mt-1 space-y-1">
           ${t.tools.items.map(item=>`<li>🛠️ <a href="${item.link}" target="_blank" class="text-link">${item.text}</a></li>`).join('')}
         </ul>
       </div>
-      <div class="section-card bg-paliaCard rounded-xl p-5 shadow-card">
+      <div id="faq" class="section-card bg-paliaCard rounded-xl p-5 shadow-card">
         <i class="fa fa-question-circle text-paliaPrimary text-xl mb-2 block"></i>
         <h3 class="font-bold text-lg">${t.faq.title}</h3>
         <ul class="text-sm mt-1 space-y-1">
@@ -576,14 +579,14 @@ function renderDynamicContent(t) {
 
     <!-- 平台+官方动态（每个子项独立链接） -->
     <div class="grid md:grid-cols-2 gap-6">
-      <div class="section-card bg-paliaCard rounded-2xl p-6">
+      <div id="platform" class="section-card bg-paliaCard rounded-2xl p-6">
         <i class="fa fa-gamepad text-paliaPrimary text-2xl mr-2"></i>
         <h2 class="text-xl font-bold inline-block">${t.platform.title}</h2>
         <ul class="mt-3 space-y-1">
           ${t.platform.items.map(item=>`<li>▪ <a href="${item.link}" target="_blank" class="text-link">${item.text}</a></li>`).join('')}
         </ul>
       </div>
-      <div class="section-card bg-paliaCard rounded-2xl p-6">
+      <div id="dev" class="section-card bg-paliaCard rounded-2xl p-6">
         <i class="fa fa-code-fork text-paliaPrimary text-2xl mr-2"></i>
         <h2 class="text-xl font-bold inline-block">${t.dev.title}</h2>
         <ul class="mt-3 space-y-1">
@@ -593,7 +596,7 @@ function renderDynamicContent(t) {
     </div>
 
     <!-- 社区精选（每个子项独立链接） -->
-    <div class="section-card bg-gradient-to-r from-paliaCard to-paliaMuted/30 rounded-2xl p-6 border-l-8 border-paliaAccent">
+    <div id="community" class="section-card bg-gradient-to-r from-paliaCard to-paliaMuted/30 rounded-2xl p-6 border-l-8 border-paliaAccent">
       <div class="flex items-center gap-3 mb-4"><i class="fa fa-users text-paliaPrimary text-2xl"></i><h2 class="text-2xl font-bold">${t.community.title}</h2></div>
       <div class="flex flex-wrap gap-3 mb-3">
         ${t.community.items.map(item=>`<span class="bg-white rounded-full px-4 py-1 shadow-sm text-sm">🏆 <a href="${item.link}" target="_blank" class="text-link">${item.text}</a></span>`).join('')}
