@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>NPC Locations, Weekly Challenges & Skill Coin Exchange | Palia Guide Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paliaBg: '#fcf8f0',
+            paliaPrimary: '#7f9a6e',
+            paliaPrimaryDeep: '#5f7a4e',
+            paliaAccent: '#e2b181',
+            paliaText: '#3c2f2a',
+            paliaCard: '#ffffff',
+            paliaMuted: '#e9e1d4',
+          },
+          fontFamily: { 'sans': ['Inter', 'system-ui', 'Segoe UI', 'Noto Sans SC', 'sans-serif'] },
+          borderRadius: { 'xl': '1rem', '2xl': '1.5rem' },
+        }
+      }
+    }
+  </script>
+  <style>
+    body { scroll-behavior: smooth; }
+    .section-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .section-card:hover { transform: translateY(-3px); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body class="bg-paliaBg text-paliaText font-sans antialiased">
+
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-paliaAccent/20 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 lg:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+    <div class="flex items-center gap-3">
+      <div class="bg-paliaPrimary/10 p-2 rounded-2xl"><i class="fa fa-map-marker text-paliaPrimary text-2xl"></i></div>
+      <div>
+        <h1 class="text-xl md:text-2xl font-bold tracking-tight text-paliaPrimaryDeep">NPC & Weekly Challenges</h1>
+        <p class="text-xs text-paliaText/70">Guild NPCs · Weekly Tasks · Skill Coin Rewards</p>
+      </div>
+    </div>
+    <a href="index.html" class="text-paliaPrimary hover:underline text-sm flex items-center gap-1"><i class="fa fa-arrow-left"></i> Back to Main Hub</a>
+  </div>
+</header>
+
+<main class="max-w-6xl mx-auto px-4 py-10 space-y-8">
+  <!-- Intro -->
+  <div class="bg-paliaCard rounded-2xl shadow-card p-6 md:p-8">
+    <div class="flex items-center gap-3 border-b border-paliaMuted pb-4 mb-5">
+      <i class="fa fa-users text-paliaPrimary text-3xl"></i>
+      <h2 class="text-2xl font-bold">Guild Representatives & Progression</h2>
+    </div>
+    <p class="text-paliaText/80 leading-relaxed">Each skill is represented by an NPC who offers weekly challenges, sells exclusive items for Skill Coins, and provides valuable tips. Complete their tasks to earn Renown, Gold, and Skill Coins – the currency for rare recipes and cosmetics.</p>
+  </div>
+
+  <!-- NPC Locations Table -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-address-card text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">📍 Skill NPC Locations & Schedules</h2></div>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50"><tr><th class="px-3 py-2">Skill</th><th class="px-3 py-2">NPC</th><th class="px-3 py-2">Location (Kilima Valley)</th><th class="px-3 py-2">Active Hours</th></tr></thead>
+        <tbody class="divide-y">
+          <tr><td class="px-3 py-2">Gardening</td><td class="px-3 py-2">Badruu</td><td class="px-3 py-2">Daiya Family Farm (southwest)</td><td class="px-3 py-2">6:00 – 18:00</td></tr>
+          <tr><td class="px-3 py-2">Fishing</td><td class="px-3 py-2">Einar</td><td class="px-3 py-2">Fisherman’s Pier (east beach)</td><td class="px-3 py-2">All day</td></tr>
+          <tr><td class="px-3 py-2">Mining</td><td class="px-3 py-2">Hodari</td><td class="px-3 py-2">Kilima Mines (north entrance)</td><td class="px-3 py-2">6:00 – 20:00</td></tr>
+          <tr><td class="px-3 py-2">Hunting</td><td class="px-3 py-2">Hassian</td><td class="px-3 py-2">Hassian’s Grove (northwest forest)</td><td class="px-3 py-2">8:00 – 22:00</td></tr>
+          <tr><td class="px-3 py-2">Foraging</td><td class="px-3 py-2">Ashura</td><td class="px-3 py-2">Kilima Village Inn (central)</td><td class="px-3 py-2">6:00 – 22:00</td> </tr>
+          <tr><td class="px-3 py-2">Bug Catching</td><td class="px-3 py-2">Auni</td><td class="px-3 py-2">Family Farm (near Badruu)</td><td class="px-3 py-2">8:00 – 20:00</td> </tr>
+          <tr><td class="px-3 py-2">Furniture Making</td><td class="px-3 py-2">Tish</td><td class="px-3 py-2">Tish’s Furniture Shop (central)</td><td class="px-3 py-2">8:00 – 20:00</td> </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="mt-3 bg-paliaPrimary/10 p-2 rounded text-xs">💡 Talk to these NPCs daily for a chance to receive a “Skill Boost” (temporary XP bonus) when you first interact.</div>
+  </div>
+
+  <!-- Weekly Challenges (general and specific) -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-tasks text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">📋 Weekly Challenges (Skill‑Specific)</h2></div>
+    <p>Each week, every guild offers 3–5 challenges. Completing them awards <strong>Renown</strong>, <strong>Gold</strong>, and <strong>Skill Coins</strong>. Challenges reset every Monday at 4:00 UTC.</p>
+    <div class="overflow-x-auto mt-3">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50"><tr><th class="px-2 py-2">Skill</th><th class="px-2 py-2">Example Weekly Challenges</th><th class="px-2 py-2">Rewards (per challenge)</th></tr></thead>
+        <tbody class="divide-y">
+          <tr><td class="px-2 py-1">Gardening</td><td class="px-2 py-1">Harvest 50 tomatoes · Water crops 100 times · Craft 10 fertilizer</td><td class="px-2 py-1">50 Renown, 200 Gold, 2 Skill Coins</td></tr>
+          <tr><td class="px-2 py-1">Fishing</td><td class="px-2 py-1">Catch 30 fish · Use 10 glow worms · Catch 3 rare fish (blue tier)</td><td class="px-2 py-1">50 Renown, 250 Gold, 2 Skill Coins</td></tr>
+          <tr><td class="px-2 py-1">Mining</td><td class="px-2 py-1">Mine 50 copper ore · Smelt 20 bars · Find 5 iron nodes</td><td class="px-2 py-1">50 Renown, 200 Gold, 2 Skill Coins</td></tr>
+          <tr><td class="px-2 py-1">Hunting</td><td class="px-2 py-1">Hunt 20 Sernuk · Craft 50 arrows · Hunt 2 magical creatures</td><td class="px-2 py-1">50 Renown, 250 Gold, 2 Skill Coins</td></tr>
+          <tr><td class="px-2 py-1">Foraging</td><td class="px-2 py-1">Pick 50 sweet leaf · Find 10 mushrooms · Forage 5 rare flowers</td><td class="px-2 py-1">50 Renown, 150 Gold, 2 Skill Coins</td></tr>
+          <tr><td class="px-2 py-1">Bug Catching</td><td class="px-2 py-1">Catch 30 bugs · Capture 10 night bugs · Use smoke candle 5 times</td><td class="px-2 py-1">50 Renown, 200 Gold, 2 Skill Coins</td></tr>
+          <tr><td class="px-2 py-1">Furniture Making</td><td class="px-2 py-1">Craft 20 furniture pieces · Build 5 palium items · Upgrade workbench</td><td class="px-2 py-1">50 Renown, 300 Gold, 3 Skill Coins</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="mt-2 text-sm text-paliaText/70">Completing <strong>all challenges</strong> for a skill within the week grants a bonus chest containing 100 Renown and 5 additional Skill Coins.</p>
+  </div>
+
+  <!-- Skill Coin Exchange Lists -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-exchange text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🪙 Skill Coin Exchange – What to Buy</h2></div>
+    <p>Skill Coins are earned from leveling up (1 coin per level after level 5) and weekly challenges. Exchange them at the corresponding guild store (located next to each NPC).</p>
+    
+    <div class="grid md:grid-cols-2 gap-5 mt-3">
+      <!-- Gardening -->
+      <div class="bg-paliaMuted/20 p-3 rounded-lg">
+        <h3 class="font-bold text-paliaPrimary">🌱 Gardening Store (Badruu)</h3>
+        <ul class="list-disc pl-4 text-sm space-y-1">
+          <li><strong>15 coins</strong> – Quality Fertilizer recipe</li>
+          <li><strong>30 coins</strong> – Seed Maker recipe</li>
+          <li><strong>50 coins</strong> – Greenhouse blueprint</li>
+          <li><strong>100 coins</strong> – Exclusive “Gardener’s Overalls” outfit</li>
+          <li><strong>200 coins</strong> – Golden Watering Can (cosmetic skin)</li>
+        </ul>
+      </div>
+      <!-- Fishing -->
+      <div class="bg-paliaMuted/20 p-3 rounded-lg">
+        <h3 class="font-bold text-paliaPrimary">🎣 Fishing Store (Einar)</h3>
+        <ul class="list-disc pl-4 text-sm space-y-1">
+          <li><strong>10 coins</strong> – Glow Worm recipe</li>
+          <li><strong>25 coins</strong> – Fisherman’s Brew recipe</li>
+          <li><strong>60 coins</strong> – Palium Rod upgrade schematic</li>
+          <li><strong>120 coins</strong> – “Angler’s Hat” cosmetic</li>
+          <li><strong>250 coins</strong> – Floating Lantern decoration</li>
+        </ul>
+      </div>
+      <!-- Mining -->
+      <div class="bg-paliaMuted/20 p-3 rounded-lg">
+        <h3 class="font-bold text-paliaPrimary">⛏️ Mining Store (Hodari)</h3>
+        <ul class="list-disc pl-4 text-sm space-y-1">
+          <li><strong>20 coins</strong> – Ore Compressor recipe</li>
+          <li><strong>40 coins</strong> – Palium Detection upgrade</li>
+          <li><strong>75 coins</strong> – “Prospector’s Helmet”</li>
+          <li><strong>150 coins</strong> – Gemstone Display case</li>
+          <li><strong>300 coins</strong> – Ruby Pickaxe skin</li>
+        </ul>
+      </div>
+      <!-- Hunting -->
+      <div class="bg-paliaMuted/20 p-3 rounded-lg">
+        <h3 class="font-bold text-paliaPrimary">🏹 Hunting Store (Hassian)</h3>
+        <ul class="list-disc pl-4 text-sm space-y-1">
+          <li><strong>15 coins</strong> – Slowdown Arrow recipe</li>
+          <li><strong>35 coins</strong> – Iron Bow upgrade</li>
+          <li><strong>80 coins</strong> – “Stalker’s Cloak” cosmetic</li>
+          <li><strong>180 coins</strong> – Mounted Sernuk trophy</li>
+          <li><strong>350 coins</strong> – Magical Bow skin</li>
+        </ul>
+      </div>
+      <!-- Foraging -->
+      <div class="bg-paliaMuted/20 p-3 rounded-lg">
+        <h3 class="font-bold text-paliaPrimary">🌿 Foraging Store (Ashura)</h3>
+        <ul class="list-disc pl-4 text-sm space-y-1">
+          <li><strong>10 coins</strong> – Truffle Map (temporary)</li>
+          <li><strong>30 coins</strong> – Rare Seed Bundle</li>
+          <li><strong>60 coins</strong> – “Herbalist’s Satchel”</li>
+          <li><strong>120 coins</strong> – Berry Bush decoration</li>
+        </ul>
+      </div>
+      <!-- Bug Catching -->
+      <div class="bg-paliaMuted/20 p-3 rounded-lg">
+        <h3 class="font-bold text-paliaPrimary">🐞 Bug Catching Store (Auni)</h3>
+        <ul class="list-disc pl-4 text-sm space-y-1">
+          <li><strong>15 coins</strong> – Smoke Candle recipe</li>
+          <li><strong>40 coins</strong> – Iron Net upgrade</li>
+          <li><strong>70 coins</strong> – “Bug Catcher’s Vest”</li>
+          <li><strong>160 coins</strong> – Butterfly Terrarium</li>
+        </ul>
+      </div>
+      <!-- Furniture Making -->
+      <div class="bg-paliaMuted/20 p-3 rounded-lg">
+        <h3 class="font-bold text-paliaPrimary">🪑 Furniture Store (Tish)</h3>
+        <ul class="list-disc pl-4 text-sm space-y-1">
+          <li><strong>25 coins</strong> – Sawmill upgrade</li>
+          <li><strong>50 coins</strong> – “Homestead” furniture set (5 pieces)</li>
+          <li><strong>100 coins</strong> – Palium Workbench schematic</li>
+          <li><strong>200 coins</strong> – “Master Crafter’s Apron”</li>
+          <li><strong>400 coins</strong> – Grand Chandelier (epic decoration)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Strategy Tips -->
+  <div class="bg-paliaPrimary/5 rounded-2xl p-6 border border-paliaAccent/20">
+    <i class="fa fa-lightbulb-o text-3xl text-paliaPrimary mb-2 block"></i>
+    <h3 class="text-xl font-bold mb-2">💡 Strategy Tips</h3>
+    <ul class="list-disc pl-5 space-y-1 text-paliaText/80">
+      <li><strong>Prioritize weekly challenges</strong> – They are the most reliable source of Skill Coins and Renown.</li>
+      <li><strong>Save coins for exclusive items</strong> – Don’t waste coins on consumables that can be crafted or bought with gold.</li>
+      <li><strong>Check NPC schedules</strong> – Some NPCs sleep at night; you cannot turn in challenges or buy items when they are unavailable.</li>
+      <li><strong>Complete all challenges for a skill</strong> – The bonus chest often contains rare items not sold elsewhere.</li>
+    </ul>
+    <div class="mt-5 text-center">
+      <a href="index.html" class="inline-block bg-paliaPrimary text-white px-6 py-2 rounded-full hover:bg-paliaPrimaryDeep transition">← Back to Main Hub</a>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-white/70 border-t border-paliaAccent/20 mt-12 py-6 text-center text-sm text-paliaText/70">
+  <p>Palia Guide Hub · NPC & Weekly Challenges · Master your dailies and earn rare rewards</p>
+  <p class="mt-1"><i class="fa fa-leaf text-paliaPrimary"></i> Talk to every guild NPC each week – don’t miss free coins!</p>
+</footer>
+</body>
+</html>

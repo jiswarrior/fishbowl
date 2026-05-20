@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Skill Unlocks – Tools & Facilities by Level | Palia Guide Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paliaBg: '#fcf8f0',
+            paliaPrimary: '#7f9a6e',
+            paliaPrimaryDeep: '#5f7a4e',
+            paliaAccent: '#e2b181',
+            paliaText: '#3c2f2a',
+            paliaCard: '#ffffff',
+            paliaMuted: '#e9e1d4',
+          },
+          fontFamily: { 'sans': ['Inter', 'system-ui', 'Segoe UI', 'Noto Sans SC', 'sans-serif'] },
+          borderRadius: { 'xl': '1rem', '2xl': '1.5rem' },
+        }
+      }
+    }
+  </script>
+  <style>
+    body { scroll-behavior: smooth; }
+    .section-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .section-card:hover { transform: translateY(-3px); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body class="bg-paliaBg text-paliaText font-sans antialiased">
+
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-paliaAccent/20 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 lg:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+    <div class="flex items-center gap-3">
+      <div class="bg-paliaPrimary/10 p-2 rounded-2xl"><i class="fa fa-cogs text-paliaPrimary text-2xl"></i></div>
+      <div>
+        <h1 class="text-xl md:text-2xl font-bold tracking-tight text-paliaPrimaryDeep">Tool & Facility Unlocks</h1>
+        <p class="text-xs text-paliaText/70">Every skill level – what you get and when</p>
+      </div>
+    </div>
+    <a href="index.html" class="text-paliaPrimary hover:underline text-sm flex items-center gap-1"><i class="fa fa-arrow-left"></i> Back to Main Hub</a>
+  </div>
+</header>
+
+<main class="max-w-6xl mx-auto px-4 py-10 space-y-8">
+  <!-- Intro -->
+  <div class="bg-paliaCard rounded-2xl shadow-card p-6 md:p-8">
+    <div class="flex items-center gap-3 border-b border-paliaMuted pb-4 mb-5">
+      <i class="fa fa-level-up text-paliaPrimary text-3xl"></i>
+      <h2 class="text-2xl font-bold">Skill Progression Overview</h2>
+    </div>
+    <p class="text-paliaText/80 leading-relaxed">Each skill in Palia unlocks new tools, crafting stations, and abilities as you level up. Use this complete reference to plan your upgrades and know exactly when you can craft better tools or build essential facilities like the Sawmill, Seed Maker, or Preserves Jar.</p>
+  </div>
+
+  <!-- Gardening Unlocks -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-pagelines text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🌱 Gardening Unlocks</h2></div>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50"><tr><th class="px-3 py-2">Level</th><th class="px-3 py-2">Unlock</th><th class="px-3 py-2">Materials / Requirement</th><th class="px-3 py-2">Effect</th></tr></thead>
+        <tbody class="divide-y">
+          <tr><td class="px-3 py-1">1</td><td class="px-3 py-1">Soil Plot</td><td class="px-3 py-1">Quest reward</td><td class="px-3 py-1">Allows planting crops</td></tr>
+          <tr><td class="px-3 py-1">2</td><td class="px-3 py-1">Watering Can (Copper)</td><td class="px-3 py-1">5 Copper Bars</td><td class="px-3 py-1">Waters more plants per use</td></tr>
+          <tr><td class="px-3 py-1">3</td><td class="px-3 py-1">Fertilizer (Basic)</td><td class="px-3 py-1">Craftable at Workbench</td><td class="px-3 py-1">Increases crop growth speed</td></tr>
+          <tr><td class="px-3 py-1">4</td><td class="px-3 py-1">Second Soil Plot</td><td class="px-3 py-1">500 Gold (Badruu)</td><td class="px-3 py-1">Double farming space</td></tr>
+          <tr><td class="px-3 py-1">5</td><td class="px-3 py-1">Iron Watering Can</td><td class="px-3 py-1">5 Iron Bars</td><td class="px-3 py-1">Wider watering radius</td></tr>
+          <tr><td class="px-3 py-1">6</td><td class="px-3 py-1">Quality Fertilizer</td><td class="px-3 py-1">Craftable (requires sapwood)</td><td class="px-3 py-1">Increases star quality chance</td></tr>
+          <tr><td class="px-3 py-1">8</td><td class="px-3 py-1">Seed Maker</td><td class="px-3 py-1">Workbench: 10 Stone, 5 Copper, 1 Sapwood</td><td class="px-3 py-1">Turn crops into seeds</td></tr>
+          <tr><td class="px-3 py-1">10</td><td class="px-3 py-1">Palium Watering Can</td><td class="px-3 py-1">5 Palium Bars</td><td class="px-3 py-1">Maximum efficiency, waters 9 tiles</td></tr>
+          <tr><td class="px-3 py-1">12</td><td class="px-3 py-1">Greenhouse (Blueprint)</td><td class="px-3 py-1">Guild Store: 100 Gardening Coins</td><td class="px-3 py-1">Allows year‑round growing of any crop</td></tr>
+          <tr><td class="px-3 py-1">15</td><td class="px-3 py-1">Speedy Grow Fertilizer</td><td class="px-3 py-1">Craftable (rare ingredients)</td><td class="px-3 py-1">Reduces grow time by 30%</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Fishing Unlocks -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-fish text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🎣 Fishing Unlocks</h2></div>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50"><tr><th class="px-3 py-2">Level</th><th class="px-3 py-2">Unlock</th><th class="px-3 py-2">Materials / Requirement</th><th class="px-3 py-2">Effect</th></tr></thead>
+        <tbody class="divide-y">
+          <tr><td class="px-3 py-1">1</td><td class="px-3 py-1">Fishing Rod (Basic)</td><td class="px-3 py-1">Quest reward</td><td class="px-3 py-1">Allows fishing</td></tr>
+          <tr><td class="px-3 py-1">2</td><td class="px-3 py-1">Worm Bait</td><td class="px-3 py-1">Craftable from compost</td><td class="px-3 py-1">Attracts uncommon fish</td></tr>
+          <tr><td class="px-3 py-1">3</td><td class="px-3 py-1">Copper Rod</td><td class="px-3 py-1">5 Copper Bars, 5 Fiber</td><td class="px-3 py-1">Longer cast distance, less stamina drain</td></tr>
+          <tr><td class="px-3 py-1">5</td><td class="px-3 py-1">Glow Worm Bait</td><td class="px-3 py-1">Craftable (requires glow bugs)</td><td class="px-3 py-1">Attracts rare & epic fish</td></tr>
+          <tr><td class="px-3 py-1">7</td><td class="px-3 py-1">Iron Rod</td><td class="px-3 py-1">5 Iron Bars, 5 Fabric</td><td class="px-3 py-1">High durability, faster reeling</td></tr>
+          <tr><td class="px-3 py-1">10</td><td class="px-3 py-1">Palium Rod</td><td class="px-3 py-1">5 Palium Bars, 5 Silk</td><td class="px-3 py-1">Best stats, can catch legendary fish</td></tr>
+          <tr><td class="px-3 py-1">12</td><td class="px-3 py-1">Fisherman’s Brew</td><td class="px-3 py-1">Guild Store recipe</td><td class="px-3 py-1">Temporary fishing buff (bigger catch zone)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Mining Unlocks -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-diamond text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">⛏️ Mining Unlocks</h2></div>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50"><tr><th class="px-3 py-2">Level</th><th class="px-3 py-2">Unlock</th><th class="px-3 py-2">Materials / Requirement</th><th class="px-3 py-2">Effect</th></tr></thead>
+        <tbody class="divide-y">
+          <tr><td class="px-3 py-1">1</td><td class="px-3 py-1">Basic Pickaxe</td><td class="px-3 py-1">Tutorial</td><td class="px-3 py-1">Mine stone, clay, copper</td></tr>
+          <tr><td class="px-3 py-1">2</td><td class="px-3 py-1">Furnace</td><td class="px-3 py-1">Craftable at Workbench</td><td class="px-3 py-1">Smelt ores into bars</td></tr>
+          <tr><td class="px-3 py-1">3</td><td class="px-3 py-1">Copper Pickaxe</td><td class="px-3 py-1">5 Copper Bars, 5 Wood</td><td class="px-3 py-1">Faster mining, chance for extra ore</td></tr>
+          <tr><td class="px-3 py-1">5</td><td class="px-3 py-1">Iron Pickaxe</td><td class="px-3 py-1">5 Iron Bars, 5 Copper Bars</td><td class="px-3 py-1">Mine iron nodes, faster break</td></tr>
+          <tr><td class="px-3 py-1">8</td><td class="px-3 py-1">Palium Detection</td><td class="px-3 py-1">Passive</td><td class="px-3 py-1">See palium nodes on compass</td></tr>
+          <tr><td class="px-3 py-1">10</td><td class="px-3 py-1">Palium Pickaxe</td><td class="px-3 py-1">5 Palium Bars, 5 Iron Bars</td><td class="px-3 py-1">Mine all ore types, high durability</td></tr>
+          <tr><td class="px-3 py-1">12</td><td class="px-3 py-1">Ore Compressor</td><td class="px-3 py-1">Guild Store: 75 Mining Coins</td><td class="px-3 py-1">Compress 5 ores into 1 dense ore (higher value)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Hunting Unlocks -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-crosshairs text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🏹 Hunting Unlocks</h2></div>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50"><tr><th class="px-3 py-2">Level</th><th class="px-3 py-2">Unlock</th><th class="px-3 py-2">Materials / Requirement</th><th class="px-3 py-2">Effect</th></tr></thead>
+        <tbody class="divide-y">
+          <tr><td class="px-3 py-1">1</td><td class="px-3 py-1">Basic Bow</td><td class="px-3 py-1">Quest</td><td class="px-3 py-1">Hunt small game (chapaa, sernuk)</td></tr>
+          <tr><td class="px-3 py-1">2</td><td class="px-3 py-1">Stone Arrows</td><td class="px-3 py-1">Craftable</td><td class="px-3 py-1">Standard arrows</td></tr>
+          <tr><td class="px-3 py-1">3</td><td class="px-3 py-1">Copper Bow</td><td class="px-3 py-1">5 Copper Bars, 5 Fiber</td><td class="px-3 py-1">Longer range, less arrow drop</td></tr>
+          <tr><td class="px-3 py-1">5</td><td class="px-3 py-1">Iron Arrows</td><td class="px-3 py-1">Craftable (iron bars)</td><td class="px-3 py-1">Higher damage</td></tr>
+          <tr><td class="px-3 py-1">6</td><td class="px-3 py-1">Slowdown Arrow</td><td class="px-3 py-1">Guild Store recipe</td><td class="px-3 py-1">Slows prey on hit</td></tr>
+          <tr><td class="px-3 py-1">8</td><td class="px-3 py-1">Iron Bow</td><td class="px-3 py-1">5 Iron Bars, 5 Fabric</td><td class="px-3 py-1">Faster draw speed</td></tr>
+          <tr><td class="px-3 py-1">10</td><td class="px-3 py-1">Palium Bow</td><td class="px-3 py-1">5 Palium Bars, 5 Silk</td><td class="px-3 py-1">Max stats, can kill magical creatures</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Foraging, Bug Catching, Furniture Making (condensed) -->
+  <div class="grid md:grid-cols-3 gap-6">
+    <div class="section-card bg-paliaCard rounded-xl p-5">
+      <div class="flex items-center gap-2 mb-3"><i class="fa fa-leaf text-paliaPrimary text-xl"></i><h3 class="font-bold text-lg">🌿 Foraging</h3></div>
+      <ul class="list-disc pl-4 text-sm space-y-1">
+        <li><strong>Lv 2:</strong> Better vision for forageables</li>
+        <li><strong>Lv 4:</strong> Rare mushrooms appear on map</li>
+        <li><strong>Lv 6:</strong> Sweet leaf respawns faster</li>
+        <li><strong>Lv 8:</strong> Find truffles (high value)</li>
+        <li><strong>Lv 10:</strong> Double gather chance</li>
+      </ul>
+    </div>
+    <div class="section-card bg-paliaCard rounded-xl p-5">
+      <div class="flex items-center gap-2 mb-3"><i class="fa fa-bug text-paliaPrimary text-xl"></i><h3 class="font-bold text-lg">🐞 Bug Catching</h3></div>
+      <ul class="list-disc pl-4 text-sm space-y-1">
+        <li><strong>Lv 2:</strong> Smoke Candle recipe</li>
+        <li><strong>Lv 4:</strong> Copper Net (wider capture)</li>
+        <li><strong>Lv 6:</strong> Belt Accessory (extra bug slot)</li>
+        <li><strong>Lv 8:</strong> Iron Net (longer reach)</li>
+        <li><strong>Lv 10:</strong> Palium Net (best capture rate)</li>
+      </ul>
+    </div>
+    <div class="section-card bg-paliaCard rounded-xl p-5">
+      <div class="flex items-center gap-2 mb-3"><i class="fa fa-cube text-paliaPrimary text-xl"></i><h3 class="font-bold text-lg">🪑 Furniture Making</h3></div>
+      <ul class="list-disc pl-4 text-sm space-y-1">
+        <li><strong>Lv 2:</strong> Sawmill (planks)</li>
+        <li><strong>Lv 3:</strong> Workbench upgrade</li>
+        <li><strong>Lv 5:</strong> Iron Furniture (recipes)</li>
+        <li><strong>Lv 8:</strong> Palium Furniture (rare)</li>
+        <li><strong>Lv 10:</strong> Guild Store exclusive sets</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Facility Summary Table -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-industry text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🏭 Key Facilities & When to Build</h2></div>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50"><tr><th class="px-3 py-2">Facility</th><th class="px-3 py-2">Skill Requirement</th><th class="px-3 py-2">Cost / Materials</th><th class="px-3 py-2">Purpose</th></tr></thead>
+        <tbody class="divide-y">
+          <tr><td class="px-3 py-1">Workbench</td><td class="px-3 py-1">None (starting)</td><td class="px-3 py-1">20 Wood, 10 Stone</td><td class="px-3 py-1">Basic crafting</td></tr>
+          <tr><td class="px-3 py-1">Furnace</td><td class="px-3 py-1">Mining Lv 2</td><td class="px-3 py-1">15 Stone, 5 Copper</td><td class="px-3 py-1">Smelting ores</td></tr>
+          <tr><td class="px-3 py-1">Sawmill</td><td class="px-3 py-1">Furniture Lv 2</td><td class="px-3 py-1">10 Stone, 10 Wood, 5 Iron</td><td class="px-3 py-1">Turn wood into planks</td></tr>
+          <tr><td class="px-3 py-1">Seed Maker</td><td class="px-3 py-1">Gardening Lv 8</td><td class="px-3 py-1">20 Stone, 10 Copper, 5 Sapwood</td><td class="px-3 py-1">Crop → seeds</td></tr>
+          <tr><td class="px-3 py-1">Preserves Jar</td><td class="px-3 py-1">Gardening Lv 6</td><td class="px-3 py-1">10 Stone, 5 Copper, 5 Glass</td><td class="px-3 py-1">Make jam/pickles</td></tr>
+          <tr><td class="px-3 py-1">Composter</td><td class="px-3 py-1">Fishing Lv 4</td><td class="px-3 py-1">10 Wood, 5 Fiber</td><td class="px-3 py-1">Produce worms & fertilizer</td></tr>
+          <tr><td class="px-3 py-1">Ore Compressor</td><td class="px-3 py-1">Mining Lv 12</td><td class="px-3 py-1">50 Mining Coins (Guild)</td><td class="px-3 py-1">Compress ores for higher sale price</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="bg-paliaPrimary/5 rounded-2xl p-6 text-center border border-paliaAccent/20">
+    <i class="fa fa-check-circle-o text-3xl text-paliaPrimary mb-2 block"></i>
+    <p class="text-paliaText/80">Use this table to prioritize which skills to level first. For example, reach Mining Lv 5 early to upgrade to Iron Pickaxe, which speeds up all gathering.</p>
+    <div class="mt-4">
+      <a href="index.html" class="inline-block bg-paliaPrimary text-white px-6 py-2 rounded-full hover:bg-paliaPrimaryDeep transition">← Back to Main Hub</a>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-white/70 border-t border-paliaAccent/20 mt-12 py-6 text-center text-sm text-paliaText/70">
+  <p>Palia Guide Hub · Tool & Facility Unlocks · Plan your progression wisely</p>
+  <p class="mt-1"><i class="fa fa-leaf text-paliaPrimary"></i> Every level brings you closer to mastery</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Time Management – Fishing, Bug Catching & Seasonal Spawns | Palia Guide Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paliaBg: '#fcf8f0',
+            paliaPrimary: '#7f9a6e',
+            paliaPrimaryDeep: '#5f7a4e',
+            paliaAccent: '#e2b181',
+            paliaText: '#3c2f2a',
+            paliaCard: '#ffffff',
+            paliaMuted: '#e9e1d4',
+          },
+          fontFamily: { 'sans': ['Inter', 'system-ui', 'Segoe UI', 'Noto Sans SC', 'sans-serif'] },
+          borderRadius: { 'xl': '1rem', '2xl': '1.5rem' },
+        }
+      }
+    }
+  </script>
+  <style>
+    body { scroll-behavior: smooth; }
+    .section-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .section-card:hover { transform: translateY(-3px); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body class="bg-paliaBg text-paliaText font-sans antialiased">
+
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-paliaAccent/20 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 lg:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+    <div class="flex items-center gap-3">
+      <div class="bg-paliaPrimary/10 p-2 rounded-2xl"><i class="fa fa-clock-o text-paliaPrimary text-2xl"></i></div>
+      <div>
+        <h1 class="text-xl md:text-2xl font-bold tracking-tight text-paliaPrimaryDeep">Time Management</h1>
+        <p class="text-xs text-paliaText/70">Fishing · Bug Catching · Seasonal Spawns · Real‑World Schedule</p>
+      </div>
+    </div>
+    <a href="index.html" class="text-paliaPrimary hover:underline text-sm flex items-center gap-1"><i class="fa fa-arrow-left"></i> Back to Main Hub</a>
+  </div>
+</header>
+
+<main class="max-w-6xl mx-auto px-4 py-10 space-y-8">
+  <!-- Intro -->
+  <div class="bg-paliaCard rounded-2xl shadow-card p-6 md:p-8">
+    <div class="flex items-center gap-3 border-b border-paliaMuted pb-4 mb-5">
+      <i class="fa fa-calendar text-paliaPrimary text-3xl"></i>
+      <h2 class="text-2xl font-bold">Plan Your Day in Palia</h2>
+    </div>
+    <p class="text-paliaText/80 leading-relaxed">Many fish, bugs, and resources only appear at specific in‑game times or seasons. This guide provides real‑world time conversions, optimal hunting windows, and seasonal spawn tables so you never miss rare catches.</p>
+  </div>
+
+  <!-- Real‑Time vs Game Time Reference -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-hourglass-half text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🕒 Real‑World Time Conversion</h2></div>
+    <p>One full Palia day = <strong>24 real minutes</strong>. Use this table to plan your sessions around specific in‑game hours.</p>
+    <div class="overflow-x-auto my-3">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50"><tr><th class="px-3 py-2">In‑game Time</th><th class="px-3 py-2">Real Time (minutes past the hour)</th><th class="px-3 py-2">Best Activities</th></tr></thead>
+        <tbody class="divide-y">
+          <tr><td class="px-3 py-2">6:00 – 9:00 (Dawn)</td><td class="px-3 py-2">0 – 3 min</td><td class="px-3 py-2">Morning fish (e.g., Dawn Ray), rare bugs</td></tr>
+          <tr><td class="px-3 py-2">9:00 – 15:00 (Midday)</td><td class="px-3 py-2">3 – 9 min</td><td class="px-3 py-2">Common fish, most bugs active</td></tr>
+          <tr><td class="px-3 py-2">15:00 – 18:00 (Afternoon)</td><td class="px-3 py-2">9 – 12 min</td><td class="px-3 py-2">Transition period – some dusk spawns begin</td></tr>
+          <tr><td class="px-3 py-2">18:00 – 21:00 (Dusk)</td><td class="px-3 py-2">12 – 15 min</td><td class="px-3 py-2">Nocturnal fish, fireflies, glow bugs</td></tr>
+          <tr><td class="px-3 py-2">21:00 – 3:00 (Night)</td><td class="px-3 py-2">15 – 24 min</td><td class="px-3 py-2">Rare night‑only fish (e.g., Midnight Carp)</td></tr>
+          <tr><td class="px-3 py-2">3:00 – 6:00 (Pre‑dawn)</td><td class="px-3 py-2">24 – 30 min (next hour)</td><td class="px-3 py-2">Unique pre‑dawn spawns like Spectral Fish</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="bg-paliaPrimary/10 p-3 rounded-xl text-sm"><i class="fa fa-lightbulb-o text-paliaPrimary mr-2"></i> 💡 Tip: Open the in‑game clock (top‑left of screen) to see the current time. Set a timer on your phone for 24 minutes to track full cycles.</div>
+  </div>
+
+  <!-- Fishing Time Tables -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-fish text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🎣 Fishing – Time & Bait Guide</h2></div>
+    <p>Different fish require specific times, bait, and weather. Below are the most sought‑after fish and their spawn conditions.</p>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50"><tr><th class="px-2 py-2">Fish</th><th class="px-2 py-2">Time Window</th><th class="px-2 py-2">Bait</th><th class="px-2 py-2">Location</th><th class="px-2 py-2">Rarity</th></tr></thead>
+        <tbody class="divide-y">
+          <tr><td class="px-2 py-1">Dawn Ray</td><td class="px-2 py-1">5:00 – 8:00</td><td class="px-2 py-1">Worm</td><td class="px-2 py-1">Kilima River</td><td class="px-2 py-1">Uncommon</td></tr>
+          <tr><td class="px-2 py-1">Midnight Carp</td><td class="px-2 py-1">0:00 – 3:00</td><td class="px-2 py-1">Glow Worm</td><td class="px-2 py-1">Bahari Bay Lake</td><td class="px-2 py-1">Rare</td></tr>
+          <tr><td class="px-2 py-1">Spectral Fish</td><td class="px-2 py-1">3:00 – 6:00</td><td class="px-2 py-1">Glow Worm</td><td class="px-2 py-1">Ancient Ruins Pond</td><td class="px-2 py-1">Epic</td></tr>
+          <tr><td class="px-2 py-1">Storm Eel</td><td class="px-2 py-1">Any (rain only)</td><td class="px-2 py-1">Worm</td><td class="px-2 py-1">Bahari Coast</td><td class="px-2 py-1">Rare</td></tr>
+          <tr><td class="px-2 py-1">Golden Salmon</td><td class="px-2 py-1">12:00 – 16:00</td><td class="px-2 py-1">None</td><td class="px-2 py-1">Kilima Waterfall</td><td class="px-2 py-1">Common</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-sm text-paliaText/70 mt-2">For a complete fish database, see the <a href="wiki-fish.html" class="text-paliaPrimary underline">Wiki Fish page</a> (coming soon).</p>
+  </div>
+
+  <!-- Bug Catching Time Tables -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-bug text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🐞 Bug Catching – Spawn Times & Locations</h2></div>
+    <p>Many insects are only active during specific hours or seasons. Use this table to target rare bugs.</p>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50"><tr><th class="px-2 py-2">Bug</th><th class="px-2 py-2">Time Window</th><th class="px-2 py-2">Season</th><th class="px-2 py-2">Location</th><th class="px-2 py-2">Rarity</th></tr></thead>
+        <tbody class="divide-y">
+          <tr><td class="px-2 py-1">Firefly</td><td class="px-2 py-1">20:00 – 23:00</td><td class="px-2 py-1">Summer</td><td class="px-2 py-1">Kilima Grasslands</td><td class="px-2 py-1">Common</td></tr>
+          <tr><td class="px-2 py-1">Moonstruck Moth</td><td class="px-2 py-1">0:00 – 4:00</td><td class="px-2 py-1">Spring/Fall</td><td class="px-2 py-1">Bahari Cliffs</td><td class="px-2 py-1">Rare</td></tr>
+          <tr><td class="px-2 py-1">Rainbow Butterfly</td><td class="px-2 py-1">10:00 – 14:00</td><td class="px-2 py-1">Spring/Summer</td><td class="px-2 py-1">Flower Fields</td><td class="px-2 py-1">Epic</td></tr>
+          <tr><td class="px-2 py-1">Frost Beetle</td><td class="px-2 py-1">All day</td><td class="px-2 py-1">Winter only</td><td class="px-2 py-1">Snowy areas</td><td class="px-2 py-1">Uncommon</td></tr>
+          <tr><td class="px-2 py-1">Glowbug</td><td class="px-2 py-1">18:00 – 6:00</td><td class="px-2 py-1">All year</td><td class="px-2 py-1">Caves & night forests</td><td class="px-2 py-1">Common</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="mt-3 bg-paliaPrimary/10 p-2 rounded text-sm"><i class="fa fa-map-marker text-paliaPrimary mr-1"></i> Use <strong>Smoke Candles</strong> (crafted at the campfire) to prevent bugs from fleeing when you approach.</div>
+  </div>
+
+  <!-- Seasonal Spawn Changes -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-leaf text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🌸 Seasonal & Weather-Based Spawns</h2></div>
+    <p>Palia has four seasons (Spring, Summer, Fall, Winter) that rotate every real‑world week. Each season brings unique fish, bugs, and foragables.</p>
+    <div class="grid md:grid-cols-2 gap-4 mt-2">
+      <div class="bg-paliaMuted/20 p-3 rounded-lg">
+        <h4 class="font-semibold text-paliaPrimary">🌼 Spring</h4>
+        <ul class="list-disc pl-4 text-sm"><li>Rainbow Butterfly (daytime)</li><li>Morel Mushrooms</li><li>Spring Carp (fish)</li></ul>
+      </div>
+      <div class="bg-paliaMuted/20 p-3 rounded-lg">
+        <h4 class="font-semibold text-paliaPrimary">☀️ Summer</h4>
+        <ul class="list-disc pl-4 text-sm"><li>Firefly (night)</li><li>Watermelon (crop)</li><li>Sunfish (morning)</li></ul>
+      </div>
+      <div class="bg-paliaMuted/20 p-3 rounded-lg">
+        <h4 class="font-semibold text-paliaPrimary">🍂 Fall</h4>
+        <ul class="list-disc pl-4 text-sm"><li>Moonstruck Moth</li><li>Pumpkin (crop)</li><li>Salmon migration</li></ul>
+      </div>
+      <div class="bg-paliaMuted/20 p-3 rounded-lg">
+        <h4 class="font-semibold text-paliaPrimary">❄️ Winter</h4>
+        <ul class="list-disc pl-4 text-sm"><li>Frost Beetle</li><li>Ice Fishing: Frostfang</li><li>Holly Berries</li></ul>
+      </div>
+    </div>
+    <p class="text-sm mt-2 text-paliaText/70">Weather also matters: <strong>rain</strong> increases spawn rates of rare fish (Storm Eel) and some bugs (Rainbow Butterfly). Check the in‑game weather icon.</p>
+  </div>
+
+  <!-- Weekly & Daily Reset Reminders -->
+  <div class="bg-paliaPrimary/5 rounded-2xl p-6 border border-paliaAccent/20">
+    <i class="fa fa-repeat text-3xl text-paliaPrimary mb-2 block"></i>
+    <h3 class="text-xl font-bold mb-2">⏰ Reset Schedules – Don't Miss Out</h3>
+    <ul class="list-disc pl-5 space-y-1 text-paliaText/80">
+      <li><strong>Daily Reset:</strong> 4:00 AM UTC – respawns all resources, gifts, and shop items.</li>
+      <li><strong>Weekly Reset:</strong> Monday 4:00 AM UTC – new weekly challenges and Maji Market if active.</li>
+      <li><strong>Season Change:</strong> Every Monday (same as weekly reset) – new season begins.</li>
+      <li><strong>Maji Market (event):</strong> Runs for two weeks, then 2‑week break. Check official news.</li>
+    </ul>
+    <div class="mt-4 text-center">
+      <a href="index.html" class="inline-block bg-paliaPrimary text-white px-6 py-2 rounded-full hover:bg-paliaPrimaryDeep transition">← Back to Main Hub</a>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-white/70 border-t border-paliaAccent/20 mt-12 py-6 text-center text-sm text-paliaText/70">
+  <p>Palia Guide Hub · Time Management Guide · Catch ‘em all at the right time</p>
+  <p class="mt-1"><i class="fa fa-leaf text-paliaPrimary"></i> Plan your play session with the in‑game clock and these tables</p>
+</footer>
+</body>
+</html>
