@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Multiplayer – Group Fishing, Hunting & Home Visits | Palia Guide Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paliaBg: '#fcf8f0',
+            paliaPrimary: '#7f9a6e',
+            paliaPrimaryDeep: '#5f7a4e',
+            paliaAccent: '#e2b181',
+            paliaText: '#3c2f2a',
+            paliaCard: '#ffffff',
+            paliaMuted: '#e9e1d4',
+          },
+          fontFamily: { 'sans': ['Inter', 'system-ui', 'Segoe UI', 'Noto Sans SC', 'sans-serif'] },
+          borderRadius: { 'xl': '1rem', '2xl': '1.5rem' },
+        }
+      }
+    }
+  </script>
+  <style>
+    body { scroll-behavior: smooth; }
+    .section-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .section-card:hover { transform: translateY(-3px); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body class="bg-paliaBg text-paliaText font-sans antialiased">
+
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-paliaAccent/20 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 lg:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+    <div class="flex items-center gap-3">
+      <div class="bg-paliaPrimary/10 p-2 rounded-2xl"><i class="fa fa-users text-paliaPrimary text-2xl"></i></div>
+      <div>
+        <h1 class="text-xl md:text-2xl font-bold tracking-tight text-paliaPrimaryDeep">Multiplayer Guide</h1>
+        <p class="text-xs text-paliaText/70">Group fishing · Hunting parties · Home visits</p>
+      </div>
+    </div>
+    <a href="index.html" class="text-paliaPrimary hover:underline text-sm flex items-center gap-1"><i class="fa fa-arrow-left"></i> Back to Main Hub</a>
+  </div>
+</header>
+
+<main class="max-w-6xl mx-auto px-4 py-10 space-y-8">
+  <!-- Intro -->
+  <div class="bg-paliaCard rounded-2xl shadow-card p-6 md:p-8">
+    <div class="flex items-center gap-3 border-b border-paliaMuted pb-4 mb-5">
+      <i class="fa fa-handshake-o text-paliaPrimary text-3xl"></i>
+      <h2 class="text-2xl font-bold">Team Up for Greater Rewards</h2>
+    </div>
+    <p class="text-paliaText/80 leading-relaxed">Palia is designed to be played with friends. Group activities give bonuses, shared loot, and faster progress. This guide covers how to form parties, the benefits of cooperative fishing and hunting, and how to invite others to visit your home plot.</p>
+  </div>
+
+  <!-- Forming a Party -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-group text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">👥 How to Form a Party</h2></div>
+    <ul class="list-disc pl-5 space-y-1">
+      <li><strong>Invite from Friends List:</strong> Press ‘O’ to open Social panel → Friends tab → click ‘Invite to Party’.</li>
+      <li><strong>Invite via Chat:</strong> Type <code class="bg-gray-100 px-1 rounded">/invite [PlayerName]</code> in chat.</li>
+      <li><strong>Join from Community:</strong> If you share a community (guild), you can join members directly.</li>
+      <li><strong>Party size limit:</strong> Up to 4 players per party.</li>
+    </ul>
+    <div class="bg-paliaPrimary/10 p-2 rounded mt-2 text-sm">💡 Party members see each other’s location on the map (green icons). You can also fast‑travel to the party leader’s location if they are in a different zone.</div>
+  </div>
+
+  <!-- Group Fishing -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-fish text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">🎣 Group Fishing</h2></div>
+    <ul class="list-disc pl-5 space-y-1">
+      <li><strong>Shared bite rate:</strong> When multiple players fish the same spot, fish bite faster for everyone.</li>
+      <li><strong>Rare fish spawn chance:</strong> Increases with each additional fisher (up to +40% for 4 players).</li>
+      <li><strong>Loot is individual:</strong> Each player catches their own fish – no competition.</li>
+      <li><strong>Best spots:</strong> Bahari Central Lake (Midnight Carp) and Kilima Pier (Dawn Ray) are ideal for group fishing.</li>
+      <li><strong>Pro tip:</strong> Use different baits to cover more fish types (some use worms, others glow worms).</li>
+    </ul>
+  </div>
+
+  <!-- Group Hunting -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-crosshairs text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">🏹 Group Hunting</h2></div>
+    <ul class="list-disc pl-5 space-y-1">
+      <li><strong>Shared credit:</strong> If two players hit the same animal (even with different weapons), both get credit for the kill and full loot.</li>
+      <li><strong>Faster takedowns:</strong> Large prey (e.g., magical creatures) have more health – groups kill them much faster.</li>
+      <li><strong>Spawn rate boost:</strong> Hunting in a group causes more animals to spawn in the area.</li>
+      <li><strong>Recommended loadout:</strong> One player uses slowdown arrows, others use standard or iron arrows.</li>
+      <li><strong>Best hunting grounds:</strong> Kilima Forest for Sernuk, Bahari Plains for magical chapaas.</li>
+    </ul>
+  </div>
+
+  <!-- Home Visits & Co-op Building -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-home text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">🏠 Home Plot Visits</h2></div>
+    <ul class="list-disc pl-5 space-y-1">
+      <li><strong>How to invite:</strong> Open Social panel → Friends → click ‘Invite to Home’. Your friend will receive a notification and can teleport directly to your plot.</li>
+      <li><strong>Permissions:</strong> By default, guests can move around but cannot edit or take items. You can promote them to “Co‑owner” for building permissions (Settings → Plot Permissions).</li>
+      <li><strong>What guests can do:</strong> Use your crafting stations, fish in your pond, harvest crops (if you enable crop sharing), pet your animals, and view your decorations.</li>
+      <li><strong>Co‑op building:</strong> Multiple players can work on the same furniture at a workbench? No, but they can donate materials to the owner.</li>
+      <li><strong>Visiting other plots:</strong> Use the Home Tour board (near Kilima Town Hall) to visit public plots or enter a friend’s code.</li>
+    </ul>
+  </div>
+
+  <!-- Group Cooking & Processing -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-cutlery text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">🍳 Group Cooking</h2></div>
+    <ul class="list-disc pl-5 space-y-1">
+      <li>You can cook together on the same stove/oven. One player starts the recipe, others can join as “helpers”.</li>
+      <li>Each helper performs one step of the minigame, reducing the chance of failure.</li>
+      <li>Group cooking increases star‑quality chance by up to 20%.</li>
+      <li>All participants receive the same number of dishes (split evenly). Great for large‑scale cooking parties.</li>
+    </ul>
+  </div>
+
+  <!-- Multiplayer Efficiency Tips -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-line-chart text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">📈 Group Efficiency Tips</h2></div>
+    <ul class="list-disc pl-5 space-y-1">
+      <li><strong>Divide and conquer:</strong> In Bahari, split up to scout for palium/flow trees, then call out locations in party chat.</li>
+      <li><strong>Shared resource nodes:</strong> Flow‑infused trees require 2+ players to chop. Always call for help in chat.</li>
+      <li><strong>Daily bonuses:</strong> Some weekly challenges (e.g., “Catch 50 fish with a party member”) require group play.</li>
+      <li><strong>Communication:</strong> Use voice chat (Discord) or in‑game text. Pin important locations on the map for your party.</li>
+    </ul>
+  </div>
+
+  <!-- Server vs Party Notes -->
+  <div class="bg-paliaPrimary/5 rounded-2xl p-6 border border-paliaAccent/20">
+    <i class="fa fa-globe text-3xl text-paliaPrimary mb-2 block"></i>
+    <h3 class="text-xl font-bold mb-2">🌐 Party vs Server</h3>
+    <ul class="list-disc pl-5 space-y-1 text-paliaText/80">
+      <li><strong>Party members automatically join the same server instance</strong> – no need to manually switch.</li>
+      <li>If your party gets separated (e.g., one enters a temple), use the ‘Teleport to Party Member’ option from the social menu.</li>
+      <li>You can still see and chat with players outside your party; they just don’t share party‑only bonuses.</li>
+    </ul>
+    <div class="mt-5 text-center">
+      <a href="index.html" class="inline-block bg-paliaPrimary text-white px-6 py-2 rounded-full hover:bg-paliaPrimaryDeep transition">← Back to Main Hub</a>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-white/70 border-t border-paliaAccent/20 mt-12 py-6 text-center text-sm text-paliaText/70">
+  <p>Palia Guide Hub · Multiplayer · Better together</p>
+  <p class="mt-1"><i class="fa fa-leaf text-paliaPrimary"></i> Friendship amplifies every joy in Palia</p>
+</footer>
+</body>
+</html>

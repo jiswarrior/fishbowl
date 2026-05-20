@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Focus Loop Optimization & Auto‑Farm Strategies | Palia Guide Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paliaBg: '#fcf8f0',
+            paliaPrimary: '#7f9a6e',
+            paliaPrimaryDeep: '#5f7a4e',
+            paliaAccent: '#e2b181',
+            paliaText: '#3c2f2a',
+            paliaCard: '#ffffff',
+            paliaMuted: '#e9e1d4',
+          },
+          fontFamily: { 'sans': ['Inter', 'system-ui', 'Segoe UI', 'Noto Sans SC', 'sans-serif'] },
+          borderRadius: { 'xl': '1rem', '2xl': '1.5rem' },
+        }
+      }
+    }
+  </script>
+  <style>
+    body { scroll-behavior: smooth; }
+    .section-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .section-card:hover { transform: translateY(-3px); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body class="bg-paliaBg text-paliaText font-sans antialiased">
+
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-paliaAccent/20 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 lg:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+    <div class="flex items-center gap-3">
+      <div class="bg-paliaPrimary/10 p-2 rounded-2xl"><i class="fa fa-refresh text-paliaPrimary text-2xl"></i></div>
+      <div>
+        <h1 class="text-xl md:text-2xl font-bold tracking-tight text-paliaPrimaryDeep">Focus Loop & Auto‑Farm</h1>
+        <p class="text-xs text-paliaText/70">Sustainable XP · Automation · Resource cycle</p>
+      </div>
+    </div>
+    <a href="index.html" class="text-paliaPrimary hover:underline text-sm flex items-center gap-1"><i class="fa fa-arrow-left"></i> Back to Main Hub</a>
+  </div>
+</header>
+
+<main class="max-w-5xl mx-auto px-4 py-10 space-y-8">
+  <!-- Intro -->
+  <div class="bg-paliaCard rounded-2xl shadow-card p-6 md:p-8">
+    <div class="flex items-center gap-3 border-b border-paliaMuted pb-4 mb-5">
+      <i class="fa fa-sync-alt text-paliaPrimary text-3xl"></i>
+      <h2 class="text-2xl font-bold">Endless Progress: Focus + Automation</h2>
+    </div>
+    <p class="text-paliaText/80 leading-relaxed">To level up quickly without burnout, you need a sustainable Focus loop – where you always have enough Focus food to keep your XP bonus high. When combined with automated farm systems (self‑watering, automatic feeding, processing chains), you create a virtuous cycle: farm → craft → eat → gain XP → unlock better tools → farm more efficiently. This guide shows you how.</p>
+  </div>
+
+  <!-- Part 1: The Focus Loop Explained -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-bolt text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">🔄 The Focus Loop</h2></div>
+    <p>A “Focus Loop” means you never run out of Focus while grinding skills. The ideal cycle:</p>
+    <ol class="list-decimal pl-5 space-y-1">
+      <li><strong>Cook in bulk</strong> – Prepare 50–100 high‑Focus meals (e.g., Hearty Vegetable Soup, Celebration Cake).</li>
+      <li><strong>Keep Focus above 80%</strong> – Eat before your bar drops below that threshold.</li>
+      <li><strong>Use XP from actions</strong> – The higher your Focus, the more XP you earn per action.</li>
+      <li><strong>Reinvest crops into more cooking</strong> – Use part of your harvest to create more Focus food.</li>
+    </ol>
+    <div class="bg-paliaPrimary/10 p-2 rounded mt-2 text-sm">💡 The key is to <strong>always have a surplus</strong> of Focus meals. Treat them as a resource like any other.</div>
+  </div>
+
+  <!-- Part 2: Best Focus Foods for Bulk Farming -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-cutlery text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">🥘 Best Focus Foods for Sustainable Loops</h2></div>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50">
+          <tr><th class="px-2 py-2">Recipe</th><th class="px-2 py-2">Focus Restored</th><th class="px-2 py-2">Main Ingredients</th><th class="px-2 py-2">Ease of Bulk Production</th><th class="px-2 py-2">XP per Craft</th></tr>
+        </thead>
+        <tbody class="divide-y">
+          <tr><td class="px-2 py-1">Hearty Vegetable Soup</th><td class="px-2 py-1">150</th><td class="px-2 py-1">Carrot, Onion, Mushroom, Spice</th><td class="px-2 py-1">★ ★ ★ ★ ☆ (easy)</th><td class="px-2 py-1">150</th></tr>
+          <tr><td class="px-2 py-1">Celebration Cake</th><td class="px-2 py-1">300</th><td class="px-2 py-1">Wheat, Egg, Butter, Sweet Leaf, Blueberry</th><td class="px-2 py-1">★ ★ ★ ☆ ☆ (medium)</th><td class="px-2 py-1">300</th></tr>
+          <tr><td class="px-2 py-1">Mushroom Quiche</th><td class="px-2 py-1">175</th><td class="px-2 py-1">Mushroom, Egg, Milk, Wheat</th><td class="px-2 py-1">★ ★ ★ ☆ ☆</th><td class="px-2 py-1">175</th></tr>
+          <tr><td class="px-2 py-1">Grilled Fish</th><td class="px-2 py-1">60</th><td class="px-2 py-1">Any Fish</th><td class="px-2 py-1">★ ★ ★ ★ ★ (very easy)</th><td class="px-2 py-1">60</th></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="mt-2"><strong>Recommendation:</strong> Use Grilled Fish for early game, transition to Hearty Vegetable Soup once you have a garden, and use Celebration Cake for late‑game loops (when you have blueberry farms).</p>
+  </div>
+
+  <!-- Part 3: Automation – What Can Be Automated -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-cogs text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">🤖 Farm Automation Systems</h2></div>
+    <p>Palia has limited automation, but several upgrades reduce daily chores, freeing time for skill grinding.</p>
+    <ul class="list-disc pl-5 space-y-2">
+      <li><strong>Upgraded Watering Can:</strong> Palium can covers 7×7 area – nearly a full garden in one click.</li>
+      <li><strong>Irrigation Channels (Gardening Lv 12):</strong> Slowly auto‑water adjacent crops (reduces manual watering by 70%).</li>
+      <li><strong>Auto‑Feeder (Barn/Coop upgrade):</strong> Holds up to 100 feed and dispenses automatically. Requires crafting “Advanced Feeder” (Furniture Lv 8).</li>
+      <li><strong>Seed Maker & Preserves Jar:</strong> Process crops overnight while you sleep.</li>
+      <li><strong>Beehives:</strong> Fully passive honey/wax production – no input needed after placement.</li>
+      <li><strong>Composter:</strong> Turn plant matter into fertilizer/worms passively.</li>
+    </ul>
+    <p class="mt-1 text-sm">While not fully “AFK”, these systems let you spend 5 minutes on farm chores instead of 30, leaving more time for active grinding.</p>
+  </div>
+
+  <!-- Part 4: Creating the Perfect Auto‑Farm Layout -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-th-large text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">🏡 Designing an Efficient Auto‑Farm</h2></div>
+    <div class="grid md:grid-cols-2 gap-4">
+      <div>
+        <h3 class="font-semibold">Crop Layout for Automation</h3>
+        <ul class="list-disc pl-5 text-sm">
+          <li>Place soil plots in 7×7 blocks to maximize Palium Watering Can coverage.</li>
+          <li>Install Irrigation Channels along the edges (water flows from a central well).</li>
+          <li>Group seed makers and preserves jars right next to crop fields.</li>
+          <li>Use same crop type per block for easy harvest.</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold">Ranch Automation</h3>
+        <ul class="list-disc pl-5 text-sm">
+          <li>Build one Barn/Coop per animal type.</li>
+          <li>Install Advanced Feeders – refill once a week.</li>
+          <li>Place storage chests next to animal products collectors.</li>
+          <li>Petting is still manual, but it takes only 1 minute for all animals.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Part 5: The Feedback Loop – Resources → XP → Better Automation -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-chart-line text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">📈 Feedback Loop: Grow, Process, Level, Upgrade</h2></div>
+    <p>This is the advanced “full loop” that powers endgame progression:</p>
+    <ol class="list-decimal pl-5 space-y-1">
+      <li><strong>Grow high‑yield crops</strong> (tomatoes, blueberries) – provide ingredients and steady gold.</li>
+      <li><strong>Process excess crops</strong> into seeds, jam, pickles (extra XP and profit).</li>
+      <li><strong>Cook advanced dishes</strong> (Celebration Cake) – high Focus food and high sale value.</li>
+      <li><strong>Eat before grinding skills</strong> – keep Focus above 80% for +80–100% XP.</li>
+      <li><strong>Level up Gardening and Cooking</strong> – unlocks better automation (irrigation, advanced stoves).</li>
+      <li><strong>Use coins and Renown</strong> to increase Focus capacity and XP multiplier.</li>
+      <li><strong>Repeat</strong> – each cycle becomes more efficient.</li>
+    </ol>
+    <div class="bg-paliaPrimary/10 p-2 rounded mt-2 text-sm">💡 This loop sustains itself: crops → food → XP → better farming → more crops.</div>
+  </div>
+
+  <!-- Part 6: Daily Focus‑Optimized Routine -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-calendar-check-o text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">📅 Sample Daily Routine (Focus‑First)</h2></div>
+    <ol class="list-decimal pl-5 space-y-1">
+      <li><strong>Start with eating</strong> – fill Focus bar to 100% with best meal.</li>
+      <li><strong>Harvest crops</strong> (gives XP with bonus) – replant immediately.</li>
+      <li><strong>Collect animal products</strong> (mood high = better products).</li>
+      <li><strong>Process materials</strong> (start seed makers, preserves jars, furnaces).</li>
+      <li><strong>Cook 10–20 meals</strong> (replenish Focus food stock).</li>
+      <li><strong>Active skill grinding</strong> – mining, fishing, hunting – while Focus high.</li>
+      <li><strong>Eat as needed</strong> – whenever Focus drops below 60%.</li>
+      <li><strong>End of day</strong> – check automation (refill feeders, empty composters).</li>
+    </ol>
+    <p class="mt-2 text-sm">Total active time: ~30 minutes. Remaining time = pure XP gain.</p>
+  </div>
+
+  <!-- Summary Card -->
+  <div class="bg-paliaPrimary/5 rounded-2xl p-6 border border-paliaAccent/20">
+    <i class="fa fa-leaf text-3xl text-paliaPrimary mb-2 block"></i>
+    <h3 class="text-xl font-bold mb-2">🌱 Final Advice</h3>
+    <ul class="list-disc pl-5 space-y-1 text-paliaText/80">
+      <li><strong>Never let Focus hit zero</strong> – even a tiny amount of Focus gives bonus XP.</li>
+      <li><strong>Automate what you can</strong> – irrigation and auto‑feeders save real time.</li>
+      <li><strong>Batch cooking</strong> – cook 50 meals at once to avoid distractions.</li>
+      <li><strong>Use Renown for Focus capacity</strong> – bigger bar means less frequent eating.</li>
+      <li><strong>Upgrade Focus Bonus % at Dragon Shrine</strong> – eventually doubles XP.</li>
+    </ul>
+    <div class="mt-5 text-center">
+      <a href="index.html" class="inline-block bg-paliaPrimary text-white px-6 py-2 rounded-full hover:bg-paliaPrimaryDeep transition">← Back to Main Hub</a>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-white/70 border-t border-paliaAccent/20 mt-12 py-6 text-center text-sm text-paliaText/70">
+  <p>Palia Guide Hub · Focus Loop & Auto‑Farm · Work once, gain forever</p>
+  <p class="mt-1"><i class="fa fa-leaf text-paliaPrimary"></i> Sustainable systems = endless progression</p>
+</footer>
+</body>
+</html>
