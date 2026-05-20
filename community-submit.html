@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Contributor Submission System – Write for Palia Guide Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paliaBg: '#fcf8f0',
+            paliaPrimary: '#7f9a6e',
+            paliaPrimaryDeep: '#5f7a4e',
+            paliaAccent: '#e2b181',
+            paliaText: '#3c2f2a',
+            paliaCard: '#ffffff',
+            paliaMuted: '#e9e1d4',
+          },
+          fontFamily: { 'sans': ['Inter', 'system-ui', 'Segoe UI', 'Noto Sans SC', 'sans-serif'] },
+          borderRadius: { 'xl': '1rem', '2xl': '1.5rem' },
+        }
+      }
+    }
+  </script>
+  <style>
+    body { scroll-behavior: smooth; }
+    .section-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .section-card:hover { transform: translateY(-3px); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body class="bg-paliaBg text-paliaText font-sans antialiased">
+
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-paliaAccent/20 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 lg:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+    <div class="flex items-center gap-3">
+      <div class="bg-paliaPrimary/10 p-2 rounded-2xl"><i class="fa fa-pencil-square-o text-paliaPrimary text-2xl"></i></div>
+      <div>
+        <h1 class="text-xl md:text-2xl font-bold tracking-tight text-paliaPrimaryDeep">Contributor Submissions</h1>
+        <p class="text-xs text-paliaText/70">Write guides · Share strategies · Get credited</p>
+      </div>
+    </div>
+    <a href="index.html" class="text-paliaPrimary hover:underline text-sm flex items-center gap-1"><i class="fa fa-arrow-left"></i> Back to Main Hub</a>
+  </div>
+</header>
+
+<main class="max-w-5xl mx-auto px-4 py-10 space-y-8">
+  <!-- Intro -->
+  <div class="bg-paliaCard rounded-2xl shadow-card p-6 md:p-8">
+    <div class="flex items-center gap-3 border-b border-paliaMuted pb-4 mb-5">
+      <i class="fa fa-users text-paliaPrimary text-3xl"></i>
+      <h2 class="text-2xl font-bold">Help Us Build the Ultimate Resource</h2>
+    </div>
+    <p class="text-paliaText/80 leading-relaxed">Palia Guide Hub thrives on community knowledge. If you’ve discovered a great strategy, created a beautiful home layout, or have deep expertise in a skill, we want your contribution. This page explains how to submit your work for inclusion – you’ll get full credit and a permanent spot in the guide.</p>
+  </div>
+
+  <!-- What Can You Submit? -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-file-text-o text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">📝 What You Can Submit</h2></div>
+    <ul class="list-disc pl-5 space-y-1">
+      <li><strong>Written guides</strong> – Step‑by‑step tutorials for skills, quests, money making, romance, etc.</li>
+      <li><strong>Farming & home layouts</strong> – Detailed descriptions with images or diagrams.</li>
+      <li><strong>Data tables / spreadsheets</strong> – Comprehensive lists (e.g., full fish spawn times, gift preferences).</li>
+      <li><strong>Video guides (embedded)</strong> – YouTube or Twitch links with written summary.</li>
+      <li><strong>Interactive tools / calculators</strong> – If you can provide JavaScript code snippets.</li>
+      <li><strong>Translations</strong> – Help us support more languages.</li>
+    </ul>
+  </div>
+
+  <!-- Submission Requirements / Format -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-list-ul text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">📋 Submission Requirements</h2></div>
+    <ul class="list-disc pl-5 space-y-1">
+      <li><strong>Original content</strong> – Do not copy from other websites or claim others’ work as your own.</li>
+      <li><strong>Clear and accurate</strong> – Information should be up‑to‑date (based on current Palia patch).</li>
+      <li><strong>Proper formatting</strong> – Use headings, bullet points, and images if possible. Plain text is also accepted; we will format it.</li>
+      <li><strong>Images / screenshots</strong> – Preferably high‑resolution, hosted on Imgur or similar. Include captions.</li>
+      <li><strong>Contact info</strong> – Provide your in‑game name or Discord tag so we can credit you.</li>
+    </ul>
+  </div>
+
+  <!-- How to Submit (Channels) -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-envelope-o text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">📬 How to Submit</h2></div>
+    <div class="space-y-3">
+      <p><strong>Option 1: Email</strong><br>Send your submission to <code class="bg-gray-100 px-2 py-1 rounded">contributions@paliaguidehub.com</code> (placeholder; replace with actual address). Attach images or link to documents.</p>
+      <p><strong>Option 2: Discord</strong><br>Join our community Discord (invite link on main page) and post in <code>#submissions</code> channel. Ping an editor (<code>@EditorTeam</code>).</p>
+      <p><strong>Option 3: Google Form</strong><br>Use our submission form (link below). Allows file uploads up to 100MB.</p>
+      <p><strong>Option 4: GitHub (for developers)</strong><br>If you’re comfortable with Markdown/HTML, you can fork our repository and create a pull request. See the <a href="#" class="text-paliaPrimary underline">GitHub repo</a> for details.</p>
+    </div>
+  </div>
+
+  <!-- Review Process & Timeline -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-hourglass-half text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">⏳ Review Process & Timeline</h2></div>
+    <ol class="list-decimal pl-5 space-y-1">
+      <li>Initial review by editor (1–3 business days).</li>
+      <li>If accepted, you’ll receive a confirmation and possible request for minor edits.</li>
+      <li>Guide is formatted and published on the appropriate sub‑page.</li>
+      <li>You’ll be notified when it’s live and given a direct link.</li>
+      <li>Major updates to your guide can be submitted as revisions.</li>
+    </ol>
+    <p class="mt-2 text-sm">Guides that are incomplete or off‑topic may be declined. You are welcome to resubmit after improvements.</p>
+  </div>
+
+  <!-- Rewards & Recognition -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-trophy text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">🏆 Contributor Rewards</h2></div>
+    <ul class="list-disc pl-5 space-y-1">
+      <li><strong>Credit line</strong> – Your name (and social link if desired) will appear at the top of the guide.</li>
+      <li><strong>Contributor badge</strong> – On your profile within our Discord community.</li>
+      <li><strong>Featured placement</strong> – Exceptional guides may be highlighted on the homepage.</li>
+      <li><strong>Monetary reward</strong> – For very large or complex submissions (e.g., complete interactive calculator), we offer a small honorarium (discussed case by case).</li>
+    </ul>
+  </div>
+
+  <!-- Submission Guidelines – Do's and Don'ts -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-check-circle text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">✅ Do's and Don'ts of Submissions</h2></div>
+    <div class="grid md:grid-cols-2 gap-4">
+      <div>
+        <span class="font-semibold text-paliaPrimary">DO:</span>
+        <ul class="list-disc pl-5 text-sm">
+          <li>Write in clear, simple English (translations welcome).</li>
+          <li>Include screenshots for visual guides.</li>
+          <li>Test your instructions in the current game version.</li>
+          <li>Cite sources if you use community data.</li>
+          <li>Be respectful and constructive.</li>
+        </ul>
+      </div>
+      <div>
+        <span class="font-semibold text-paliaPrimary">DON'T:</span>
+        <ul class="list-disc pl-5 text-sm">
+          <li>Plagiarize from official wiki or other sites.</li>
+          <li>Submit low‑effort or one‑sentence tips.</li>
+          <li>Include exploits or cheats.</li>
+          <li>Post affiliate links or ads.</li>
+          <li>Submit the same guide to multiple channels.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Editors -->
+  <div class="bg-paliaPrimary/5 rounded-2xl p-6 border border-paliaAccent/20">
+    <i class="fa fa-comments text-3xl text-paliaPrimary mb-2 block"></i>
+    <h3 class="text-xl font-bold mb-2">📢 Questions? Talk to an Editor</h3>
+    <p>If you’re unsure whether your idea fits, feel free to reach out before writing a full guide.</p>
+    <ul class="list-disc pl-5 mt-2 text-sm">
+      <li><strong>Discord:</strong> @EditorTeam (in #submissions channel)</li>
+      <li><strong>Email:</strong> <code class="bg-gray-100 px-2 py-1 rounded">editors@paliaguidehub.com</code></li>
+      <li><strong>Reddit:</strong> DM u/PaliaGuideHub</li>
+    </ul>
+    <div class="mt-5 text-center">
+      <a href="index.html" class="inline-block bg-paliaPrimary text-white px-6 py-2 rounded-full hover:bg-paliaPrimaryDeep transition">← Back to Main Hub</a>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-white/70 border-t border-paliaAccent/20 mt-12 py-6 text-center text-sm text-paliaText/70">
+  <p>Palia Guide Hub · Contributor Submissions · Your knowledge helps everyone</p>
+  <p class="mt-1"><i class="fa fa-leaf text-paliaPrimary"></i> Together we build the best guide</p>
+</footer>
+</body>
+</html>
