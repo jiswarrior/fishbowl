@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Quest Troubleshooting – Common Stuck Issues | Palia Guide Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paliaBg: '#fcf8f0',
+            paliaPrimary: '#7f9a6e',
+            paliaPrimaryDeep: '#5f7a4e',
+            paliaAccent: '#e2b181',
+            paliaText: '#3c2f2a',
+            paliaCard: '#ffffff',
+            paliaMuted: '#e9e1d4',
+          },
+          fontFamily: { 'sans': ['Inter', 'system-ui', 'Segoe UI', 'Noto Sans SC', 'sans-serif'] },
+          borderRadius: { 'xl': '1rem', '2xl': '1.5rem' },
+        }
+      }
+    }
+  </script>
+  <style>
+    body { scroll-behavior: smooth; }
+    .section-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .section-card:hover { transform: translateY(-3px); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body class="bg-paliaBg text-paliaText font-sans antialiased">
+
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-paliaAccent/20 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 lg:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+    <div class="flex items-center gap-3">
+      <div class="bg-paliaPrimary/10 p-2 rounded-2xl"><i class="fa fa-question-circle text-paliaPrimary text-2xl"></i></div>
+      <div>
+        <h1 class="text-xl md:text-2xl font-bold tracking-tight text-paliaPrimaryDeep">Quest Troubleshooting</h1>
+        <p class="text-xs text-paliaText/70">Fix stuck quests · Missing NPCs · Progress resets</p>
+      </div>
+    </div>
+    <a href="index.html" class="text-paliaPrimary hover:underline text-sm flex items-center gap-1"><i class="fa fa-arrow-left"></i> Back to Main Hub</a>
+  </div>
+</header>
+
+<main class="max-w-5xl mx-auto px-4 py-10 space-y-8">
+  <!-- Intro -->
+  <div class="bg-paliaCard rounded-2xl shadow-card p-6 md:p-8">
+    <div class="flex items-center gap-3 border-b border-paliaMuted pb-4 mb-5">
+      <i class="fa fa-wrench text-paliaPrimary text-3xl"></i>
+      <h2 class="text-2xl font-bold">Quick Fixes for Common Quest Problems</h2>
+    </div>
+    <p class="text-paliaText/80 leading-relaxed">Sometimes quests don't progress as expected – NPCs may not appear, required items won't spawn, or dialogue options are missing. This guide lists the most common pitfalls and step‑by‑step solutions to get you unstuck.</p>
+  </div>
+
+  <!-- Category 1: NPC Not Appearing -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-user-times text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">👤 NPC Not Showing Up</h2></div>
+    <ul class="list-disc pl-5 space-y-2">
+      <li><strong>Check the in‑game time:</strong> Many NPCs sleep or change locations. Use the map to see their current position. If it's night (after 22:00), most NPCs are indoors (Inn or their homes).</li>
+      <li><strong>Relog or wait for a full day cycle:</strong> Sometimes NPCs get stuck in a loop. Logging out and back in, or waiting 24 in‑game minutes (real time), resets their pathing.</li>
+      <li><strong>Complete prerequisite quests:</strong> Some NPCs won't appear until a previous quest is finished. Check your quest log for any incomplete tasks involving that character.</li>
+      <li><strong>Example – Hassian missing from his Grove:</strong> He moves to the Inn at night. Wait until 8:00 in‑game.</li>
+    </ul>
+  </div>
+
+  <!-- Category 2: Quest Item Not Spawning / Missing -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-cube text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">📦 Quest Item Not Spawning</h2></div>
+    <ul class="list-disc pl-5 space-y-2">
+      <li><strong>Daily reset:</strong> Some items respawn only after the daily reset (4:00 UTC). If you picked it up earlier, you must wait.</li>
+      <li><strong>Multiplayer interference:</strong> If another player recently looted the item, you may need to change servers (relog or travel to Bahari and back).</li>
+      <li><strong>Check your inventory / storage:</strong> You might have already picked it up and forgotten. Use search in storage chests.</li>
+      <li><strong>Read quest text carefully:</strong> Sometimes the item is not a physical pickup but requires crafting or interacting with a specific object (e.g., “collect ore” means mine it, not find a sparkle).</li>
+      <li><strong>Example – “Lost Locket” for Ashura’s quest:</strong> The locket spawns on the beach inside a clam. If not there, wait for next in‑game tide cycle (every 2 hours real).</li>
+    </ul>
+  </div>
+
+  <!-- Category 3: Dialogue / Quest Trigger Not Working -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-comments text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">💬 Dialogue or Trigger Not Appearing</h2></div>
+    <ul class="list-disc pl-5 space-y-2">
+      <li><strong>Missing friendship level:</strong> Many quests require a specific friendship level with the NPC. Check your relationship tab.</li>
+      <li><strong>Time of day lock:</strong> Some dialogues only happen at certain hours (e.g., “Ask Ashura about his past” only after 20:00).</li>
+      <li><strong>Already completed? Use “Esc” → “Quests” to see if it's already finished.</li>
+      <li><strong>Try talking to other NPCs first:</strong> Some quests are chained; you may need to talk to an intermediary before the target NPC reacts.</li>
+      <li><strong>Example – “Family Recipe” not starting:</strong> You must first give Badruu a loved gift (carrot) before he shares the recipe quest.</li>
+    </ul>
+  </div>
+
+  <!-- Category 4: Progress Not Updating (Kill/Craft/Collect) -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-pause-circle text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">📉 Progress Not Updating</h2></div>
+    <ul class="list-disc pl-5 space-y-2">
+      <li><strong>Ensure you use the correct tool/action:</strong> Example – “Catch a fish” requires a fishing rod, not a net.</li>
+      <li><strong>Star quality vs. normal:</strong> Some quests specify “star‑quality” item. If you use a normal one, it won't count.</li>
+      <li><strong>Leave the zone and return:</strong> Sometimes the server doesn't update the counter. Fast‑travel to another zone and back.</li>
+      <li><strong>Drop and re‑craft/pick up:</strong> For crafted items, try dropping the item from inventory and crafting a fresh one.</li>
+      <li><strong>Example – “Craft 5 furniture” not counting:</strong> Only items crafted after receiving the quest count. Pre‑existing items do not.</li>
+    </ul>
+  </div>
+
+  <!-- Category 5: Temple Puzzle Glitches -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-puzzle-piece text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🧩 Temple Puzzle Stuck</h2></div>
+    <ul class="list-disc pl-5 space-y-2">
+      <li><strong>Reset the puzzle room:</strong> Leave the temple entirely (go outside) and re‑enter. Most puzzles reset to their initial state.</li>
+      <li><strong>Missing a hidden switch:</strong> Look for pressure plates, torches to light, or movable mirrors. Use your pickaxe/arrow to interact.</li>
+      <li><strong>Multiplayer required:</strong> Some puzzles need two players to stand on plates simultaneously. Use the “Request Help” emote or ask in chat.</li>
+      <li><strong>Check for day/night cycles:</strong> A few temple puzzles only work at specific times (e.g., Temple of Waves water level depends on tides).</li>
+      <li><strong>Example – Temple of Gales air vents not working:</strong> You must activate the switch on the lower floor first. It's easy to miss.</li>
+    </ul>
+  </div>
+
+  <!-- Category 6: General Reset / Relog Advice -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-refresh text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🔄 The Universal Fix: Relog & Reset</h2></div>
+    <p>When nothing else works, try these steps in order:</p>
+    <ol class="list-decimal pl-5 space-y-1">
+      <li>Save and quit to character selection, then log back in.</li>
+      <li>Fast‑travel to your home plot, then back to the zone.</li>
+      <li>Wait for the next daily reset (4:00 UTC) – many quests soft‑lock resolve after reset.</li>
+      <li>If still stuck, submit a bug report via the in‑game menu (Esc → Support) with screenshot and description.</li>
+    </ol>
+    <div class="bg-paliaPrimary/10 p-2 rounded mt-2 text-sm">💡 Note: Palia is in active development; occasional quest bugs are fixed in patches. Check official Discord for known issues.</div>
+  </div>
+
+  <!-- Common Specific Queries (FAQ style) -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-list-alt text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">📌 Specific Quest Stuck Examples</h2></div>
+    <ul class="list-disc pl-5 space-y-2">
+      <li><strong>“Your Little Plot of Land” – no plot marker:</strong> Talk to Kenli again. He gives you a map. Sometimes you need to travel to the plot location manually (east of village).</li>
+      <li><strong>“A New Frontier” – bridge not repairable:</strong> You need 5 copper bars, but the crafting interface may not show the option. Restart the game, or craft bars at a furnace and talk to Hodari again.</li>
+      <li><strong>“Temple of Waves” – water won't drain:</strong> The valves must be turned in order (red, blue, green). If you mess up, leave and re‑enter the temple to reset.</li>
+      <li><strong>Romance quest not starting after giving pin:</strong> Wait 24 real hours; the pin needs to be “accepted” on the next day.</li>
+    </ul>
+  </div>
+
+  <!-- Where to Get Help -->
+  <div class="bg-paliaPrimary/5 rounded-2xl p-6 border border-paliaAccent/20">
+    <i class="fa fa-comments-o text-3xl text-paliaPrimary mb-2 block"></i>
+    <h3 class="text-xl font-bold mb-2">🗣️ Community Help Resources</h3>
+    <ul class="list-disc pl-5 space-y-1 text-paliaText/80">
+      <li><strong>Official Palia Discord:</strong> #help channel – players and moderators respond quickly.</li>
+      <li><strong>Reddit r/Palia:</strong> Search for your quest name; many solutions posted.</li>
+      <li><strong>Palia Wiki (fandom/wiki.gg):</strong> Detailed quest walkthroughs with maps.</li>
+      <li><strong>In‑game “Ask for Help” feature:</strong> Type “/help [quest name]” in chat to request assistance from nearby players.</li>
+    </ul>
+    <div class="mt-5 text-center">
+      <a href="index.html" class="inline-block bg-paliaPrimary text-white px-6 py-2 rounded-full hover:bg-paliaPrimaryDeep transition">← Back to Main Hub</a>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-white/70 border-t border-paliaAccent/20 mt-12 py-6 text-center text-sm text-paliaText/70">
+  <p>Palia Guide Hub · Quest Troubleshooting · Never stay stuck for long</p>
+  <p class="mt-1"><i class="fa fa-leaf text-paliaPrimary"></i> Patience and these tips will see you through</p>
+</footer>
+</body>
+</html>

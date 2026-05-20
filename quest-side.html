@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Side Quests & Bulletin Dailies – Triggers & Rewards | Palia Guide Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paliaBg: '#fcf8f0',
+            paliaPrimary: '#7f9a6e',
+            paliaPrimaryDeep: '#5f7a4e',
+            paliaAccent: '#e2b181',
+            paliaText: '#3c2f2a',
+            paliaCard: '#ffffff',
+            paliaMuted: '#e9e1d4',
+          },
+          fontFamily: { 'sans': ['Inter', 'system-ui', 'Segoe UI', 'Noto Sans SC', 'sans-serif'] },
+          borderRadius: { 'xl': '1rem', '2xl': '1.5rem' },
+        }
+      }
+    }
+  </script>
+  <style>
+    body { scroll-behavior: smooth; }
+    .section-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .section-card:hover { transform: translateY(-3px); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body class="bg-paliaBg text-paliaText font-sans antialiased">
+
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-paliaAccent/20 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 lg:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+    <div class="flex items-center gap-3">
+      <div class="bg-paliaPrimary/10 p-2 rounded-2xl"><i class="fa fa-tasks text-paliaPrimary text-2xl"></i></div>
+      <div>
+        <h1 class="text-xl md:text-2xl font-bold tracking-tight text-paliaPrimaryDeep">Side Quests & Dailies</h1>
+        <p class="text-xs text-paliaText/70">NPC quests · Bulletin board · Triggers · Rewards</p>
+      </div>
+    </div>
+    <a href="index.html" class="text-paliaPrimary hover:underline text-sm flex items-center gap-1"><i class="fa fa-arrow-left"></i> Back to Main Hub</a>
+  </div>
+</header>
+
+<main class="max-w-6xl mx-auto px-4 py-10 space-y-8">
+  <!-- Intro -->
+  <div class="bg-paliaCard rounded-2xl shadow-card p-6 md:p-8">
+    <div class="flex items-center gap-3 border-b border-paliaMuted pb-4 mb-5">
+      <i class="fa fa-list-ul text-paliaPrimary text-3xl"></i>
+      <h2 class="text-2xl font-bold">All Non‑Main Quests</h2>
+    </div>
+    <p class="text-paliaText/80 leading-relaxed">Side quests flesh out the world of Palia – you’ll learn about each NPC’s personality, unlock exclusive rewards, and often gain large amounts of Renown. This guide lists every known side quest (by NPC) and daily bulletin board tasks, including how to trigger them.</p>
+  </div>
+
+  <!-- Bulletin Board Daily Quests -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-bullhorn text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">📌 Bulletin Board Dailies (Kilima Village)</h2></div>
+    <p>Next to the Town Hall, there is a bulletin board that refreshes daily (4:00 UTC). It offers 3–5 simple fetch or delivery quests. These are optional but give quick gold and Renown.</p>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50">
+          <tr><th class="px-2 py-2">Quest Name</th><th class="px-2 py-2">Objective</th><th class="px-2 py-2">Reward</th><th class="px-2 py-2">Trigger / Notes</th></tr>
+        </thead>
+        <tbody class="divide-y">
+          <tr><td class="px-2 py-1">Lost Recipe</th><td class="px-2 py-1">Deliver 1 Sweet Leaf to Reth</th><td class="px-2 py-1">100g, 10 Renown</th><td class="px-2 py-1">Always available</td></tr>
+          <tr><td class="px-2 py-1">Missing Hammer</th><td class="px-2 py-1">Find Sifuu’s hammer near the forge</th><td class="px-2 py-1">150g, 15 Renown</th><td class="px-2 py-1">Spawns randomly</td></tr>
+          <tr><td class="px-2 py-1">Shiny Bug</th><td class="px-2 py-1">Catch a Firefly (night) for Auni</th><td class="px-2 py-1">200g, 20 Renown</th><td class="px-2 py-1">Summer only</td></tr>
+          <tr><td class="px-2 py-1">Fish Delivery</th><td class="px-2 py-1">Catch a Kilima Perch for Einar</th><td class="px-2 py-1">100g, 10 Renown</th><td class="px-2 py-1">Common</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="mt-2 text-sm">Bulletin quests are a great source of early gold and easy friendship points (turning in to the NPC gives a small reputation boost as well).</p>
+  </div>
+
+  <!-- NPC Side Quests – Friendship Level 2+ -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-users text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🤝 NPC Side Quests (Unlocked by Friendship Levels)</h2></div>
+    <p>Each NPC has 2–3 personal quests, typically unlocked at Friendship Level 2 and Level 3. These are often multi‑step and reward unique items.</p>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50">
+          <tr><th class="px-2 py-2">NPC</th><th class="px-2 py-2">Quest Name</th><th class="px-2 py-2">Trigger (Friendship Lv)</th><th class="px-2 py-2">Objective</th><th class="px-2 py-2">Reward</th></tr>
+        </thead>
+        <tbody class="divide-y">
+          <tr><td class="px-2 py-1">Ashura</td><td class="px-2 py-1">“Ashura’s Old Friend”</td><td class="px-2 py-1">Lv 2</td><td class="px-2 py-1">Find a lost locket in Bahari Bay</td><td class="px-2 py-1">200g, “Ashura’s Stew” recipe</td></tr>
+          <tr><td class="px-2 py-1">Badruu</td><td class="px-2 py-1">“Family Recipe”</td><td class="px-2 py-1">Lv 2</td><td class="px-2 py-1">Collect 5 carrots, 5 onions, talk to Delaila</td><td class="px-2 py-1">Quality Fertilizer ×10</td></tr>
+          <tr><td class="px-2 py-1">Einar</td><td class="px-2 py-1">“A Strange Bait”</td><td class="px-2 py-1">Lv 2</td><td class="px-2 py-1">Catch 3 glowing fish at night</td><td class="px-2 py-1">Glow Worm ×20</td></tr>
+          <tr><td class="px-2 py-1">Hassian</td><td class="px-2 py-1">“The Hunter’s Path”</td><td class="px-2 py-1">Lv 2</td><td class="px-2 py-1">Hunt 5 magical creatures</td><td class="px-2 py-1">Slowdown Arrow recipe</td></tr>
+          <tr><td class="px-2 py-1">Hodari</td><td class="px-2 py-1">“Deeper Below”</td><td class="px-2 py-1">Lv 2</td><td class="px-2 py-1">Mine 20 iron ore</td><td class="px-2 py-1">Ore Compressor blueprint</td></tr>
+          <tr><td class="px-2 py-1">Kenyatta</td><td class="px-2 py-1">“The Mayor’s Burden”</td><td class="px-2 py-1">Lv 2</td><td class="px-2 py-1">Deliver 3 notes to Kenli, Reth, Ashura</td><td class="px-2 py-1”>Celebration Cake ×5</td></tr>
+          <tr><td class="px-2 py-1">Reth</td><td class="px-2 py-1">“Missing Ingredient”</td><td class="px-2 py-1">Lv 2</td><td class="px-2 py-1">Find rare spice in Bahari caves</td><td class="px-2 py-1">Chef’s Hat (cosmetic)</td></tr>
+          <tr><td class="px-2 py-1">Tamala</td><td class="px-2 py-1">“The Alchemist’s Apprentice”</td><td class="px-2 py-1">Lv 2</td><td class="px-2 py-1">Collect 5 dawn petals and 3 glowing mushrooms</td><td class="px-2 py-1">Brewing Stand blueprint</td></tr>
+          <tr><td class="px-2 py-1">Tish</td><td class="px-2 py-1">“Tish’s Dream”</td><td class="px-2 py-1">Lv 2</td><td class="px-2 py-1">Craft a Copper Lamp for her shop</td><td class="px-2 py-1">Furniture Coin ×10</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Romance‑Specific Quests (after giving Romance Pin) -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-heart text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">💘 Romance Side Quests</h2></div>
+    <p>After starting romance with an NPC (Friendship Lv 3 + Romance Pin), you unlock additional romantic quests at each romance level. Rewards are often unique furniture or emotes.</p>
+    <ul class="list-disc pl-5 space-y-1">
+      <li><strong>Ashura</strong> – “Dinner for Two” → rewards Ashura’s Locket (wall decor).</li>
+      <li><strong>Reth</strong> – “Cooking Together” → rewards “Sharing Meal” emote.</li>
+      <li><strong>Kenyatta</strong> – “A Royal Evening” → rewards Kenyatta’s Portrait (interactive).</li>
+      <li><strong>Hassian</strong> – “Under the Stars” → rewards Wolf Plushie.</li>
+    </ul>
+    <p class="mt-1 text-sm">Romance quests are repeatable? No, each is one-time but gives large Renown (100–300).</p>
+  </div>
+
+  <!-- Skill‑Gated Side Quests (from guild NPCs) -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-level-up text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">📈 Skill‑Gated Quests (Guild Representatives)</h2></div>
+    <p>When you reach certain skill levels, the corresponding guild NPC will offer a special quest. These are often about crafting a master-level item.</p>
+    <ul class="list-disc pl-5 space-y-1">
+      <li><strong>Gardening Lv 10:</strong> Badruu asks you to craft a Seed Maker → reward +10 Gardening Coins.</li>
+      <li><strong>Fishing Lv 10:</strong> Einar wants a Palium Rod → reward Fisherman’s outfit.</li>
+      <li><strong>Mining Lv 10:</strong> Hodari requests 10 Palium Ore → reward Miner’s Helmet glider skin.</li>
+      <li><strong>Furniture Lv 10:</strong> Tish wants a Palium Mirror → reward “Master Crafter” apron.</li>
+    </ul>
+  </div>
+
+  <!-- Hidden Trigger Quests (Environmental) -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-question-circle text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🕵️ Hidden Trigger Quests (Exploration)</h2></div>
+    <ul class="list-disc pl-5 space-y-1">
+      <li><strong>“Mysterious Chest”</strong> – Open a locked chest in the Bahari ruins (requires 3 gears found around the map). Reward: 200 Renown, rare furniture.</li>
+      <li><strong>“The Watcher’s Note”</strong> – Find 5 hidden notes in Kilima (locations: inn roof, tree hollow, well). Reward: “Conspiracy Theorist” title.</li>
+      <li><strong>“Ancient Technology”</strong> – Insert 3 power cells into the machine near the Temple of Roots. Reward: Ancient Hoe upgrade.</li>
+    </ul>
+  </div>
+
+  <!-- Trigger Conditions Summary -->
+  <div class="bg-paliaPrimary/5 rounded-2xl p-6 border border-paliaAccent/20">
+    <i class="fa fa-exclamation-triangle text-3xl text-paliaPrimary mb-2 block"></i>
+    <h3 class="text-xl font-bold mb-2">⚠️ Important Trigger Notes</h3>
+    <ul class="list-disc pl-5 space-y-1 text-paliaText/80">
+      <li><strong>Time of day:</strong> Some quests only appear during specific hours (e.g., “Night Watch” quest from Ashura appears after 20:00).</li>
+      <li><strong>Weather:</strong> Rain‑exclusive quests (e.g., “Snail Trail” from Auni) require rainy weather.</li>
+      <li><strong>Skill prerequisites:</strong> Many quests won’t appear until you reach a certain skill level (e.g., Lv 5 Gardening to get Badruu’s second quest).</li>
+      <li><strong>Completed previous quests:</strong> NPC quests are sequential – finish Lv 2 friendship quest before Lv 3 will appear.</li>
+    </ul>
+    <div class="mt-5 text-center">
+      <a href="index.html" class="inline-block bg-paliaPrimary text-white px-6 py-2 rounded-full hover:bg-paliaPrimaryDeep transition">← Back to Main Hub</a>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-white/70 border-t border-paliaAccent/20 mt-12 py-6 text-center text-sm text-paliaText/70">
+  <p>Palia Guide Hub · Side Quests & Dailies · Don’t miss a single story</p>
+  <p class="mt-1"><i class="fa fa-leaf text-paliaPrimary"></i> Every villager has a story to share</p>
+</footer>
+</body>
+</html>
