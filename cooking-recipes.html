@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Complete Cooking Recipes – Ingredients, Focus, Value, Gifts | Palia Guide Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paliaBg: '#fcf8f0',
+            paliaPrimary: '#7f9a6e',
+            paliaPrimaryDeep: '#5f7a4e',
+            paliaAccent: '#e2b181',
+            paliaText: '#3c2f2a',
+            paliaCard: '#ffffff',
+            paliaMuted: '#e9e1d4',
+          },
+          fontFamily: { 'sans': ['Inter', 'system-ui', 'Segoe UI', 'Noto Sans SC', 'sans-serif'] },
+          borderRadius: { 'xl': '1rem', '2xl': '1.5rem' },
+        }
+      }
+    }
+  </script>
+  <style>
+    body { scroll-behavior: smooth; }
+    .section-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .section-card:hover { transform: translateY(-3px); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body class="bg-paliaBg text-paliaText font-sans antialiased">
+
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-paliaAccent/20 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 lg:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+    <div class="flex items-center gap-3">
+      <div class="bg-paliaPrimary/10 p-2 rounded-2xl"><i class="fa fa-book text-paliaPrimary text-2xl"></i></div>
+      <div>
+        <h1 class="text-xl md:text-2xl font-bold tracking-tight text-paliaPrimaryDeep">Complete Recipe Database</h1>
+        <p class="text-xs text-paliaText/70">Ingredients · Focus · Value · NPC Gifts</p>
+      </div>
+    </div>
+    <a href="index.html" class="text-paliaPrimary hover:underline text-sm flex items-center gap-1"><i class="fa fa-arrow-left"></i> Back to Main Hub</a>
+  </div>
+</header>
+
+<main class="max-w-7xl mx-auto px-4 py-10 space-y-8">
+  <!-- Intro -->
+  <div class="bg-paliaCard rounded-2xl shadow-card p-6 md:p-8">
+    <div class="flex items-center gap-3 border-b border-paliaMuted pb-4 mb-5">
+      <i class="fa fa-list-ul text-paliaPrimary text-3xl"></i>
+      <h2 class="text-2xl font-bold">Every Dish You Can Cook</h2>
+    </div>
+    <p class="text-paliaText/80 leading-relaxed">This is the complete list of cookable recipes in Palia, sorted by cooking station. For each dish, you’ll find required ingredients, Focus restored (standard & star quality), sell prices, and which NPCs love receiving it as a gift. Use this guide to plan your cooking for profit, XP, or friendship.</p>
+  </div>
+
+  <!-- Campfire Recipes -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-fire text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🔥 Campfire Recipes</h2></div>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50">
+          <tr><th class="px-2 py-2">Dish</th><th class="px-2 py-2">Ingredients</th><th class="px-2 py-2">Focus (Std/★)</th><th class="px-2 py-2">Sell Price (Std/★)</th><th class="px-2 py-2">Loved By NPC</th></tr>
+        </thead>
+        <tbody class="divide-y">
+          <tr><td class="px-2 py-1">Grilled Fish</td><td class="px-2 py-1">Any Fish (1)</td><td class="px-2 py-1">60 / 90</td><td class="px-2 py-1">50–100 / 75–150</td><td class="px-2 py-1">Einar, Ashura</td></tr>
+          <tr><td class="px-2 py-1">Roasted Mushroom</td><td class="px-2 py-1">Mushroom (1)</td><td class="px-2 py-1">40 / 60</td><td class="px-2 py-1">30 / 45</td><td class="px-2 py-1">Tamala, Sifuu</td></tr>
+          <tr><td class="px-2 py-1">Campfire Veggies</td><td class="px-2 py-1">Carrot, Onion, Spice</td><td class="px-2 py-1">80 / 120</td><td class="px-2 py-1">60 / 90</td><td class="px-2 py-1">Badruu, Delaila</td></tr>
+          <tr><td class="px-2 py-1">Baked Fish</td><td class="px-2 py-1">Fish (1), Spice</td><td class="px-2 py-1">70 / 105</td><td class="px-2 py-1">65 / 98</td><td class="px-2 py-1">Einar</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Stove Recipes -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-stove text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🍳 Stove Recipes</h2></div>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50">
+          <tr><th class="px-2 py-2">Dish</th><th class="px-2 py-2">Ingredients</th><th class="px-2 py-2">Focus (Std/★)</th><th class="px-2 py-2">Sell Price (Std/★)</th><th class="px-2 py-2">Loved By NPC</th></tr>
+        </thead>
+        <tbody class="divide-y">
+          <tr><td class="px-2 py-1">Hearty Vegetable Soup</td><td class="px-2 py-1">Carrot, Onion, Mushroom, Spice</td><td class="px-2 py-1">150 / 225</td><td class="px-2 py-1">180 / 270</td><td class="px-2 py-1">Badruu, Ashura</td></tr>
+          <tr><td class="px-2 py-1">Sernuk Stew</td><td class="px-2 py-1">Sernuk Meat, Carrot, Spice</td><td class="px-2 py-1">120 / 180</td><td class="px-2 py-1">150 / 225</td><td class="px-2 py-1">Hassian, Sifuu</td></tr>
+          <tr><td class="px-2 py-1">Mushroom Risotto</td><td class="px-2 py-1">Mushroom, Rice, Butter, Spice</td><td class="px-2 py-1">140 / 210</td><td class="px-2 py-1">200 / 300</td><td class="px-2 py-1">Tamala, Reth</td></tr>
+          <tr><td class="px-2 py-1">Fish Stew</td><td class="px-2 py-1">Fish (1), Carrot, Onion, Spice</td><td class="px-2 py-1">130 / 195</td><td class="px-2 py-1">170 / 255</td><td class="px-2 py-1">Einar, Ashura</td></tr>
+          <tr><td class="px-2 py-1">Loaded Potato Soup</td><td class="px-2 py-1">Potato, Milk, Cheese, Spice</td><td class="px-2 py-1">160 / 240</td><td class="px-2 py-1">210 / 315</td><td class="px-2 py-1">Delaila, Kenyatta</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Oven Recipes -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-thermometer-full text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🥧 Oven Recipes</h2></div>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50">
+          <tr><th class="px-2 py-2">Dish</th><th class="px-2 py-2">Ingredients</th><th class="px-2 py-2">Focus (Std/★)</th><th class="px-2 py-2">Sell Price (Std/★)</th><th class="px-2 py-2">Loved By NPC</th></tr>
+        </thead>
+        <tbody class="divide-y">
+          <tr><td class="px-2 py-1">Celebration Cake</td><td class="px-2 py-1">Wheat, Egg, Butter, Sweet Leaf, Blueberry</td><td class="px-2 py-1">300 / 450</td><td class="px-2 py-1">600 / 900</td><td class="px-2 py-1">Reth, Tish, Kenyatta</td></tr>
+          <tr><td class="px-2 py-1">Mushroom Quiche</td><td class="px-2 py-1">Mushroom, Egg, Milk, Wheat</td><td class="px-2 py-1">175 / 262</td><td class="px-2 py-1">220 / 330</td><td class="px-2 py-1">Tamala, Badruu</td></tr>
+          <tr><td class="px-2 py-1">Apple Pie</td><td class="px-2 py-1">Apple, Wheat, Butter, Sweet Leaf</td><td class="px-2 py-1">180 / 270</td><td class="px-2 py-1">250 / 375</td><td class="px-2 py-1">Ashura, Delaila</td></tr>
+          <tr><td class="px-2 py-1">Bread Loaf</td><td class="px-2 py-1">Wheat, Yeast, Water</td><td class="px-2 py-1">80 / 120</td><td class="px-2 py-1">100 / 150</td><td class="px-2 py-1">Reth, Hodari</td></tr>
+          <tr><td class="px-2 py-1">Blueberry Pie</td><td class="px-2 py-1">Blueberry, Wheat, Butter, Sweet Leaf</td><td class="px-2 py-1">200 / 300</td><td class="px-2 py-1">300 / 450</td><td class="px-2 py-1">Tish, Kenyatta</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Mixer & Prep Station Recipes -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-mixcloud text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🥄 Mixer & Prep Station Recipes</h2></div>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50">
+          <tr><th class="px-2 py-2">Dish</th><th class="px-2 py-2">Ingredients</th><th class="px-2 py-2">Focus (Std/★)</th><th class="px-2 py-2">Sell Price (Std/★)</th><th class="px-2 py-2">Loved By NPC</th></tr>
+        </thead>
+        <tbody class="divide-y">
+          <tr><td class="px-2 py-1">Fruit Salad</td><td class="px-2 py-1">Apple, Blueberry, Sweet Leaf</td><td class="px-2 py-1">90 / 135</td><td class="px-2 py-1">110 / 165</td><td class="px-2 py-1">Reth, Tish</td></tr>
+          <tr><td class="px-2 py-1">Stuffed Mushrooms</td><td class="px-2 py-1">Mushroom, Cheese, Spice</td><td class="px-2 py-1">110 / 165</td><td class="px-2 py-1">140 / 210</td><td class="px-2 py-1">Tamala, Reth</td></tr>
+          <tr><td class="px-2 py-1">Meat Stir-fry</td><td class="px-2 py-1">Sernuk Meat, Mushroom, Spice, Rice</td><td class="px-2 py-1">160 / 240</td><td class="px-2 py-1">190 / 285</td><td class="px-2 py-1">Hassian, Sifuu</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Best Gifts Reference -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-gift text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🎁 NPC Favorite Dishes (Quick Lookup)</h2></div>
+    <div class="grid md:grid-cols-3 gap-3 text-sm">
+      <div><span class="font-semibold">Ashura:</span> Hearty Vegetable Soup, Apple Pie</div>
+      <div><span class="font-semibold">Badruu:</span> Hearty Vegetable Soup, Mushroom Quiche</div>
+      <div><span class="font-semibold">Delaila:</span> Loaded Potato Soup, Apple Pie</div>
+      <div><span class="font-semibold">Einar:</span> Grilled Fish, Fish Stew, Baked Fish</div>
+      <div><span class="font-semibold">Hassian:</span> Sernuk Stew, Meat Stir-fry</div>
+      <div><span class="font-semibold">Hodari:</span> Bread Loaf</div>
+      <div><span class="font-semibold">Kenyatta:</span> Celebration Cake, Blueberry Pie, Loaded Potato Soup</div>
+      <div><span class="font-semibold">Reth:</span> Celebration Cake, Bread Loaf, Stuffed Mushrooms</div>
+      <div><span class="font-semibold">Sifuu:</span> Roasted Mushroom, Sernuk Stew, Meat Stir-fry</div>
+      <div><span class="font-semibold">Tamala:</span> Roasted Mushroom, Mushroom Risotto, Stuffed Mushrooms</div>
+      <div><span class="font-semibold">Tish:</span> Celebration Cake, Blueberry Pie, Fruit Salad</div>
+    </div>
+    <p class="text-sm mt-3 text-paliaText/70">Gifting a loved dish gives double friendship points compared to neutral items. Star‑quality dishes give an additional 25% bonus.</p>
+  </div>
+
+  <!-- Profitability Ranking -->
+  <div class="bg-paliaPrimary/5 rounded-2xl p-6 border border-paliaAccent/20">
+    <i class="fa fa-money text-3xl text-paliaPrimary mb-2 block"></i>
+    <h3 class="text-xl font-bold mb-2">💰 Most Profitable Dishes for Selling</h3>
+    <ol class="list-decimal pl-5 space-y-1">
+      <li><strong>Celebration Cake (★)</strong> – 900 gold, high ingredient cost but best profit per dish.</li>
+      <li><strong>Blueberry Pie (★)</strong> – 450 gold, simpler ingredients.</li>
+      <li><strong>Mushroom Risotto (★)</strong> – 300 gold, easy to mass-produce if you grow rice.</li>
+      <li><strong>Hearty Vegetable Soup (★)</strong> – 270 gold, great for early game.</li>
+      <li><strong>Apple Pie (★)</strong> – 375 gold, requires apple trees (take time to grow).</li>
+    </ol>
+    <p class="text-sm mt-2">For pure gold per hour, focus on Celebration Cake if you have blueberries and wheat. Otherwise, Hearty Vegetable Soup is the best balance of ingredients and profit.</p>
+    <div class="mt-5 text-center">
+      <a href="index.html" class="inline-block bg-paliaPrimary text-white px-6 py-2 rounded-full hover:bg-paliaPrimaryDeep transition">← Back to Main Hub</a>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-white/70 border-t border-paliaAccent/20 mt-12 py-6 text-center text-sm text-paliaText/70">
+  <p>Palia Guide Hub · Complete Recipe Database · Cook, gift, and profit</p>
+  <p class="mt-1"><i class="fa fa-leaf text-paliaPrimary"></i> The best meals build friendships and fortunes</p>
+</footer>
+</body>
+</html>

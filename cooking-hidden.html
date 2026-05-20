@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Hidden Recipes & Star-Quality Cooking | Palia Guide Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paliaBg: '#fcf8f0',
+            paliaPrimary: '#7f9a6e',
+            paliaPrimaryDeep: '#5f7a4e',
+            paliaAccent: '#e2b181',
+            paliaText: '#3c2f2a',
+            paliaCard: '#ffffff',
+            paliaMuted: '#e9e1d4',
+          },
+          fontFamily: { 'sans': ['Inter', 'system-ui', 'Segoe UI', 'Noto Sans SC', 'sans-serif'] },
+          borderRadius: { 'xl': '1rem', '2xl': '1.5rem' },
+        }
+      }
+    }
+  </script>
+  <style>
+    body { scroll-behavior: smooth; }
+    .section-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .section-card:hover { transform: translateY(-3px); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body class="bg-paliaBg text-paliaText font-sans antialiased">
+
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-paliaAccent/20 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 lg:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+    <div class="flex items-center gap-3">
+      <div class="bg-paliaPrimary/10 p-2 rounded-2xl"><i class="fa fa-secret text-paliaPrimary text-2xl"></i></div>
+      <div>
+        <h1 class="text-xl md:text-2xl font-bold tracking-tight text-paliaPrimaryDeep">Hidden Recipes & Star Quality</h1>
+        <p class="text-xs text-paliaText/70">Secret dishes · Unlock conditions · Consistent ★ production</p>
+      </div>
+    </div>
+    <a href="index.html" class="text-paliaPrimary hover:underline text-sm flex items-center gap-1"><i class="fa fa-arrow-left"></i> Back to Main Hub</a>
+  </div>
+</header>
+
+<main class="max-w-5xl mx-auto px-4 py-10 space-y-8">
+  <!-- Intro -->
+  <div class="bg-paliaCard rounded-2xl shadow-card p-6 md:p-8">
+    <div class="flex items-center gap-3 border-b border-paliaMuted pb-4 mb-5">
+      <i class="fa fa-star-o text-paliaPrimary text-3xl"></i>
+      <h2 class="text-2xl font-bold">Unlock the Rarest Dishes</h2>
+    </div>
+    <p class="text-paliaText/80 leading-relaxed">Some recipes aren’t available at the workbench by default. They require completing certain quests, reaching high friendship levels, or discovering hidden locations. This guide reveals every known hidden recipe and gives you pro strategies to consistently cook star‑quality (★) versions for maximum profit and NPC gifts.</p>
+  </div>
+
+  <!-- Hidden Recipes List -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-lock text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🔐 Hidden Recipes & How to Unlock</h2></div>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50">
+          <tr><th class="px-3 py-2">Dish</th><th class="px-3 py-2">Unlock Condition</th><th class="px-3 py-2">Ingredients (Special)</th><th class="px-3 py-2">Focus / Value</th></tr>
+        </thead>
+        <tbody class="divide-y">
+          <tr><td class="px-3 py-2">Reth’s Special Stew</td><td class="px-3 py-2">Friendship Level 4 with Reth + complete his personal quest “Family Recipe”</td><td class="px-3 py-2">Sernuk Meat, Spice, Onion, Secret Herb (quest item)</td><td class="px-3 py-2">200 Focus, 400 gold (★ 300/600)</td></tr>
+          <tr><td class="px-3 py-2">Einar’s Bait Soup</td><td class="px-3 py-2">Catch all 5 legendary fish (achievement reward)</td><td class="px-3 py-2">Legendary Fish (1), Glow Worm, Seaweed</td><td class="px-3 py-2">250 Focus, 800 gold (★ 375/1200)</td></tr>
+          <tr><td class="px-3 py-2">Ashura’s Hearty Roast</td><td class="px-3 py-2">Reach Friendship Level 5 with Ashura + give him a Golden Apple</td><td class="px-3 py-2">Sernuk Meat, Potato, Carrot, Golden Apple</td><td class="px-3 py-2">180 Focus, 350 gold (★ 270/525)</td></tr>
+          <tr><td class="px-3 py-2">Moonlight Cake</td><td class="px-3 py-2">Find the recipe in a hidden chest in Bahari Bay at midnight (2:00 – 3:00 in-game)</td><td class="px-3 py-2">Wheat, Blueberry, Moonstone Dust (rare mining drop), Egg</td><td class="px-3 py-2">350 Focus, 1000 gold (★ 525/1500)</td></tr>
+          <tr><td class="px-3 py-2">Tish’s Flower Tea</td><td class="px-3 py-2">Gift Tish 5★ Blueberry Pies and reach Romance Level 2</td><td class="px-3 py-2">Dawn Petals (forage at 5 AM), Sweet Leaf, Water</td><td class="px-3 py-2">80 Focus, 100 gold (★ 120/150)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="mt-3 text-sm">These recipes are not required for skill mastery, but they offer unique Focus values and are loved by specific NPCs. Some are excellent for selling due to high base value.</p>
+  </div>
+
+  <!-- Star Quality Mechanics -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-star text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">⭐ How Star Quality Works</h2></div>
+    <p>Star quality (★) dishes have a blue border and provide <strong>50% more Focus and 50% higher sell price</strong>. Your chance to produce a star dish depends on three factors:</p>
+    <ul class="list-disc pl-5 space-y-1 mt-2">
+      <li><strong>Minigame performance</strong> – Getting “Perfect” on every step gives a base +40% star chance.</li>
+      <li><strong>Current Focus percentage</strong> – At 100% Focus, you gain an extra +30% star chance.</li>
+      <li><strong>Cooking station upgrade level</strong> – Iron or Palium stations add +10% to +25% star chance.</li>
+    </ul>
+    <div class="bg-paliaPrimary/10 p-3 rounded-xl mt-3 text-sm">
+      📊 <strong>Example:</strong> Perfect minigames (40%) + 100% Focus (30%) + Palium Oven (25%) = 95% star chance. Almost guaranteed!
+    </div>
+  </div>
+
+  <!-- How to Consistently Get Star Dishes -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-check-circle-o text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">✅ Proven Methods for ★ Consistency</h2></div>
+    <ol class="list-decimal pl-5 space-y-2">
+      <li><strong>Always cook with full Focus</strong> – Eat a small meal (e.g., Apple) before starting a cooking session. Never cook when your Focus bar is below 80%.</li>
+      <li><strong>Use upgraded stations</strong> – Craft Copper Stove/Oven as soon as possible, then Iron, then Palium. Each upgrade significantly widens perfect zones.</li>
+      <li><strong>Practice the same recipe repeatedly</strong> – Muscle memory reduces mistakes. Cook the same dish 20–30 times in a row.</li>
+      <li><strong>Cook in multiplayer</strong> – With 2+ players, the “group synergy” bonus adds +20% star chance if all steps are completed without error.</li>
+      <li><strong>Use Focus-boosting furniture</strong> – Place the “Cozy Kitchen” set (3 pieces) near your stove/oven for a hidden +10% star chance.</li>
+    </ol>
+  </div>
+
+  <!-- Star Quality vs. Golden Star (Myth?) -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-diamond text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">✨ Golden Star Dishes – Real or Legend?</h2></div>
+    <p>There are rumors of “Golden Star” dishes (golden border) with 100% extra Focus and double sell price. According to game data, these exist but are extremely rare. They can only occur when:</p>
+    <ul class="list-disc pl-5 space-y-1">
+      <li>All minigame steps are “Perfect” (not just success)</li>
+      <li>Focus is exactly 100% (not 99%) at the moment of each step</li>
+      <li>Cooking station is Palium tier</li>
+      <li>You are cooking during a real‑world in‑game “lucky hour” (random event, very rare)</li>
+    </ul>
+    <p class="mt-2 text-sm">Golden Star dishes are not required for any achievement, but they are collector’s items. If you get one, consider saving it for a special occasion or selling it to Zeki for a huge price.</p>
+  </div>
+
+  <!-- Best Recipes for Star Farming -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-tasks text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🏆 Top 3 Recipes for Star Quality Farming</h2></div>
+    <div class="grid md:grid-cols-3 gap-3">
+      <div class="border p-3 rounded">
+        <h3 class="font-bold text-center">🥣 Hearty Vegetable Soup</h3>
+        <p class="text-xs">Cheapest ingredients, easy minigames. ★ version sells for 270 gold. Best for early star farming.</p>
+      </div>
+      <div class="border p-3 rounded">
+        <h3 class="font-bold text-center">🍰 Celebration Cake</h3>
+        <p class="text-xs">High value (★ = 900 gold). Requires practice but great for profit once mastered.</p>
+      </div>
+      <div class="border p-3 rounded">
+        <h3 class="font-bold text-center">🥧 Apple Pie</h3>
+        <p class="text-xs">Medium difficulty. ★ sells for 375 gold. Apples are passive from trees.</p>
+      </div>
+    </div>
+    <p class="mt-3 text-sm">Recommendation: Start with Hearty Vegetable Soup to build consistency, then move to Apple Pie, and finally Celebration Cake when you have good stations.</p>
+  </div>
+
+  <!-- Special Events & Limited Recipes -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-calendar text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">📅 Event-Exclusive Recipes</h2></div>
+    <p>Certain seasonal events introduce temporary recipes that cannot be obtained afterward. Below are known examples:</p>
+    <ul class="list-disc pl-5 space-y-1">
+      <li><strong>Maji Market (Summer event)</strong> – “Spiced Chapaa Meat” (requires event tokens).</li>
+      <li><strong>Winter Lights (December)</strong> – “Frostberry Cake” (requires Frostberries from snow biomes).</li>
+      <li><strong>Halloween (October)</strong> – “Candy Corn Soup” (event currency).</li>
+    </ul>
+    <p class="mt-2 text-sm">These recipes are not necessary for progression but are fun collectibles. They often have unique visual effects (e.g., glowing food).</p>
+  </div>
+
+  <!-- Summary Card -->
+  <div class="bg-paliaPrimary/5 rounded-2xl p-6 border border-paliaAccent/20">
+    <i class="fa fa-lightbulb-o text-3xl text-paliaPrimary mb-2 block"></i>
+    <h3 class="text-xl font-bold mb-2">💡 Final Tips for Star Hunters</h3>
+    <ul class="list-disc pl-5 space-y-1 text-paliaText/80">
+      <li><strong>Don’t forget to eat before cooking</strong> – Empty Focus = very low star chance.</li>
+      <li><strong>Upgrade stations before mass cooking</strong> – The star chance increase pays for materials quickly.</li>
+      <li><strong>Sell standard dishes, keep star dishes for gifts</strong> – Star dishes give 50% more friendship points.</li>
+      <li><strong>Join cooking parties on Discord</strong> – Group cooking is the most reliable way to get stars.</li>
+    </ul>
+    <div class="mt-5 text-center">
+      <a href="index.html" class="inline-block bg-paliaPrimary text-white px-6 py-2 rounded-full hover:bg-paliaPrimaryDeep transition">← Back to Main Hub</a>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-white/70 border-t border-paliaAccent/20 mt-12 py-6 text-center text-sm text-paliaText/70">
+  <p>Palia Guide Hub · Hidden Recipes & Star Quality · Unlock secrets, cook brilliantly</p>
+  <p class="mt-1"><i class="fa fa-leaf text-paliaPrimary"></i> Every perfect dish brings you closer to culinary legend</p>
+</footer>
+</body>
+</html>

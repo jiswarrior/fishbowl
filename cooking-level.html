@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Efficient Cooking Leveling & Cost Control | Palia Guide Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paliaBg: '#fcf8f0',
+            paliaPrimary: '#7f9a6e',
+            paliaPrimaryDeep: '#5f7a4e',
+            paliaAccent: '#e2b181',
+            paliaText: '#3c2f2a',
+            paliaCard: '#ffffff',
+            paliaMuted: '#e9e1d4',
+          },
+          fontFamily: { 'sans': ['Inter', 'system-ui', 'Segoe UI', 'Noto Sans SC', 'sans-serif'] },
+          borderRadius: { 'xl': '1rem', '2xl': '1.5rem' },
+        }
+      }
+    }
+  </script>
+  <style>
+    body { scroll-behavior: smooth; }
+    .section-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .section-card:hover { transform: translateY(-3px); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body class="bg-paliaBg text-paliaText font-sans antialiased">
+
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-paliaAccent/20 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 lg:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+    <div class="flex items-center gap-3">
+      <div class="bg-paliaPrimary/10 p-2 rounded-2xl"><i class="fa fa-rocket text-paliaPrimary text-2xl"></i></div>
+      <div>
+        <h1 class="text-xl md:text-2xl font-bold tracking-tight text-paliaPrimaryDeep">Cooking Leveling & Cost Control</h1>
+        <p class="text-xs text-paliaText/70">Fastest XP routes · Material efficiency · Budget tips</p>
+      </div>
+    </div>
+    <a href="index.html" class="text-paliaPrimary hover:underline text-sm flex items-center gap-1"><i class="fa fa-arrow-left"></i> Back to Main Hub</a>
+  </div>
+</header>
+
+<main class="max-w-5xl mx-auto px-4 py-10 space-y-8">
+  <!-- Intro -->
+  <div class="bg-paliaCard rounded-2xl shadow-card p-6 md:p-8">
+    <div class="flex items-center gap-3 border-b border-paliaMuted pb-4 mb-5">
+      <i class="fa fa-line-chart text-paliaPrimary text-3xl"></i>
+      <h2 class="text-2xl font-bold">From Novice to Master Chef</h2>
+    </div>
+    <p class="text-paliaText/80 leading-relaxed">Cooking is one of the most rewarding skills in Palia – it provides Focus food, high‑value sell items, and powerful friendship gifts. But leveling efficiently requires smart recipe choices. This guide ranks every recipe by XP per ingredient, shows the cheapest ways to level, and helps you avoid wasting rare materials.</p>
+  </div>
+
+  <!-- XP per Dish Table (Base Focus as proxy for XP) -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-calculator text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">📊 Cooking XP per Recipe</h2></div>
+    <p>Cooking XP is roughly equal to the <strong>Focus restored (standard version)</strong>. Star quality dishes give 50% more XP. The table below sorts recipes by XP yield and ingredient cost efficiency.</p>
+    <div class="overflow-x-auto mt-2">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50"><tr><th class="px-2 py-1">Recipe</th><th class="px-2 py-1">Base XP</th><th class="px-2 py-1">★ XP</th><th class="px-2 py-1">Typical Ingredient Cost (Gold)</th><th class="px-2 py-1">XP per 100 Gold</th><th class="px-2 py-1">Best for Leveling?</th></tr></thead>
+        <tbody class="divide-y">
+          <tr><td class="px-2 py-1">Grilled Fish</td><td class="px-2 py-1">60</td><td class="px-2 py-1">90</td><td class="px-2 py-1">~30 (fish)</td><td class="px-2 py-1">200</td><td class="px-2 py-1">✅ Early game</td></tr>
+          <tr><td class="px-2 py-1">Roasted Mushroom</td><td class="px-2 py-1">40</td><td class="px-2 py-1">60</td><td class="px-2 py-1">~10 (mushroom)</td><td class="px-2 py-1">400</td><td class="px-2 py-1">✅ Very cheap</td></tr>
+          <tr><td class="px-2 py-1">Campfire Veggies</td><td class="px-2 py-1">80</td><td class="px-2 py-1">120</td><td class="px-2 py-1">~40</td><td class="px-2 py-1">200</td><td class="px-2 py-1">✅ Good for mid level</td></tr>
+          <tr><td class="px-2 py-1">Bread Loaf</td><td class="px-2 py-1">80</td><td class="px-2 py-1">120</td><td class="px-2 py-1">~60 (wheat, yeast)</td><td class="px-2 py-1">133</td><td class="px-2 py-1">⭕ Decent</td></tr>
+          <tr><td class="px-2 py-1">Hearty Vegetable Soup</td><td class="px-2 py-1">150</td><td class="px-2 py-1">225</td><td class="px-2 py-1">~80</td><td class="px-2 py-1">187</td><td class="px-2 py-1">✅ Best mid tier</td></tr>
+          <tr><td class="px-2 py-1">Sernuk Stew</td><td class="px-2 py-1">120</td><td class="px-2 py-1">180</td><td class="px-2 py-1">~100</td><td class="px-2 py-1">120</td><td class="px-2 py-1">⭕ If you hunt</td></tr>
+          <tr><td class="px-2 py-1">Mushroom Risotto</td><td class="px-2 py-1">140</td><td class="px-2 py-1">210</td><td class="px-2 py-1">~120</td><td class="px-2 py-1">117</td><td class="px-2 py-1">❌ Expensive</td></tr>
+          <tr><td class="px-2 py-1">Celebration Cake</td><td class="px-2 py-1">300</td><td class="px-2 py-1">450</td><td class="px-2 py-1">~250</td><td class="px-2 py-1">120</td><td class="px-2 py-1">✅ Best for endgame</td></tr>
+          <tr><td class="px-2 py-1">Apple Pie</td><td class="px-2 py-1">180</td><td class="px-2 py-1">270</td><td class="px-2 py-1">~150</td><td class="px-2 py-1">120</td><td class="px-2 py-1">⭕ Good if apples abundant</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-xs text-paliaText/60 mt-2">* Ingredient cost estimates based on average market prices (gardening, foraging, fishing). Actual cost may vary.</p>
+  </div>
+
+  <!-- Leveling Phases -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-road text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🗺️ Recommended Leveling Path</h2></div>
+    <div class="space-y-4">
+      <div class="border-l-4 border-paliaPrimary pl-3">
+        <h3 class="font-bold">Level 1–5: Campfire Basics</h3>
+        <ul class="list-disc pl-4 text-sm">
+          <li><strong>Best recipe:</strong> Roasted Mushroom (cheapest) + Grilled Fish (while fishing).</li>
+          <li><strong>Cost control:</strong> Forage mushrooms; fish while leveling Fishing. Don’t buy ingredients.</li>
+          <li><strong>Goal:</strong> Unlock Stove (Lv 3) and Prep Station (Lv 4).</li>
+        </ul>
+      </div>
+      <div class="border-l-4 border-paliaPrimary pl-3">
+        <h3 class="font-bold">Level 5–10: Stove Specialties</h3>
+        <ul class="list-disc pl-4 text-sm">
+          <li><strong>Best recipe:</strong> Hearty Vegetable Soup (carrots, onions, mushrooms, spice).</li>
+          <li><strong>Cost control:</strong> Grow carrots & onions; forage mushrooms; spice is cheap from Zeki.</li>
+          <li><strong>Alternative:</strong> Campfire Veggies if ingredients are short.</li>
+          <li><strong>Goal:</strong> Unlock Oven (Lv 5) and start baking.</li>
+        </ul>
+      </div>
+      <div class="border-l-4 border-paliaPrimary pl-3">
+        <h3 class="font-bold">Level 10–20: Oven & Mixed Dishes</h3>
+        <ul class="list-disc pl-4 text-sm">
+          <li><strong>Best recipe:</strong> Celebration Cake (once you have blueberry farm & wheat).</li>
+          <li><strong>Budget option:</strong> Apple Pie (if you have apple trees) or Hearty Vegetable Soup.</li>
+          <li><strong>Cost control:</strong> Do not buy wheat/butter/eggs if possible – farm chickens and mill your own flour.</li>
+          <li><strong>Goal:</strong> Reach Lv 15 for Palium Oven upgrade.</li>
+        </ul>
+      </div>
+      <div class="border-l-4 border-paliaPrimary pl-3">
+        <h3 class="font-bold">Level 20–50: Mass Production</h3>
+        <ul class="list-disc pl-4 text-sm">
+          <li><strong>Best recipe:</strong> Celebration Cake (best XP per craft) and Hearty Vegetable Soup (best XP per gold).</li>
+          <li><strong>Advanced strategy:</strong> Cook in multiplayer to split steps and reduce failure risk.</li>
+          <li><strong>Pro tip:</strong> Stockpile ingredients during gardening/hunting sessions, then cook in batches of 50+.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cost Control Strategies -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-gavel text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">💰 Cost Control Strategies</h2></div>
+    <ul class="list-disc pl-5 space-y-2">
+      <li><strong>Never buy basic ingredients from NPCs</strong> – Forage mushrooms, fish, grow crops, raise chickens for eggs/butter. Buying from stores is 2–5x more expensive.</li>
+      <li><strong>Use seed makers</strong> – Turn star-quality crops into seeds and sell the excess seeds for profit, which funds other ingredients.</li>
+      <li><strong>Cook with friends</strong> – Each player can bring different ingredients, splitting the total cost. Also, group cooking reduces failure rate.</li>
+      <li><strong>Focus on one high‑yield recipe</strong> – Mastering a single recipe (e.g., Hearty Vegetable Soup) reduces waste from failed attempts due to unfamiliar minigames.</li>
+      <li><strong>Sell star-quality dishes, eat standard ones</strong> – Star dishes sell for 50% more, so it’s better to consume normal versions for Focus and sell the stars.</li>
+    </ul>
+  </div>
+
+  <!-- Avoiding Waste -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-trash text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🚫 How to Avoid Waste & Failures</h2></div>
+    <div class="grid md:grid-cols-2 gap-3">
+      <div class="bg-paliaMuted/20 p-3 rounded">
+        <h3 class="font-bold">❌ Common Waste Sources</h3>
+        <ul class="list-disc pl-4 text-sm">
+          <li>Burning dishes (minigame failure)</li>
+          <li>Cooking without enough Focus</li>
+          <li>Trying new complex recipes with expensive ingredients first</li>
+          <li>Overcooking – making more than you can eat/sell before they spoil</li>
+        </ul>
+      </div>
+      <div class="bg-paliaPrimary/10 p-3 rounded">
+        <h3 class="font-bold">✅ Waste Prevention Tips</h3>
+        <ul class="list-disc pl-4 text-sm">
+          <li>Practice new recipes with cheap ingredients first (e.g., campfire dishes).</li>
+          <li>Always cook with Focus ≥ 80% (easier perfect zones).</li>
+          <li>Cook in small batches (10–20) unless you have a large storage.</li>
+          <li>Use preserving jars to extend dish shelf life (pickled veggies don’t spoil).</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Comparison: Solo vs Group Cooking -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-users text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">👥 Solo vs Group Cooking Efficiency</h2></div>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50"><tr><th class="px-2 py-1">Metric</th><th class="px-2 py-1">Solo</th><th class="px-2 py-1">2 Players</th><th class="px-2 py-1">4 Players</th></tr></thead>
+        <tbody class="divide-y">
+          <tr><td class="px-2 py-1">Success rate (same skill)</td><td class="px-2 py-1">~70%</td><td class="px-2 py-1">~85%</td><td class="px-2 py-1">~95%</td></tr>
+          <tr><td class="px-2 py-1">Star quality chance</td><td class="px-2 py-1">~40%</td><td class="px-2 py-1">~60%</td><td class="px-2 py-1">~80%</td></tr>
+          <tr><td class="px-2 py-1">Ingredient cost per dish</td><td class="px-2 py-1">100%</td><td class="px-2 py-1">~80% (shared)</td><td class="px-2 py-1">~65% (shared)</td></tr>
+          <tr><td class="px-2 py-1">XP per minute</td><td class="px-2 py-1">Baseline</td><td class="px-2 py-1">+40%</td><td class="px-2 py-1">+100%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-sm mt-2">Group cooking is significantly more efficient, especially for expensive recipes like Celebration Cake. Join a Palia Discord community to find cooking partners.</p>
+  </div>
+
+  <!-- Summary: Best Recipes per Goal -->
+  <div class="bg-paliaPrimary/5 rounded-2xl p-6 border border-paliaAccent/20">
+    <i class="fa fa-target text-3xl text-paliaPrimary mb-2 block"></i>
+    <h3 class="text-xl font-bold mb-2">🎯 Best Recipe By Goal</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
+      <div><span class="font-semibold">Fastest XP (ignoring cost):</span> Celebration Cake (300 XP/dish)</div>
+      <div><span class="font-semibold">Best XP per gold:</span> Roasted Mushroom (400 XP per 100 gold)</div>
+      <div><span class="font-semibold">Best for early levels (1–5):</span> Roasted Mushroom + Grilled Fish</div>
+      <div><span class="font-semibold">Best for mid levels (5–15):</span> Hearty Vegetable Soup</div>
+      <div><span class="font-semibold">Best for late levels (15+):</span> Celebration Cake (group cooking)</div>
+      <div><span class="font-semibold">Best for selling profit:</span> Celebration Cake (★) – 900 gold each</div>
+    </div>
+    <div class="mt-5 text-center">
+      <a href="index.html" class="inline-block bg-paliaPrimary text-white px-6 py-2 rounded-full hover:bg-paliaPrimaryDeep transition">← Back to Main Hub</a>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-white/70 border-t border-paliaAccent/20 mt-12 py-6 text-center text-sm text-paliaText/70">
+  <p>Palia Guide Hub · Cooking Leveling & Cost Control · Smart cooking saves gold</p>
+  <p class="mt-1"><i class="fa fa-leaf text-paliaPrimary"></i> Level up your kitchen skills without breaking the bank</p>
+</footer>
+</body>
+</html>

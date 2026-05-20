@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Stove & Oven Unlock Conditions | Palia Guide Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paliaBg: '#fcf8f0',
+            paliaPrimary: '#7f9a6e',
+            paliaPrimaryDeep: '#5f7a4e',
+            paliaAccent: '#e2b181',
+            paliaText: '#3c2f2a',
+            paliaCard: '#ffffff',
+            paliaMuted: '#e9e1d4',
+          },
+          fontFamily: { 'sans': ['Inter', 'system-ui', 'Segoe UI', 'Noto Sans SC', 'sans-serif'] },
+          borderRadius: { 'xl': '1rem', '2xl': '1.5rem' },
+        }
+      }
+    }
+  </script>
+  <style>
+    body { scroll-behavior: smooth; }
+    .section-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .section-card:hover { transform: translateY(-3px); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body class="bg-paliaBg text-paliaText font-sans antialiased">
+
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-paliaAccent/20 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 lg:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+    <div class="flex items-center gap-3">
+      <div class="bg-paliaPrimary/10 p-2 rounded-2xl"><i class="fa fa-fire text-paliaPrimary text-2xl"></i></div>
+      <div>
+        <h1 class="text-xl md:text-2xl font-bold tracking-tight text-paliaPrimaryDeep">Stove & Oven Unlocks</h1>
+        <p class="text-xs text-paliaText/70">Crafting stations · Requirements · Upgrades</p>
+      </div>
+    </div>
+    <a href="index.html" class="text-paliaPrimary hover:underline text-sm flex items-center gap-1"><i class="fa fa-arrow-left"></i> Back to Main Hub</a>
+  </div>
+</header>
+
+<main class="max-w-5xl mx-auto px-4 py-10 space-y-8">
+  <!-- Intro -->
+  <div class="bg-paliaCard rounded-2xl shadow-card p-6 md:p-8">
+    <div class="flex items-center gap-3 border-b border-paliaMuted pb-4 mb-5">
+      <i class="fa fa-building-o text-paliaPrimary text-3xl"></i>
+      <h2 class="text-2xl font-bold">Building Your Kitchen</h2>
+    </div>
+    <p class="text-paliaText/80 leading-relaxed">To cook advanced dishes, you need proper stations. The Basic Campfire is free, but real cooking starts with the Stove and Oven. This guide covers how to unlock each station, what materials they require, and how upgrading them improves your cooking success rate.</p>
+  </div>
+
+  <!-- Basic Campfire (reminder) -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-3"><i class="fa fa-fire text-paliaPrimary text-xl"></i><h2 class="text-lg font-bold">🔥 Basic Campfire</h2></div>
+    <div class="grid md:grid-cols-2 gap-4 text-sm">
+      <div><span class="font-semibold">Unlock:</span> Automatic (after tutorial)</div>
+      <div><span class="font-semibold">Materials:</span> 5 Wood, 5 Stone</div>
+      <div><span class="font-semibold">Recipes:</span> Grilled Fish, Roasted Mushroom, Campfire Veggies</div>
+      <div><span class="font-semibold">Limit:</span> No Focus bonus, basic quality only</div>
+    </div>
+  </div>
+
+  <!-- Stove Unlock -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-stove text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🍳 Stove – Unlock & Crafting</h2></div>
+    <p>The Stove is your primary station for soups, stews, stir-fries, and boiling. It requires a workbench and mid-game materials.</p>
+    <div class="overflow-x-auto mt-3">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50"><tr><th class="px-3 py-2">Requirement</th><th class="px-3 py-2">Details</th></tr></thead>
+        <tbody class="divide-y">
+          <tr><td class="px-3 py-2">Skill Level</td><td class="px-3 py-2">Cooking Level 3</td></tr>
+          <tr><td class="px-3 py-2">Crafting Station</td><td class="px-3 py-2">Workbench</td></tr>
+          <tr><td class="px-3 py-2">Materials</td><td class="px-3 py-2">20 Stone, 10 Copper Bar, 5 Iron Bar, 10 Clay</td></tr>
+          <tr><td class="px-3 py-2">Placement</td><td class="px-3 py-2">Home plot (indoors or outdoors)</td></tr>
+          <tr><td class="px-3 py-2">Recipes Unlocked</td><td class="px-3 py-2">Hearty Vegetable Soup, Sernuk Stew, Mushroom Risotto, Fish Stew, etc.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="mt-3 bg-paliaPrimary/10 p-2 rounded text-sm">💡 Tip: Place the Stove near a storage chest for easy access to ingredients.</div>
+  </div>
+
+  <!-- Oven Unlock -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-thermometer-full text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🥧 Oven – Unlock & Crafting</h2></div>
+    <p>The Oven is required for baking breads, cakes, pies, and pastries. It becomes available after reaching Cooking Level 5.</p>
+    <div class="overflow-x-auto mt-3">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50"><tr><th class="px-3 py-2">Requirement</th><th class="px-3 py-2">Details</th></tr></thead>
+        <tbody class="divide-y">
+          <tr><td class="px-3 py-2">Skill Level</td><td class="px-3 py-2">Cooking Level 5</td></tr>
+          <tr><td class="px-3 py-2">Crafting Station</td><td class="px-3 py-2">Workbench</td></tr>
+          <tr><td class="px-3 py-2">Materials</td><td class="px-3 py-2">30 Stone, 15 Iron Bar, 10 Copper Bar, 5 Glass, 5 Palium Bar</td></tr>
+          <tr><td class="px-3 py-2">Placement</td><td class="px-3 py-2">Home plot (indoors recommended)</td></tr>
+          <tr><td class="px-3 py-2">Recipes Unlocked</td><td class="px-3 py-2">Celebration Cake, Mushroom Quiche, Bread Loaf, Apple Pie, etc.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Mixer & Prep Station (additional) -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-mixcloud text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🥄 Mixer & Prep Station</h2></div>
+    <p>Some advanced recipes require a Mixer or Prep Station as an auxiliary station. They are not mandatory for basic cooking but enable certain dishes.</p>
+    <div class="grid md:grid-cols-2 gap-4">
+      <div>
+        <h3 class="font-bold">Mixer</h3>
+        <ul class="list-disc pl-4 text-sm">
+          <li>Unlock: Cooking Level 7</li>
+          <li>Materials: 10 Iron Bar, 5 Copper Bar, 5 Glass</li>
+          <li>Used for: Cake batters, dough, sauces</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold">Prep Station</h3>
+        <ul class="list-disc pl-4 text-sm">
+          <li>Unlock: Cooking Level 4</li>
+          <li>Materials: 10 Wood, 5 Copper Bar, 1 Knife (crafted)</li>
+          <li>Used for: Chopping vegetables, preparing fish fillets</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Upgrades: Improved Stove & Oven -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-level-up text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">⬆️ Upgraded Stations</h2></div>
+    <p>At higher Cooking levels, you can upgrade your Stove and Oven to better versions. Upgrades increase success rate and unlock new recipes.</p>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50"><tr><th class="px-2 py-1">Station</th><th class="px-2 py-1">Upgrade Level</th><th class="px-2 py-1">Cooking Level Req</th><th class="px-2 py-1">Materials</th><th class="px-2 py-1">Bonus</th></tr></thead>
+        <tbody class="divide-y">
+          <tr><td class="px-2 py-1">Copper Stove</td><td class="px-2 py-1">1</td><td class="px-2 py-1">Lv 8</td><td class="px-2 py-1">10 Copper Bar, 5 Iron Bar</td><td class="px-2 py-1">+10% perfect zone size</td></tr>
+          <tr><td class="px-2 py-1">Iron Stove</td><td class="px-2 py-1">2</td><td class="px-2 py-1">Lv 12</td><td class="px-2 py-1">15 Iron Bar, 5 Palium Bar</td><td class="px-2 py-1">+20% perfect zone, -10% cook time</td></tr>
+          <tr><td class="px-2 py-1">Copper Oven</td><td class="px-2 py-1">1</td><td class="px-2 py-1">Lv 10</td><td class="px-2 py-1">10 Copper Bar, 10 Iron Bar, 5 Glass</td><td class="px-2 py-1">+10% star-quality chance</td></tr>
+          <tr><td class="px-2 py-1">Palium Oven</td><td class="px-2 py-1">2</td><td class="px-2 py-1">Lv 15</td><td class="px-2 py-1">15 Palium Bar, 10 Silver Bar, 10 Glass</td><td class="px-2 py-1">+25% star-quality chance, +5% golden star</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Placement & Multiplayer Considerations -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-home text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🏠 Placement Tips & Multiplayer</h2></div>
+    <ul class="list-disc pl-5 space-y-2">
+      <li><strong>Indoor vs Outdoor:</strong> Stoves and ovens work anywhere, but placing them indoors (kitchen room) gives a +5% Focus bonus to dishes cooked inside.</li>
+      <li><strong>Group Cooking:</strong> If multiple players have upgraded stations, the group can use the highest-level station available. Good coordination reduces material waste.</li>
+      <li><strong>Storage Proximity:</strong> Place a storage chest or lockbox next to your cooking area to quickly restock ingredients without running across your plot.</li>
+      <li><strong>Aesthetic Bonus:</strong> Some decor items (e.g., hanging herbs, spice rack) provide a hidden +2% to cooking success rate when placed within 5 tiles of a stove or oven.</li>
+    </ul>
+  </div>
+
+  <!-- Summary Table -->
+  <div class="bg-paliaPrimary/5 rounded-2xl p-6 border border-paliaAccent/20">
+    <i class="fa fa-list-alt text-3xl text-paliaPrimary mb-2 block"></i>
+    <h3 class="text-xl font-bold mb-2">📋 Quick Reference: Cooking Stations</h3>
+    <div class="grid grid-cols-2 gap-2 text-sm">
+      <div><span class="font-semibold">Campfire:</span> Lv 1</div>
+      <div>Grilled fish, basic roasts</div>
+      <div><span class="font-semibold">Stove:</span> Lv 3</div>
+      <div>Soups, stews, stir-fries</div>
+      <div><span class="font-semibold">Oven:</span> Lv 5</div>
+      <div>Breads, cakes, pies</div>
+      <div><span class="font-semibold">Prep Station:</span> Lv 4</div>
+      <div>Chopping, filleting</div>
+      <div><span class="font-semibold">Mixer:</span> Lv 7</div>
+      <div>Batters, dough, sauces</div>
+    </div>
+    <div class="mt-5 text-center">
+      <a href="index.html" class="inline-block bg-paliaPrimary text-white px-6 py-2 rounded-full hover:bg-paliaPrimaryDeep transition">← Back to Main Hub</a>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-white/70 border-t border-paliaAccent/20 mt-12 py-6 text-center text-sm text-paliaText/70">
+  <p>Palia Guide Hub · Stove & Oven Unlocks · Build the perfect kitchen</p>
+  <p class="mt-1"><i class="fa fa-leaf text-paliaPrimary"></i> Good tools make great cooks</p>
+</footer>
+</body>
+</html>
