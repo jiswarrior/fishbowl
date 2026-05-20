@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>NPC Profiles – Schedules, Loved Gifts, Hated Items | Palia Guide Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paliaBg: '#fcf8f0',
+            paliaPrimary: '#7f9a6e',
+            paliaPrimaryDeep: '#5f7a4e',
+            paliaAccent: '#e2b181',
+            paliaText: '#3c2f2a',
+            paliaCard: '#ffffff',
+            paliaMuted: '#e9e1d4',
+          },
+          fontFamily: { 'sans': ['Inter', 'system-ui', 'Segoe UI', 'Noto Sans SC', 'sans-serif'] },
+          borderRadius: { 'xl': '1rem', '2xl': '1.5rem' },
+        }
+      }
+    }
+  </script>
+  <style>
+    body { scroll-behavior: smooth; }
+    .section-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .section-card:hover { transform: translateY(-3px); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body class="bg-paliaBg text-paliaText font-sans antialiased">
+
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-paliaAccent/20 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 lg:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+    <div class="flex items-center gap-3">
+      <div class="bg-paliaPrimary/10 p-2 rounded-2xl"><i class="fa fa-address-card text-paliaPrimary text-2xl"></i></div>
+      <div>
+        <h1 class="text-xl md:text-2xl font-bold tracking-tight text-paliaPrimaryDeep">NPC Profiles</h1>
+        <p class="text-xs text-paliaText/70">Schedules · Loved Gifts · Hated Items</p>
+      </div>
+    </div>
+    <a href="index.html" class="text-paliaPrimary hover:underline text-sm flex items-center gap-1"><i class="fa fa-arrow-left"></i> Back to Main Hub</a>
+  </div>
+</header>
+
+<main class="max-w-6xl mx-auto px-4 py-10 space-y-8">
+  <!-- Intro -->
+  <div class="bg-paliaCard rounded-2xl shadow-card p-6 md:p-8">
+    <div class="flex items-center gap-3 border-b border-paliaMuted pb-4 mb-5">
+      <i class="fa fa-users text-paliaPrimary text-3xl"></i>
+      <h2 class="text-2xl font-bold">Get to Know the Villagers of Palia</h2>
+    </div>
+    <p class="text-paliaText/80 leading-relaxed">Building friendships (and romances) with NPCs unlocks quests, rewards, and unique dialogue. This guide lists every major character – where to find them, what they love, and what they hate. Use the tables to plan your daily gift runs.</p>
+  </div>
+
+  <!-- NPC Table (Main Village) -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-table text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">📋 Kilima Valley NPCs</h2></div>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50">
+          <tr><th class="px-2 py-2">NPC</th><th class="px-2 py-2">Typical Schedule (in-game)</th><th class="px-2 py-2">Loved Gifts</th><th class="px-2 py-2">Hated Gifts</th></tr>
+        </thead>
+        <tbody class="divide-y">
+          <tr><td class="px-2 py-1">Ashura (Innkeeper)</td><td class="px-2 py-1">6:00–22:00 at Inn</td><td class="px-2 py-1">Hearty Vegetable Soup, Apple Pie, Any Fish</td><td class="px-2 py-1">Trash, Spoiled Food</td></tr>
+          <tr><td class="px-2 py-1">Badruu (Gardener)</td><td class="px-2 py-1">6:00–18:00 at Farm, then Inn</td><td class="px-2 py-1">Carrot, Onion, Truffle, Any Crop</td><td class="px-2 py-1">Bug (any), Weed</td></tr>
+          <tr><td class="px-2 py-1">Delaila (Farmer)</td><td class="px-2 py-1">6:00–20:00 at Farm, then home</td><td class="px-2 py-1">Apple Pie, Loaded Potato Soup, Tomato</td><td class="px-2 py-1">Insect Parts</td></tr>
+          <tr><td class="px-2 py-1">Einar (Fisherman)</td><td class="px-2 py-1">All day at Fisherman's Pier</td><td class="px-2 py-1">Any Fish (especially rare), Glow Worm</td><td class="px-2 py-1">Meat, Crop Seeds</td></tr>
+          <tr><td class="px-2 py-1">Hassian (Hunter)</td><td class="px-2 py-1">8:00–22:00 at Grove, sometimes Inn</td><td class="px-2 py-1">Sernuk Meat, Spitfire Cicada, Iron Arrow</td><td class="px-2 py-1">Flower, Sweet Leaf</td></tr>
+          <tr><td class="px-2 py-1">Hodari (Miner)</td><td class="px-2 py-1">6:00–20:00 at Mines, then Inn</td><td class="px-2 py-1">Copper Ore, Iron Ore, Stone (any)</td><td class="px-2 py-1">Gem (sell only), Fish</td></tr>
+          <tr><td class="px-2 py-1">Kenyatta (Mayor's Daughter)</td><td class="px-2 py-1">10:00–18:00 at Town Hall, then home</td><td class="px-2 py-1">Celebration Cake, Blueberry Pie, Golden Scarab</td><td class="px-2 py-1">Vegetables, Fish</td></tr>
+          <tr><td class="px-2 py-1">Reth (Cook)</td><td class="px-2 py-1">8:00–22:00 at Inn kitchen</td><td class="px-2 py-1">Celebration Cake, Bread Loaf, Any Cooked Dish</td><td class="px-2 py-1">Raw Meat, Weed</td></tr>
+          <tr><td class="px-2 py-1">Sifuu (Blacksmith)</td><td class="px-2 py-1">8:00–20:00 at Forge, then Inn</td><td class="px-2 py-1">Iron Bar, Palium Bar, Any Metal</td><td class="px-2 py-1">Wood, Fiber</td></tr>
+          <tr><td class="px-2 py-1">Tamala (Alchemist)</td><td class="px-2 py-1">10:00–22:00 at Bahari Bay (Alchemist Hut)</td><td class="px-2 py-1">Rainbow Butterfly, Dawn Petal, Glowing Mushroom</td><td class="px-2 py-1">Common Mushroom, Meat</td></tr>
+          <tr><td class="px-2 py-1">Tish (Furniture Maker)</td><td class="px-2 py-1">8:00–20:00 at Furniture Shop</td><td class="px-2 py-1">Blueberry Pie, Celebration Cake, Any Flower</td><td class="px-2 py-1">Stone, Ore (unprocessed)</td></tr>
+          <tr><td class="px-2 py-1">Zeki (General Store)</td><td class="px-2 py-1">6:00–22:00 at Store</td><td class="px-2 py-1">Any Gem, Golden Scarab, Any Fish (rare)</td><td class="px-2 py-1">Crop (common), Weed</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-xs text-paliaText/60 mt-2">* Schedules may vary slightly on weekends (real-world Saturday/Sunday in-game). Check the map for current location.</p>
+  </div>
+
+  <!-- Romanceable NPCs (marked for romance) -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-heart text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">💕 Romanceable NPCs (9 total)</h2></div>
+    <p>The following NPCs can be romanced after reaching Friendship Level 3. You may date multiple simultaneously without penalty (see romance guide).</p>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-2 text-sm mt-2">
+      <span class="bg-paliaMuted/20 p-1 rounded">Ashura</span>
+      <span class="bg-paliaMuted/20 p-1 rounded">Badruu</span>
+      <span class="bg-paliaMuted/20 p-1 rounded">Delaila</span>
+      <span class="bg-paliaMuted/20 p-1 rounded">Einar</span>
+      <span class="bg-paliaMuted/20 p-1 rounded">Hassian</span>
+      <span class="bg-paliaMuted/20 p-1 rounded">Hodari</span>
+      <span class="bg-paliaMuted/20 p-1 rounded">Kenyatta</span>
+      <span class="bg-paliaMuted/20 p-1 rounded">Reth</span>
+      <span class="bg-paliaMuted/20 p-1 rounded">Tamala</span>
+    </div>
+    <p class="text-xs mt-2">(Tish and Zeki are not romanceable in current version.)</p>
+  </div>
+
+  <!-- NPC Location Quick Reference (by zone) -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-map-marker text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">📍 NPC Locations by Zone</h2></div>
+    <div class="grid md:grid-cols-2 gap-4">
+      <div>
+        <h3 class="font-bold">Kilima Valley</h3>
+        <ul class="list-disc pl-4 text-sm">
+          <li>Town Hall / Inn area: Ashura, Reth, Kenyatta, Zeki</li>
+          <li>Farm (southwest): Badruu, Delaila</li>
+          <li>Pier (east): Einar</li>
+          <li>Grove (northwest): Hassian</li>
+          <li>Mines (north): Hodari</li>
+          <li>Forge (central): Sifuu</li>
+          <li>Furniture Shop: Tish</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold">Bahari Bay</h3>
+        <ul class="list-disc pl-4 text-sm">
+          <li>Alchemist's Hut (south coast): Tamala</li>
+          <li>Fisherman's Dock (east beach): Einar (sometimes)</li>
+          <li>No other NPCs permanently reside in Bahari, but some visit during quests.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gift Giving Strategy -->
+  <div class="bg-paliaPrimary/5 rounded-2xl p-6 border border-paliaAccent/20">
+    <i class="fa fa-gift text-3xl text-paliaPrimary mb-2 block"></i>
+    <h3 class="text-xl font-bold mb-2">🎁 Gift Efficiency Tips</h3>
+    <ul class="list-disc pl-5 space-y-1 text-paliaText/80">
+      <li><strong>One gift per NPC per day</strong> – Resets at 4:00 UTC (daily reset).</li>
+      <li><strong>Star‑quality items give +25% extra friendship points.</strong> Always give the best version you have.</li>
+      <li><strong>Weekly Wants:</strong> Each NPC has 3 random “weekly wanted” items (check their dialogue). Giving a wanted item gives double friendship.</li>
+      <li><strong>Birthday gifts:</strong> If you give a gift on an NPC's birthday (check calendar), you get triple friendship.</li>
+      <li><strong>Don’t give hated items</strong> – They reduce friendship (-5 points).</li>
+    </ul>
+    <div class="mt-5 text-center">
+      <a href="index.html" class="inline-block bg-paliaPrimary text-white px-6 py-2 rounded-full hover:bg-paliaPrimaryDeep transition">← Back to Main Hub</a>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-white/70 border-t border-paliaAccent/20 mt-12 py-6 text-center text-sm text-paliaText/70">
+  <p>Palia Guide Hub · NPC Profiles · Gift wisely, build bonds</p>
+  <p class="mt-1"><i class="fa fa-leaf text-paliaPrimary"></i> Kindness opens doors (and quests)</p>
+</footer>
+</body>
+</html>

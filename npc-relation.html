@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Relationship Paths – Quests & Rewards | Palia Guide Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paliaBg: '#fcf8f0',
+            paliaPrimary: '#7f9a6e',
+            paliaPrimaryDeep: '#5f7a4e',
+            paliaAccent: '#e2b181',
+            paliaText: '#3c2f2a',
+            paliaCard: '#ffffff',
+            paliaMuted: '#e9e1d4',
+          },
+          fontFamily: { 'sans': ['Inter', 'system-ui', 'Segoe UI', 'Noto Sans SC', 'sans-serif'] },
+          borderRadius: { 'xl': '1rem', '2xl': '1.5rem' },
+        }
+      }
+    }
+  </script>
+  <style>
+    body { scroll-behavior: smooth; }
+    .section-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .section-card:hover { transform: translateY(-3px); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body class="bg-paliaBg text-paliaText font-sans antialiased">
+
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-paliaAccent/20 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 lg:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+    <div class="flex items-center gap-3">
+      <div class="bg-paliaPrimary/10 p-2 rounded-2xl"><i class="fa fa-arrow-up text-paliaPrimary text-2xl"></i></div>
+      <div>
+        <h1 class="text-xl md:text-2xl font-bold tracking-tight text-paliaPrimaryDeep">Relationship Paths</h1>
+        <p class="text-xs text-paliaText/70">Friendship tiers · Exclusive quests · Rewards</p>
+      </div>
+    </div>
+    <a href="index.html" class="text-paliaPrimary hover:underline text-sm flex items-center gap-1"><i class="fa fa-arrow-left"></i> Back to Main Hub</a>
+  </div>
+</header>
+
+<main class="max-w-6xl mx-auto px-4 py-10 space-y-8">
+  <!-- Intro -->
+  <div class="bg-paliaCard rounded-2xl shadow-card p-6 md:p-8">
+    <div class="flex items-center gap-3 border-b border-paliaMuted pb-4 mb-5">
+      <i class="fa fa-signal text-paliaPrimary text-3xl"></i>
+      <h2 class="text-2xl font-bold">Climbing the Friendship Ladder</h2>
+    </div>
+    <p class="text-paliaText/80 leading-relaxed">Every NPC has 4 friendship levels (0–3) and, for romanceable characters, 4 additional romance levels (0–3). Each new level unlocks special dialogue, a personal quest, and unique rewards. This guide lists all known level‑up thresholds and the prizes you’ll earn along the way.</p>
+  </div>
+
+  <!-- Friendship Levels Overview -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-bar-chart text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">📊 Friendship Level Progression</h2></div>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50">
+          <tr><th class="px-2 py-2">Level</th><th class="px-2 py-2">Points Required (cumulative)</th><th class="px-2 py-2">Typical Gifts Needed</th><th class="px-2 py-2">Unlocks</th></tr>
+        </thead>
+        <tbody class="divide-y">
+          <tr><td class="px-2 py-1">0 → 1 (Acquaintance)</td><td class="px-2 py-1">100 points</th><td class="px-2 py-1">~5 liked gifts</td><td class="px-2 py-1">Basic dialogue, can gift once per day</td></tr>
+          <tr><td class="px-2 py-1">1 → 2 (Friend)</th><td class="px-2 py-1">300 points (total 400)</td><td class="px-2 py-1">~15 liked gifts</td><td class="px-2 py-1">First friendship quest, small reward</td></tr>
+          <tr><td class="px-2 py-1">2 → 3 (Good Friend)</th><td class="px-2 py-1">600 points (total 1000)</td><td class="px-2 py-1">~30 liked gifts</td><td class="px-2 py-1">Second quest, better rewards, can start romance (if applicable)</td></tr>
+          <tr><td class="px-2 py-1">3 → 4 (Best Friend)</th><td class="px-2 py-1">1500 points (total 2500)</td><td class="px-2 py-1">~75 liked gifts</td><td class="px-2 py-1">Final friendship quest, epic reward, special title</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-sm mt-2">Gift values: Loved gift = +50 points, Liked gift = +15 points, Neutral = +5 points, Hated = -10 points. Star quality gives +25% bonus.</p>
+  </div>
+
+  <!-- Romance Levels (separate track) -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-heart text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">💖 Romance Level Progression (Romanceable NPCs only)</h2></div>
+    <p>After reaching Friendship Level 3, you can give a “Romance Pin” (crafted or bought from Zeki) to start the romance track. Romance levels are separate and add additional quests.</p>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50">
+          <tr><th class="px-2 py-2">Romance Level</th><th class="px-2 py-2">Points Required</th><th class="px-2 py-2">Quest Name</th><th class="px-2 py-2">Reward</th></tr>
+        </thead>
+        <tbody class="divide-y">
+          <tr><td class="px-2 py-1">0 → 1 (Flirting)</th><td class="px-2 py-1">500</td><td class="px-2 py-1">“A Special Connection”</td><td class="px-2 py-1">Romance Pin (cosmetic), 50 Renown</td></tr>
+          <tr><td class="px-2 py-1">1 → 2 (Dating)</th><td class="px-2 py-1">1000</td><td class="px-2 py-1">“Dinner Date”</td><td class="px-2 py-1">Unique furniture (varies per NPC)</td></tr>
+          <tr><td class="px-2 py-1">2 → 3 (Partners)</th><td class="px-2 py-1">2000</td><td class="px-2 py-1">“Meet the Family”</td><td class="px-2 py-1">Portrait of the NPC (wall art)</td></tr>
+          <tr><td class="px-2 py-1">3 → 4 (Soulmates)</th><td class="px-2 py-1">4000</td><td class="px-2 py-1">“Forever Together”</td><td class="px-2 py-1">Emote: “Hug” or “Kiss” (varies), +100 Renown</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Exclusive Quests & Rewards by NPC (condensed table) -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-list-alt text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🎁 Notable NPC Quest Rewards</h2></div>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50">
+          <tr><th class="px-2 py-2">NPC</th><th class="px-2 py-2">Friendship Lv 2 Quest Reward</th><th class="px-2 py-2">Friendship Lv 3 Quest Reward</th><th class="px-2 py-2">Romance Lv 3 Reward</th></tr>
+        </thead>
+        <tbody class="divide-y">
+          <tr><td class="px-2 py-1">Ashura</td><td class="px-2 py-1">“Ashura’s Stew” recipe</td><td class="px-2 py-1">Rug of Comfort (+10% forage bonus)</td><td class="px-2 py-1">Ashura’s Locket (wall decoration)</td></tr>
+          <tr><td class="px-2 py-1">Badruu</td><td class="px-2 py-1">Quality Fertilizer ×20</td><td class="px-2 py-1">Golden Hoe (tool skin)</td><td class="px-2 py-1”>Scarecrow (companion decoration)</td></tr>
+          <tr><td class="px-2 py-1">Delaila</td><td class="px-2 py-1">Apple Pie recipe</td><td class="px-2 py-1">Fruit Basket (crafting station)</td><td class="px-2 py-1">“Delaila’s Apron” (cosmetic)</td></tr>
+          <tr><td class="px-2 py-1">Einar</td><td class="px-2 py-1">Glow Worm ×30</td><td class="px-2 py-1">Fishing Totem (+5% rare fish chance)</td><td class="px-2 py-1">Einar’s Compass (housing decoration)</td></tr>
+          <tr><td class="px-2 py-1">Hassian</td><td class="px-2 py-1">Slowdown Arrow recipe</td><td class="px-2 py-1">Hunter’s Cloak (cosmetic)</td><td class="px-2 py-1">Wolf Plushie (cuddly decoration)</td></tr>
+          <tr><td class="px-2 py-1">Hodari</td><td class="px-2 py-1">Ore Compressor blueprint</td><td class="px-2 py-1">Miner’s Helmet (glider skin)</td><td class="px-2 py-1">Gem Display (furniture)</td></tr>
+          <tr><td class="px-2 py-1">Kenyatta</td><td class="px-2 py-1">Celebration Cake ×5</td><td class="px-2 py-1">Royal Scepter (wand cosmetic)</td><td class="px-2 py-1">Kenyatta’s Portrait (interactive)</td></tr>
+          <tr><td class="px-2 py-1">Reth</td><td class="px-2 py-1">Chef’s Hat (cosmetic)</td><td class="px-2 py-1">Kitchen Knife Set (wall decor)</td><td class="px-2 py-1">Reth’s Special Soup (permanent +10% focus buff)</td></tr>
+          <tr><td class="px-2 py-1">Tamala</td><td class="px-2 py-1">Brewing Stand (make potions)</td><td class="px-2 py-1">Alchemist’s Goggles (cosmetic)</td><td class="px-2 py-1">Cauldron (outdoor decoration, emits smoke)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- How to Level Quickly (daily routine) -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-clock-o text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">⏱️ Efficient Friendship Farming</h2></div>
+    <ul class="list-disc pl-5 space-y-1">
+      <li><strong>Give a loved gift every day</strong> – Check the NPC’s loved items list (previous guide) and farm/craft them in bulk.</li>
+      <li><strong>Complete weekly challenges</strong> – Many reward Renown, which can be traded for friendship boosters at the Dragon Shrine.</li>
+      <li><strong>Talk to each NPC once per day</strong> – Simply initiating conversation gives +2 points.</li>
+      <li><strong>Cook for them</strong> – Giving a cooked dish that is loved counts as a gift. Mass‑produce Celebration Cake for universal loved gift (almost everyone likes cake).</li>
+      <li><strong>Use Renown for the “Friendship Bonus” upgrade</strong> – At the Dragon Shrine, you can increase the base friendship gain by up to 50% for 200 Renown total.</li>
+    </ul>
+    <div class="bg-paliaPrimary/10 p-2 rounded mt-2 text-sm">💡 Priority: Upgrade Friendship Bonus before spending Renown on anything else if your goal is to max all NPCs quickly.</div>
+  </div>
+
+  <!-- Special Reward: Ultimate Friendship Title -->
+  <div class="bg-paliaPrimary/5 rounded-2xl p-6 border border-paliaAccent/20">
+    <i class="fa fa-trophy text-3xl text-paliaPrimary mb-2 block"></i>
+    <h3 class="text-xl font-bold mb-2">🏆 Maximum Friendship Achievement</h3>
+    <p>When you reach Friendship Level 4 with ALL 12 NPCs, you earn the title “Beloved of Palia” and a special reward: a <strong>Golden Pinwheel</strong> (housing decoration) and 500 Renown. If you also reach Romance Level 4 with all 9 romanceable NPCs, you unlock the “Heart of the Valley” title and a unique emote: “Group Hug”.</p>
+    <div class="mt-5 text-center">
+      <a href="index.html" class="inline-block bg-paliaPrimary text-white px-6 py-2 rounded-full hover:bg-paliaPrimaryDeep transition">← Back to Main Hub</a>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-white/70 border-t border-paliaAccent/20 mt-12 py-6 text-center text-sm text-paliaText/70">
+  <p>Palia Guide Hub · Relationship Paths · Every friendship tells a story</p>
+  <p class="mt-1"><i class="fa fa-leaf text-paliaPrimary"></i> Loyalty is rewarded with memories and treasures</p>
+</footer>
+</body>
+</html>
