@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Limited Furniture & Outfits – Expiry Alerts | Palia Guide Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paliaBg: '#fcf8f0',
+            paliaPrimary: '#7f9a6e',
+            paliaPrimaryDeep: '#5f7a4e',
+            paliaAccent: '#e2b181',
+            paliaText: '#3c2f2a',
+            paliaCard: '#ffffff',
+            paliaMuted: '#e9e1d4',
+            eventRed: '#e67e22',
+            eventGold: '#d4af37',
+          },
+          fontFamily: { 'sans': ['Inter', 'system-ui', 'Segoe UI', 'Noto Sans SC', 'sans-serif'] },
+          borderRadius: { 'xl': '1rem', '2xl': '1.5rem' },
+        }
+      }
+    }
+  </script>
+  <style>
+    body { scroll-behavior: smooth; }
+    .section-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .section-card:hover { transform: translateY(-3px); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1); }
+    .expiry-warning { background-color: #fef9e6; border-left: 4px solid #e67e22; }
+  </style>
+</head>
+<body class="bg-paliaBg text-paliaText font-sans antialiased">
+
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-paliaAccent/20 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 lg:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+    <div class="flex items-center gap-3">
+      <div class="bg-paliaPrimary/10 p-2 rounded-2xl"><i class="fa fa-clock-o text-paliaPrimary text-2xl"></i></div>
+      <div>
+        <h1 class="text-xl md:text-2xl font-bold tracking-tight text-paliaPrimaryDeep">Limited Items & Expiry</h1>
+        <p class="text-xs text-paliaText/70">Rare furniture · Outfits · Disappearing soon</p>
+      </div>
+    </div>
+    <a href="index.html" class="text-paliaPrimary hover:underline text-sm flex items-center gap-1"><i class="fa fa-arrow-left"></i> Back to Main Hub</a>
+  </div>
+</header>
+
+<main class="max-w-6xl mx-auto px-4 py-10 space-y-8">
+  <!-- Intro -->
+  <div class="bg-paliaCard rounded-2xl shadow-card p-6 md:p-8">
+    <div class="flex items-center gap-3 border-b border-paliaMuted pb-4 mb-5">
+      <i class="fa fa-exclamation-triangle text-eventRed text-3xl"></i>
+      <h2 class="text-2xl font-bold">Don’t Miss These Time‑Sensitive Treasures</h2>
+    </div>
+    <p class="text-paliaText/80 leading-relaxed">Each limited event brings exclusive furniture and outfits that may never return (or will return only after a long wait). This page highlights the most desirable items and clearly marks when they expire. Prioritize these before the event ends.</p>
+  </div>
+
+  <!-- Maji Market Limited Items -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-birthday-cake text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">🎡 Maji Market (Summer)</h2></div>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50">
+          <tr><th class="px-2 py-2">Item</th><th class="px-2 py-2">Type</th><th class="px-2 py-2">Cost (Tokens)</th><th class="px-2 py-2">Expiry / Availability</th><th class="px-2 py-2">Priority</th></tr>
+        </thead>
+        <tbody class="divide-y">
+          <tr><td class="px-2 py-1">Maji Firefly Lantern</th><td class="px-2 py-1">Furniture (light)</th><td class="px-2 py-1">150 Maji Coins</th><td class="px-2 py-1">End of event (2 weeks)</th><td class="px-2 py-1">🔴 High</td></tr>
+          <tr><td class="px-2 py-1">Carnival Outfit Set</th><td class="px-2 py-1">Cosmetic (top+pants+hat)</th><td class="px-2 py-1">300 Maji Coins</th><td class="px-2 py-1">End of event</th><td class="px-2 py-1">🟠 Medium</td></tr>
+          <tr><td class="px-2 py-1">Fortune Pig Plushie</th><td class="px-2 py-1">Furniture (companion)</th><td class="px-2 py-1">100 Maji Coins</th><td class="px-2 py-1">End of event</th><td class="px-2 py-1">🟢 Low (common)</td></tr>
+          <tr><td class="px-2 py-1">Maji Market Music Box</th><td class="px-2 py-1">Furniture (plays music)</th><td class="px-2 py-1">250 Maji Coins</th><td class="px-2 py-1">End of event</th><td class="px-2 py-1">🟠 Medium</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Winter Lights Limited Items -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-snowflake-o text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">❄️ Winter Lights (Holiday)</h2></div>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50">
+          <tr><th class="px-2 py-2">Item</th><th class="px-2 py-2">Type</th><th class="px-2 py-2">Cost (Winter Tokens)</th><th class="px-2 py-2">Expiry</th><th class="px-2 py-2">Priority</th></tr>
+        </thead>
+        <tbody class="divide-y">
+          <tr><td class="px-2 py-1">Winter Lights Wreath</th><td class="px-2 py-1">Door decoration</th><td class="px-2 py-1">80 Tokens</th><td class="px-2 py-1">End of December</th><td class="px-2 py-1">🔴 High (iconic)</td></tr>
+          <tr><td class="px-2 py-1">Frost Deer Mount</th><td class="px-2 py-1">Statue (large)</th><td class="px-2 py-1">250 Tokens</th><td class="px-2 py-1">End of event</th><td class="px-2 py-1">🟠 Medium</td></tr>
+          <tr><td class="px-2 py-1">Cozy Winter Sweater</th><td class="px-2 py-1">Outfit (top)</th><td class="px-2 py-1">120 Tokens</th><td class="px-2 py-1">End of event</th><td class="px-2 py-1">🔴 High (cosmetic)</td></tr>
+          <tr><td class="px-2 py-1">Holiday Stockings (set of 4)</th><td class="px-2 py-1">Wall hanging</th><td class="px-2 py-1">200 Tokens</th><td class="px-2 py-1">End of event</th><td class="px-2 py-1">🟡 Low</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Halloween Limited Items -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-ghost text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">🎃 Halloween</h2></div>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50">
+          <tr><th class="px-2 py-2">Item</th><th class="px-2 py-2">Type</th><th class="px-2 py-2">Cost (Candy Corn)</th><th class="px-2 py-2">Expiry</th><th class="px-2 py-2">Priority</th></tr>
+        </thead>
+        <tbody class="divide-y">
+          <tr><td class="px-2 py-1">Spooky Lantern</th><td class="px-2 py-1">Furniture (glowing)</th><td class="px-2 py-1">100 Candy Corn</th><td class="px-2 py-1">Nov 3</th><td class="px-2 py-1">🔴 High</td></tr>
+          <tr><td class="px-2 py-1">Witch’s Hat</th><td class="px-2 py-1">Hat cosmetic</th><td class="px-2 py-1">200 Candy Corn</th><td class="px-2 py-1">Nov 3</th><td class="px-2 py-1">🔴 Very High</td></tr>
+          <tr><td class="px-2 py-1">Pumpkin Patch (reskin)</th><td class="px-2 py-1">Crop plot skin</th><td class="px-2 py-1">150 Candy Corn</th><td class="px-2 py-1">Nov 3</th><td class="px-2 py-1">🟠 Medium</td></tr>
+          <tr><td class="px-2 py-1">Ghostly Plushie</th><td class="px-2 py-1">Furniture</th><td class="px-2 py-1">80 Candy Corn</th><td class="px-2 py-1">Nov 3</th><td class="px-2 py-1">🟢 Low</td></tr>
+          <tr><td class="px-2 py-1">Candy Corn Soup (recipe)</th><td class="px-2 py-1">Cooking</th><td class="px-2 py-1">50 Candy Corn</th><td class="px-2 py-1">Nov 3</th><td class="px-2 py-1">🟡 Low (recipe remains after event but can’t be obtained)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Expiry Reminder & Prioritization Strategy -->
+  <div class="section-card expiry-warning p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-hourglass-end text-eventRed text-2xl"></i><h2 class="text-xl font-bold">⚠️ Expiry & Prioritization</h2></div>
+    <ul class="list-disc pl-5 space-y-2">
+      <li><strong>Check the event end date</strong> – Events typically last 2 weeks. The exact date is shown in the event UI. Items disappear from vendors when the event ends.</li>
+      <li><strong>Limited outfits are highest priority</strong> – Furniture may return, but costumes rarely do. Get the Witch’s Hat, Carnival Outfit, and Winter Sweater first.</li>
+      <li><strong>Recipe items</strong> – If you learn a recipe, you keep it forever. So even if you don’t craft it during the event, buy the recipe before it expires.</li>
+      <li><strong>Event currency farming</strong> – Log in daily for bonus tokens. Focus on the most expensive item you want first, then work down.</li>
+      <li><strong>After event ends</strong> – Some items may appear in Zeki’s Black Market at a much higher price (e.g., 10,000g for a limited hat). Better to earn during event.</li>
+    </ul>
+  </div>
+
+  <!-- How to Check Remaining Time -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-3"><i class="fa fa-stopwatch text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">⏱️ How to See Time Left</h2></div>
+    <p>In‑game, open the Event Panel (calendar icon on the top‑right) during an active event. It shows:</p>
+    <ul class="list-disc pl-5 mt-2">
+      <li>Days and hours remaining</li>
+      <li>Current token balance</li>
+      <li>Direct links to event vendors</li>
+    </ul>
+    <p class="mt-2">You can also check official announcements on Discord or the login screen.</p>
+  </div>
+
+  <!-- Past items warning -->
+  <div class="bg-paliaPrimary/5 rounded-2xl p-6 border border-paliaAccent/20">
+    <i class="fa fa-archive text-3xl text-paliaPrimary mb-2 block"></i>
+    <h3 class="text-xl font-bold mb-2">📦 What Happens to Expired Items?</h3>
+    <p>Items you already earned stay in your inventory forever – you can still place furniture or wear outfits. However, after the event ends, you cannot buy them again unless the event returns (some do annually). A few items have been marked “Vintage” and never returned.</p>
+    <div class="mt-3 p-2 bg-white/50 rounded">
+      <p class="text-sm font-semibold">💡 Pro tip: If you’re unsure, buy at least one copy of every low‑cost item (e.g., plushie, recipe) before the event ends, even if you don’t plan to use it immediately.</p>
+    </div>
+    <div class="mt-5 text-center">
+      <a href="index.html" class="inline-block bg-paliaPrimary text-white px-6 py-2 rounded-full hover:bg-paliaPrimaryDeep transition">← Back to Main Hub</a>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-white/70 border-t border-paliaAccent/20 mt-12 py-6 text-center text-sm text-paliaText/70">
+  <p>Palia Guide Hub · Limited Items & Expiry · Collect before they’re gone</p>
+  <p class="mt-1"><i class="fa fa-leaf text-paliaPrimary"></i> Time waits for no gamer – prioritize wisely</p>
+</footer>
+</body>
+</html>
