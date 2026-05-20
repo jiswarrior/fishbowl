@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Online Calculators – Fish Timing, Crop Growth, Friendship Meter | Palia Guide Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paliaBg: '#fcf8f0',
+            paliaPrimary: '#7f9a6e',
+            paliaPrimaryDeep: '#5f7a4e',
+            paliaAccent: '#e2b181',
+            paliaText: '#3c2f2a',
+            paliaCard: '#ffffff',
+            paliaMuted: '#e9e1d4',
+          },
+          fontFamily: { 'sans': ['Inter', 'system-ui', 'Segoe UI', 'Noto Sans SC', 'sans-serif'] },
+          borderRadius: { 'xl': '1rem', '2xl': '1.5rem' },
+        }
+      }
+    }
+  </script>
+  <style>
+    body { scroll-behavior: smooth; }
+    .section-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .section-card:hover { transform: translateY(-3px); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1); }
+    input, select { border: 1px solid #d1c5b5; border-radius: 0.75rem; padding: 0.5rem; width: 100%; background-color: white; }
+    .calc-result { background-color: #f0ede8; border-radius: 1rem; padding: 1rem; margin-top: 1rem; font-weight: 500; text-align: center; }
+  </style>
+</head>
+<body class="bg-paliaBg text-paliaText font-sans antialiased">
+
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-paliaAccent/20 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 lg:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+    <div class="flex items-center gap-3">
+      <div class="bg-paliaPrimary/10 p-2 rounded-2xl"><i class="fa fa-calculator text-paliaPrimary text-2xl"></i></div>
+      <div>
+        <h1 class="text-xl md:text-2xl font-bold tracking-tight text-paliaPrimaryDeep">Online Calculators</h1>
+        <p class="text-xs text-paliaText/70">Fish timing · Crop growth · Friendship meter</p>
+      </div>
+    </div>
+    <a href="index.html" class="text-paliaPrimary hover:underline text-sm flex items-center gap-1"><i class="fa fa-arrow-left"></i> Back to Main Hub</a>
+  </div>
+</header>
+
+<main class="max-w-5xl mx-auto px-4 py-10 space-y-8">
+  <!-- Intro -->
+  <div class="bg-paliaCard rounded-2xl shadow-card p-6 md:p-8">
+    <div class="flex items-center gap-3 border-b border-paliaMuted pb-4 mb-5">
+      <i class="fa fa-clock-o text-paliaPrimary text-3xl"></i>
+      <h2 class="text-2xl font-bold">Plan Your Time with Precision</h2>
+    </div>
+    <p class="text-paliaText/80 leading-relaxed">These interactive calculators help you estimate in‑game timing and resource requirements. Use them to optimize your fishing sessions, plan crop harvests, or figure out how many more gifts you need to reach the next friendship level.</p>
+  </div>
+
+  <!-- Calculator 1: Fish Timing Estimator -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-fish text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">🎣 Fish Timing Estimator</h2></div>
+    <p class="text-sm">Estimate how long (real minutes) you might need to catch a specific fish, based on rarity, bait, and location bonus. (Approximate – actual RNG varies.)</p>
+    <div class="grid md:grid-cols-2 gap-4 mt-3">
+      <div>
+        <label class="block text-sm font-semibold">Fish Rarity</label>
+        <select id="fishRarity">
+          <option value="common">Common (e.g., Kilima Perch)</option>
+          <option value="uncommon">Uncommon (e.g., Dawn Ray)</option>
+          <option value="rare" selected>Rare (e.g., Midnight Carp)</option>
+          <option value="epic">Epic (e.g., Spectral Fish)</option>
+          <option value="legendary">Legendary (e.g., Dragon Fish)</option>
+        </select>
+      </div>
+      <div>
+        <label class="block text-sm font-semibold">Bait Type</label>
+        <select id="fishBait">
+          <option value="none">No Bait</option>
+          <option value="worm" selected>Worm</option>
+          <option value="glow">Glow Worm</option>
+        </select>
+      </div>
+      <div>
+        <label class="block text-sm font-semibold">Location Bonus?</label>
+        <select id="locationBonus">
+          <option value="none">No (general area)</option>
+          <option value="hotspot" selected>Yes (known hotspot / optimal spot)</option>
+        </select>
+      </div>
+      <div>
+        <label class="block text-sm font-semibold">Party Bonus?</label>
+        <select id="partyBonus">
+          <option value="none">Solo fishing</option>
+          <option value="party" selected>Party (2+ players)</option>
+        </select>
+      </div>
+    </div>
+    <div class="calc-result" id="fishResult">Select options to estimate time.</div>
+    <p class="text-xs text-paliaText/60 mt-2">* Times are averages based on community data. Real results vary with luck.</p>
+  </div>
+
+  <!-- Calculator 2: Crop Growth Timer (countdown) -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-pagelines text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">🌾 Crop Growth Timer</h2></div>
+    <p class="text-sm">Select a crop and see its growth time in real minutes. Also includes an optional countdown timer if you set a start time.</p>
+    <div class="grid md:grid-cols-2 gap-4 mt-3">
+      <div>
+        <label class="block text-sm font-semibold">Crop Type</label>
+        <select id="cropType">
+          <option value="carrot">Carrot (12 min)</option>
+          <option value="tomato" selected>Tomato (30 min first harvest, then 12 min repeats)</option>
+          <option value="onion">Onion (15 min)</option>
+          <option value="wheat">Wheat (10 min)</option>
+          <option value="cotton">Cotton (25 min)</option>
+          <option value="rice">Rice (20 min)</option>
+          <option value="potato">Potato (18 min)</option>
+          <option value="blueberry">Blueberry (40 min first, then 20 min repeats)</option>
+          <option value="apple">Apple Tree (72 hours, 4320 min)</option>
+        </select>
+      </div>
+      <div>
+        <label class="block text-sm font-semibold">Speed‑Grow Fertilizer?</label>
+        <select id="fertilizer">
+          <option value="none">No</option>
+          <option value="speedgrow">Speed‑Grow (reduces time by 25%)</option>
+          <option value="speedy">Speedy Grow (rare, reduces time by 50%)</option>
+        </select>
+      </div>
+      <div class="md:col-span-2">
+        <label class="block text-sm font-semibold">Planted At (real time, optional):</label>
+        <input type="datetime-local" id="plantTime" />
+        <p class="text-xs text-paliaText/60 mt-1">Leave blank to see raw growth time; fill to see countdown.</p>
+      </div>
+    </div>
+    <div class="calc-result" id="cropResult">Select a crop to see growth duration.</div>
+  </div>
+
+  <!-- Calculator 3: Friendship / Romance Meter -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-heart text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">💝 Friendship & Romance Level Calculator</h2></div>
+    <p class="text-sm">Calculate how many gifts (or days) you need to reach a target friendship/romance level.</p>
+    <div class="grid md:grid-cols-2 gap-4 mt-3">
+      <div>
+        <label class="block text-sm font-semibold">NPC (points info)</label>
+        <select id="npcSelect">
+          <option value="standard">Any NPC (standard points)</option>
+          <option value="kenyatta">Kenyatta (harder to please)</option>
+        </select>
+        <p class="text-xs text-paliaText/60 mt-1">Most NPCs require same points; some have slightly different thresholds.</p>
+      </div>
+      <div>
+        <label class="block text-sm font-semibold">Current Friendship Level</label>
+        <select id="currentFriendLevel">
+          <option value="0">Level 0 (0/100 points)</option>
+          <option value="1">Level 1 (100/400 total, need 300 more)</option>
+          <option value="2">Level 2 (400/1000 total, need 600 more)</option>
+          <option value="3" selected>Level 3 (1000/2500 total, need 1500 more)</option>
+        </select>
+      </div>
+      <div>
+        <label class="block text-sm font-semibold">Target Friendship Level</label>
+        <select id="targetFriendLevel">
+          <option value="1">Level 1</option>
+          <option value="2">Level 2</option>
+          <option value="3">Level 3</option>
+          <option value="4" selected>Level 4 (Best Friend)</option>
+        </select>
+      </div>
+      <div>
+        <label class="block text-sm font-semibold">Gift Quality</label>
+        <select id="giftQuality">
+          <option value="normal">Normal gift (100% points)</option>
+          <option value="star" selected>Star Quality gift (125% points)</option>
+          <option value="loved">Loved gift (200% points, if known loved item)</option>
+          <option value="lovedStar">Loved + Star (250% points)</option>
+        </select>
+      </div>
+      <div class="md:col-span-2">
+        <label class="block text-sm font-semibold">Friendship Bonus (Renown upgrade)</label>
+        <select id="friendshipBonus">
+          <option value="0">0%</option>
+          <option value="10">+10%</option>
+          <option value="20">+20%</option>
+          <option value="30" selected>+30%</option>
+          <option value="40">+40%</option>
+          <option value="50">+50% (max)</option>
+        </select>
+      </div>
+    </div>
+    <div class="calc-result" id="friendshipResult">Select options to calculate needed gifts.</div>
+  </div>
+
+  <!-- Additional Info / How to Use -->
+  <div class="bg-paliaPrimary/5 rounded-2xl p-6 border border-paliaAccent/20">
+    <i class="fa fa-info-circle text-3xl text-paliaPrimary mb-2 block"></i>
+    <h3 class="text-xl font-bold mb-2">📌 About the Calculators</h3>
+    <ul class="list-disc pl-5 space-y-1 text-paliaText/80">
+      <li><strong>Fish Timer:</strong> Averages from player‑reported data. Multiply by 1.5 if unlucky.</li>
+      <li><strong>Crop Growth:</strong> Times are real minutes; use the datetime picker to see harvest countdown (based on your local time).</li>
+      <li><strong>Friendship Meter:</strong> Assumes one gift per day. Does not include weekly want bonuses or quests.</li>
+      <li>All calculators are client‑side – your data never leaves your device.</li>
+    </ul>
+    <div class="mt-5 text-center">
+      <a href="index.html" class="inline-block bg-paliaPrimary text-white px-6 py-2 rounded-full hover:bg-paliaPrimaryDeep transition">← Back to Main Hub</a>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-white/70 border-t border-paliaAccent/20 mt-12 py-6 text-center text-sm text-paliaText/70">
+  <p>Palia Guide Hub · Online Calculators · Plan, predict, progress</p>
+  <p class="mt-1"><i class="fa fa-leaf text-paliaPrimary"></i> Numbers don't lie – use them to your advantage</p>
+</footer>
+
+<script>
+  // Fish Timing Calculator
+  function updateFishTime() {
+    const rarity = document.getElementById('fishRarity').value;
+    const bait = document.getElementById('fishBait').value;
+    const locationBonus = document.getElementById('locationBonus').value;
+    const partyBonus = document.getElementById('partyBonus').value;
+
+    let baseMinutes = 0;
+    switch (rarity) {
+      case 'common': baseMinutes = 1; break;
+      case 'uncommon': baseMinutes = 3; break;
+      case 'rare': baseMinutes = 12; break;
+      case 'epic': baseMinutes = 25; break;
+      case 'legendary': baseMinutes = 45; break;
+    }
+    if (bait === 'worm') baseMinutes *= 0.8;
+    if (bait === 'glow') baseMinutes *= 0.6;
+    if (locationBonus === 'hotspot') baseMinutes *= 0.7;
+    if (partyBonus === 'party') baseMinutes *= 0.85;
+
+    const resultDiv = document.getElementById('fishResult');
+    resultDiv.innerHTML = `⏱️ Estimated average time: <strong>${Math.round(baseMinutes)} minutes</strong> of active fishing.` +
+      `<br><span class="text-xs">(RNG can vary ±50%)</span>`;
+  }
+
+  // Crop Growth Calculator
+  function updateCrop() {
+    const crop = document.getElementById('cropType').value;
+    const fert = document.getElementById('fertilizer').value;
+    const plantTimeInput = document.getElementById('plantTime').value;
+
+    let baseMinutes = 0;
+    let repeatHarvest = false;
+    switch (crop) {
+      case 'carrot': baseMinutes = 12; break;
+      case 'tomato': baseMinutes = 30; repeatHarvest = true; break;
+      case 'onion': baseMinutes = 15; break;
+      case 'wheat': baseMinutes = 10; break;
+      case 'cotton': baseMinutes = 25; break;
+      case 'rice': baseMinutes = 20; break;
+      case 'potato': baseMinutes = 18; break;
+      case 'blueberry': baseMinutes = 40; repeatHarvest = true; break;
+      case 'apple': baseMinutes = 4320; break;
+    }
+    if (fert === 'speedgrow') baseMinutes *= 0.75;
+    if (fert === 'speedy') baseMinutes *= 0.5;
+
+    const minutes = Math.round(baseMinutes);
+    const hours = Math.floor(minutes / 60);
+    const mins = minutes % 60;
+    let timeString = '';
+    if (hours > 0) timeString += `${hours} hours `;
+    if (mins > 0) timeString += `${mins} minutes`;
+    if (minutes === 0) timeString = '0 minutes';
+
+    let resultHtml = `🌱 Growth time: <strong>${timeString}</strong> (real time).`;
+    if (repeatHarvest) resultHtml += `<br>🔄 This crop repeats harvest every ${fert === 'speedgrow' ? Math.round(baseMinutes*0.75) : fert === 'speedy' ? Math.round(baseMinutes*0.5) : baseMinutes} minutes after first harvest.`;
+
+    if (plantTimeInput) {
+      const plantDate = new Date(plantTimeInput);
+      if (!isNaN(plantDate.getTime())) {
+        const harvestDate = new Date(plantDate.getTime() + minutes * 60000);
+        resultHtml += `<br>📅 Harvest ready at: <strong>${harvestDate.toLocaleString()}</strong>`;
+        // Countdown update would require setInterval, but for simplicity just show ready time.
+      }
+    }
+    document.getElementById('cropResult').innerHTML = resultHtml;
+  }
+
+  // Friendship Calculator
+  function updateFriendship() {
+    const currentLv = parseInt(document.getElementById('currentFriendLevel').value);
+    const targetLv = parseInt(document.getElementById('targetFriendLevel').value);
+    const giftQuality = document.getElementById('giftQuality').value;
+    const bonus = parseInt(document.getElementById('friendshipBonus').value);
+    const npc = document.getElementById('npcSelect').value;
+
+    // Points needed to reach target level from current
+    const levelPoints = [0, 100, 400, 1000, 2500];
+    if (targetLv <= currentLv) {
+      document.getElementById('friendshipResult').innerHTML = '⚠️ Target level is not higher than current level.';
+      return;
+    }
+    let pointsNeeded = levelPoints[targetLv] - levelPoints[currentLv];
+
+    // Gift value
+    let giftBase = 0;
+    switch (giftQuality) {
+      case 'normal': giftBase = 15; break;
+      case 'star': giftBase = 18; break;  // 15*1.25 rounded
+      case 'loved': giftBase = 30; break;
+      case 'lovedStar': giftBase = 37; break; // 30*1.25
+    }
+    // Apply friendship bonus
+    const effectiveGift = giftBase * (1 + bonus / 100);
+    let giftsNeeded = Math.ceil(pointsNeeded / effectiveGift);
+
+    // Days needed (1 gift per day)
+    const days = giftsNeeded;
+
+    let resultHtml = `🎁 You need approximately <strong>${giftsNeeded} gifts</strong> (${days} days) to reach Friendship Level ${targetLv}.<br>`;
+    resultHtml += `Each gift gives ~${effectiveGift.toFixed(1)} points (including bonus).<br>`;
+    resultHtml += `<span class="text-xs">* Does not include weekly want bonuses (double points) or quests.</span>`;
+    document.getElementById('friendshipResult').innerHTML = resultHtml;
+  }
+
+  // Attach event listeners
+  document.getElementById('fishRarity').addEventListener('change', updateFishTime);
+  document.getElementById('fishBait').addEventListener('change', updateFishTime);
+  document.getElementById('locationBonus').addEventListener('change', updateFishTime);
+  document.getElementById('partyBonus').addEventListener('change', updateFishTime);
+
+  document.getElementById('cropType').addEventListener('change', updateCrop);
+  document.getElementById('fertilizer').addEventListener('change', updateCrop);
+  document.getElementById('plantTime').addEventListener('change', updateCrop);
+
+  document.getElementById('currentFriendLevel').addEventListener('change', updateFriendship);
+  document.getElementById('targetFriendLevel').addEventListener('change', updateFriendship);
+  document.getElementById('giftQuality').addEventListener('change', updateFriendship);
+  document.getElementById('friendshipBonus').addEventListener('change', updateFriendship);
+  document.getElementById('npcSelect').addEventListener('change', updateFriendship);
+
+  // Initial calculations
+  updateFishTime();
+  updateCrop();
+  updateFriendship();
+</script>
+</body>
+</html>

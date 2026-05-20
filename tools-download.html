@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Downloads – Excel Wiki, Spawn Maps, NPC Gift List | Palia Guide Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paliaBg: '#fcf8f0',
+            paliaPrimary: '#7f9a6e',
+            paliaPrimaryDeep: '#5f7a4e',
+            paliaAccent: '#e2b181',
+            paliaText: '#3c2f2a',
+            paliaCard: '#ffffff',
+            paliaMuted: '#e9e1d4',
+          },
+          fontFamily: { 'sans': ['Inter', 'system-ui', 'Segoe UI', 'Noto Sans SC', 'sans-serif'] },
+          borderRadius: { 'xl': '1rem', '2xl': '1.5rem' },
+        }
+      }
+    }
+  </script>
+  <style>
+    body { scroll-behavior: smooth; }
+    .section-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .section-card:hover { transform: translateY(-3px); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1); }
+    .download-btn { background-color: #7f9a6e; color: white; padding: 0.5rem 1rem; border-radius: 2rem; display: inline-flex; align-items: center; gap: 0.5rem; transition: background 0.2s; }
+    .download-btn:hover { background-color: #5f7a4e; }
+  </style>
+</head>
+<body class="bg-paliaBg text-paliaText font-sans antialiased">
+
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-paliaAccent/20 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 lg:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+    <div class="flex items-center gap-3">
+      <div class="bg-paliaPrimary/10 p-2 rounded-2xl"><i class="fa fa-download text-paliaPrimary text-2xl"></i></div>
+      <div>
+        <h1 class="text-xl md:text-2xl font-bold tracking-tight text-paliaPrimaryDeep">Downloads</h1>
+        <p class="text-xs text-paliaText/70">Excel wikis · Spawn maps · NPC gift tables</p>
+      </div>
+    </div>
+    <a href="index.html" class="text-paliaPrimary hover:underline text-sm flex items-center gap-1"><i class="fa fa-arrow-left"></i> Back to Main Hub</a>
+  </div>
+</header>
+
+<main class="max-w-5xl mx-auto px-4 py-10 space-y-8">
+  <!-- Intro -->
+  <div class="bg-paliaCard rounded-2xl shadow-card p-6 md:p-8">
+    <div class="flex items-center gap-3 border-b border-paliaMuted pb-4 mb-5">
+      <i class="fa fa-file-excel-o text-paliaPrimary text-3xl"></i>
+      <h2 class="text-2xl font-bold">Offline Resources for Power Players</h2>
+    </div>
+    <p class="text-paliaText/80 leading-relaxed">Sometimes you need data at your fingertips without switching tabs. These downloadable files include full item databases, interactive‑style spawn maps, and NPC gift charts – perfect for printing or keeping on a second monitor.</p>
+  </div>
+
+  <!-- Download 1: Excel Wiki Table -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-table text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">📊 Excel Wiki Table – Complete Item Database</h2></div>
+    <p>An Excel spreadsheet (.xlsx) containing all known items in Palia: crops, fish, bugs, ores, furniture, recipes, and more. Columns include item name, category, sell value (normal & star), source, and usage notes.</p>
+    <ul class="list-disc pl-5 text-sm mt-2">
+      <li><strong>Size:</strong> ~2 MB (unzipped)</li>
+      <li><strong>Format:</strong> Microsoft Excel (compatible with LibreOffice, Google Sheets)</li>
+      <li><strong>Last updated:</strong> Patch 0.182</li>
+      <li><strong>Includes filters:</strong> Sort by value, type, or rarity</li>
+    </ul>
+    <div class="mt-3">
+      <a href="#" class="download-btn" id="downloadExcelBtn"><i class="fa fa-file-excel-o"></i> Download Excel Wiki (XLSX)</a>
+      <p class="text-xs text-paliaText/60 mt-2">(Note: In this HTML demo, the download will simulate; in production, link to actual file.)</p>
+    </div>
+  </div>
+
+  <!-- Download 2: Spawn Maps -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-map-o text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">🗺️ High‑Resolution Spawn Maps (PDF/PNG)</h2></div>
+    <p>Printable or viewable maps of Kilima Valley and Bahari Bay, marked with all rare resource spawns: palium ore, flow trees, legendary fish hotspots, and rare bug locations.</p>
+    <ul class="list-disc pl-5 text-sm mt-2">
+      <li><strong>Kilima Valley Map:</strong> 4,000×3,000 pixels (PNG) / PDF – marks copper, clay, sweet leaf, and rare fish spots.</li>
+      <li><strong>Bahari Bay Map:</strong> 4,500×3,500 pixels (PNG) / PDF – iron, palium, flow trees, rainbow butterfly, golden scarab.</li>
+      <li><strong>Interactive PDF version:</strong> Clickable legend.</li>
+    </ul>
+    <div class="mt-3 flex flex-wrap gap-3">
+      <a href="#" class="download-btn" id="downloadKilimaMap"><i class="fa fa-file-image-o"></i> Kilima Valley Map (PNG)</a>
+      <a href="#" class="download-btn" id="downloadBahariMap"><i class="fa fa-file-image-o"></i> Bahari Bay Map (PNG)</a>
+      <a href="#" class="download-btn" id="downloadPDFMap"><i class="fa fa-file-pdf-o"></i> Both Maps (PDF)</a>
+    </div>
+  </div>
+
+  <!-- Download 3: NPC Gift List -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-gift text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">🎁 NPC Gift List (CSV / Excel)</h2></div>
+    <p>A sortable table of every NPC's loved, liked, and hated gifts. Also includes weekly wanted items (updated each patch) and birthday dates.</p>
+    <ul class="list-disc pl-5 text-sm mt-2">
+      <li><strong>CSV version:</strong> Import into any spreadsheet or database.</li>
+      <li><strong>Excel version:</strong> Pre‑formatted with conditional coloring.</li>
+      <li><strong>Includes:</strong> 12 NPCs, 4 friendship levels, romance‑specific gifts, and event gift preferences.</li>
+    </ul>
+    <div class="mt-3 flex flex-wrap gap-3">
+      <a href="#" class="download-btn" id="downloadGiftCSV"><i class="fa fa-file-text-o"></i> Gift List (CSV)</a>
+      <a href="#" class="download-btn" id="downloadGiftExcel"><i class="fa fa-file-excel-o"></i> Gift List (Excel)</a>
+    </div>
+  </div>
+
+  <!-- Additional Tools: Extras -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-puzzle-piece text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">🧩 Bonus Downloads</h2></div>
+    <ul class="list-disc pl-5 text-sm">
+      <li><strong>Checklist for Bundles (Temple of Waves):</strong> PDF checklist of all required fish, bugs, and crops – tick off as you collect.</li>
+      <li><strong>Weekly Challenge Tracker:</strong> Excel template to track your progress across all 7 skills.</li>
+      <li><strong>Crafting Calculator:</strong> Spreadsheet that calculates material requirements for bulk crafting (furniture, cooking).</li>
+    </ul>
+    <div class="mt-3">
+      <a href="#" class="download-btn" id="downloadBundleChecklist"><i class="fa fa-check-square-o"></i> Bundle Checklist (PDF)</a>
+      <a href="#" class="download-btn" id="downloadCraftCalc"><i class="fa fa-calculator"></i> Crafting Calculator (XLSX)</a>
+    </div>
+  </div>
+
+  <!-- How to Use These Files -->
+  <div class="bg-paliaPrimary/5 rounded-2xl p-6 border border-paliaAccent/20">
+    <i class="fa fa-lightbulb-o text-3xl text-paliaPrimary mb-2 block"></i>
+    <h3 class="text-xl font-bold mb-2">💡 Using the Downloads Effectively</h3>
+    <ul class="list-disc pl-5 space-y-1 text-paliaText/80">
+      <li><strong>Print the spawn maps</strong> – Keep a physical copy next to your monitor for quick reference while playing.</li>
+      <li><strong>Import NPC gift CSV into Google Sheets</strong> – Share with friends to coordinate daily gifts.</li>
+      <li><strong>Use the Excel wiki to calculate profit margins</strong> – Sort by “Gold per hour” to identify best farming methods.</li>
+      <li><strong>Check for updates</strong> – These files are manually updated after each patch; the version date is in the filename.</li>
+    </ul>
+    <div class="mt-5 text-center">
+      <a href="index.html" class="inline-block bg-paliaPrimary text-white px-6 py-2 rounded-full hover:bg-paliaPrimaryDeep transition">← Back to Main Hub</a>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-white/70 border-t border-paliaAccent/20 mt-12 py-6 text-center text-sm text-paliaText/70">
+  <p>Palia Guide Hub · Downloads · Your offline companion</p>
+  <p class="mt-1"><i class="fa fa-leaf text-paliaPrimary"></i> Data at your fingertips, wherever you go</p>
+</footer>
+
+<script>
+  // Simulate download for demo – in real implementation, replace with actual file URLs
+  const downloadBtns = document.querySelectorAll('.download-btn');
+  downloadBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      alert('In a live version, this would download the requested file. For this demo, files are not hosted. You can host them manually following the naming conventions.');
+    });
+  });
+</script>
+</body>
+</html>

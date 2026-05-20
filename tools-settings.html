@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Hotkeys, Performance Tweaks & Game Settings | Palia Guide Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paliaBg: '#fcf8f0',
+            paliaPrimary: '#7f9a6e',
+            paliaPrimaryDeep: '#5f7a4e',
+            paliaAccent: '#e2b181',
+            paliaText: '#3c2f2a',
+            paliaCard: '#ffffff',
+            paliaMuted: '#e9e1d4',
+          },
+          fontFamily: { 'sans': ['Inter', 'system-ui', 'Segoe UI', 'Noto Sans SC', 'sans-serif'] },
+          borderRadius: { 'xl': '1rem', '2xl': '1.5rem' },
+        }
+      }
+    }
+  </script>
+  <style>
+    body { scroll-behavior: smooth; }
+    .section-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .section-card:hover { transform: translateY(-3px); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1); }
+    kbd { background-color: #f3f0ea; border: 1px solid #d1c5b5; border-radius: 0.3rem; padding: 0.1rem 0.4rem; font-family: monospace; font-size: 0.8rem; }
+  </style>
+</head>
+<body class="bg-paliaBg text-paliaText font-sans antialiased">
+
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-paliaAccent/20 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 lg:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+    <div class="flex items-center gap-3">
+      <div class="bg-paliaPrimary/10 p-2 rounded-2xl"><i class="fa fa-keyboard-o text-paliaPrimary text-2xl"></i></div>
+      <div>
+        <h1 class="text-xl md:text-2xl font-bold tracking-tight text-paliaPrimaryDeep">Hotkeys & Settings</h1>
+        <p class="text-xs text-paliaText/70">Keyboard shortcuts · Performance tweaks · Recommended options</p>
+      </div>
+    </div>
+    <a href="index.html" class="text-paliaPrimary hover:underline text-sm flex items-center gap-1"><i class="fa fa-arrow-left"></i> Back to Main Hub</a>
+  </div>
+</header>
+
+<main class="max-w-6xl mx-auto px-4 py-10 space-y-8">
+  <!-- Intro -->
+  <div class="bg-paliaCard rounded-2xl shadow-card p-6 md:p-8">
+    <div class="flex items-center gap-3 border-b border-paliaMuted pb-4 mb-5">
+      <i class="fa fa-sliders text-paliaPrimary text-3xl"></i>
+      <h2 class="text-2xl font-bold">Optimize Your Gameplay Experience</h2>
+    </div>
+    <p class="text-paliaText/80 leading-relaxed">Whether you play on PC or Switch, the right settings and hotkeys can drastically improve your comfort and efficiency. This guide covers essential shortcuts, performance‑boosting graphics settings, and cross‑platform recommendations.</p>
+  </div>
+
+  <!-- Hotkeys: PC vs Switch -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-gamepad text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">🎮 Hotkeys – PC (Keyboard/Mouse) vs Switch</h2></div>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50">
+          <tr><th class="px-2 py-2">Action</th><th class="px-2 py-2">PC Default</th><th class="px-2 py-2">Switch (Pro Controller)</th></tr>
+        </thead>
+        <tbody class="divide-y">
+          <tr><td class="px-2 py-1">Move</td><td class="px-2 py-1"><kbd>W/A/S/D</kbd></td><td class="px-2 py-1">Left Stick</td></tr>
+          <tr><td class="px-2 py-1">Camera / Look</td><td class="px-2 py-1"><kbd>Mouse</kbd></td><td class="px-2 py-1">Right Stick</td></tr>
+          <tr><td class="px-2 py-1">Interact / Pick up</td><td class="px-2 py-1"><kbd>E</kbd> or <kbd>Left Click</kbd></td><td class="px-2 py-1"><kbd>A</kbd> button</td></tr>
+          <tr><td class="px-2 py-1">Open Tool Wheel</td><td class="px-2 py-1"><kbd>Q</kbd></td><td class="px-2 py-1"><kbd>L</kbd> button</td></tr>
+          <tr><td class="px-2 py-1">Use Tool (Mine/Chop/Fish)</td><td class="px-2 py-1"><kbd>Left Click</kbd></td><td class="px-2 py-1"><kbd>ZR</kbd> (right trigger)</td></tr>
+          <tr><td class="px-2 py-1">Jump</td><td class="px-2 py-1"><kbd>Spacebar</kbd></td><td class="px-2 py-1"><kbd>B</kbd></td></tr>
+          <tr><td class="px-2 py-1">Open Inventory / Menu</td><td class="px-2 py-1"><kbd>I</kbd> or <kbd>Esc</kbd></td><td class="px-2 py-1"><kbd>+</kbd> button</td></tr>
+          <tr><td class="px-2 py-1">Map</td><td class="px-2 py-1"><kbd>M</kbd></td><td class="px-2 py-1"><kbd>-</kbd> button</td></tr>
+          <tr><td class="px-2 py-1">Social Panel (Friends)</td><td class="px-2 py-1"><kbd>O</kbd></td><td class="px-2 py-1">Hold <kbd>ZL</kbd> + <kbd>A</kbd></td></tr>
+          <tr><td class="px-2 py-1">Sprint (toggle)</td><td class="px-2 py-1"><kbd>Shift</kbd> (hold) / <kbd>Toggle in settings</kbd></td><td class="px-2 py-1"><kbd>ZL</kbd> (hold)</td></tr>
+          <tr><td class="px-2 py-1">Emote Wheel</td><td class="px-2 py-1"><kbd>Y</kbd></td><td class="px-2 py-1"><kbd>R</kbd> button</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="mt-2 text-sm">All keys can be remapped in the settings menu (PC: Input tab; Switch: System Settings → Controllers).</p>
+  </div>
+
+  <!-- Performance Optimization -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-tachometer text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">⚙️ Graphics & Performance Tuning</h2></div>
+    <div class="grid md:grid-cols-2 gap-4">
+      <div>
+        <h3 class="font-semibold">🖥️ Low‑End PCs (Integrated graphics, 4‑8GB RAM)</h3>
+        <ul class="list-disc pl-5 text-sm">
+          <li>Resolution: 720p or 900p</li>
+          <li>Windowed mode (Fullscreen may cause lag)</li>
+          <li>Graphics Quality: Low</li>
+          <li>Shadows: Off</li>
+          <li>Anti‑aliasing: Off</li>
+          <li>View Distance: Medium (or Low)</li>
+          <li>V‑Sync: Off</li>
+          <li>FPS Cap: 30 or 60 (test which is stable)</li>
+          <li>Close background apps (browsers, Discord).</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold">💻 Mid‑Range PCs (GTX 1060 / RX 580, 16GB RAM)</h3>
+        <ul class="list-disc pl-5 text-sm">
+          <li>Resolution: 1080p</li>
+          <li>Graphics Quality: Medium</li>
+          <li>Shadows: Low</li>
+          <li>Anti‑aliasing: FXAA or Low</li>
+          <li>View Distance: High</li>
+          <li>V‑Sync: On (to prevent screen tearing)</li>
+          <li>FPS Cap: 60 or Unlimited</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold">🚀 High‑End PCs (RTX 2060+, 32GB RAM)</h3>
+        <ul class="list-disc pl-5 text-sm">
+          <li>Resolution: 1440p or 4K</li>
+          <li>Graphics Quality: High / Epic</li>
+          <li>Shadows: High</li>
+          <li>Anti‑aliasing: TAA or High</li>
+          <li>View Distance: Maximum</li>
+          <li>FPS Cap: 144 (if monitor supports)</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold">🎮 Nintendo Switch (Docked / Handheld)</h3>
+        <ul class="list-disc pl-5 text-sm">
+          <li>Game automatically adjusts; no manual graphics settings.</li>
+          <li>For better performance: Close other software, play in Airplane Mode (offline), lower TV output to 720p if docked, and restart the console before playing.</li>
+          <li>Reduce in‑game camera sensitivity (Settings → Controls → Camera Sensitivity = 0.4–0.6).</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Network & Online Stability -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-wifi text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">🌐 Network Optimization & Ping Reduction</h2></div>
+    <ul class="list-disc pl-5 space-y-1">
+      <li><strong>Wired connection:</strong> Use Ethernet instead of Wi‑Fi for more stable ping.</li>
+      <li><strong>Close bandwidth‑heavy apps:</strong> Streaming video, large downloads, or torrents.</li>
+      <li><strong>Select the correct region</strong> in the launcher (NA, EU, Asia).</li>
+      <li><strong>DNS settings:</strong> Use Cloudflare (1.1.1.1) or Google (8.8.8.8) for faster resolution.</li>
+      <li><strong>Port forwarding:</strong> Not typically required; but if you experience constant disconnects, forward UDP ports 27000–27030 to your PC.</li>
+      <li><strong>Switch users:</strong> Place console closer to router; restart network settings via “Initialize Console” (does not delete save data).</li>
+    </ul>
+  </div>
+
+  <!-- Recommended In‑Game Settings -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-sliders-h text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">🎛️ Recommended Game Settings (Quality of Life)</h2></div>
+    <div class="grid md:grid-cols-2 gap-4 text-sm">
+      <div>
+        <h3 class="font-semibold">📷 Camera & Controls</h3>
+        <ul class="list-disc pl-5">
+          <li><strong>Field of View (FOV):</strong> 90–100 (wider view, less motion sickness)</li>
+          <li><strong>Mouse Sensitivity:</strong> 0.7 (default) – adjust to your comfort</li>
+          <li><strong>Invert Y‑Axis:</strong> Personal preference</li>
+          <li><strong>Controller Vibration:</strong> Off (improves battery life on Switch and reduces distraction)</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold">🔊 Audio</h3>
+        <ul class="list-disc pl-5">
+          <li><strong>Master Volume:</strong> 70% (avoid missing quest dialogue)</li>
+          <li><strong>Music Volume:</strong> 40% (ambient, not overwhelming)</li>
+          <li><strong>SFX Volume:</strong> 80% (important for fishing bite sounds)</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold">🖥️ Display</h3>
+        <ul class="list-disc pl-5">
+          <li><strong>Fullscreen Mode:</strong> Fullscreen (better performance than Windowed)</li>
+          <li><strong>Resolution Scale:</strong> 100% (reducing causes blur)</li>
+          <li><strong>Brightness:</strong> 1.2 (if game appears dark)</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold">🎮 Gameplay</h3>
+        <ul class="list-disc pl-5">
+          <li><strong>Auto‑Sprint:</strong> On (toggle sprint with Shift)</li>
+          <li><strong>Toggle Tool Wheel:</strong> On (press Q once instead of holding)</li>
+          <li><strong>Show Player Names:</strong> Always (helpful for grouping)</li>
+          <li><strong>Quest Tracker:</strong> Keep at least 3 quests pinned</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Advanced Tweaks (Config Files) -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-code text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">🔧 Advanced Tweaks (Config Files – PC Only)</h2></div>
+    <p>For experienced users, you can manually edit the <code>GameUserSettings.ini</code> file located in <code>%LOCALAPPDATA%\Palia\Saved\Config\WindowsClient\</code>.</p>
+    <ul class="list-disc pl-5 text-sm">
+      <li><strong>Disable motion blur:</strong> <code>bMotionBlur=False</code> (under [ScalabilityGroups])</li>
+      <li><strong>Reduce particle effects:</strong> <code>sg.EffectsQuality=1</code> (instead of 3)</li>
+      <li><strong>Increase texture streaming pool:</strong> <code>r.Streaming.PoolSize=2000</code> (higher for VRAM >6GB)</li>
+    </ul>
+    <p class="mt-1 text-xs text-paliaText/60">⚠️ Editing config files may cause crashes if misconfigured. Back up the original file first.</p>
+  </div>
+
+  <!-- Summary -->
+  <div class="bg-paliaPrimary/5 rounded-2xl p-6 border border-paliaAccent/20">
+    <i class="fa fa-check-circle-o text-3xl text-paliaPrimary mb-2 block"></i>
+    <h3 class="text-xl font-bold mb-2">✅ Quick Setup Checklist</h3>
+    <ul class="list-disc pl-5 space-y-1 text-paliaText/80">
+      <li>Set graphics preset according to your hardware (Low/Medium/High)</li>
+      <li>Enable Auto‑Sprint and Toggle Tool Wheel for comfort</li>
+      <li>Adjust FOV to 95 for better peripheral vision</li>
+      <li>Connect via Ethernet if possible, close background apps</li>
+      <li>Remap hotkeys that feel awkward – especially tool wheel if you use mouse side buttons</li>
+      <li>For Switch, lower camera sensitivity to 0.5 and play in Docked mode for stability</li>
+    </ul>
+    <div class="mt-5 text-center">
+      <a href="index.html" class="inline-block bg-paliaPrimary text-white px-6 py-2 rounded-full hover:bg-paliaPrimaryDeep transition">← Back to Main Hub</a>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-white/70 border-t border-paliaAccent/20 mt-12 py-6 text-center text-sm text-paliaText/70">
+  <p>Palia Guide Hub · Hotkeys & Settings · Play your way, at peak performance</p>
+  <p class="mt-1"><i class="fa fa-leaf text-paliaPrimary"></i> Small tweaks, big comfort</p>
+</footer>
+</body>
+</html>
