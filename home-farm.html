@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Efficient Farm Layout & Storage Organization | Palia Guide Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paliaBg: '#fcf8f0',
+            paliaPrimary: '#7f9a6e',
+            paliaPrimaryDeep: '#5f7a4e',
+            paliaAccent: '#e2b181',
+            paliaText: '#3c2f2a',
+            paliaCard: '#ffffff',
+            paliaMuted: '#e9e1d4',
+          },
+          fontFamily: { 'sans': ['Inter', 'system-ui', 'Segoe UI', 'Noto Sans SC', 'sans-serif'] },
+          borderRadius: { 'xl': '1rem', '2xl': '1.5rem' },
+        }
+      }
+    }
+  </script>
+  <style>
+    body { scroll-behavior: smooth; }
+    .section-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .section-card:hover { transform: translateY(-3px); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body class="bg-paliaBg text-paliaText font-sans antialiased">
+
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-paliaAccent/20 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 lg:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+    <div class="flex items-center gap-3">
+      <div class="bg-paliaPrimary/10 p-2 rounded-2xl"><i class="fa fa-tasks text-paliaPrimary text-2xl"></i></div>
+      <div>
+        <h1 class="text-xl md:text-2xl font-bold tracking-tight text-paliaPrimaryDeep">Farm Efficiency & Storage</h1>
+        <p class="text-xs text-paliaText/70">Crop layout · Automation · Chest organization</p>
+      </div>
+    </div>
+    <a href="index.html" class="text-paliaPrimary hover:underline text-sm flex items-center gap-1"><i class="fa fa-arrow-left"></i> Back to Main Hub</a>
+  </div>
+</header>
+
+<main class="max-w-5xl mx-auto px-4 py-10 space-y-8">
+  <!-- Intro -->
+  <div class="bg-paliaCard rounded-2xl shadow-card p-6 md:p-8">
+    <div class="flex items-center gap-3 border-b border-paliaMuted pb-4 mb-5">
+      <i class="fa fa-cogs text-paliaPrimary text-3xl"></i>
+      <h2 class="text-2xl font-bold">Maximize Your Farm’s Potential</h2>
+    </div>
+    <p class="text-paliaText/80 leading-relaxed">A well‑organized farm saves hours of daily chore time and boosts productivity. This guide covers optimal crop placement, water management, processing facility layouts, and a smart storage system so you always find what you need.</p>
+  </div>
+
+  <!-- Crop Layout Strategies -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-th-large text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🌾 Efficient Crop Layout</h2></div>
+    <ul class="list-disc pl-5 space-y-2">
+      <li><strong>Group crops by harvest cycle</strong> – Place short‑cycle crops (carrots, wheat) together for quick harvesting; long‑cycle (blueberries, apples) together to reduce walking.</li>
+      <li><strong>Leave 1‑tile pathways</strong> – Between soil plots, leave at least one empty tile so you can reach every crop without stepping on them.</li>
+      <li><strong>Place fertilizer spreaders (if available)</strong> – Some upgrades allow automatic fertilizer application; position them centrally.</li>
+      <li><strong>Watering efficiency:</strong> Arrange plots in rectangles (3×3 or 5×5) to maximize watering can coverage. Upgraded watering cans cover 3×3, 5×5, or even 7×7 area.</li>
+      <li><strong>Near storage and processing:</strong> Place seed makers and preserves jars adjacent to your crop fields to minimize travel when processing harvests.</li>
+    </ul>
+    <div class="bg-paliaMuted/20 p-3 rounded mt-2">
+      <p class="font-semibold">📐 Example: 5×5 plot layout (25 tiles)</p>
+      <p class="text-xs">Crops: Center 9 tiles for tomatoes (continuous harvest), outer ring for carrots/wheat, corners for flowers. Leave edges for pathways.</p>
+    </div>
+  </div>
+
+  <!-- Water Management & Sprinklers (if implemented) -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-tint text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">💧 Water Management & Automated Irrigation</h2></div>
+    <p>Watering crops is the most time‑consuming farm chore. As you progress, you can automate:</p>
+    <ul class="list-disc pl-5 space-y-2">
+      <li><strong>Watering Can upgrades</strong> – Copper (3×3), Iron (5×5), Palium (7×7). At max upgrade, you can water 49 tiles in one click.</li>
+      <li><strong>Rain Collector</strong> – Building (Gardening Lv 10) that stores rainwater. Can be connected to sprinklers (future content).</li>
+      <li><strong>Irrigation Channel (crafted):</strong> Unlocks at Lv 12 Gardening. Place channels between plots; water flows from a source (well) to nearby crops automatically, reducing watering frequency by 50%.</li>
+      <li><strong>Group farming bonus:</strong> If you and a neighbor both water the same plot, growth speed increases by 20% (social bonus).</li>
+    </ul>
+  </div>
+
+  <!-- Processing Facility Layout -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-industry text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🏭 Processing Facility Organization</h2></div>
+    <p>Group all processing stations in a dedicated “shed” or outdoor area to streamline workflow.</p>
+    <div class="grid md:grid-cols-2 gap-3 text-sm">
+      <div>
+        <h3 class="font-bold">Food Processing Zone</h3>
+        <ul class="list-disc pl-4">
+          <li>Seed Maker (turns crops → seeds)</li>
+          <li>Preserves Jar (jam, pickles)</li>
+          <li>Composter (fertilizer, worms)</li>
+          <li>Oven / Stove (cooking)</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold">Material Processing Zone</h3>
+        <ul class="list-disc pl-4">
+          <li>Furnace (ore → bars)</li>
+          <li>Sawmill (wood → planks)</li>
+          <li>Loom (cotton → fabric)</li>
+          <li>Workbench (general crafting)</li>
+        </ul>
+      </div>
+    </div>
+    <p class="mt-2 text-sm">Keep all processing stations within a few steps of at least one storage chest to avoid running back and forth.</p>
+  </div>
+
+  <!-- Storage Organization System -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-archive text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">📦 Smart Storage Organization</h2></div>
+    <p>You can place multiple storage chests. Each chest has a limited capacity, but they share a global inventory? Actually, chests are separate – you must manually organize. Use color‑coding and naming.</p>
+    <ul class="list-disc pl-5 space-y-2">
+      <li><strong>Chest types and capacities:</strong> Wooden Chest (20 slots), Copper Chest (40 slots), Iron Chest (60 slots), Palium Chest (100 slots). Upgrade as you progress.</li>
+      <li><strong>Color coding:</strong> Use dye to paint chests (available at Workbench). Recommended colors: Red = raw materials (ores, wood), Green = crops/seeds, Blue = fish/bugs, Yellow = processed goods, Purple = furniture/rare items.</li>
+      <li><strong>Place chests logically:</strong> One chest near garden (crops/seeds), one near workshop (bars/planks), one near cooking area (ingredients).</li>
+      <li><strong>Naming chests (if feature exists):</strong> Interact with a placed chest to rename it – the name appears when you hover.</li>
+      <li><strong>Label with signs:</strong> Craft wooden signs and place them above chests for extra clarity.</li>
+    </ul>
+  </div>
+
+  <!-- Daily Farm Routine -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-calendar-check-o text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">⏰ Optimized Daily Farm Routine (15 min)</h2></div>
+    <ol class="list-decimal pl-5 space-y-1 text-sm">
+      <li><strong>Collect products</strong> – Eggs, milk, wool, honey (ranch zone).</li>
+      <li><strong>Water crops</strong> – Use upgraded can to cover all plots in seconds.</li>
+      <li><strong>Harvest ready crops</strong> – Start with multi‑harvest (tomatoes, blueberries).</li>
+      <li><strong>Replant seeds</strong> – Immediately replant empty soil plots to avoid idle time.</li>
+      <li><strong>Restock processing machines</strong> – Empty seed makers, preserves jars, furnaces.</li>
+      <li><strong>Check beehives & composter</strong> – Collect honey, wax, fertilizer.</li>
+      <li><strong>Deposit loot into correct chests</strong> – Follow color system for quick sorting.</li>
+    </ol>
+    <p class="mt-2 text-sm">If you follow this route, you can manage a 50‑tile farm + full ranch in under 15 minutes of real time, leaving the rest for exploration and quests.</p>
+  </div>
+
+  <!-- Advanced Tips: Automation Chains -->
+  <div class="bg-paliaPrimary/5 rounded-2xl p-6 border border-paliaAccent/20">
+    <i class="fa fa-link text-3xl text-paliaPrimary mb-2 block"></i>
+    <h3 class="text-xl font-bold mb-2">🔁 Automation & Flow Efficiency</h3>
+    <ul class="list-disc pl-5 space-y-1 text-paliaText/80">
+      <li><strong>Seed → Crop → Seed loop:</strong> Dedicate one soil plot to carrots, turn all carrots into seeds via Seed Maker. Sell excess seeds for gold – this creates a passive profit loop.</li>
+      <li><strong>Wheat → Flour → Bread:</strong> Process wheat into flour (Mill), then bake bread. Bread sells for more than raw wheat.</li>
+      <li><strong>Tomato → Pickled Tomato:</strong> Preserves Jar turns tomatoes into pickled tomatoes (3x value). Stockpile tomatoes for weekend processing.</li>
+      <li><strong>Manure → Fertilizer:</strong> Collect manure from animals daily → Composter → quality fertilizer → use on valuable crops (blueberries).</li>
+    </ul>
+    <div class="mt-5 text-center">
+      <a href="index.html" class="inline-block bg-paliaPrimary text-white px-6 py-2 rounded-full hover:bg-paliaPrimaryDeep transition">← Back to Main Hub</a>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-white/70 border-t border-paliaAccent/20 mt-12 py-6 text-center text-sm text-paliaText/70">
+  <p>Palia Guide Hub · Farm Efficiency & Storage · Work smarter, not harder</p>
+  <p class="mt-1"><i class="fa fa-leaf text-paliaPrimary"></i> An organized farm is a profitable farm</p>
+</footer>
+</body>
+</html>

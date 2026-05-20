@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Ranch Guide – Animal Mood, Breeding, Bees & Poultry | Palia Guide Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paliaBg: '#fcf8f0',
+            paliaPrimary: '#7f9a6e',
+            paliaPrimaryDeep: '#5f7a4e',
+            paliaAccent: '#e2b181',
+            paliaText: '#3c2f2a',
+            paliaCard: '#ffffff',
+            paliaMuted: '#e9e1d4',
+          },
+          fontFamily: { 'sans': ['Inter', 'system-ui', 'Segoe UI', 'Noto Sans SC', 'sans-serif'] },
+          borderRadius: { 'xl': '1rem', '2xl': '1.5rem' },
+        }
+      }
+    }
+  </script>
+  <style>
+    body { scroll-behavior: smooth; }
+    .section-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .section-card:hover { transform: translateY(-3px); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body class="bg-paliaBg text-paliaText font-sans antialiased">
+
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-paliaAccent/20 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 lg:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+    <div class="flex items-center gap-3">
+      <div class="bg-paliaPrimary/10 p-2 rounded-2xl"><i class="fa fa-paw text-paliaPrimary text-2xl"></i></div>
+      <div>
+        <h1 class="text-xl md:text-2xl font-bold tracking-tight text-paliaPrimaryDeep">Ranch Guide</h1>
+        <p class="text-xs text-paliaText/70">Animal Mood · Breeding · Bees · Poultry</p>
+      </div>
+    </div>
+    <a href="index.html" class="text-paliaPrimary hover:underline text-sm flex items-center gap-1"><i class="fa fa-arrow-left"></i> Back to Main Hub</a>
+  </div>
+</header>
+
+<main class="max-w-6xl mx-auto px-4 py-10 space-y-8">
+  <!-- Intro -->
+  <div class="bg-paliaCard rounded-2xl shadow-card p-6 md:p-8">
+    <div class="flex items-center gap-3 border-b border-paliaMuted pb-4 mb-5">
+      <i class="fa fa-leaf text-paliaPrimary text-3xl"></i>
+      <h2 class="text-2xl font-bold">Running a Successful Ranch</h2>
+    </div>
+    <p class="text-paliaText/80 leading-relaxed">Raising animals is a reliable source of cooking ingredients (eggs, milk, butter) and crafting materials (wool, feathers). This guide covers everything from keeping your animals happy to breeding rare color variants and setting up beehives for passive honey production.</p>
+  </div>
+
+  <!-- Animal Basics & Mood -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-smile-o text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">😊 Animal Mood & Happiness</h2></div>
+    <p>Every animal has a mood meter (0–100%). High mood increases product quality and quantity.</p>
+    <ul class="list-disc pl-5 space-y-1">
+      <li><strong>Daily petting:</strong> Each animal can be petted once per day, giving +10 mood.</li>
+      <li><strong>Feeding:</strong> Keep troughs filled with appropriate feed (hay for chickens, grass for cows, etc.). Empty troughs reduce mood by -5 per hour.</li>
+      <li><strong>Shelter:</strong> Animals need a barn or coop appropriate for their species (Chicken Coop, Cow Barn, etc.). Without shelter, mood drops faster during rain/night.</li>
+      <li><strong>Cleanliness:</strong> Dirty pens (waste not cleared) reduce mood by -2 per hour. Use a shovel to remove manure.</li>
+    </ul>
+    <div class="bg-paliaPrimary/10 p-2 rounded mt-2 text-sm">💡 Mood over 80%: +25% chance to produce star‑quality products. Mood below 20%: animals may stop producing entirely.</div>
+  </div>
+
+  <!-- Animal Types & Products -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-pagelines text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🐄 Livestock & Their Products</h2></div>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50">
+          <tr><th class="px-2 py-2">Animal</th><th class="px-2 py-2">Unlock Condition</th><th class="px-2 py-2">Base Product</th><th class="px-2 py-2">Star Product Value</th><th class="px-2 py-2">Best Use</th></tr>
+        </thead>
+        <tbody class="divide-y">
+          <tr><td class="px-2 py-1">Chicken (Brown)</td><td class="px-2 py-1">Gardening Lv 5, Coop built</td><td class="px-2 py-1">Egg (daily)</td><td class="px-2 py-1">15g ★</td><td class="px-2 py-1">Cooking (quiche, cake)</td></tr>
+          <tr><td class="px-2 py-1">Chicken (White)</td><td class="px-2 py-1">Breeding (rare)</td><td class="px-2 py-1">Egg (daily)</td><td class="px-2 py-1">20g ★</td><td class="px-2 py-1">Higher sell value</td></tr>
+          <tr><td class="px-2 py-1">Cow (Brown)</td><td class="px-2 py-1">Gardening Lv 8, Barn built</td><td class="px-2 py-1">Milk (daily)</td><td class="px-2 py-1">30g ★</td><td class="px-2 py-1">Cheese, butter</td></tr>
+          <tr><td class="px-2 py-1">Cow (Black & White)</td><td class="px-2 py-1">Breeding (very rare)</td><td class="px-2 py-1">Milk (daily)</td><td class="px-2 py-1">45g ★</td><td class="px-2 py-1">High-profit milk</td></tr>
+          <tr><td class="px-2 py-1">Sheep</td><td class="px-2 py-1">Gardening Lv 10, Barn upgrade</td><td class="px-2 py-1">Wool (every 2 days)</td><td class="px-2 py-1">40g ★</td><td class="px-2 py-1">Fabric, rugs</td></tr>
+          <tr><td class="px-2 py-1">Duck</td><td class="px-2 py-1">Gardening Lv 12, Coop upgrade</td><td class="px-2 py-1">Feather (every 2 days)</td><td class="px-2 py-1">35g ★</td><td class="px-2 py-1">Crafting, gifts</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Breeding Mechanics -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-heartbeat text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🐣 Breeding Animals</h2></div>
+    <ul class="list-disc pl-5 space-y-2">
+      <li><strong>Requirements:</strong> One male and one female of the same species (gender visible in animal details). Both must have mood ≥ 80% for at least 3 consecutive days.</li>
+      <li><strong>Gestation time:</strong> 2 real‑world days (48 hours).</li>
+      <li><strong>Offspring:</strong> A baby animal appears in the barn/coop. After 4 days, it matures into an adult and can be kept or sold.</li>
+      <li><strong>Rare color variants:</strong> Some breeding pairs have a small chance (5%) to produce a rare color (e.g., White Chicken, Black & White Cow). These sell for higher prices and produce star products more often.</li>
+      <li><strong>Limit:</strong> Maximum 6 animals per barn/coop. Breeding stops if capacity is full.</li>
+    </ul>
+    <div class="bg-paliaMuted/20 p-2 rounded mt-2 text-sm">💰 Selling a mature animal: Base price 500–2000g depending on rarity. Breeding for rare colors can be profitable.</div>
+  </div>
+
+  <!-- Beehives & Honey -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-bug text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🐝 Beehives – Passive Honey Production</h2></div>
+    <p>Beehives are unlocked at <strong>Gardening Level 6</strong>. They require no daily maintenance and passively produce honey and wax.</p>
+    <ul class="list-disc pl-5 space-y-2">
+      <li><strong>Materials:</strong> 20 Wood, 5 Copper Bar, 2 Glass (Workbench).</li>
+      <li><strong>Placement:</strong> Near flowers (daisies, bluebells) increases honey production by 20% per flower within 5 tiles.</li>
+      <li><strong>Production cycle:</strong> Honey produced every 12 real hours; wax every 24 hours.</li>
+      <li><strong>Products:</strong> Honey (used in cooking, sells for 30g ★) and Beeswax (used for candles, furniture, sells for 15g).</li>
+      <li><strong>Maximum beehives:</strong> Up to 5 hives per plot (additional plots increase limit).</li>
+    </ul>
+    <div class="bg-paliaPrimary/10 p-2 rounded mt-2 text-sm">💡 Place beehives in the center of a flower garden for maximum honey output – you can get up to 3 honey per day per hive.</div>
+  </div>
+
+  <!-- Poultry Tips (Chickens & Ducks) -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-sun-o text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🐔 Poultry Management (Chickens & Ducks)</h2></div>
+    <ul class="list-disc pl-5 space-y-2">
+      <li><strong>Feeding:</strong> Chickens eat 1 seed (any) per day; ducks eat 1 seed + 1 water. Keep feeders full.</li>
+      <li><strong>Free-range bonus:</strong> If chickens have access to an outdoor fenced area (at least 10×10 tiles with grass), they produce eggs 25% faster.</li>
+      <li><strong>Nesting boxes:</strong> Each coop needs at least 2 nesting boxes for 6 chickens – otherwise egg production slows.</li>
+      <li><strong>Duck feathers:</strong> Ducks produce feathers every 2 days when mood > 70%. Feathers are used for pillows, decorations, and some NPC gifts (Tamala).</li>
+    </ul>
+  </div>
+
+  <!-- Ranch Efficiency Layout -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-building-o text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🏡 Optimal Ranch Layout</h2></div>
+    <div class="grid md:grid-cols-2 gap-3">
+      <div>
+        <h3 class="font-bold">Small Ranch (1 plot)</h3>
+        <ul class="list-disc pl-4 text-sm">
+          <li>1 Coop (up to 6 chickens)</li>
+          <li>1 Barn (up to 4 cows/sheep)</li>
+          <li>2 Beehives</li>
+          <li>Fenced outdoor area (grass)</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold">Large Ranch (2+ plots)</h3>
+        <ul class="list-disc pl-4 text-sm">
+          <li>2 Coops (chickens + ducks)</li>
+          <li>2 Barns (cows + sheep)</li>
+          <li>5 Beehives</li>
+          <li>Separate breeding pen</li>
+        </ul>
+      </div>
+    </div>
+    <p class="mt-2 text-sm">Place all buildings near each other for easy daily petting/feeding route. Use a shed to store extra hay and tools.</p>
+  </div>
+
+  <!-- Profitability & Daily Routine -->
+  <div class="bg-paliaPrimary/5 rounded-2xl p-6 border border-paliaAccent/20">
+    <i class="fa fa-clock-o text-3xl text-paliaPrimary mb-2 block"></i>
+    <h3 class="text-xl font-bold mb-2">📅 Daily Ranch Checklist (10 min)</h3>
+    <ol class="list-decimal pl-5 space-y-1 text-paliaText/80">
+      <li>Pet every animal (mood +10 each).</li>
+      <li>Refill food troughs (check all barns/coops).</li>
+      <li>Collect products (eggs, milk, wool, feathers).</li>
+      <li>Remove manure (shovel) – compost it for fertilizer.</li>
+      <li>Check beehives for honey/wax.</li>
+      <li>If breeding: make sure mood >80% for breeding pair.</li>
+    </ol>
+    <p class="mt-2 text-sm">With 6 chickens, 4 cows, 2 sheep, and 5 beehives, you can earn 5,000–8,000 gold per day from ranch products alone.</p>
+    <div class="mt-5 text-center">
+      <a href="index.html" class="inline-block bg-paliaPrimary text-white px-6 py-2 rounded-full hover:bg-paliaPrimaryDeep transition">← Back to Main Hub</a>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-white/70 border-t border-paliaAccent/20 mt-12 py-6 text-center text-sm text-paliaText/70">
+  <p>Palia Guide Hub · Ranch Guide · Happy animals, abundant harvests</p>
+  <p class="mt-1"><i class="fa fa-leaf text-paliaPrimary"></i> Kindness to creatures returns in gold</p>
+</footer>
+</body>
+</html>

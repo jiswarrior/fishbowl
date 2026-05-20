@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Home Plot Unlock, Land Expansion & Decor Limit | Palia Guide Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paliaBg: '#fcf8f0',
+            paliaPrimary: '#7f9a6e',
+            paliaPrimaryDeep: '#5f7a4e',
+            paliaAccent: '#e2b181',
+            paliaText: '#3c2f2a',
+            paliaCard: '#ffffff',
+            paliaMuted: '#e9e1d4',
+          },
+          fontFamily: { 'sans': ['Inter', 'system-ui', 'Segoe UI', 'Noto Sans SC', 'sans-serif'] },
+          borderRadius: { 'xl': '1rem', '2xl': '1.5rem' },
+        }
+      }
+    }
+  </script>
+  <style>
+    body { scroll-behavior: smooth; }
+    .section-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .section-card:hover { transform: translateY(-3px); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body class="bg-paliaBg text-paliaText font-sans antialiased">
+
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-paliaAccent/20 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 lg:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+    <div class="flex items-center gap-3">
+      <div class="bg-paliaPrimary/10 p-2 rounded-2xl"><i class="fa fa-home text-paliaPrimary text-2xl"></i></div>
+      <div>
+        <h1 class="text-xl md:text-2xl font-bold tracking-tight text-paliaPrimaryDeep">Home Plot Expansion</h1>
+        <p class="text-xs text-paliaText/70">Unlock · Land purchase · Decor capacity</p>
+      </div>
+    </div>
+    <a href="index.html" class="text-paliaPrimary hover:underline text-sm flex items-center gap-1"><i class="fa fa-arrow-left"></i> Back to Main Hub</a>
+  </div>
+</header>
+
+<main class="max-w-5xl mx-auto px-4 py-10 space-y-8">
+  <!-- Intro -->
+  <div class="bg-paliaCard rounded-2xl shadow-card p-6 md:p-8">
+    <div class="flex items-center gap-3 border-b border-paliaMuted pb-4 mb-5">
+      <i class="fa fa-map-marker text-paliaPrimary text-3xl"></i>
+      <h2 class="text-2xl font-bold">Building Your Dream Homestead</h2>
+    </div>
+    <p class="text-paliaText/80 leading-relaxed">Your home plot is your personal sanctuary in Palia. This guide explains how to claim your first plot, purchase additional land, and manage the decor limit to create a beautiful and functional homestead without running into space constraints.</p>
+  </div>
+
+  <!-- Unlocking the First Home Plot -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-key text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🏠 Unlocking Your First Plot</h2></div>
+    <ul class="list-disc pl-5 space-y-2">
+      <li><strong>Quest requirement:</strong> Complete the early main quest “Your Little Plot of Land” (given by Kenli or Ashura after finishing tutorial).</li>
+      <li><strong>Location:</strong> The plot is located east of Kilima Village, marked by a “For Sale” sign.</li>
+      <li><strong>Cost:</strong> Free (first plot). You receive a basic tent, a workbench, and a small storage chest.</li>
+      <li><strong>Initial size:</strong> Approximately 15×15 tiles – enough for a small house, a few garden plots, and basic facilities.</li>
+    </ul>
+    <div class="bg-paliaPrimary/10 p-3 rounded-xl mt-3 text-sm">💡 Tip: After unlocking, immediately interact with the Home Sign (near the tent) to fast-travel back to your plot for free once per day.</div>
+  </div>
+
+  <!-- Purchasing Additional Land -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-shopping-cart text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">💰 Buying Additional Land Plots</h2></div>
+    <p>You can expand your homestead by purchasing adjacent land plots from the <strong>Kilima Town Hall</strong> (talk to Kenli). Each new plot adds roughly 10×10 tiles of buildable area.</p>
+    <div class="overflow-x-auto mt-3">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50">
+          <tr><th class="px-3 py-2">Plot Number</th><th class="px-3 py-2">Cost (Gold)</th><th class="px-3 py-2">Cumulative Cost</th><th class="px-3 py-2">Total Buildable Area (approx)</th><th class="px-3 py-2">Recommended Order</th></tr>
+        </thead>
+        <tbody class="divide-y">
+          <tr><td class="px-3 py-1">2nd Plot (South)</td><td class="px-3 py-1">2,000g</td><td class="px-3 py-1">2,000g</td><td class="px-3 py-1">~250 tiles</td><td class="px-3 py-1">1st – garden expansion</td></tr>
+          <tr><td class="px-3 py-1">3rd Plot (North)</td><td class="px-3 py-1">5,000g</td><td class="px-3 py-1">7,000g</td><td class="px-3 py-1">~350 tiles</td><td class="px-3 py-1">2nd – animal pastures</td></tr>
+          <tr><td class="px-3 py-1">4th Plot (East)</td><td class="px-3 py-1">10,000g</td><td class="px-3 py-1">17,000g</td><td class="px-3 py-1">~450 tiles</td><td class="px-3 py-1">3rd – orchards/furniture yard</td></tr>
+          <tr><td class="px-3 py-1">5th Plot (West)</td><td class="px-3 py-1">20,000g</td><td class="px-3 py-1">37,000g</td><td class="px-3 py-1">~550 tiles</td><td class="px-3 py-1">4th – large builds</td></tr>
+          <tr><td class="px-3 py-1">6th+ (Premium)</td><td class="px-3 py-1">30,000g each</td><td class="px-3 py-1">varies</td><td class="px-3 py-1">+100 tiles each</td><td class="px-3 py-1">Endgame luxury</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="mt-2 text-sm">You can buy up to 10 additional plots (11 total). Each plot is separate but adjacent, allowing you to build a large continuous homestead.</p>
+  </div>
+
+  <!-- Decor Limit & Capacity -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-puzzle-piece text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">📦 Decor Limit & Capacity</h2></div>
+    <p>Every furniture, decoration, and building on your plot consumes <strong>Decor Units</strong>. The total limit starts at 3,000 units and increases as you expand your plot and increase your Renown level.</p>
+    <ul class="list-disc pl-5 space-y-1">
+      <li><strong>Base limit:</strong> 3,000 units (enough for about 150-200 small items).</li>
+      <li><strong>Per additional plot purchased:</strong> +500 units.</li>
+      <li><strong>Renown upgrades:</strong> Spend 25 Renown at the Phoenix Shrine for +250 decor capacity (up to 5 times).</li>
+      <li><strong>Maximum achievable limit:</strong> 3,000 (base) + (10 plots × 500) + (5 × 250) = 8,250 units.</li>
+    </ul>
+    <div class="bg-paliaMuted/20 p-3 rounded mt-2">
+      <p class="font-semibold">📊 Decor Point Cost Examples:</p>
+      <ul class="list-disc pl-5 text-sm">
+        <li>Small decoration (flower pot, candle): 5–10 points</li>
+        <li>Medium furniture (chair, table): 15–30 points</li>
+        <li>Large furniture (bed, bookshelf): 50–100 points</li>
+        <li>Building (house room, barn): 200–500 points</li>
+        <li>Special epic items (e.g., Star Chart Globe): 1,000 points</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- How to Increase Decor Limit Without Spending Renown -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-shield text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">⚙️ Alternative Ways to Expand Capacity</h2></div>
+    <ul class="list-disc pl-5 space-y-2">
+      <li><strong>Reach Decor Score milestones</strong> – Every 1,000 Decor Score increases your limit by 100 units (up to 1,000 bonus).</li>
+      <li><strong>Place “Storage Shed” building</strong> – This special building (crafted at Workbench, requires Lv 8 Furniture) adds +200 decor capacity.</li>
+      <li><strong>Complete achievements</strong> – “Hoarding Master” (place 500 items) and “Interior Designer” (reach 5,000 Decor Score) each give permanent +200 capacity.</li>
+    </ul>
+  </div>
+
+  <!-- Tips for Efficient Land Use -->
+  <div class="bg-paliaPrimary/5 rounded-2xl p-6 border border-paliaAccent/20">
+    <i class="fa fa-lightbulb-o text-3xl text-paliaPrimary mb-2 block"></i>
+    <h3 class="text-xl font-bold mb-2">💡 Land Management Tips</h3>
+    <ul class="list-disc pl-5 space-y-1 text-paliaText/80">
+      <li><strong>Buy plots in order of need</strong> – South plot first (sunlight for crops), then North (animal pasture), then East/West for decoration.</li>
+      <li><strong>Use verticality</strong> – Build multi-story houses to save ground space for gardens and ranches.</li>
+      <li><strong>Leave pathways</strong> – Plan roads between plots to avoid tight corners when placing large furniture.</li>
+      <li><strong>Prioritize decor capacity upgrades</strong> – If you love decorating, spend Renown on capacity early.</li>
+    </ul>
+    <div class="mt-5 text-center">
+      <a href="index.html" class="inline-block bg-paliaPrimary text-white px-6 py-2 rounded-full hover:bg-paliaPrimaryDeep transition">← Back to Main Hub</a>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-white/70 border-t border-paliaAccent/20 mt-12 py-6 text-center text-sm text-paliaText/70">
+  <p>Palia Guide Hub · Home Plot Expansion · Build big, decorate freely</p>
+  <p class="mt-1"><i class="fa fa-leaf text-paliaPrimary"></i> Your land, your legacy</p>
+</footer>
+</body>
+</html>
