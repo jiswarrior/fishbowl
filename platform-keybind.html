@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Platform Keybinds & Cross-Play Notes | Palia Guide Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paliaBg: '#fcf8f0',
+            paliaPrimary: '#7f9a6e',
+            paliaPrimaryDeep: '#5f7a4e',
+            paliaAccent: '#e2b181',
+            paliaText: '#3c2f2a',
+            paliaCard: '#ffffff',
+            paliaMuted: '#e9e1d4',
+          },
+          fontFamily: { 'sans': ['Inter', 'system-ui', 'Segoe UI', 'Noto Sans SC', 'sans-serif'] },
+          borderRadius: { 'xl': '1rem', '2xl': '1.5rem' },
+        }
+      }
+    }
+  </script>
+  <style>
+    body { scroll-behavior: smooth; }
+    .section-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .section-card:hover { transform: translateY(-3px); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body class="bg-paliaBg text-paliaText font-sans antialiased">
+
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-paliaAccent/20 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 lg:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+    <div class="flex items-center gap-3">
+      <div class="bg-paliaPrimary/10 p-2 rounded-2xl"><i class="fa fa-gamepad text-paliaPrimary text-2xl"></i></div>
+      <div>
+        <h1 class="text-xl md:text-2xl font-bold tracking-tight text-paliaPrimaryDeep">Platform Keybinds & Cross-Play</h1>
+        <p class="text-xs text-paliaText/70">PC vs Switch controls · Cross‑platform tips</p>
+      </div>
+    </div>
+    <a href="index.html" class="text-paliaPrimary hover:underline text-sm flex items-center gap-1"><i class="fa fa-arrow-left"></i> Back to Main Hub</a>
+  </div>
+</header>
+
+<main class="max-w-6xl mx-auto px-4 py-10 space-y-8">
+  <!-- Intro -->
+  <div class="bg-paliaCard rounded-2xl shadow-card p-6 md:p-8">
+    <div class="flex items-center gap-3 border-b border-paliaMuted pb-4 mb-5">
+      <i class="fa fa-exchange text-paliaPrimary text-3xl"></i>
+      <h2 class="text-2xl font-bold">Playing Together Across Platforms</h2>
+    </div>
+    <p class="text-paliaText/80 leading-relaxed">Palia supports full cross‑play and cross‑progression between PC and Nintendo Switch. This guide lists default keybinds for both platforms and explains how to add friends, join parties, and sync your progress seamlessly.</p>
+  </div>
+
+  <!-- PC Keybinds Table -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-desktop text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">🖥️ PC (Keyboard + Mouse) – Default Keybinds</h2></div>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50">
+          <tr><th class="px-2 py-2">Action</th><th class="px-2 py-2">Key</th></tr>
+        </thead>
+        <tbody class="divide-y">
+          <tr><td class="px-2 py-1">Move</th><td class="px-2 py-1">W/A/S/D</th></tr>
+          <tr><td class="px-2 py-1">Camera / Look</th><td class="px-2 py-1">Mouse</th></tr>
+          <tr><td class="px-2 py-1">Interact / Pick up</th><td class="px-2 py-1">E or Left Click</th></tr>
+          <tr><td class="px-2 py-1">Open Tool Wheel</th><td class="px-2 py-1">Q</th></tr>
+          <tr><td class="px-2 py-1">Use Tool (Mine/Chop/Fish)</th><td class="px-2 py-1">Left Click</th></tr>
+          <tr><td class="px-2 py-1">Jump</th><td class="px-2 py-1">Spacebar</th></tr>
+          <tr><td class="px-2 py-1">Sprint (hold)</th><td class="px-2 py-1">Shift</th></tr>
+          <tr><td class="px-2 py-1">Open Inventory / Menu</th><td class="px-2 py-1">I or Esc</th></tr>
+          <tr><td class="px-2 py-1">Map</th><td class="px-2 py-1">M</th></tr>
+          <tr><td class="px-2 py-1">Social Panel (Friends)</th><td class="px-2 py-1">O</th></tr>
+          <tr><td class="px-2 py-1">Emote Wheel</th><td class="px-2 py-1">Y</th></tr>
+          <tr><td class="px-2 py-1">Chat</th><td class="px-2 py-1">Enter (then type)</th></tr>
+          <tr><td class="px-2 py-1">Take Screenshot</th><td class="px-2 py-1">F12 (Steam) or Print Screen</th></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="mt-2 text-sm">All keys can be remapped in Settings → Input.</p>
+  </div>
+
+  <!-- Switch Controls Table -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-tablet text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">🎮 Nintendo Switch – Default Controls (Pro Controller / Joy‑Con)</h2></div>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50">
+          <tr><th class="px-2 py-2">Action</th><th class="px-2 py-2">Button</th></tr>
+        </thead>
+        <tbody class="divide-y">
+          <tr><td class="px-2 py-1">Move</th><td class="px-2 py-1">Left Stick</th></tr>
+          <tr><td class="px-2 py-1">Camera / Look</th><td class="px-2 py-1">Right Stick</th></tr>
+          <tr><td class="px-2 py-1">Interact / Pick up</th><td class="px-2 py-1">A</th></tr>
+          <tr><td class="px-2 py-1">Open Tool Wheel</th><td class="px-2 py-1">L Button</th></tr>
+          <tr><td class="px-2 py-1">Use Tool / Confirm</th><td class="px-2 py-1">ZR (Right Trigger)</th></tr>
+          <tr><td class="px-2 py-1">Jump</th><td class="px-2 py-1">B</th></tr>
+          <tr><td class="px-2 py-1">Sprint (hold)</th><td class="px-2 py-1">ZL (Left Trigger)</th></tr>
+          <tr><td class="px-2 py-1">Open Inventory / Menu</th><td class="px-2 py-1">+ Button</th></tr>
+          <tr><td class="px-2 py-1">Map</th><td class="px-2 py-1">- Button</th></tr>
+          <tr><td class="px-2 py-1">Social Panel (Friends)</th><td class="px-2 py-1">Hold ZL + A</th></tr>
+          <tr><td class="px-2 py-1">Emote Wheel</th><td class="px-2 py-1">R Button</th></td>
+          <tr><td class="px-2 py-1">Chat (text)</th><td class="px-2 py-1">- then select chat icon, use on‑screen keyboard</th></tr>
+          <tr><td class="px-2 py-1">Screenshot</th><td class="px-2 py-1">Capture Button (left Joy‑Con)</th></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="mt-2 text-sm">Controls cannot be remapped on Switch, but you can swap A/B or L/R in system settings if desired.</p>
+  </div>
+
+  <!-- Cross-Platform Notes -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-globe text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">🌐 Cross-Play & Cross-Progression</h2></div>
+    <ul class="list-disc pl-5 space-y-2">
+      <li><strong>Cross‑play is automatic:</strong> PC and Switch players share the same servers. You can party up with anyone regardless of platform.</li>
+      <li><strong>Cross‑progression:</strong> Your account progress (skills, inventory, home, quests) is saved on Palia’s servers. Log into the same account on PC or Switch, and you’ll have everything.</li>
+      <li><strong>Linking accounts:</strong> If you start on PC, you can later link your Nintendo account via the Palia website to continue on Switch. Progress is shared.</li>
+      <li><strong>Friend list sync:</strong> Friends added on PC also appear on Switch (and vice versa). You must have an active Palia account on both platforms with same email.</li>
+    </ul>
+    <div class="bg-paliaPrimary/10 p-2 rounded mt-2 text-sm">💡 Voice chat is not built‑in; use Discord (PC or mobile) for cross‑platform voice.</div>
+  </div>
+
+  <!-- Cross-Platform Invitations -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-user-plus text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">👥 How to Add Cross‑Platform Friends & Invite to Party</h2></div>
+    <ol class="list-decimal pl-5 space-y-2">
+      <li><strong>Send a friend request:</strong> Press <kbd>O</kbd> (PC) or hold <kbd>ZL + A</kbd> (Switch) → “Add Friend”. Type the player’s exact in‑game name (case‑sensitive).</li>
+      <li><strong>Accept request:</strong> The recipient must accept via their social panel.</li>
+      <li><strong>Invite to party:</strong> Once friends, open party menu → “Invite to Party”. Cross‑platform works seamlessly.</li>
+      <li><strong>Join via code (alternative):</strong> If direct invite fails, use the “Copy Invite Code” feature in the party menu and share it via text/chat. Other players can join by entering that code.</li>
+    </ol>
+    <p><strong>Troubleshooting:</strong> If friend doesn’t appear, ensure both players are online on the same server region (NA/EU/Asia).</p>
+  </div>
+
+  <!-- Switch Specific Tips -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-toggle-on text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">🔧 Switch‑Specific Recommendations</h2></div>
+    <ul class="list-disc pl-5 space-y-1">
+      <li><strong>Text chat:</strong> Using the on‑screen keyboard is slow. Consider using the Nintendo Switch Online mobile app for voice chat instead of typing.</li>
+      <li><strong>Performance mode:</strong> In TV mode, set Switch to 720p output for smoother frame rates.</li>
+      <li><strong>Pro Controller recommended</strong> – Joy‑Cons are usable but less comfortable for long sessions.</li>
+      <li><strong>Battery life:</strong> Palia drains battery faster than average; keep the charger nearby.</li>
+    </ul>
+  </div>
+
+  <!-- Back to Hub -->
+  <div class="bg-paliaPrimary/5 rounded-2xl p-6 text-center border border-paliaAccent/20">
+    <i class="fa fa-arrow-circle-left text-3xl text-paliaPrimary mb-2 block"></i>
+    <p class="text-paliaText/80">Return to the main hub or continue to the next platform optimization page.</p>
+    <div class="mt-4">
+      <a href="index.html" class="inline-block bg-paliaPrimary text-white px-6 py-2 rounded-full hover:bg-paliaPrimaryDeep transition">← Back to Main Hub</a>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-white/70 border-t border-paliaAccent/20 mt-12 py-6 text-center text-sm text-paliaText/70">
+  <p>Palia Guide Hub · Platform Keybinds & Cross-Play · Play together, anywhere</p>
+  <p class="mt-1"><i class="fa fa-leaf text-paliaPrimary"></i> No matter the device, Palia brings us together</p>
+</footer>
+</body>
+</html>

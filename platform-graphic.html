@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Graphics Optimization – Low/High PC & Switch FPS | Palia Guide Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paliaBg: '#fcf8f0',
+            paliaPrimary: '#7f9a6e',
+            paliaPrimaryDeep: '#5f7a4e',
+            paliaAccent: '#e2b181',
+            paliaText: '#3c2f2a',
+            paliaCard: '#ffffff',
+            paliaMuted: '#e9e1d4',
+          },
+          fontFamily: { 'sans': ['Inter', 'system-ui', 'Segoe UI', 'Noto Sans SC', 'sans-serif'] },
+          borderRadius: { 'xl': '1rem', '2xl': '1.5rem' },
+        }
+      }
+    }
+  </script>
+  <style>
+    body { scroll-behavior: smooth; }
+    .section-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .section-card:hover { transform: translateY(-3px); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body class="bg-paliaBg text-paliaText font-sans antialiased">
+
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-paliaAccent/20 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 lg:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+    <div class="flex items-center gap-3">
+      <div class="bg-paliaPrimary/10 p-2 rounded-2xl"><i class="fa fa-sliders text-paliaPrimary text-2xl"></i></div>
+      <div>
+        <h1 class="text-xl md:text-2xl font-bold tracking-tight text-paliaPrimaryDeep">Graphics Optimization</h1>
+        <p class="text-xs text-paliaText/70">Low/High PC · Switch frame rate tips</p>
+      </div>
+    </div>
+    <a href="index.html" class="text-paliaPrimary hover:underline text-sm flex items-center gap-1"><i class="fa fa-arrow-left"></i> Back to Main Hub</a>
+  </div>
+</header>
+
+<main class="max-w-5xl mx-auto px-4 py-10 space-y-8">
+  <!-- Intro -->
+  <div class="bg-paliaCard rounded-2xl shadow-card p-6 md:p-8">
+    <div class="flex items-center gap-3 border-b border-paliaMuted pb-4 mb-5">
+      <i class="fa fa-desktop text-paliaPrimary text-3xl"></i>
+      <h2 class="text-2xl font-bold">Smooth Gameplay on Any Device</h2>
+    </div>
+    <p class="text-paliaText/80 leading-relaxed">Palia can run on a wide range of hardware – from integrated graphics laptops to high‑end gaming rigs and the Nintendo Switch. This guide provides tested graphics settings to maximize frame rates while keeping the game looking good.</p>
+  </div>
+
+  <!-- PC Low‑Spec Preset -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-microchip text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">💻 Low‑End PC / Laptop (Integrated graphics, 4‑8GB RAM)</h2></div>
+    <p>Target: Stable 30‑40 FPS at 720p or 900p. These settings prioritize performance over visuals.</p>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm mt-2">
+        <thead class="bg-paliaMuted/50"><tr><th class="px-2 py-2">Setting</th><th class="px-2 py-2">Recommended Value</th></tr></thead>
+        <tbody class="divide-y">
+          <tr><td class="px-2 py-1">Resolution</td><td class="px-2 py-1">1280×720 or 1600×900</td></tr>
+          <tr><td class="px-2 py-1">Window Mode</td><td class="px-2 py-1">Fullscreen</td></tr>
+          <tr><td class="px-2 py-1">Graphics Quality</td><td class="px-2 py-1">Low</td></tr>
+          <tr><td class="px-2 py-1">Shadows</td><td class="px-2 py-1">Off</td></tr>
+          <tr><td class="px-2 py-1">Anti‑Aliasing</td><td class="px-2 py-1">Off</td></tr>
+          <tr><td class="px-2 py-1">View Distance</td><td class="px-2 py-1">Medium (or Low if still laggy)</td></tr>
+          <tr><td class="px-2 py-1">Texture Quality</td><td class="px-2 py-1">Low</td></tr>
+          <tr><td class="px-2 py-1">Effects Quality</td><td class="px-2 py-1">Low</td></tr>
+          <tr><td class="px-2 py-1">Post Processing</td><td class="px-2 py-1">Low</td></tr>
+          <tr><td class="px-2 py-1">V‑Sync</td><td class="px-2 py-1">Off</td></tr>
+          <tr><td class="px-2 py-1">FPS Cap</td><td class="px-2 py-1">30 (or 60 if consistent)</td></tr>
+          <tr><td class="px-2 py-1">Motion Blur</td><td class="px-2 py-1">Off</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="mt-2 text-sm"><strong>Extra tips:</strong> Close background apps (browsers, Discord), update integrated graphics drivers, and run the game in high‑performance power mode.</p>
+  </div>
+
+  <!-- PC Mid‑Range Preset -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-laptop text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">🖥️ Mid‑Range PC (GTX 1060 / RX 580, 16GB RAM)</h2></div>
+    <p>Target: 60 FPS at 1080p with balanced visuals.</p>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm mt-2">
+        <thead class="bg-paliaMuted/50"><tr><th class="px-2 py-2">Setting</th><th class="px-2 py-2">Recommended Value</th></tr></thead>
+        <tbody class="divide-y">
+          <tr><td class="px-2 py-1">Resolution</td><td class="px-2 py-1">1920×1080</td></tr>
+          <tr><td class="px-2 py-1">Window Mode</td><td class="px-2 py-1">Fullscreen</td></tr>
+          <tr><td class="px-2 py-1">Graphics Quality</td><td class="px-2 py-1">Medium</td></tr>
+          <tr><td class="px-2 py-1">Shadows</td><td class="px-2 py-1">Low</td></tr>
+          <tr><td class="px-2 py-1">Anti‑Aliasing</td><td class="px-2 py-1">FXAA (Low)</td></tr>
+          <tr><td class="px-2 py-1">View Distance</td><td class="px-2 py-1">High</td></tr>
+          <tr><td class="px-2 py-1">Texture Quality</td><td class="px-2 py-1">Medium</td></tr>
+          <tr><td class="px-2 py-1">Effects Quality</td><td class="px-2 py-1">Medium</td></tr>
+          <tr><td class="px-2 py-1">Post Processing</td><td class="px-2 py-1">Medium</td></tr>
+          <tr><td class="px-2 py-1">V‑Sync</td><td class="px-2 py-1">On (to prevent tearing)</td></tr>
+          <tr><td class="px-2 py-1">FPS Cap</td><td class="px-2 py-1">60 (or Unlimited)</td></tr>
+          <tr><td class="px-2 py-1">Motion Blur</td><td class="px-2 py-1">Off (personal preference)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="mt-2 text-sm">If you experience drops in Bahari Bay, lower View Distance to Medium.</p>
+  </div>
+
+  <!-- PC High‑End Preset -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-tachometer text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">🚀 High‑End PC (RTX 2060+, 32GB RAM)</h2></div>
+    <p>Target: 144+ FPS at 1440p or 4K with maxed visuals.</p>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm mt-2">
+        <thead class="bg-paliaMuted/50"><tr><th class="px-2 py-2">Setting</th><th class="px-2 py-2">Recommended Value</th></tr></thead>
+        <tbody class="divide-y">
+          <tr><td class="px-2 py-1">Resolution</td><td class="px-2 py-1">2560×1440 or 3840×2160 (4K)</td></tr>
+          <tr><td class="px-2 py-1">Window Mode</td><td class="px-2 py-1">Fullscreen</td></tr>
+          <tr><td class="px-2 py-1">Graphics Quality</td><td class="px-2 py-1">Epic / High</td></tr>
+          <tr><td class="px-2 py-1">Shadows</td><td class="px-2 py-1">High</td></tr>
+          <tr><td class="px-2 py-1">Anti‑Aliasing</td><td class="px-2 py-1">TAA (High)</td></tr>
+          <tr><td class="px-2 py-1">View Distance</td><td class="px-2 py-1">Maximum</td></tr>
+          <tr><td class="px-2 py-1">Texture Quality</td><td class="px-2 py-1">High</td></tr>
+          <tr><td class="px-2 py-1">Effects Quality</td><td class="px-2 py-1">High</td></tr>
+          <tr><td class="px-2 py-1">Post Processing</td><td class="px-2 py-1">High</td></tr>
+          <tr><td class="px-2 py-1">V‑Sync</td><td class="px-2 py-1">Off (use G‑Sync / FreeSync if available)</td></tr>
+          <tr><td class="px-2 py-1">FPS Cap</td><td class="px-2 py-1">Unlimited or 144</td></tr>
+          <tr><td class="px-2 py-1">Motion Blur</td><td class="px-2 py-1">Off (most players prefer off)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="mt-2 text-sm">On very high‑end hardware, you can also enable additional experimental settings via config file (e.g., increased shadow resolution).</p>
+  </div>
+
+  <!-- Nintendo Switch Optimization -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-tablet text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">🎮 Nintendo Switch – Frame Rate & Stability Tips</h2></div>
+    <ul class="list-disc pl-5 space-y-2">
+      <li><strong>Docked vs Handheld:</strong> Docked mode often runs smoother because the Switch can draw more power. If playing handheld, lower screen brightness and close other apps.</li>
+      <li><strong>Lower TV output resolution (Docked):</strong> In Switch System Settings → TV Settings → TV Resolution → set to 720p. This reduces rendering load and can stabilize FPS.</li>
+      <li><strong>Airplane Mode:</strong> Turn on Airplane Mode (but keep Wi‑Fi on if playing online) to disable Bluetooth and other radios that may cause micro‑stutters.</li>
+      <li><strong>Restart regularly:</strong> Switch memory leaks over time; restarting the console before playing Palia can improve performance.</li>
+      <li><strong>Install on internal storage:</strong> If you have a microSD card, move Palia to internal memory (System Settings → Data Management) for slightly faster loading.</li>
+      <li><strong>Camera sensitivity:</strong> Reduce in‑game camera sensitivity (Settings → Controls → Camera Sensitivity 0.4–0.6) to reduce visual stutter perception.</li>
+      <li><strong>Performance note:</strong> Palia runs at ~30 FPS on Switch with occasional dips in crowded areas (Maji Market, Bahari Bay). This is normal.</li>
+    </ul>
+    <div class="bg-paliaPrimary/10 p-2 rounded mt-2 text-sm">💡 Use a wired LAN adapter for docked mode – it improves network stability, indirectly helping online performance.</div>
+  </div>
+
+  <!-- Advanced Config Tweaks (PC) -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-code text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">🔧 Advanced: Editing GameUserSettings.ini (PC)</h2></div>
+    <p>For fine control, manually edit <code>%LOCALAPPDATA%\Palia\Saved\Config\WindowsClient\GameUserSettings.ini</code>. Add these lines under <code>[ScalabilityGroups]</code>:</p>
+    <pre class="bg-paliaMuted/50 p-2 rounded text-xs overflow-x-auto">
+    sg.ResolutionQuality=100
+    sg.ViewDistanceQuality=2
+    sg.AntiAliasingQuality=1
+    sg.ShadowQuality=0
+    sg.PostProcessQuality=1
+    sg.TextureQuality=1
+    sg.EffectsQuality=1
+    sg.FoliageQuality=1
+    </pre>
+    <p class="mt-2 text-sm">Set values from 0 (low) to 3 (high). Back up the file before editing.</p>
+  </div>
+
+  <!-- Quick Performance Check -->
+  <div class="bg-paliaPrimary/5 rounded-2xl p-6 border border-paliaAccent/20">
+    <i class="fa fa-chart-line text-3xl text-paliaPrimary mb-2 block"></i>
+    <h3 class="text-xl font-bold mb-2">📊 How to Check Your FPS (PC)</h3>
+    <ul class="list-disc pl-5 space-y-1 text-paliaText/80">
+      <li>Use Steam overlay (if playing via Steam) or enable FPS counter in NVIDIA GeForce Experience / AMD Adrenalin.</li>
+      <li>Third‑party tools: MSI Afterburner + RivaTuner (free, detailed overlay).</li>
+      <li>In‑game: Palia does not have a native FPS display.</li>
+    </ul>
+    <p class="mt-2">For Switch, there is no FPS counter, but you can judge smoothness visually.</p>
+    <div class="mt-5 text-center">
+      <a href="index.html" class="inline-block bg-paliaPrimary text-white px-6 py-2 rounded-full hover:bg-paliaPrimaryDeep transition">← Back to Main Hub</a>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-white/70 border-t border-paliaAccent/20 mt-12 py-6 text-center text-sm text-paliaText/70">
+  <p>Palia Guide Hub · Graphics Optimization · Beautiful and smooth</p>
+  <p class="mt-1"><i class="fa fa-leaf text-paliaPrimary"></i> Game settings are personal – tweak until it feels right</p>
+</footer>
+</body>
+</html>

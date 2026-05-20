@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Network Stability & Cloud Save Guide | Palia Guide Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paliaBg: '#fcf8f0',
+            paliaPrimary: '#7f9a6e',
+            paliaPrimaryDeep: '#5f7a4e',
+            paliaAccent: '#e2b181',
+            paliaText: '#3c2f2a',
+            paliaCard: '#ffffff',
+            paliaMuted: '#e9e1d4',
+          },
+          fontFamily: { 'sans': ['Inter', 'system-ui', 'Segoe UI', 'Noto Sans SC', 'sans-serif'] },
+          borderRadius: { 'xl': '1rem', '2xl': '1.5rem' },
+        }
+      }
+    }
+  </script>
+  <style>
+    body { scroll-behavior: smooth; }
+    .section-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .section-card:hover { transform: translateY(-3px); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body class="bg-paliaBg text-paliaText font-sans antialiased">
+
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-paliaAccent/20 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 lg:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+    <div class="flex items-center gap-3">
+      <div class="bg-paliaPrimary/10 p-2 rounded-2xl"><i class="fa fa-cloud-upload text-paliaPrimary text-2xl"></i></div>
+      <div>
+        <h1 class="text-xl md:text-2xl font-bold tracking-tight text-paliaPrimaryDeep">Network & Cloud Save</h1>
+        <p class="text-xs text-paliaText/70">Stability fixes · DNS · Port forwarding · Cross‑platform saves</p>
+      </div>
+    </div>
+    <a href="index.html" class="text-paliaPrimary hover:underline text-sm flex items-center gap-1"><i class="fa fa-arrow-left"></i> Back to Main Hub</a>
+  </div>
+</header>
+
+<main class="max-w-5xl mx-auto px-4 py-10 space-y-8">
+  <!-- Intro -->
+  <div class="bg-paliaCard rounded-2xl shadow-card p-6 md:p-8">
+    <div class="flex items-center gap-3 border-b border-paliaMuted pb-4 mb-5">
+      <i class="fa fa-wifi text-paliaPrimary text-3xl"></i>
+      <h2 class="text-2xl font-bold">Reliable Connection & Safe Progress</h2>
+    </div>
+    <p class="text-paliaText/80 leading-relaxed">Network issues and data security can ruin the cozy experience. This guide helps you diagnose and fix common connectivity problems, and explains how Palia’s cloud save system works so you never lose your hard‑earned progress – whether you play on PC or Switch.</p>
+  </div>
+
+  <!-- Section 1: Improve Network Stability (PC & Switch) -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-network-wired text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">🌐 Network Stability Improvements</h2></div>
+    <div class="space-y-3">
+      <p><strong>For all platforms:</strong></p>
+      <ul class="list-disc pl-5">
+        <li><strong>Use a wired Ethernet connection</strong> instead of Wi‑Fi whenever possible – reduces ping spikes and packet loss.</li>
+        <li><strong>Restart your router/modem</strong> – clears cached routes and refreshes your IP.</li>
+        <li><strong>Close bandwidth‑heavy applications</strong> – streaming (Netflix, YouTube), large downloads, or cloud backups.</li>
+        <li><strong>Disable VPN or proxy</strong> – they add latency and can cause disconnects.</li>
+        <li><strong>Change DNS to a faster resolver</strong> – e.g., Cloudflare (<code>1.1.1.1</code> and <code>1.0.0.1</code>) or Google (<code>8.8.8.8</code>, <code>8.8.4.4</code>). Instructions below.</li>
+      </ul>
+      <p><strong>PC specific:</strong></p>
+      <ul class="list-disc pl-5">
+        <li><strong>Port forwarding</strong> (advanced): Forward UDP ports <code>27000-27030</code> to your PC’s local IP. This helps with strict NAT types.</li>
+        <li><strong>Update network drivers</strong> – especially for Ethernet/Wi‑Fi adapters.</li>
+        <li><strong>Disable IPv6</strong> (temporarily) in network adapter settings – some users report improvements.</li>
+      </ul>
+      <p><strong>Switch specific:</strong></p>
+      <ul class="list-disc pl-5">
+        <li><strong>Use a LAN adapter</strong> (official or compatible) for docked mode – the Switch’s Wi‑Fi chip is weak.</li>
+        <li><strong>Change MTU settings</strong> – Go to System Settings → Internet → Your Network → Change Settings → MTU to <code>1500</code> (instead of 1400). This can reduce fragmentation.</li>
+        <li><strong>Set a static IP</strong> on your router for the Switch to improve NAT.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- How to Change DNS (PC & Switch) -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-dns text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">📡 How to Change DNS (Step by Step)</h2></div>
+    <div class="grid md:grid-cols-2 gap-4">
+      <div>
+        <h3 class="font-semibold">Windows 10/11</h3>
+        <ol class="list-decimal pl-4 text-sm">
+          <li>Open Control Panel → Network and Sharing Center.</li>
+          <li>Click your active connection → Properties.</li>
+          <li>Select “Internet Protocol Version 4 (TCP/IPv4)” → Properties.</li>
+          <li>Select “Use the following DNS server addresses”.</li>
+          <li>Preferred: <code>1.1.1.1</code>; Alternate: <code>1.0.0.1</code> (Cloudflare) or <code>8.8.8.8</code>/<code>8.8.4.4</code> (Google).</li>
+          <li>OK → Close → restart the game.</li>
+        </ol>
+      </div>
+      <div>
+        <h3 class="font-semibold">Nintendo Switch</h3>
+        <ol class="list-decimal pl-4 text-sm">
+          <li>System Settings → Internet → Internet Settings.</li>
+          <li>Select your Wi‑Fi network → Change Settings.</li>
+          <li>DNS Settings → Manual.</li>
+          <li>Primary DNS: <code>1.1.1.1</code>; Secondary DNS: <code>1.0.0.1</code>.</li>
+          <li>Save → test connection.</li>
+        </ol>
+      </div>
+    </div>
+    <p class="mt-2 text-sm">After changing DNS, you may need to restart the game and launcher for changes to take effect.</p>
+  </div>
+
+  <!-- Port Forwarding (PC only) -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-share-alt text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">🔌 Port Forwarding (PC – Advanced)</h2></div>
+    <p>If you frequently disconnect or cannot connect to other players, forwarding the following ports may help. This requires access to your router’s admin panel.</p>
+    <ul class="list-disc pl-5">
+      <li><strong>Ports:</strong> UDP 27000-27030</li>
+      <li><strong>Protocol:</strong> UDP</li>
+      <li><strong>IP Address:</strong> Your PC’s local IP (find via <code>ipconfig</code> in Command Prompt).</li>
+    </ul>
+    <p class="mt-1 text-sm">Refer to your router manufacturer’s guide for exact steps (usually found at <code>192.168.0.1</code> or <code>192.168.1.1</code>).</p>
+    <div class="bg-paliaPrimary/10 p-2 rounded mt-2 text-sm">💡 Port forwarding is usually not required, but can fix strict NAT issues. If unsure, skip this step.</div>
+  </div>
+
+  <!-- Cloud Save: Cross-Progression & Backup -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-cloud text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">☁️ Cloud Saves & Cross‑Progression</h2></div>
+    <ul class="list-disc pl-5 space-y-2">
+      <li><strong>All progression is server‑side:</strong> Your skills, inventory, home, quests, and relationships are stored on Palia’s servers. There is no “local save” that you can manually copy – the game automatically saves everything in real time.</li>
+      <li><strong>Cross‑progression</strong> (PC ↔ Switch): Log into the same Palia account on both devices, and your progress is instantly synced. No extra steps needed.</li>
+      <li><strong>What if I uninstall the game?</strong> Your progress remains on the server. Reinstall and log in – everything will be there.</li>
+      <li><strong>Can I lose my save?</strong> Extremely unlikely – server data is backed up regularly. However, if you are worried, you can take screenshots of your inventory/achievements as a manual reference.</li>
+      <li><strong>Transferring settings (keybinds, graphics):</strong> These are stored locally. On PC, back up <code>%LOCALAPPDATA%\Palia\Saved\Config\WindowsClient\</code> if you want to keep your preferences when reinstalling Windows.</li>
+    </ul>
+    <div class="bg-paliaPrimary/10 p-2 rounded mt-2 text-sm">⚠️ On Nintendo Switch, save data is also automatically uploaded to Nintendo’s cloud if you have a Switch Online subscription. But Palia’s own cloud is the primary source – you do not need to rely on Nintendo’s backup.</div>
+  </div>
+
+  <!-- Manual "Backup" of Config (PC) -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-save text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">💾 How to Backup Configuration Files (PC)</h2></div>
+    <p>Your <strong>settings</strong> (graphics, keybinds, audio) are not cloud‑synced. To save them manually:</p>
+    <ol class="list-decimal pl-5">
+      <li>Press <code>Win + R</code>, type <code>%LOCALAPPDATA%\Palia\Saved\Config\WindowsClient\</code>, press Enter.</li>
+      <li>Copy the entire folder to a safe location (e.g., Desktop, OneDrive).</li>
+      <li>To restore later, replace the folder with your backup.</li>
+    </ol>
+    <p class="mt-1 text-sm">This does not affect your game progress – only your preferences.</p>
+  </div>
+
+  <!-- Common Network Error Messages -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-exclamation-triangle text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">⚠️ Common Network Errors & Fixes</h2></div>
+    <ul class="list-disc pl-5 space-y-1">
+      <li><strong>Error: “Unable to connect to server”</strong> – Check server status on Discord or official site. If servers are up, restart your router and game launcher.</li>
+      <li><strong>Error: “Connection timed out”</strong> – Likely firewall blocking the game. Add Palia to Windows Defender Firewall allow list.</li>
+      <li><strong>High ping / lag spikes</strong> – Switch to Ethernet, close background apps, change DNS, or play during off‑peak hours.</li>
+      <li><strong>“Failed to create party”</strong> – Try inviting via code instead of direct invite. Also ensure both players are online on the same region.</li>
+    </ul>
+  </div>
+
+  <!-- Check Server Status -->
+  <div class="bg-paliaPrimary/5 rounded-2xl p-6 border border-paliaAccent/20">
+    <i class="fa fa-info-circle text-3xl text-paliaPrimary mb-2 block"></i>
+    <h3 class="text-xl font-bold mb-2">🕹️ Is Palia down? How to check</h3>
+    <ul class="list-disc pl-5 space-y-1 text-paliaText/80">
+      <li><strong>Official Discord:</strong> #server-status channel (most reliable).</li>
+      <li><strong>Third‑party websites:</strong> downdetector.com (search “Palia”).</li>
+      <li><strong>In‑game message:</strong> If you cannot log in, the launcher may show a maintenance notice.</li>
+    </ul>
+    <div class="mt-5 text-center">
+      <a href="index.html" class="inline-block bg-paliaPrimary text-white px-6 py-2 rounded-full hover:bg-paliaPrimaryDeep transition">← Back to Main Hub</a>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-white/70 border-t border-paliaAccent/20 mt-12 py-6 text-center text-sm text-paliaText/70">
+  <p>Palia Guide Hub · Network & Cloud Save · Stay connected, stay safe</p>
+  <p class="mt-1"><i class="fa fa-leaf text-paliaPrimary"></i> Your progress is precious – the cloud keeps it secure</p>
+</footer>
+</body>
+</html>
