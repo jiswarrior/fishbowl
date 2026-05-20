@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Cooking Minigame – Focus Bonus & Success Secrets | Palia Guide Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paliaBg: '#fcf8f0',
+            paliaPrimary: '#7f9a6e',
+            paliaPrimaryDeep: '#5f7a4e',
+            paliaAccent: '#e2b181',
+            paliaText: '#3c2f2a',
+            paliaCard: '#ffffff',
+            paliaMuted: '#e9e1d4',
+          },
+          fontFamily: { 'sans': ['Inter', 'system-ui', 'Segoe UI', 'Noto Sans SC', 'sans-serif'] },
+          borderRadius: { 'xl': '1rem', '2xl': '1.5rem' },
+        }
+      }
+    }
+  </script>
+  <style>
+    body { scroll-behavior: smooth; }
+    .section-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .section-card:hover { transform: translateY(-3px); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body class="bg-paliaBg text-paliaText font-sans antialiased">
+
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-paliaAccent/20 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 lg:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+    <div class="flex items-center gap-3">
+      <div class="bg-paliaPrimary/10 p-2 rounded-2xl"><i class="fa fa-cutlery text-paliaPrimary text-2xl"></i></div>
+      <div>
+        <h1 class="text-xl md:text-2xl font-bold tracking-tight text-paliaPrimaryDeep">Cooking Minigame</h1>
+        <p class="text-xs text-paliaText/70">Mechanics · Focus Bonus · Success Secrets</p>
+      </div>
+    </div>
+    <a href="index.html" class="text-paliaPrimary hover:underline text-sm flex items-center gap-1"><i class="fa fa-arrow-left"></i> Back to Main Hub</a>
+  </div>
+</header>
+
+<main class="max-w-5xl mx-auto px-4 py-10 space-y-8">
+  <!-- Intro -->
+  <div class="bg-paliaCard rounded-2xl shadow-card p-6 md:p-8">
+    <div class="flex items-center gap-3 border-b border-paliaMuted pb-4 mb-5">
+      <i class="fa fa-gamepad text-paliaPrimary text-3xl"></i>
+      <h2 class="text-2xl font-bold">Master the Cooking Minigame</h2>
+    </div>
+    <p class="text-paliaText/80 leading-relaxed">Cooking in Palia isn't just about having ingredients – each dish requires you to complete a series of interactive minigames. Your performance directly affects the final dish's quality, Focus restoration, and sale value. This guide covers every minigame type, how Focus influences success, and advanced tips to consistently cook star-quality meals.</p>
+  </div>
+
+  <!-- The Minigame Types -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-hand-peace-o text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🎮 Minigame Types</h2></div>
+    <p>Each step in a recipe triggers one of the following minigames. Your goal is to complete each step within the time limit and with high accuracy.</p>
+    <div class="grid md:grid-cols-2 gap-4 mt-3">
+      <div class="border rounded-lg p-3">
+        <h3 class="font-bold text-paliaPrimary">🔪 Chop / Slice</h3>
+        <p class="text-sm">A bar moves left and right. Press the action key when the marker is inside the highlighted zone. The narrower the zone, the harder the dish.</p>
+        <ul class="list-disc pl-4 text-xs mt-1"><li>Perfect zone: +20% quality chance</li><li>Miss: reduced dish quality</li></ul>
+      </div>
+      <div class="border rounded-lg p-3">
+        <h3 class="font-bold text-paliaPrimary">🥄 Stir / Mix</h3>
+        <p class="text-sm">Hold the action key to keep a needle within a moving target area. The longer you stay inside, the better.</p>
+        <ul class="list-disc pl-4 text-xs mt-1"><li>Maintain for 3 seconds = perfect stir</li><li>Straying outside lowers final quality</li></ul>
+      </div>
+      <div class="border rounded-lg p-3">
+        <h3 class="font-bold text-paliaPrimary">🔥 Flip / Sear</h3>
+        <p class="text-sm">A timer counts down while a flame icon moves. Tap at the exact moment the flame reaches the center.</p>
+        <ul class="list-disc pl-4 text-xs mt-1"><li>Perfect flip: unlocks bonus Focus</li><li>Early/late: burnt food (less value)</li></ul>
+      </div>
+      <div class="border rounded-lg p-3">
+        <h3 class="font-bold text-paliaPrimary">⏲️ Bake / Roast</h3>
+        <p class="text-sm">A meter fills up; you must click when it reaches a specific marker. Similar to "stop the meter" games.</p>
+        <ul class="list-disc pl-4 text-xs mt-1"><li>Closest to marker gives "Golden Bake"</li><li>Overcooking reduces quality</li></ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Focus Bonus on Cooking -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-bolt text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">⚡ How Focus Affects Cooking</h2></div>
+    <p>Your current <strong>Focus percentage</strong> directly influences your cooking success rate. Higher Focus gives you:</p>
+    <ul class="list-disc pl-5 space-y-1">
+      <li><strong>Larger perfect zones</strong> – The target areas in minigames become wider, making perfect hits easier.</li>
+      <li><strong>Longer timers</strong> – Each step gets 0.5–2 extra seconds depending on Focus percentage.</li>
+      <li><strong>Higher chance of star-quality</strong> – At 100% Focus, you have a base +30% chance to produce star-quality dishes.</li>
+    </ul>
+    <div class="bg-paliaPrimary/10 p-3 rounded-xl mt-3 text-sm">
+      📊 <strong>Table: Focus vs. Perfect Zone Size</strong><br>
+      Focus 100% → Zone width = 40% of bar<br>
+      Focus 50% → Zone width = 20% of bar<br>
+      Focus 0% → Zone width = 10% of bar (very difficult)
+    </div>
+    <p class="mt-2 text-sm">Always cook with full Focus to maximize your chance of getting star-quality meals.</p>
+  </div>
+
+  <!-- Success Rate & Quality Tiers -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-star text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">⭐ Quality Tiers & Success Rate</h2></div>
+    <p>Every dish has three possible outcomes based on your overall performance across all minigame steps:</p>
+    <ul class="list-disc pl-5 space-y-2">
+      <li><strong>Standard (gray border)</strong> – Basic Focus restoration and sale value. Happens if you miss 2+ steps.</li>
+      <li><strong>Star Quality (blue border)</strong> – +50% Focus restoration, +50% sale price. Requires perfect or near-perfect on all steps.</li>
+      <li><strong>Golden Star (golden border)</strong> – +100% Focus restoration, +100% sale value. Extremely rare; requires all steps "perfect" with no mistakes, plus high Focus.</li>
+    </ul>
+    <div class="overflow-x-auto mt-3">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50"><tr><th class="px-2 py-1">Dish Example</th><th class="px-2 py-1">Standard Value</th><th class="px-2 py-1">Star Quality Value</th><th class="px-2 py-1">Golden Star Value</th></tr></thead>
+        <tbody class="divide-y">
+          <tr><td class="px-2 py-1">Hearty Vegetable Soup</td><td class="px-2 py-1">150 Focus, 180 Gold</td><td class="px-2 py-1">225 Focus, 270 Gold</td><td class="px-2 py-1">300 Focus, 360 Gold</td></tr>
+          <tr><td class="px-2 py-1">Celebration Cake</td><td class="px-2 py-1">300 Focus, 600 Gold</td><td class="px-2 py-1">450 Focus, 900 Gold</td><td class="px-2 py-1">600 Focus, 1200 Gold</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Secrets & Pro Tips -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-secret text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🔐 Secrets to Consistent Success</h2></div>
+    <ul class="list-disc pl-5 space-y-2">
+      <li><strong>Cook the same dish repeatedly</strong> – The minigame patterns are identical each time. Muscle memory makes perfect execution easier.</li>
+      <li><strong>Upgrade your cooking stations</strong> – Better stoves/ovens (see separate guide) increase the margin of error slightly.</li>
+      <li><strong>Cook with a friend in multiplayer</strong> – In co-op cooking, each person takes one step. This reduces the chance of one person messing up multiple steps.</li>
+      <li><strong>Use Focus-boosting food before cooking</strong> – Eating a small Focus snack before a cooking session ensures your Focus is at 100%.</li>
+      <li><strong>Practice with cheap recipes first</strong> – Use Grilled Fish or basic bread to learn the timing before attempting expensive dishes like Celebration Cake.</li>
+    </ul>
+  </div>
+
+  <!-- Common Mistakes -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-exclamation-triangle text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">⚠️ Common Mistakes & How to Avoid Them</h2></div>
+    <div class="grid md:grid-cols-2 gap-3">
+      <div class="bg-red-50 p-3 rounded"><span class="font-bold">❌ Clicking too early on Chop minigames</span><br>→ Wait for the marker to enter the colored zone. The zone flashes slightly when it's active.</div>
+      <div class="bg-red-50 p-3 rounded"><span class="font-bold">❌ Letting the Stir meter drift</span><br>→ Make small, corrective taps instead of holding continuously.</div>
+      <div class="bg-red-50 p-3 rounded"><span class="font-bold">❌ Cooking with low Focus</span><br>→ Always refill Focus before starting a cooking session. Low Focus makes minigames much harder.</div>
+      <div class="bg-red-50 p-3 rounded"><span class="font-bold">❌ Not reading recipe steps beforehand</span><br>→ Each dish has a fixed sequence. Know what's coming to prepare mentally.</div>
+    </div>
+  </div>
+
+  <!-- Multiplayer Cooking Bonus -->
+  <div class="bg-paliaPrimary/5 rounded-2xl p-6 border border-paliaAccent/20">
+    <i class="fa fa-users text-3xl text-paliaPrimary mb-2 block"></i>
+    <h3 class="text-xl font-bold mb-2">👥 Multiplayer Cooking Bonus</h3>
+    <p class="text-paliaText/80">When you cook with another player (or group), each person can take over different steps. This splits the workload and reduces the chance of failure. Additionally, if everyone performs perfectly, the final dish has a <strong>+20% chance to become Golden Star</strong> regardless of individual performance. Group cooking is the best way to mass-produce high-quality meals for selling or gifting.</p>
+    <div class="mt-3 text-sm">To invite someone to cook with you: stand near the stove/oven, open the cooking menu, and click "Invite to Cook". They must be on your home plot or in the same party.</div>
+    <div class="mt-5 text-center">
+      <a href="index.html" class="inline-block bg-paliaPrimary text-white px-6 py-2 rounded-full hover:bg-paliaPrimaryDeep transition">← Back to Main Hub</a>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-white/70 border-t border-paliaAccent/20 mt-12 py-6 text-center text-sm text-paliaText/70">
+  <p>Palia Guide Hub · Cooking Minigame · Perfect every dish with practice</p>
+  <p class="mt-1"><i class="fa fa-leaf text-paliaPrimary"></i> Good cooking comes from focus and repetition</p>
+</footer>
+</body>
+</html>
