@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en-US">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Palia 帕利亚攻略站 | 完整百科与玩家社区</title>
+  <title>Palia Guide Hub | Complete Wiki &amp; Community</title>
   <!-- TailwindCSS + Font Awesome + Google Fonts -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -65,7 +65,7 @@
     <!-- 仅保留英文/简体中文切换 -->
     <div class="flex flex-wrap gap-1.5 text-xs bg-paliaMuted/50 p-1 rounded-full">
       <button class="lang-btn px-3 py-1.5 rounded-full transition-all font-medium" data-lang="en">EN</button>
-      <button class="lang-btn px-3 py-1.5 rounded-full transition-all font-medium active" data-lang="zh_CN">简中</button>
+      <button class="lang-btn px-3 py-1.5 rounded-full transition-all font-medium" data-lang="zh_CN">简中</button>
     </div>
   </div>
   <div class="border-t border-paliaAccent/10 bg-white/40">
@@ -607,8 +607,8 @@ function renderDynamicContent(t) {
 
 // 绑定语言切换事件
 document.querySelectorAll(".lang-btn").forEach(btn => btn.addEventListener("click", () => applyLanguage(btn.dataset.lang)));
-// 页面加载默认显示简体中文
-window.onload = () => applyLanguage("zh_CN");
+// 页面加载默认显示英文
+window.onload = () => applyLanguage("en");
 </script>
 </body>
 </html>
