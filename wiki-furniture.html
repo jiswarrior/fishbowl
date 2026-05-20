@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Furniture Wiki – Blueprints, Materials, Unlocks, Decor Effects | Palia Guide Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paliaBg: '#fcf8f0',
+            paliaPrimary: '#7f9a6e',
+            paliaPrimaryDeep: '#5f7a4e',
+            paliaAccent: '#e2b181',
+            paliaText: '#3c2f2a',
+            paliaCard: '#ffffff',
+            paliaMuted: '#e9e1d4',
+          },
+          fontFamily: { 'sans': ['Inter', 'system-ui', 'Segoe UI', 'Noto Sans SC', 'sans-serif'] },
+          borderRadius: { 'xl': '1rem', '2xl': '1.5rem' },
+        }
+      }
+    }
+  </script>
+  <style>
+    body { scroll-behavior: smooth; }
+    .section-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .section-card:hover { transform: translateY(-3px); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body class="bg-paliaBg text-paliaText font-sans antialiased">
+
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-paliaAccent/20 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 lg:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+    <div class="flex items-center gap-3">
+      <div class="bg-paliaPrimary/10 p-2 rounded-2xl"><i class="fa fa-cube text-paliaPrimary text-2xl"></i></div>
+      <div>
+        <h1 class="text-xl md:text-2xl font-bold tracking-tight text-paliaPrimaryDeep">Furniture Wiki</h1>
+        <p class="text-xs text-paliaText/70">Blueprints · Materials · Unlock Conditions · Decor Effects</p>
+      </div>
+    </div>
+    <a href="index.html" class="text-paliaPrimary hover:underline text-sm flex items-center gap-1"><i class="fa fa-arrow-left"></i> Back to Main Hub</a>
+  </div>
+</header>
+
+<main class="max-w-7xl mx-auto px-4 py-10 space-y-8">
+  <!-- Intro -->
+  <div class="bg-paliaCard rounded-2xl shadow-card p-6 md:p-8">
+    <div class="flex items-center gap-3 border-b border-paliaMuted pb-4 mb-5">
+      <i class="fa fa-database text-paliaPrimary text-3xl"></i>
+      <h2 class="text-2xl font-bold">Complete Furniture Database</h2>
+    </div>
+    <p class="text-paliaText/80 leading-relaxed">Furniture making is essential for home decoration, increasing your home’s Decor Score, and unlocking special passive bonuses. This guide lists every known furniture blueprint – where to get it, what materials you need, and what special effects (if any) the furniture provides.</p>
+  </div>
+
+  <!-- Furniture Table (Selected key items) -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-table text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">📋 Furniture Blueprints</h2></div>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50">
+          <tr><th class="px-2 py-2">Furniture</th><th class="px-2 py-2">Blueprint Source</th><th class="px-2 py-2">Materials</th><th class="px-2 py-2">Furniture Lv</th><th class="px-2 py-2">Decor Points</th><th class="px-2 py-2">Special Effect</th></tr>
+        </thead>
+        <tbody class="divide-y">
+          <!-- Basic -->
+          <tr><td class="px-2 py-1">Wooden Chair</td><td class="px-2 py-1">Default (Workbench)</td><td class="px-2 py-1">10 Wood, 2 Fiber</td><td class="px-2 py-1">Lv 1</td><td class="px-2 py-1">15</td><td class="px-2 py-1">None</td></tr>
+          <tr><td class="px-2 py-1">Wooden Table</td><td class="px-2 py-1">Default</td><td class="px-2 py-1">20 Wood, 5 Nails</td><td class="px-2 py-1">Lv 2</td><td class="px-2 py-1">30</td><td class="px-2 py-1">None</td></tr>
+          <tr><td class="px-2 py-1">Copper Lamp</td><td class="px-2 py-1">Tish’s Store (500g)</td><td class="px-2 py-1">5 Copper Bar, 3 Glass, 1 Wax</td><td class="px-2 py-1">Lv 3</td><td class="px-2 py-1">50</td><td class="px-2 py-1">+5% Focus restoration when inside room</td></tr>
+          <tr><td class="px-2 py-1">Rug of Comfort</td><td class="px-2 py-1">Ashura Friendship Lv 3 (reward)</td><td class="px-2 py-1">10 Wool, 5 Fabric, 2 Dye</td><td class="px-2 py-1">Lv 4</td><td class="px-2 py-1">80</td><td class="px-2 py-1">+10% chance to find extra forageable</td></tr>
+          <tr><td class="px-2 py-1">Iron Chandelier</td><td class="px-2 py-1">Guild Store (50 Furniture Coins)</td><td class="px-2 py-1">15 Iron Bar, 10 Glass, 5 Crystal</td><td class="px-2 py-1">Lv 7</td><td class="px-2 py-1">200</td><td class="px-2 py-1">Reduces cooking minigame difficulty by 15%</td></tr>
+          <tr><td class="px-2 py-1">Palium Mirror</td><td class="px-2 py-1">Temple of Waves reward</td><td class="px-2 py-1">10 Palium Bar, 5 Silver Bar, 10 Glass</td><td class="px-2 py-1">Lv 12</td><td class="px-2 py-1">500</td><td class="px-2 py-1">+10% chance to catch rare fish while fishing</td></tr>
+          <tr><td class="px-2 py-1">Homestead Bookshelf</td><td class="px-2 py-1">Default (Workbench)</td><td class="px-2 py-1">25 Plank, 5 Nails, 2 Ink</td><td class="px-2 py-1">Lv 5</td><td class="px-2 py-1">120</td><td class="px-2 py-1">+5% XP from all skills when placed in main room</td></tr>
+          <tr><td class="px-2 py-1">Flower Pot (Set)</td><td class="px-2 py-1">Tish’s Store (200g each)</td><td class="px-2 py-1">5 Clay, 2 Dye, 1 Flower</td><td class="px-2 py-1">Lv 2</td><td class="px-2 py-1">25</td><td class="px-2 py-1">None (cosmetic)</td></tr>
+          <tr><td class="px-2 py-1">Cozy Fireplace</td><td class="px-2 py-1">Zeki’s Black Market (rare, 5000g)</td><td class="px-2 py-1">30 Stone, 20 Iron Bar, 10 Glass</td><td class="px-2 py-1">Lv 9</td><td class="px-2 py-1">400</td><td class="px-2 py-1">Warms nearby crops – reduces growth time by 10% (if placed outside)</td></tr>
+          <tr><td class="px-2 py-1">Star Chart Globe</td><td class="px-2 py-1">Complete all temple puzzles</td><td class="px-2 py-1">25 Palium Bar, 10 Crystal, 5 Gold Bar</td><td class="px-2 py-1">Lv 15</td><td class="px-2 py-1">1000</td><td class="px-2 py-1">+20% Renown earned from weekly challenges</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-xs text-paliaText/60 mt-2">* Decor Points contribute to your Home Decor Score, which unlocks higher-tier achievements and rewards.</p>
+  </div>
+
+  <!-- How to Get Blueprints -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-map-o text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🔍 Blueprint Acquisition Methods</h2></div>
+    <div class="grid md:grid-cols-2 gap-4">
+      <div>
+        <h3 class="font-bold">🏪 In-Game Stores</h3>
+        <ul class="list-disc pl-4 text-sm">
+          <li><strong>Tish’s Furniture Shop</strong> – Sells basic and decorative blueprints (gold).</li>
+          <li><strong>Guild Store (Furniture Making)</strong> – Sells advanced blueprints for Furniture Coins.</li>
+          <li><strong>Zeki’s Black Market</strong> – Rare, rotating blueprints (high gold cost).</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold">🎁 Quests & Rewards</h3>
+        <ul class="list-disc pl-4 text-sm">
+          <li><strong>NPC Friendship / Romance levels</strong> – Many NPCs give unique furniture as rewards.</li>
+          <li><strong>Temple completions</strong> – Each temple rewards a rare decorative item.</li>
+          <li><strong>Treasure chests</strong> – Random furniture blueprints can be found in hidden chests.</li>
+          <li><strong>Weekly challenge bonuses</strong> – Completing all challenges sometimes yields exclusive blueprints.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Decor Score & Bonuses -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-home text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🏡 Decor Score & Passive Bonuses</h2></div>
+    <p>Every furniture piece contributes Decor Points. The total Decor Score of your home plot unlocks bonuses and achievements:</p>
+    <ul class="list-disc pl-5 space-y-1">
+      <li><strong>500 points:</strong> “Cozy Home” title + 50 Renown</li>
+      <li><strong>1000 points:</strong> “Decor Enthusiast” title + ability to place +10% more items</li>
+      <li><strong>2000 points:</strong> “Master Decorator” title + special flower wallpaper</li>
+      <li><strong>5000 points:</strong> “Architect” title + exclusive gazebo blueprint</li>
+    </ul>
+    <div class="bg-paliaPrimary/10 p-2 rounded mt-2 text-sm">💡 Special furniture (like Cozy Fireplace or Homestead Bookshelf) provides active gameplay buffs, not just points. Prioritize crafting these.</div>
+  </div>
+
+  <!-- Material Requirements Overview -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-cubes text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🔨 Common Crafting Materials</h2></div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-2 text-sm">
+      <div><span class="font-semibold">Wood & Planks:</span> Basic, from trees via Sawmill.</div>
+      <div><span class="font-semibold">Nails:</span> 1 Iron Bar → 10 Nails (Workbench).</div>
+      <div><span class="font-semibold">Glass:</span> 2 Sand + 1 fuel (Furnace).</div>
+      <div><span class="font-semibold">Fabric:</span> 5 Cotton + 1 water (Loom).</div>
+      <div><span class="font-semibold">Dye:</span> Crush flowers (e.g., Bluebell, Daisy) at Workbench.</div>
+      <div><span class="font-semibold">Wax:</span> From beekeeping (Beehive, Gardening Lv 6).</div>
+      <div><span class="font-semibold">Crystal:</span> Rare mining drop (Bahari caves).</div>
+      <div><span class="font-semibold">Ink:</span> 1 Charcoal + 1 Water (Workbench).</div>
+    </div>
+  </div>
+
+  <!-- Set Bonuses -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-puzzle-piece text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">✨ Furniture Set Bonuses</h2></div>
+    <p>Placing multiple pieces from the same set in one room unlocks additional passive bonuses.</p>
+    <ul class="list-disc pl-5 space-y-1">
+      <li><strong>Cozy Cottage (3+ pieces):</strong> +5% Focus restoration from any food eaten in that room.</li>
+      <li><strong>Ironwood Kitchen (4 pieces):</strong> Cooking success rate +10%.</li>
+      <li><strong>Palium Aristocrat (5 pieces):</strong> +15% gold from selling crafted items.</li>
+      <li><strong>Gardener’s Corner (3 pieces):</strong> Crops in nearby soil plots grow 5% faster.</li>
+    </ul>
+    <p class="mt-2 text-sm">To see set bonuses, open the room UI (press H) and hover over the “Set Bonus” icon.</p>
+  </div>
+
+  <!-- Best Furniture to Craft Early -->
+  <div class="bg-paliaPrimary/5 rounded-2xl p-6 border border-paliaAccent/20">
+    <i class="fa fa-lightbulb-o text-3xl text-paliaPrimary mb-2 block"></i>
+    <h3 class="text-xl font-bold mb-2">✅ Priority Furniture for New Players</h3>
+    <ol class="list-decimal pl-5 space-y-1 text-paliaText/80">
+      <li><strong>Workbench</strong> – Required for all crafting.</li>
+      <li><strong>Sawmill</strong> – Turns wood into planks (needed for higher-tier furniture).</li>
+      <li><strong>Copper Lamp</strong> – Easy to craft, gives +5% Focus restoration buff.</li>
+      <li><strong>Homestead Bookshelf</strong> – Unlocks at Lv 5, gives +5% global XP bonus.</li>
+      <li><strong>Cozy Fireplace</strong> – Expensive but worth it for crop growth speed.</li>
+    </ol>
+    <div class="mt-5 text-center">
+      <a href="index.html" class="inline-block bg-paliaPrimary text-white px-6 py-2 rounded-full hover:bg-paliaPrimaryDeep transition">← Back to Main Hub</a>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-white/70 border-t border-paliaAccent/20 mt-12 py-6 text-center text-sm text-paliaText/70">
+  <p>Palia Guide Hub · Furniture Wiki · Build, decorate, and gain benefits</p>
+  <p class="mt-1"><i class="fa fa-leaf text-paliaPrimary"></i> A beautiful home is also a powerful home</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Crop Wiki – Seeds, Growth Time, Fertilizer, Star Yield | Palia Guide Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paliaBg: '#fcf8f0',
+            paliaPrimary: '#7f9a6e',
+            paliaPrimaryDeep: '#5f7a4e',
+            paliaAccent: '#e2b181',
+            paliaText: '#3c2f2a',
+            paliaCard: '#ffffff',
+            paliaMuted: '#e9e1d4',
+          },
+          fontFamily: { 'sans': ['Inter', 'system-ui', 'Segoe UI', 'Noto Sans SC', 'sans-serif'] },
+          borderRadius: { 'xl': '1rem', '2xl': '1.5rem' },
+        }
+      }
+    }
+  </script>
+  <style>
+    body { scroll-behavior: smooth; }
+    .section-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .section-card:hover { transform: translateY(-3px); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body class="bg-paliaBg text-paliaText font-sans antialiased">
+
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-paliaAccent/20 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 lg:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+    <div class="flex items-center gap-3">
+      <div class="bg-paliaPrimary/10 p-2 rounded-2xl"><i class="fa fa-pagelines text-paliaPrimary text-2xl"></i></div>
+      <div>
+        <h1 class="text-xl md:text-2xl font-bold tracking-tight text-paliaPrimaryDeep">Crop Wiki</h1>
+        <p class="text-xs text-paliaText/70">Seed sources · Growth time · Fertilizer · Star quality</p>
+      </div>
+    </div>
+    <a href="index.html" class="text-paliaPrimary hover:underline text-sm flex items-center gap-1"><i class="fa fa-arrow-left"></i> Back to Main Hub</a>
+  </div>
+</header>
+
+<main class="max-w-7xl mx-auto px-4 py-10 space-y-8">
+  <!-- Intro -->
+  <div class="bg-paliaCard rounded-2xl shadow-card p-6 md:p-8">
+    <div class="flex items-center gap-3 border-b border-paliaMuted pb-4 mb-5">
+      <i class="fa fa-database text-paliaPrimary text-3xl"></i>
+      <h2 class="text-2xl font-bold">Complete Crop Database</h2>
+    </div>
+    <p class="text-paliaText/80 leading-relaxed">Gardening is one of the most profitable skills in Palia. This page lists every seed, its growth time (real minutes), fertilizer effects, star quality yield, and best use – whether for selling, cooking, or gifting to NPCs.</p>
+  </div>
+
+  <!-- Crop Table -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-table text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">📋 Crop List</h2></div>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50">
+          <tr><th class="px-2 py-2">Crop</th><th class="px-2 py-2">Seed Source</th><th class="px-2 py-2">Growth (real mins)</th><th class="px-2 py-2">Best Fertilizer</th><th class="px-2 py-2">★ Sell Price</th><th class="px-2 py-2">Best Use</th><th class="px-2 py-2">Loved By NPC</th></tr>
+        </thead>
+        <tbody class="divide-y">
+          <tr><td class="px-2 py-1">Carrot</td><td class="px-2 py-1">Badruu (5g) / Seed Maker</td><td class="px-2 py-1">12 min</td><td class="px-2 py-1">Speed Grow</td><td class="px-2 py-1">22g</td><td class="px-2 py-1">Soup, stews</td><td class="px-2 py-1">Badruu, Ashura</td></tr>
+          <tr><td class="px-2 py-1">Tomato</td><td class="px-2 py-1">Badruu (10g) / Seed Maker</td><td class="px-2 py-1">30 min (repeats every 12 min after first)</td><td class="px-2 py-1">Quality</td><td class="px-2 py-1">45g</td><td class="px-2 py-1">Best early profit, jam</td><td class="px-2 py-1">Reth, Delaila</td></tr>
+          <tr><td class="px-2 py-1">Onion</td><td class="px-2 py-1">Badruu (8g) / Seed Maker</td><td class="px-2 py-1">15 min</td><td class="px-2 py-1">Speed Grow</td><td class="px-2 py-1">18g</td><td class="px-2 py-1">Soup, gift</td><td class="px-2 py-1">Hodari</td></tr>
+          <tr><td class="px-2 py-1">Wheat</td><td class="px-2 py-1">Badruu (4g) / Seed Maker</td><td class="px-2 py-1">10 min</td><td class="px-2 py-1">Harvest Boost</td><td class="px-2 py-1">10g</td><td class="px-2 py-1">Flour, bread, cake</td><td class="px-2 py-1">Reth</td></tr>
+          <tr><td class="px-2 py-1">Cotton</td><td class="px-2 py-1">Badruu (15g) / Seed Maker</td><td class="px-2 py-1">25 min</td><td class="px-2 py-1">Quality</td><td class="px-2 py-1">35g</td><td class="px-2 py-1">Fabric, sells well</td><td class="px-2 py-1">Tish</td></tr>
+          <tr><td class="px-2 py-1">Rice</td><td class="px-2 py-1">Badruu (12g) / Seed Maker</td><td class="px-2 py-1">20 min</td><td class="px-2 py-1">Speed Grow</td><td class="px-2 py-1">28g</td><td class="px-2 py-1">Risotto, stir-fry</td><td class="px-2 py-1">Tamala</td></tr>
+          <tr><td class="px-2 py-1">Potato</td><td class="px-2 py-1">Badruu (12g) / Seed Maker</td><td class="px-2 py-1">18 min</td><td class="px-2 py-1">Speed Grow</td><td class="px-2 py-1">20g</td><td class="px-2 py-1">Soup, loaded potato</td><td class="px-2 py-1">Ashura</td></tr>
+          <tr><td class="px-2 py-1">Blueberry</td><td class="px-2 py-1">Badruu (25g) / Seed Maker (rare)</td><td class="px-2 py-1">40 min (repeats every 20 min)</td><td class="px-2 py-1">Quality</td><td class="px-2 py-1">75g</td><td class="px-2 py-1">Cake, pie, high profit</td><td class="px-2 py-1">Kenyatta, Reth</td></tr>
+          <tr><td class="px-2 py-1">Apple (tree)</td><td class="px-2 py-1">Badruu (100g) – grows into tree</td><td class="px-2 py-1">72 hours (real)</td><td class="px-2 py-1">Quality</td><td class="px-2 py-1">125g (★)</td><td class="px-2 py-1">Pies, juice, long-term profit</td><td class="px-2 py-1">Ashura, Delaila</td></tr>
+          <tr><td class="px-2 py-1">Corn</td><td class="px-2 py-1">Badruu (18g) / Seed Maker</td><td class="px-2 py-1">22 min</td><td class="px-2 py-1">Harvest Boost</td><td class="px-2 py-1">25g</td><td class="px-2 py-1">Animal feed, oil</td><td class="px-2 py-1">Sifuu</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-xs text-paliaText/60 mt-2">* Growth times are in real-world minutes. Trees take much longer but provide passive income.</p>
+  </div>
+
+  <!-- Fertilizer Types & Effects -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-flask text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🧪 Fertilizer Guide</h2></div>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50">
+          <tr><th class="px-2 py-2">Fertilizer</th><th class="px-2 py-2">Crafting Recipe</th><th class="px-2 py-2">Effect</th><th class="px-2 py-2">Best Used On</th></tr>
+        </thead>
+        <tbody class="divide-y">
+          <tr><td class="px-2 py-1">Speed Grow</td><td class="px-2 py-1">1 Plant Fiber + 1 Sapwood (Workbench)</td><td class="px-2 py-1">Reduces growth time by 25%</td><td class="px-2 py-1">Carrots, onions, rice</td></tr>
+          <tr><td class="px-2 py-1">Quality Fertilizer</td><td class="px-2 py-1">1 Sapwood + 1 Sweet Leaf (Workbench)</td><td class="px-2 py-1">+30% chance of star quality</td><td class="px-2 py-1">Tomatoes, blueberries, cotton</td></tr>
+          <tr><td class="px-2 py-1">Harvest Boost</td><td class="px-2 py-1">2 Plant Fiber + 1 Compost (Composter)</td><td class="px-2 py-1">Increases crop yield by 1-2 extra units</td><td class="px-2 py-1">Wheat, corn, cotton</td></tr>
+          <tr><td class="px-2 py-1">Speedy Grow (rare)</td><td class="px-2 py-1">Gardening Guild Store (15 coins)</td><td class="px-2 py-1">Reduces growth time by 50%</td><td class="px-2 py-1">Blueberries, trees</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="mt-2 text-sm">Apply fertilizer to each soil plot individually. It lasts for one growth cycle and then needs reapplication.</p>
+  </div>
+
+  <!-- Star Quality Mechanics -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-star text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">⭐ Star Quality Crops</h2></div>
+    <ul class="list-disc pl-5 space-y-1">
+      <li><strong>Star quality (★) crops sell for 50% more than normal.</strong></li>
+      <li>Using Quality Fertilizer increases star chance to ~40% base.</li>
+      <li>Higher Gardening skill (level 10+) gives passive +10% star chance.</li>
+      <li>Star crops also produce star seeds in Seed Maker, which grow into star crops more often.</li>
+      <li>Star crops are required for certain cooking recipes to yield star dishes.</li>
+    </ul>
+    <div class="bg-paliaPrimary/10 p-2 rounded mt-2 text-sm">💡 Pro tip: Save star crops for cooking (they boost dish quality) and sell regular crops directly.</div>
+  </div>
+
+  <!-- Profitability Ranking -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-line-chart text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">💰 Most Profitable Crops (Gold per hour)</h2></div>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50">
+          <tr><th class="px-2 py-2">Crop</th><th class="px-2 py-2">★ Sell Price</th><th class="px-2 py-2">Growth (min)</th><th class="px-2 py-2">Gold/Hour (★)</th><th class="px-2 py-2">Notes</th></tr>
+        </thead>
+        <tbody class="divide-y">
+          <tr><td class="px-2 py-1">Blueberry</td><td class="px-2 py-1">75g</td><td class="px-2 py-1">40 (repeat 20)</td><td class="px-2 py-1">~225g (continuous)</td><td class="px-2 py-1">Best mid-game, multi-harvest</td></tr>
+          <tr><td class="px-2 py-1">Tomato</td><td class="px-2 py-1">45g</td><td class="px-2 py-1">30 (repeat 12)</td><td class="px-2 py-1">~225g (continuous)</td><td class="px-2 py-1">Best early multi-harvest</td></tr>
+          <tr><td class="px-2 py-1">Cotton</td><td class="px-2 py-1">35g</td><td class="px-2 py-1">25</td><td class="px-2 py-1">84g</td><td class="px-2 py-1">Good for fabric crafting</td></tr>
+          <tr><td class="px-2 py-1">Carrot</td><td class="px-2 py-1">22g</td><td class="px-2 py-1">12</td><td class="px-2 py-1">110g</td><td class="px-2 py-1">Fast, good for early money</td></tr>
+          <tr><td class="px-2 py-1">Wheat</td><td class="px-2 py-1">10g</td><td class="px-2 py-1">10</td><td class="px-2 py-1">60g</td><td class="px-2 py-1">Low profit, needed for cooking</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="mt-2 text-sm">For passive income, plant tomatoes and blueberries – they regrow without replanting.</p>
+  </div>
+
+  <!-- Crop Usage Summary -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-cutlery text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🍲 Crops in Cooking Recipes</h2></div>
+    <div class="grid md:grid-cols-2 gap-2 text-sm">
+      <div><span class="font-semibold">Hearty Vegetable Soup:</span> Carrot, Onion, Mushroom, Spice</div>
+      <div><span class="font-semibold">Celebration Cake:</span> Wheat, Egg, Butter, Sweet Leaf, Blueberry</div>
+      <div><span class="font-semibold">Mushroom Quiche:</span> Mushroom, Egg, Milk, Wheat</div>
+      <div><span class="font-semibold">Sernuk Stew:</span> Sernuk Meat, Carrot, Spice</div>
+      <div><span class="font-semibold">Apple Pie:</span> Apple, Wheat, Butter, Sweet Leaf</div>
+      <div><span class="font-semibold">Loaded Potato Soup:</span> Potato, Milk, Cheese, Spice</div>
+    </div>
+  </div>
+
+  <!-- Seed Maker Details -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-cogs text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🌱 Seed Maker Efficiency</h2></div>
+    <p>Unlocked at Gardening Level 8. Input one crop to receive multiple seeds (2-5 depending on crop).</p>
+    <ul class="list-disc pl-5 mt-2 space-y-1">
+      <li><strong>Best crops to turn into seeds:</strong> Carrot (yields ~3 seeds, each costs 5g → profit), Tomato (yields 1-3 seeds, valued 10g each).</li>
+      <li><strong>Star crops yield more seeds</strong> – Star tomato gives 2-4 seeds instead of 1-3.</li>
+      <li><strong>Processing time:</strong> 10-25 minutes per batch. Multiple Seed Makers speed up production.</li>
+    </ul>
+  </div>
+
+  <!-- Gift Guide -->
+  <div class="bg-paliaPrimary/5 rounded-2xl p-6 border border-paliaAccent/20">
+    <i class="fa fa-gift text-3xl text-paliaPrimary mb-2 block"></i>
+    <h3 class="text-xl font-bold mb-2">🎁 NPCs Who Love Specific Crops (Raw)</h3>
+    <ul class="list-disc pl-5 space-y-1 text-paliaText/80">
+      <li><strong>Badruu:</strong> Carrot, Onion, Potato (gardening theme)</li>
+      <li><strong>Reth:</strong> Tomato, Wheat, Blueberry (cooking ingredients)</li>
+      <li><strong>Delaila:</strong> Tomato, Onion, Apple (farm life)</li>
+      <li><strong>Ashura:</strong> Potato, Apple, Carrot</li>
+      <li><strong>Tish:</strong> Cotton, Blueberry (crafting & sweets)</li>
+      <li><strong>Kenyatta:</strong> Blueberry, Apple (luxury items)</li>
+    </ul>
+    <div class="mt-5 text-center">
+      <a href="index.html" class="inline-block bg-paliaPrimary text-white px-6 py-2 rounded-full hover:bg-paliaPrimaryDeep transition">← Back to Main Hub</a>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-white/70 border-t border-paliaAccent/20 mt-12 py-6 text-center text-sm text-paliaText/70">
+  <p>Palia Guide Hub · Crop Wiki · Grow wisely, harvest often</p>
+  <p class="mt-1"><i class="fa fa-leaf text-paliaPrimary"></i> The best farmers plan their fertilizer and rotation</p>
+</footer>
+</body>
+</html>

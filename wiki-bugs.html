@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Bug Wiki – Spawn Times, Zones, Capture Tips, Gifts | Palia Guide Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paliaBg: '#fcf8f0',
+            paliaPrimary: '#7f9a6e',
+            paliaPrimaryDeep: '#5f7a4e',
+            paliaAccent: '#e2b181',
+            paliaText: '#3c2f2a',
+            paliaCard: '#ffffff',
+            paliaMuted: '#e9e1d4',
+          },
+          fontFamily: { 'sans': ['Inter', 'system-ui', 'Segoe UI', 'Noto Sans SC', 'sans-serif'] },
+          borderRadius: { 'xl': '1rem', '2xl': '1.5rem' },
+        }
+      }
+    }
+  </script>
+  <style>
+    body { scroll-behavior: smooth; }
+    .section-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .section-card:hover { transform: translateY(-3px); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body class="bg-paliaBg text-paliaText font-sans antialiased">
+
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-paliaAccent/20 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 lg:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+    <div class="flex items-center gap-3">
+      <div class="bg-paliaPrimary/10 p-2 rounded-2xl"><i class="fa fa-bug text-paliaPrimary text-2xl"></i></div>
+      <div>
+        <h1 class="text-xl md:text-2xl font-bold tracking-tight text-paliaPrimaryDeep">Bug Wiki</h1>
+        <p class="text-xs text-paliaText/70">Spawn Times · Zones · Capture Tips · Gifts & Prices</p>
+      </div>
+    </div>
+    <a href="index.html" class="text-paliaPrimary hover:underline text-sm flex items-center gap-1"><i class="fa fa-arrow-left"></i> Back to Main Hub</a>
+  </div>
+</header>
+
+<main class="max-w-7xl mx-auto px-4 py-10 space-y-8">
+  <!-- Intro -->
+  <div class="bg-paliaCard rounded-2xl shadow-card p-6 md:p-8">
+    <div class="flex items-center gap-3 border-b border-paliaMuted pb-4 mb-5">
+      <i class="fa fa-database text-paliaPrimary text-3xl"></i>
+      <h2 class="text-2xl font-bold">Complete Bug Database</h2>
+    </div>
+    <p class="text-paliaText/80 leading-relaxed">Bugs are essential for the “Bug Catching” skill, used in crafting (glow worms, smoke candles), and loved by certain NPCs. This guide lists every bug’s spawn conditions, capture difficulty, selling price, and which NPCs appreciate them as gifts.</p>
+  </div>
+
+  <!-- Bug Table -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-table text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">📋 Bug List</h2></div>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50">
+          <tr><th class="px-2 py-2">Bug</th><th class="px-2 py-2">Zone</th><th class="px-2 py-2">Time</th><th class="px-2 py-2">Season</th><th class="px-2 py-2">Capture Tip</th><th class="px-2 py-2">Price (Std/★)</th><th class="px-2 py-2">Loved By NPC</th></tr>
+        </thead>
+        <tbody class="divide-y">
+          <!-- Common bugs -->
+          <tr><td class="px-2 py-1">Common Butterfly</td><td class="px-2 py-1">Kilima Fields</td><td class="px-2 py-1">6:00 – 18:00</td><td class="px-2 py-1">All</td><td class="px-2 py-1">Very slow, easy catch</td><td class="px-2 py-1">5 / 7</td><td class="px-2 py-1">Tish</td></tr>
+          <tr><td class="px-2 py-1">Garden Snail</td><td class="px-2 py-1">Home plots (on crops)</td><td class="px-2 py-1">Rain only</td><td class="px-2 py-1">All</td><td class="px-2 py-1">Check your garden after rain</td><td class="px-2 py-1">10 / 15</td><td class="px-2 py-1">Badruu</td></tr>
+          <tr><td class="px-2 py-1">Firefly</td><td class="px-2 py-1">Kilima Forest</td><td class="px-2 py-1">20:00 – 23:00</td><td class="px-2 py-1">Summer</td><td class="px-2 py-1">Glows at night, easy to spot</td><td class="px-2 py-1">30 / 45</td><td class="px-2 py-1">Reth, Kenyatta</td></tr>
+          <tr><td class="px-2 py-1">Glowbug</td><td class="px-2 py-1">Bahari Caves</td><td class="px-2 py-1">18:00 – 6:00</td><td class="px-2 py-1">All</td><td class="px-2 py-1">In caves, use smoke candle</td><td class="px-2 py-1">40 / 60</td><td class="px-2 py-1">Einar</td></tr>
+          <tr><td class="px-2 py-1">Blue Butterfly</td><td class="px-2 py-1">Kilima Flowers</td><td class="px-2 py-1">8:00 – 16:00</td><td class="px-2 py-1">Spring/Summer</td><td class="px-2 py-1">Near flowers, flies erratically</td><td class="px-2 py-1">25 / 37</td><td class="px-2 py-1">Tish, Ashura</td></tr>
+          <!-- Rare bugs -->
+          <tr><td class="px-2 py-1">Rainbow Butterfly</td><td class="px-2 py-1">Bahari Highlands</td><td class="px-2 py-1">10:00 – 14:00</td><td class="px-2 py-1">Spring/Summer</td><td class="px-2 py-1">Rare; use smoke candle and sneak</td><td class="px-2 py-1">200 / 300</td><td class="px-2 py-1">Tamala, Tish</td></tr>
+          <tr><td class="px-2 py-1">Moonstruck Moth</td><td class="px-2 py-1">Bahari Cliffs</td><td class="px-2 py-1">0:00 – 4:00</td><td class="px-2 py-1">Spring/Fall</td><td class="px-2 py-1">Attracted to light sources</td><td class="px-2 py-1">150 / 225</td><td class="px-2 py-1">Tamala, Reth</td></tr>
+          <tr><td class="px-2 py-1">Frost Beetle</td><td class="px-2 py-1">Snowy Kilima</td><td class="px-2 py-1">All day</td><td class="px-2 py-1">Winter only</td><td class="px-2 py-1">Slow moving on snow</td><td class="px-2 py-1">60 / 90</td><td class="px-2 py-1">Hodari, Sifuu</td></tr>
+          <tr><td class="px-2 py-1">Golden Scarab</td><td class="px-2 py-1">Bahari Desert Ruins</td><td class="px-2 py-1">12:00 – 15:00</td><td class="px-2 py-1">Summer</td><td class="px-2 py-1">Very rare, runs fast</td><td class="px-2 py-1">500 / 750</td><td class="px-2 py-1">Kenyatta, Ashura</td></tr>
+          <tr><td class="px-2 py-1">Spitfire Cicada</td><td class="px-2 py-1">Kilima Forest</td><td class="px-2 py-1">14:00 – 18:00</td><td class="px-2 py-1">Summer</td><td class="px-2 py-1">Loud chirping, follow sound</td><td class="px-2 py-1">80 / 120</td><td class="px-2 py-1">Hassian</td></td>
+          <tr><td class="px-2 py-1">Vampire Moth</td><td class="px-2 py-1">Bahari Caves</td><td class="px-2 py-1">0:00 – 5:00</td><td class="px-2 py-1">Fall</td><td class="px-2 py-1">Attracted to glow worms as bait</td><td class="px-2 py-1">120 / 180</td><td class="px-2 py-1">Tamala</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-xs text-paliaText/60 mt-2">* Price shown is base value; star‑quality bugs sell for 1.5x. Smoke candles prevent bugs from fleeing.</p>
+  </div>
+
+  <!-- Capture Techniques -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-net text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🎯 Bug Catching Techniques</h2></div>
+    <ul class="list-disc pl-5 space-y-2">
+      <li><strong>Sneak approach:</strong> Hold the "walk" key (default Ctrl) to move silently. Bugs are less likely to flee.</li>
+      <li><strong>Smoke Candles:</strong> Craftable at the campfire (requires 1 plant fiber + 1 sweet leaf). When placed on the ground, it creates a smoke cloud that prevents bugs from running away within its radius. Essential for rare bugs.</li>
+      <li><strong>Bait:</strong> Certain bugs (like Vampire Moth) can be lured by placing glow worms on the ground. Wait a few seconds for them to appear.</li>
+      <li><strong>Net upgrade:</strong> Higher tier nets (Iron, Palium) have a larger capture radius and faster swing speed, making it easier to catch fast bugs.</li>
+    </ul>
+  </div>
+
+  <!-- Best Bug Farming Spots -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-map-pin text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">📍 Best Farming Spots by Bug Type</h2></div>
+    <div class="grid md:grid-cols-2 gap-4">
+      <div>
+        <h3 class="font-bold">Kilima Valley</h3>
+        <ul class="list-disc pl-4 text-sm">
+          <li><strong>Flower Fields (south):</strong> Common Butterfly, Blue Butterfly.</li>
+          <li><strong>Forest (west):</strong> Firefly (night), Spitfire Cicada (afternoon).</li>
+          <li><strong>Home Garden (after rain):</strong> Garden Snail.</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold">Bahari Bay</h3>
+        <ul class="list-disc pl-4 text-sm">
+          <li><strong>Highlands (east):</strong> Rainbow Butterfly (daytime).</li>
+          <li><strong>Cliffs (north):</strong> Moonstruck Moth (night).</li>
+          <li><strong>Desert Ruins (southwest):</strong> Golden Scarab (summer noon).</li>
+          <li><strong>Caves (any):</strong> Glowbug (night), Vampire Moth (fall night).</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bugs for Bundles & Quests -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-tasks text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🐞 Bugs Required for Bundles/Quests</h2></div>
+    <ul class="list-disc pl-5 space-y-1">
+      <li><strong>Rainbow Butterfly</strong> – Temple of Gales bundle (rare).</li>
+      <li><strong>Golden Scarab</strong> – “Golden Fortune” quest from Zeki.</li>
+      <li><strong>Firefly</strong> – “Light the Way” quest (requires 5 fireflies).</li>
+      <li><strong>Glowbug</strong> – Used to craft Glow Worms (fishing bait).</li>
+    </ul>
+    <p class="mt-2 text-sm">Keep at least one of each rare bug in storage for future bundles or weekly challenges.</p>
+  </div>
+
+  <!-- NPC Gift Guide -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-gift text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🎁 Best Bugs to Gift NPCs</h2></div>
+    <div class="grid md:grid-cols-2 gap-3 text-sm">
+      <div><span class="font-semibold">Tamala:</span> Rainbow Butterfly, Moonstruck Moth, Vampire Moth</div>
+      <div><span class="font-semibold">Tish:</span> Common Butterfly, Blue Butterfly, Rainbow Butterfly</div>
+      <div><span class="font-semibold">Reth:</span> Firefly, Moonstruck Moth</div>
+      <div><span class="font-semibold">Badruu:</span> Garden Snail</div>
+      <div><span class="font-semibold">Kenyatta:</span> Firefly, Golden Scarab</div>
+      <div><span class="font-semibold">Hassian:</span> Spitfire Cicada</div>
+      <div><span class="font-semibold">Einar:</span> Glowbug</div>
+      <div><span class="font-semibold">Hodari / Sifuu:</span> Frost Beetle</div>
+    </div>
+    <p class="text-sm mt-2">Gifting a loved bug gives +50% friendship points. Star‑quality bugs give an additional +25%.</p>
+  </div>
+
+  <!-- Summary Tips -->
+  <div class="bg-paliaPrimary/5 rounded-2xl p-6 border border-paliaAccent/20">
+    <i class="fa fa-lightbulb-o text-3xl text-paliaPrimary mb-2 block"></i>
+    <h3 class="text-xl font-bold mb-2">💡 Pro Catching Tips</h3>
+    <ul class="list-disc pl-5 space-y-1 text-paliaText/80">
+      <li><strong>Use smoke candles liberally</strong> – They are cheap to craft and prevent bugs from fleeing.</li>
+      <li><strong>Run diagonally</strong> – Bugs’ movement AI is weaker at angles.</li>
+      <li><strong>Collect bugs during rain</strong> – Snails and some rare bugs appear only in rainy weather.</li>
+      <li><strong>Nighttime is best for rares</strong> – Many valuable bugs spawn only after 8 PM.</li>
+      <li><strong>Upgrade net to Palium asap</strong> – The larger capture radius lets you catch bugs from farther away.</li>
+    </ul>
+    <div class="mt-5 text-center">
+      <a href="index.html" class="inline-block bg-paliaPrimary text-white px-6 py-2 rounded-full hover:bg-paliaPrimaryDeep transition">← Back to Main Hub</a>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-white/70 border-t border-paliaAccent/20 mt-12 py-6 text-center text-sm text-paliaText/70">
+  <p>Palia Guide Hub · Bug Wiki · Catch, gift, and profit</p>
+  <p class="mt-1"><i class="fa fa-leaf text-paliaPrimary"></i> A steady net and patience fill your collection</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Resources Wiki – Ores, Clay, Spices, Mushrooms, Flowers, Berries | Palia Guide Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paliaBg: '#fcf8f0',
+            paliaPrimary: '#7f9a6e',
+            paliaPrimaryDeep: '#5f7a4e',
+            paliaAccent: '#e2b181',
+            paliaText: '#3c2f2a',
+            paliaCard: '#ffffff',
+            paliaMuted: '#e9e1d4',
+          },
+          fontFamily: { 'sans': ['Inter', 'system-ui', 'Segoe UI', 'Noto Sans SC', 'sans-serif'] },
+          borderRadius: { 'xl': '1rem', '2xl': '1.5rem' },
+        }
+      }
+    }
+  </script>
+  <style>
+    body { scroll-behavior: smooth; }
+    .section-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .section-card:hover { transform: translateY(-3px); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body class="bg-paliaBg text-paliaText font-sans antialiased">
+
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-paliaAccent/20 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 lg:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+    <div class="flex items-center gap-3">
+      <div class="bg-paliaPrimary/10 p-2 rounded-2xl"><i class="fa fa-tree text-paliaPrimary text-2xl"></i></div>
+      <div>
+        <h1 class="text-xl md:text-2xl font-bold tracking-tight text-paliaPrimaryDeep">Resources Wiki</h1>
+        <p class="text-xs text-paliaText/70">Ores · Clay · Spices · Mushrooms · Flowers · Berries</p>
+      </div>
+    </div>
+    <a href="index.html" class="text-paliaPrimary hover:underline text-sm flex items-center gap-1"><i class="fa fa-arrow-left"></i> Back to Main Hub</a>
+  </div>
+</header>
+
+<main class="max-w-7xl mx-auto px-4 py-10 space-y-8">
+  <!-- Intro -->
+  <div class="bg-paliaCard rounded-2xl shadow-card p-6 md:p-8">
+    <div class="flex items-center gap-3 border-b border-paliaMuted pb-4 mb-5">
+      <i class="fa fa-database text-paliaPrimary text-3xl"></i>
+      <h2 class="text-2xl font-bold">Complete Resource Database</h2>
+    </div>
+    <p class="text-paliaText/80 leading-relaxed">Resources are the backbone of crafting, cooking, and upgrading in Palia. This guide covers every mineable ore, foraged spice, mushroom, flower, berry, and clay deposit – including where to find them, their sale value, and what they are used for.</p>
+  </div>
+
+  <!-- Ores & Minerals -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-diamond text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">⛏️ Ores & Minerals</h2></div>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50">
+          <tr><th class="px-2 py-2">Resource</th><th class="px-2 py-2">Location</th><th class="px-2 py-2">Tool Level</th><th class="px-2 py-2">Sell Price (each)</th><th class="px-2 py-2">Used For</th></tr>
+        </thead>
+        <tbody class="divide-y">
+          <tr><td class="px-2 py-1">Stone</td><td class="px-2 py-1">Everywhere</td><td class="px-2 py-1">Basic Pickaxe</td><td class="px-2 py-1">2g</td><td class="px-2 py-1">Building, crafting</td></tr>
+          <tr><td class="px-2 py-1">Copper Ore</td><td class="px-2 py-1">Kilima Valley caves, cliffs</td><td class="px-2 py-1">Basic Pickaxe</td><td class="px-2 py-1">10g</td><td class="px-2 py-1">Smelt to Copper Bar</td></tr>
+          <tr><td class="px-2 py-1">Iron Ore</td><td class="px-2 py-1">Bahari Bay (cliffs, mines)</td><td class="px-2 py-1">Copper Pickaxe (Lv 5)</td><td class="px-2 py-1">20g</td><td class="px-2 py-1">Smelt to Iron Bar</td></tr>
+          <tr><td class="px-2 py-1">Palium Ore</td><td class="px-2 py-1">Bahari Bay caves, rare veins</td><td class="px-2 py-1">Iron Pickaxe (Lv 10)</td><td class="px-2 py-1">50g</td><td class="px-2 py-1">Smelt to Palium Bar</td></tr>
+          <tr><td class="px-2 py-1">Clay</td><td class="px-2 py-1">Riverbanks, Kilima Valley</td><td class="px-2 py-1">Basic Pickaxe</td><td class="px-2 py-1">3g</td><td class="px-2 py-1">Pottery, glass, building</td></tr>
+          <tr><td class="px-2 py-1">Glass (crafted)</td><td class="px-2 py-1">Furnace: 2 Sand + 1 Fuel</td><td class="px-2 py-1">Mining Lv 3</td><td class="px-2 py-1">15g</td><td class="px-2 py-1">Windows, jars, decorations</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Spices & Herbs -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-leaf text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🌿 Spices & Herbs</h2></div>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50">
+          <tr><th class="px-2 py-2">Resource</th><th class="px-2 py-2">Location</th><th class="px-2 py-2">Spawn Condition</th><th class="px-2 py-2">Sell Price</th><th class="px-2 py-2">Used In</th></tr>
+        </thead>
+        <tbody class="divide-y">
+          <tr><td class="px-2 py-1">Sweet Leaf</td><td class="px-2 py-1">Kilima & Bahari fields</td><td class="px-2 py-1">All day</td><td class="px-2 py-1">8g</td><td class="px-2 py-1">Cooking, smoke candles</td></tr>
+          <tr><td class="px-2 py-1">Spice Sprouts</td><td class="px-2 py-1">Bahari Highlands</td><td class="px-2 py-1">Daytime</td><td class="px-2 py-1">12g</td><td class="px-2 py-1">Hearty Soup, stews</td></tr>
+          <tr><td class="px-2 py-1">Wild Garlic</td><td class="px-2 py-1">Kilima Forest</td><td class="px-2 py-1">Rain only</td><td class="px-2 py-1">15g</td><td class="px-2 py-1">Rare recipes, gift for Reth</td></tr>
+          <tr><td class="px-2 py-1">Cinnamon Bark</td><td class="px-2 py-1">Bahari trees (rare)</td><td class="px-2 py-1">Fall only</td><td class="px-2 py-1">25g</td><td class="px-2 py-1">Sweet baked goods</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Mushrooms -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-pagelines text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🍄 Mushrooms</h2></div>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50">
+          <tr><th class="px-2 py-2">Mushroom</th><th class="px-2 py-2">Location</th><th class="px-2 py-2">Time/Season</th><th class="px-2 py-2">Sell Price</th><th class="px-2 py-2">Notes</th></tr>
+        </thead>
+        <tbody class="divide-y">
+          <tr><td class="px-2 py-1">Common Mushroom</td><td class="px-2 py-1">Forest floor (both zones)</td><td class="px-2 py-1">All day</td><td class="px-2 py-1">5g</td><td class="px-2 py-1">Basic cooking</td></tr>
+          <tr><td class="px-2 py-1">Morel</td><td class="px-2 py-1">Kilima near streams</td><td class="px-2 py-1">Spring, morning</td><td class="px-2 py-1">20g</td><td class="px-2 py-1">Soup, risotto</td></tr>
+          <tr><td class="px-2 py-1">Truffle</td><td class="px-2 py-1">Bahari caves (very rare)</td><td class="px-2 py-1">Year-round, night</td><td class="px-2 py-1">150g</td><td class="px-2 py-1">High-value, loved by Badruu</td></tr>
+          <tr><td class="px-2 py-1">Glowing Mushroom</td><td class="px-2 py-1">Kilima Mines (deep)</td><td class="px-2 py-1">Always dark</td><td class="px-2 py-1">40g</td><td class="px-2 py-1">Crafting glow worms</td></tr>
+        </tbody>
+      ｜｜DSML｜｜
+    </div>
+  </div>
+
+  <!-- Flowers -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-flower text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🌸 Flowers</h2></div>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50">
+          <tr><th class="px-2 py-2">Flower</th><th class="px-2 py-2">Location</th><th class="px-2 py-2">Bloom Season</th><th class="px-2 py-2">Sell Price</th><th class="px-2 py-2">Used For</th></tr>
+        </thead>
+        <tbody class="divide-y">
+          <tr><td class="px-2 py-1">Daisy</td><td class="px-2 py-1">Kilima fields</td><td class="px-2 py-1">Spring/Summer</td><td class="px-2 py-1">4g</td><td class="px-2 py-1">Decoration, gift for Tish</td></tr>
+          <tr><td class="px-2 py-1">Bluebell</td><td class="px-2 py-1">Bahari forest</td><td class="px-2 py-1">Summer</td><td class="px-2 py-1">6g</td><td class="px-2 py-1">Dye, furniture</td></tr>
+          <tr><td class="px-2 py-1">Dawn Petal</td><td class="px-2 py-1">Ancient ruins</td><td class="px-2 py-1">5:00 – 6:00 AM only</td><td class="px-2 py-1">30g</td><td class="px-2 py-1">Moonlight Cake, gift for Tamala</td></tr>
+          <tr><td class="px-2 py-1">Sundrop Lily</td><td class="px-2 py-1">Bahari cliffs (rare)</td><td class="px-2 py-1">Summer, noon</td><td class="px-2 py-1">50g</td><td class="px-2 py-1">High-value, love by Kenyatta</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Berries & Fruits -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-apple text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🍓 Berries & Wild Fruits</h2></div>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl shadow-sm text-sm">
+        <thead class="bg-paliaMuted/50">
+          <tr><th class="px-2 py-2">Resource</th><th class="px-2 py-2">Location</th><th class="px-2 py-2">Season</th><th class="px-2 py-2">Sell Price</th><th class="px-2 py-2">Used In</th></tr>
+        </thead>
+        <tbody class="divide-y">
+          <tr><td class="px-2 py-1">Wild Berry</td><td class="px-2 py-1">Bushes (Kilima)</td><td class="px-2 py-1">Summer/Fall</td><td class="px-2 py-1">3g</td><td class="px-2 py-1">Simple cooking</td></tr>
+          <tr><td class="px-2 py-1">Blueberry (wild)</td><td class="px-2 py-1">Bahari bushes (rare)</td><td class="px-2 py-1">Summer</td><td class="px-2 py-1">15g</td><td class="px-2 py-1">Cake, pies</td></tr>
+          <tr><td class="px-2 py-1">Apple (wild)</td><td class="px-2 py-1">Kilima orchards (rare)</td><td class="px-2 py-1">Fall</td><td class="px-2 py-1">25g</td><td class="px-2 py-1">Pies, juice</td></tr>
+          <tr><td class="px-2 py-1">Spice Berry</td><td class="px-2 py-1">Bahari caves</td><td class="px-2 py-1">Year-round</td><td class="px-2 py-1">10g</td><td class="px-2 py-1">Spice alternative</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Resource Map Summary -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-map text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🗺️ Best Farming Routes</h2></div>
+    <div class="grid md:grid-cols-2 gap-4">
+      <div>
+        <h3 class="font-bold">Kilima Valley (beginners)</h3>
+        <ul class="list-disc pl-4 text-sm">
+          <li>Copper ore: around cliffs and mines</li>
+          <li>Clay: along riverbanks from Fisherman’s Pier to central pond</li>
+          <li>Sweet leaf & Common Mushroom: fields near the farm</li>
+          <li>Daisies: open grasslands</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold">Bahari Bay (advanced)</h3>
+        <ul class="list-disc pl-4 text-sm">
+          <li>Iron ore: northern cliffs and caves</li>
+          <li>Palium ore: deep caves (rare), often near waterfalls</li>
+          <li>Spice Sprouts & Cinnamon Bark: highlands and ancient trees</li>
+          <li>Truffles: cave floors (rare spawn)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Crafting & Processing -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-3 mb-4"><i class="fa fa-industry text-paliaPrimary text-2xl"></i><h2 class="text-xl font-bold">🔨 Processing Resources</h2></div>
+    <ul class="list-disc pl-5 space-y-1">
+      <li><strong>Furnace:</strong> Copper Ore → Copper Bar (5 ore + 2 wood). Iron Ore → Iron Bar (5 ore + 4 wood). Palium Ore → Palium Bar (5 ore + 8 wood).</li>
+      <li><strong>Glass:</strong> 2 Sand + 1 fuel in Furnace (Mining Lv 3).</li>
+      <li><strong>Fabric:</strong> 5 Cotton + 1 water in Loom (Gardening Lv 4).</li>
+      <li><strong>Dyes:</strong> Crush specific flowers at the Workbench for colored dyes (used in furniture).</li>
+    </ul>
+  </div>
+
+  <!-- Sales & NPC Gifts -->
+  <div class="bg-paliaPrimary/5 rounded-2xl p-6 border border-paliaAccent/20">
+    <i class="fa fa-gift text-3xl text-paliaPrimary mb-2 block"></i>
+    <h3 class="text-xl font-bold mb-2">🎁 NPCs Who Love Resources</h3>
+    <ul class="list-disc pl-5 space-y-1 text-paliaText/80">
+      <li><strong>Hodari (Mining):</strong> Copper Ore, Iron Ore, Palium Ore</li>
+      <li><strong>Badruu (Gardening):</strong> Truffle, Morel, Wild Garlic</li>
+      <li><strong>Tamala:</strong> Dawn Petal, Glowing Mushroom, Spice Berry</li>
+      <li><strong>Reth:</strong> Sweet Leaf, Spice Sprouts, Wild Garlic</li>
+      <li><strong>Tish:</strong> Daisy, Bluebell, any flower</li>
+      <li><strong>Ashura:</strong> Cinnamon Bark, Wild Berry</li>
+    </ul>
+    <div class="mt-5 text-center">
+      <a href="index.html" class="inline-block bg-paliaPrimary text-white px-6 py-2 rounded-full hover:bg-paliaPrimaryDeep transition">← Back to Main Hub</a>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-white/70 border-t border-paliaAccent/20 mt-12 py-6 text-center text-sm text-paliaText/70">
+  <p>Palia Guide Hub · Resources Wiki · Gather, process, and profit</p>
+  <p class="mt-1"><i class="fa fa-leaf text-paliaPrimary"></i> The right tool and the right spot make all the difference</p>
+</footer>
+</body>
+</html>
