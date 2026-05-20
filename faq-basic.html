@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>FAQ – Inventory Full, Fast Travel Home, Friend Can't Join | Palia Guide Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paliaBg: '#fcf8f0',
+            paliaPrimary: '#7f9a6e',
+            paliaPrimaryDeep: '#5f7a4e',
+            paliaAccent: '#e2b181',
+            paliaText: '#3c2f2a',
+            paliaCard: '#ffffff',
+            paliaMuted: '#e9e1d4',
+          },
+          fontFamily: { 'sans': ['Inter', 'system-ui', 'Segoe UI', 'Noto Sans SC', 'sans-serif'] },
+          borderRadius: { 'xl': '1rem', '2xl': '1.5rem' },
+        }
+      }
+    }
+  </script>
+  <style>
+    body { scroll-behavior: smooth; }
+    .section-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .section-card:hover { transform: translateY(-3px); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body class="bg-paliaBg text-paliaText font-sans antialiased">
+
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-paliaAccent/20 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 lg:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+    <div class="flex items-center gap-3">
+      <div class="bg-paliaPrimary/10 p-2 rounded-2xl"><i class="fa fa-question-circle text-paliaPrimary text-2xl"></i></div>
+      <div>
+        <h1 class="text-xl md:text-2xl font-bold tracking-tight text-paliaPrimaryDeep">Basic FAQ</h1>
+        <p class="text-xs text-paliaText/70">Inventory · Fast travel · Home access</p>
+      </div>
+    </div>
+    <a href="index.html" class="text-paliaPrimary hover:underline text-sm flex items-center gap-1"><i class="fa fa-arrow-left"></i> Back to Main Hub</a>
+  </div>
+</header>
+
+<main class="max-w-5xl mx-auto px-4 py-10 space-y-8">
+  <!-- Intro -->
+  <div class="bg-paliaCard rounded-2xl shadow-card p-6 md:p-8">
+    <div class="flex items-center gap-3 border-b border-paliaMuted pb-4 mb-5">
+      <i class="fa fa-life-ring text-paliaPrimary text-3xl"></i>
+      <h2 class="text-2xl font-bold">Answers to Common Early‑Game Questions</h2>
+    </div>
+    <p class="text-paliaText/80 leading-relaxed">New players often run into the same small hurdles. This guide covers the three most frequently asked questions about inventory space, returning home quickly, and inviting friends to your plot.</p>
+  </div>
+
+  <!-- Q1: Inventory Full -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-shopping-bag text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">📦 What do I do when my inventory is full?</h2></div>
+    <p class="font-semibold">Several solutions, from simplest to most efficient:</p>
+    <ol class="list-decimal pl-5 space-y-2 mt-2">
+      <li><strong>Drop items</strong> – Press <kbd class="bg-gray-100 px-1 rounded">I</kbd> to open inventory, drag items out of the bag to drop them. Only do this for cheap items (e.g., stones, extra fiber).</li>
+      <li><strong>Sell to Zeki</strong> – Fast‑travel to Kilima Village or use the shipping bin on your home plot. Zeki buys almost everything.</li>
+      <li><strong>Upgrade backpack</strong> – Buy backpack slot upgrades from Zeki’s store. First upgrade (500g) adds 5 slots; second (1000g) adds another 5. Essential early purchase.</li>
+      <li><strong>Use storage chests</strong> – Place a Wooden Chest on your home plot (craft at Workbench). It holds 20 items. Build multiple chests as needed.</li>
+      <li><strong>Process items</strong> – Smelt ores into bars, turn crops into seeds or preserves – processed items often stack higher and sell for more, freeing slots.</li>
+    </ol>
+    <div class="bg-paliaPrimary/10 p-2 rounded mt-3 text-sm">💡 Tip: Always keep at least 5 free slots for gathering. If you’re on a farming run, have a chest or sell point nearby.</div>
+  </div>
+
+  <!-- Q2: Fast Travel Home -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-home text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">⛩️ How do I quickly return to my home plot?</h2></div>
+    <ul class="list-disc pl-5 space-y-2">
+      <li><strong>Home Shrine (fastest – free once per day):</strong> Open the map (<kbd>M</kbd>) and click the “Return Home” button. First use each day is free; subsequent uses cost 50 gold.</li>
+      <li><strong>Fast Travel Board:</strong> Use any fast travel board (e.g., in Kilima Village square) and select “Your Home Plot”. Cost: 10–50 gold depending on distance.</li>
+      <li><strong>Walk / Glide:</strong> Your home plot is east of Kilima Village. Follow the path or glide from the cliffs near the farm.</li>
+      <li><strong>Death reset (not recommended):</strong> If you get stuck, you can intentionally drown or fall to respawn at your home plot, but you’ll drop some gold (10g penalty).</li>
+    </ul>
+    <div class="bg-paliaPrimary/10 p-2 rounded mt-2 text-sm">💡 The free daily home return is best used after a long gathering session to deposit items.</div>
+  </div>
+
+  <!-- Q3: Friend Can't Join Home -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-user-plus text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">🏠 Why can’t my friend join my home plot?</h2></div>
+    <p>Several possible reasons and fixes:</p>
+    <ul class="list-disc pl-5 space-y-2">
+      <li><strong>Not in the same party:</strong> You must be in a party together. Press <kbd>O</kbd> → Friends → Invite to Party, or type <code class="bg-gray-100 px-1 rounded">/invite [PlayerName]</code> in chat.</li>
+      <li><strong>Permissions not set:</strong> By default, guests can enter but sometimes need an explicit invite. Open Social panel → Party → click “Invite to Home” (or press the “Home” icon next to their name).</li>
+      <li><strong>Friend is in a different server region:</strong> Party members automatically sync servers, but if they were offline, try re‑inviting after they log in.</li>
+      <li><strong>Your plot is full?</strong> Home plots have a visitor limit (up to 8 players including owner). If already full, ask someone else to leave or try again later.</li>
+      <li><strong>They haven’t completed the tutorial:</strong> New characters must finish the basic tutorial (unlock first tools) before they can visit other plots.</li>
+      <li><strong>Game bug / server issue:</strong> Sometimes a relog (restart game) for both players solves the problem. Also check for maintenance announcements.</li>
+    </ul>
+    <div class="bg-paliaPrimary/10 p-2 rounded mt-2 text-sm">💡 To allow friends to edit/build on your plot, go to Settings → Plot Permissions → set “Guest Editing” to “Friends” or “Party”.</div>
+  </div>
+
+  <!-- Extra Related Tips -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-lightbulb-o text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">💡 Bonus: Quick Storage & Home Access Tricks</h2></div>
+    <ul class="list-disc pl-5 space-y-1">
+      <li><strong>Place multiple chests side by side</strong> – each chest is independent, so you can have different categories (ores, crops, fish).</li>
+      <li><strong>Upgrade chests later</strong> – Wooden → Copper → Iron → Palium chests hold more slots and are larger, reducing number needed.</li>
+      <li><strong>Use the shipping bin</strong> – It sells items instantly, but you get the gold the next day. Good for offloading bulk items without going to Zeki.</li>
+      <li><strong>Home plot access via friend list:</strong> You can teleport directly to a friend’s plot from the social panel without an invite, if they have set permissions to “Friends”.</li>
+    </ul>
+  </div>
+
+  <!-- Back to Hub -->
+  <div class="bg-paliaPrimary/5 rounded-2xl p-6 text-center border border-paliaAccent/20">
+    <i class="fa fa-arrow-circle-left text-3xl text-paliaPrimary mb-2 block"></i>
+    <p class="text-paliaText/80">Find more answers in other FAQ pages, or return to the main hub.</p>
+    <div class="mt-4">
+      <a href="index.html" class="inline-block bg-paliaPrimary text-white px-6 py-2 rounded-full hover:bg-paliaPrimaryDeep transition">← Back to Main Hub</a>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-white/70 border-t border-paliaAccent/20 mt-12 py-6 text-center text-sm text-paliaText/70">
+  <p>Palia Guide Hub · Basic FAQ · Clear answers for smooth sailing</p>
+  <p class="mt-1"><i class="fa fa-leaf text-paliaPrimary"></i> No question is too small – we’ve got you covered</p>
+</footer>
+</body>
+</html>

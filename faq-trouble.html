@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>FAQ – Lag, Network Issues, Save Backup | Palia Guide Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paliaBg: '#fcf8f0',
+            paliaPrimary: '#7f9a6e',
+            paliaPrimaryDeep: '#5f7a4e',
+            paliaAccent: '#e2b181',
+            paliaText: '#3c2f2a',
+            paliaCard: '#ffffff',
+            paliaMuted: '#e9e1d4',
+          },
+          fontFamily: { 'sans': ['Inter', 'system-ui', 'Segoe UI', 'Noto Sans SC', 'sans-serif'] },
+          borderRadius: { 'xl': '1rem', '2xl': '1.5rem' },
+        }
+      }
+    }
+  </script>
+  <style>
+    body { scroll-behavior: smooth; }
+    .section-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .section-card:hover { transform: translateY(-3px); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body class="bg-paliaBg text-paliaText font-sans antialiased">
+
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-paliaAccent/20 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 lg:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+    <div class="flex items-center gap-3">
+      <div class="bg-paliaPrimary/10 p-2 rounded-2xl"><i class="fa fa-wrench text-paliaPrimary text-2xl"></i></div>
+      <div>
+        <h1 class="text-xl md:text-2xl font-bold tracking-tight text-paliaPrimaryDeep">FAQ – Troubleshooting</h1>
+        <p class="text-xs text-paliaText/70">Lag · Network · Save backup</p>
+      </div>
+    </div>
+    <a href="index.html" class="text-paliaPrimary hover:underline text-sm flex items-center gap-1"><i class="fa fa-arrow-left"></i> Back to Main Hub</a>
+  </div>
+</header>
+
+<main class="max-w-5xl mx-auto px-4 py-10 space-y-8">
+  <!-- Intro -->
+  <div class="bg-paliaCard rounded-2xl shadow-card p-6 md:p-8">
+    <div class="flex items-center gap-3 border-b border-paliaMuted pb-4 mb-5">
+      <i class="fa fa-medkit text-paliaPrimary text-3xl"></i>
+      <h2 class="text-2xl font-bold">Solving Technical Hiccups</h2>
+    </div>
+    <p class="text-paliaText/80 leading-relaxed">Even a cozy game like Palia can run into performance or connectivity issues. This guide helps you diagnose and fix common problems – from lag and ping spikes to ensuring your progress is never lost.</p>
+  </div>
+
+  <!-- Section 1: Lag / Low FPS -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-tachometer text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">🐢 Game is laggy or low FPS</h2></div>
+    <div class="space-y-3">
+      <p><strong>For PC players:</strong></p>
+      <ul class="list-disc pl-5">
+        <li>Lower graphics settings: Shadows → Low, Anti‑aliasing → Off, View Distance → Medium. (See the Performance Tuning guide for detailed presets.)</li>
+        <li>Close background applications (browsers, Discord, Spotify).</li>
+        <li>Update graphics drivers (NVIDIA/AMD/Intel).</li>
+        <li>Switch to Fullscreen mode instead of Windowed.</li>
+        <li>Lower resolution to 720p or 900p if needed.</li>
+        <li>Disable V‑Sync and set FPS cap to 60 or 30.</li>
+      </ul>
+      <p><strong>For Nintendo Switch:</strong></p>
+      <ul class="list-disc pl-5">
+        <li>Restart the console (hold power → Restart).</li>
+        <li>Play in Docked mode with a wired LAN adapter for stability.</li>
+        <li>Lower TV resolution to 720p (in Switch System Settings).</li>
+        <li>Close other software (press Home, close any open games).</li>
+        <li>Install the game on internal storage (not SD card) for slightly faster loading.</li>
+      </ul>
+      <div class="bg-paliaPrimary/10 p-2 rounded text-sm">💡 If lag happens only in certain zones (e.g., Bahari Bay with many players), try switching servers by teleporting home and back, or relogging.</div>
+    </div>
+  </div>
+
+  <!-- Section 2: Network / Disconnects -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-wifi text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">🌐 Frequent disconnects or high ping</h2></div>
+    <ul class="list-disc pl-5 space-y-2">
+      <li><strong>Use a wired connection</strong> – Ethernet is always more stable than Wi‑Fi.</li>
+      <li><strong>Check your region</strong> – In the launcher, select the server region closest to you (NA, EU, Asia). Playing on a distant region increases ping.</li>
+      <li><strong>Restart your router/modem</strong> – A classic but effective fix for most network issues.</li>
+      <li><strong>Disable VPN or proxy</strong> – These can interfere with game traffic.</li>
+      <li><strong>Port forwarding (advanced)</strong> – Forward UDP ports 27000–27030 to your PC. This may improve connectivity on strict NAT networks.</li>
+      <li><strong>DNS change</strong> – Use Google DNS (8.8.8.8 / 8.8.4.4) or Cloudflare (1.1.1.1) for potentially faster resolution.</li>
+      <li><strong>Check server status</strong> – Visit the official Palia Discord or server status page for maintenance announcements.</li>
+    </ul>
+    <p><strong>Switch specific:</strong> Go to System Settings → Internet → Test Connection. If NAT type is D or worse, try connecting via a mobile hotspot to bypass strict NAT.</p>
+  </div>
+
+  <!-- Section 3: Save / Backup -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-database text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">💾 How to back up my save? (PC)</h2></div>
+    <p>Palia uses <strong>cloud saves</strong> (server‑side). Your progress is tied to your account – you do not need to manually back up, and you can play from any device after logging in.</p>
+    <p>However, for extra safety or to transfer settings/configurations, you can copy local configuration files (not the save itself):</p>
+    <ul class="list-disc pl-5">
+      <li><strong>Location:</strong> <code>%LOCALAPPDATA%\Palia\Saved\Config\WindowsClient\</code></li>
+      <li><strong>Files:</strong> <code>GameUserSettings.ini</code> (graphics/controls) and <code>Input.ini</code> (keybinds).</li>
+      <li>Backup these files manually if you plan to reinstall Windows or move to another PC.</li>
+    </ul>
+    <p><strong>Switch users:</strong> Save data is automatically backed up to Nintendo’s cloud if you have a Nintendo Switch Online subscription. Otherwise, the save remains on the console.</p>
+    <div class="bg-paliaPrimary/10 p-2 rounded mt-2 text-sm">⚠️ There is no “local save file” for your inventory or skill levels – everything is on Palia’s servers. Deleting local files will NOT delete your progress.</div>
+  </div>
+
+  <!-- Section 4: Still stuck? -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-life-ring text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">🚨 Still having issues?</h2></div>
+    <ul class="list-disc pl-5 space-y-1">
+      <li><strong>Verify game files (PC):</strong> In the Palia launcher, go to Settings → Verify Integrity.</li>
+      <li><strong>Reinstall the game</strong> – Corrupted files can cause strange bugs.</li>
+      <li><strong>Contact official support:</strong> Visit <a href="https://support.palia.com" class="text-paliaPrimary underline" target="_blank">support.palia.com</a> or use the in‑game “Report Bug” (Esc → Support).</li>
+      <li><strong>Community help:</strong> Ask in #help channel on the official Palia Discord – players and moderators are responsive.</li>
+    </ul>
+  </div>
+
+  <!-- Quick Troubleshooting Flowchart (text) -->
+  <div class="bg-paliaPrimary/5 rounded-2xl p-6 border border-paliaAccent/20">
+    <i class="fa fa-list-ol text-3xl text-paliaPrimary mb-2 block"></i>
+    <h3 class="text-xl font-bold mb-2">🔍 Quick Diagnostic Steps (PC)</h3>
+    <ol class="list-decimal pl-5 space-y-1 text-paliaText/80">
+      <li>Check your internet speed and ping (speedtest.net).</li>
+      <li>Update graphics drivers and Windows.</li>
+      <li>Lower in‑game graphics settings.</li>
+      <li>Close other programs (especially Chrome/Discord).</li>
+      <li>Restart the game and launcher.</li>
+      <li>Restart your PC and router.</li>
+      <li>Reinstall the game as last resort.</li>
+    </ol>
+    <div class="mt-5 text-center">
+      <a href="index.html" class="inline-block bg-paliaPrimary text-white px-6 py-2 rounded-full hover:bg-paliaPrimaryDeep transition">← Back to Main Hub</a>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-white/70 border-t border-paliaAccent/20 mt-12 py-6 text-center text-sm text-paliaText/70">
+  <p>Palia Guide Hub · FAQ – Troubleshooting · Get back to cozy gaming</p>
+  <p class="mt-1"><i class="fa fa-leaf text-paliaPrimary"></i> Most problems have simple fixes – start with a restart</p>
+</footer>
+</body>
+</html>
