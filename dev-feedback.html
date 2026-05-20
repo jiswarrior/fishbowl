@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Official Feedback Submission Guide | Palia Guide Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paliaBg: '#fcf8f0',
+            paliaPrimary: '#7f9a6e',
+            paliaPrimaryDeep: '#5f7a4e',
+            paliaAccent: '#e2b181',
+            paliaText: '#3c2f2a',
+            paliaCard: '#ffffff',
+            paliaMuted: '#e9e1d4',
+          },
+          fontFamily: { 'sans': ['Inter', 'system-ui', 'Segoe UI', 'Noto Sans SC', 'sans-serif'] },
+          borderRadius: { 'xl': '1rem', '2xl': '1.5rem' },
+        }
+      }
+    }
+  </script>
+  <style>
+    body { scroll-behavior: smooth; }
+    .section-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .section-card:hover { transform: translateY(-3px); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body class="bg-paliaBg text-paliaText font-sans antialiased">
+
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-paliaAccent/20 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 lg:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+    <div class="flex items-center gap-3">
+      <div class="bg-paliaPrimary/10 p-2 rounded-2xl"><i class="fa fa-envelope-o text-paliaPrimary text-2xl"></i></div>
+      <div>
+        <h1 class="text-xl md:text-2xl font-bold tracking-tight text-paliaPrimaryDeep">Feedback Submission Guide</h1>
+        <p class="text-xs text-paliaText/70">How to share your voice · Best practices</p>
+      </div>
+    </div>
+    <a href="index.html" class="text-paliaPrimary hover:underline text-sm flex items-center gap-1"><i class="fa fa-arrow-left"></i> Back to Main Hub</a>
+  </div>
+</header>
+
+<main class="max-w-5xl mx-auto px-4 py-10 space-y-8">
+  <!-- Intro -->
+  <div class="bg-paliaCard rounded-2xl shadow-card p-6 md:p-8">
+    <div class="flex items-center gap-3 border-b border-paliaMuted pb-4 mb-5">
+      <i class="fa fa-commenting text-paliaPrimary text-3xl"></i>
+      <h2 class="text-2xl font-bold">Make Your Voice Heard</h2>
+    </div>
+    <p class="text-paliaText/80 leading-relaxed">Palia’s developers actively listen to the community. Whether you have a bug report, a feature request, or general feedback, this guide shows you exactly how to submit it through the official channels – and how to write feedback that gets noticed and acted upon.</p>
+  </div>
+
+  <!-- Channel 1: In-Game Feedback Tool -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-gamepad text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">🎮 In‑Game Feedback Tool (Most Direct)</h2></div>
+    <ul class="list-disc pl-5 space-y-1">
+      <li><strong>How to access:</strong> Press <kbd>Esc</kbd> (PC) or <kbd>+</kbd> (Switch) → select “Feedback” or “Submit a Bug”.</li>
+      <li><strong>What you can submit:</strong> Bug reports, feature suggestions, general feedback, or compliments.</li>
+      <li><strong>Automatic metadata:</strong> The tool automatically includes your game version, platform, and rough location, which helps developers reproduce issues.</li>
+      <li><strong>Attachments:</strong> You can attach up to 3 screenshots or short videos (max 30 seconds) to illustrate the problem.</li>
+    </ul>
+    <div class="bg-paliaPrimary/10 p-2 rounded mt-2 text-sm">💡 This is the best channel for <strong>bugs</strong> because the tool collects technical data automatically. For complex issues, include a step‑by‑step description.</div>
+  </div>
+
+  <!-- Channel 2: Official Discord -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-discord text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">💬 Official Discord (Community & Direct Channels)</h2></div>
+    <ul class="list-disc pl-5 space-y-1">
+      <li><strong>Invite link:</strong> <a href="https://discord.gg/palia" class="text-paliaPrimary underline" target="_blank">discord.gg/palia</a></li>
+      <li><strong>Channels for feedback:</strong>
+        <ul class="list-disc pl-5 mt-1">
+          <li><code>#feedback-and-suggestions</code> – post feature ideas and general feedback. Upvote others’ ideas.</li>
+          <li><code>#bug-reports</code> – report in‑game bugs. Follow the template (platform, description, reproduction steps).</li>
+          <li><code>#help</code> – for player‑to‑player support (not direct developer feedback).</li>
+        </ul>
+      </li>
+      <li><strong>Developer presence:</strong> S6 staff read these channels daily and occasionally reply. They also use upvote count to prioritize features.</li>
+    </ul>
+  </div>
+
+  <!-- Channel 3: Official Website / Support Portal -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-globe text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">🌐 Palia Support Website</h2></div>
+    <ul class="list-disc pl-5 space-y-1">
+      <li><strong>URL:</strong> <a href="https://support.palia.com" class="text-paliaPrimary underline" target="_blank">support.palia.com</a></li>
+      <li><strong>Best for:</strong> Account issues, purchase problems, technical support, and detailed bug reports that need file attachments.</li>
+      <li><strong>Process:</strong> Submit a ticket → choose category → fill in form (includes fields for device specs, screenshot uploads, and logs).</li>
+      <li><strong>Response time:</strong> Usually 24–72 hours for account/billing issues; longer for feature suggestions (which are forwarded to design team).</li>
+    </ul>
+  </div>
+
+  <!-- Channel 4: Social Media (X / Twitter) -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-twitter text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">🐦 Social Media (X @PlayPalia)</h2></div>
+    <p>While you can tag @PlayPalia with feedback, this is not the most effective channel for detailed reports. Best used for sharing appreciation, short suggestions, or reporting widespread issues. The team does monitor but directs detailed reports to other channels.</p>
+  </div>
+
+  <!-- How to Write Effective Feedback -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-pencil-square-o text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">✍️ Writing Effective Feedback – Best Practices</h2></div>
+    <div class="space-y-3">
+      <p><strong>For bug reports:</strong></p>
+      <ul class="list-disc pl-5">
+        <li><strong>Title:</strong> Short and specific (e.g., “Fishing rod animation stuck after casting in Bahari Lake”).</li>
+        <li><strong>Description:</strong> What happened, where, and when (in‑game time if relevant).</li>
+        <li><strong>Reproduction steps:</strong> Numbered list of exact steps to make the bug happen.</li>
+        <li><strong>Expected result:</strong> What should have happened.</li>
+        <li><strong>Actual result:</strong> What happened instead.</li>
+        <li><strong>Screenshot / video:</strong> A picture is worth a thousand words. Use in‑game screenshot (F12 on PC, Capture button on Switch).</li>
+        <li><strong>Platform & specs:</strong> PC or Switch, graphics settings, and any unusual hardware.</li>
+      </ul>
+      <p><strong>For feature suggestions:</strong></p>
+      <ul class="list-disc pl-5">
+        <li><strong>Explain the “why”</strong> – not just what you want, but how it improves the game (e.g., “More soil plots would allow players to experiment with crop rotations without reducing other farm space”).</li>
+        <li><strong>Be constructive</strong> – avoid “the game is broken”. Instead, say “I think the mining XP rate feels low compared to fishing, could it be rebalanced?”</li>
+        <li><strong>Check if it already exists</strong> – use Discord search to see if your idea has been suggested before. Upvote existing instead of creating duplicate.</li>
+        <li><strong>One suggestion per post</strong> – makes it easier to vote and track.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- What Happens After You Submit? -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-hourglass-half text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">⏱️ What Happens to Your Feedback?</h2></div>
+    <ul class="list-disc pl-5 space-y-1">
+      <li><strong>Bugs:</strong> Triage team verifies and assigns priority. Critical bugs (crashes, lost progress) are addressed within days. Minor bugs may be queued for later patches.</li>
+      <li><strong>Feature suggestions:</strong> Monthly review by design team. Popular ideas on Discord are logged in a public Trello board (viewable).</li>
+      <li><strong>You may not get a personal reply</strong> – but every submission is read. If a bug is fixed, it will appear in patch notes.</li>
+      <li><strong>Duplicate reports:</strong> They help gauge frequency – don’t worry if you post the same bug as someone else.</li>
+    </ul>
+  </div>
+
+  <!-- Dos and Don'ts -->
+  <div class="bg-paliaPrimary/5 rounded-2xl p-6 border border-paliaAccent/20">
+    <i class="fa fa-check-circle-o text-3xl text-paliaPrimary mb-2 block"></i>
+    <h3 class="text-xl font-bold mb-2">✅ DOs and DON'Ts of Submitting Feedback</h3>
+    <div class="grid md:grid-cols-2 gap-3 text-sm">
+      <div>
+        <span class="font-semibold text-paliaPrimary">DO:</span>
+        <ul class="list-disc pl-5">
+          <li>Be specific and polite</li>
+          <li>Include screenshots/videos</li>
+          <li>Search before posting duplicates</li>
+          <li>Use the in‑game tool for bugs</li>
+          <li>Upvote others’ ideas you like</li>
+        </ul>
+      </div>
+      <div>
+        <span class="font-semibold text-paliaPrimary">DON'T:</span>
+        <ul class="list-disc pl-5">
+          <li>Post the same feedback in multiple channels</li>
+          <li>Demand immediate fixes</li>
+          <li>Use aggressive language</li>
+          <li>Submit feedback about gameplay mechanics without explaining why it’s problematic</li>
+          <li>Send private messages to developers (they won’t reply)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-5 text-center">
+      <a href="index.html" class="inline-block bg-paliaPrimary text-white px-6 py-2 rounded-full hover:bg-paliaPrimaryDeep transition">← Back to Main Hub</a>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-white/70 border-t border-paliaAccent/20 mt-12 py-6 text-center text-sm text-paliaText/70">
+  <p>Palia Guide Hub · Feedback Submission Guide · Your voice shapes Palia</p>
+  <p class="mt-1"><i class="fa fa-leaf text-paliaPrimary"></i> Speak up – the developers are listening</p>
+</footer>
+</body>
+</html>

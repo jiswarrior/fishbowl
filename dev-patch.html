@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Patch Notes, Dev Q&A & Roadmap | Palia Guide Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paliaBg: '#fcf8f0',
+            paliaPrimary: '#7f9a6e',
+            paliaPrimaryDeep: '#5f7a4e',
+            paliaAccent: '#e2b181',
+            paliaText: '#3c2f2a',
+            paliaCard: '#ffffff',
+            paliaMuted: '#e9e1d4',
+          },
+          fontFamily: { 'sans': ['Inter', 'system-ui', 'Segoe UI', 'Noto Sans SC', 'sans-serif'] },
+          borderRadius: { 'xl': '1rem', '2xl': '1.5rem' },
+        }
+      }
+    }
+  </script>
+  <style>
+    body { scroll-behavior: smooth; }
+    .section-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .section-card:hover { transform: translateY(-3px); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body class="bg-paliaBg text-paliaText font-sans antialiased">
+
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-paliaAccent/20 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 lg:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+    <div class="flex items-center gap-3">
+      <div class="bg-paliaPrimary/10 p-2 rounded-2xl"><i class="fa fa-newspaper-o text-paliaPrimary text-2xl"></i></div>
+      <div>
+        <h1 class="text-xl md:text-2xl font-bold tracking-tight text-paliaPrimaryDeep">Official News & Roadmap</h1>
+        <p class="text-xs text-paliaText/70">Patch notes · Dev Q&A · Future content</p>
+      </div>
+    </div>
+    <a href="index.html" class="text-paliaPrimary hover:underline text-sm flex items-center gap-1"><i class="fa fa-arrow-left"></i> Back to Main Hub</a>
+  </div>
+</header>
+
+<main class="max-w-5xl mx-auto px-4 py-10 space-y-8">
+  <!-- Intro -->
+  <div class="bg-paliaCard rounded-2xl shadow-card p-6 md:p-8">
+    <div class="flex items-center gap-3 border-b border-paliaMuted pb-4 mb-5">
+      <i class="fa fa-bullhorn text-paliaPrimary text-3xl"></i>
+      <h2 class="text-2xl font-bold">Stay Informed, Shape the Future</h2>
+    </div>
+    <p class="text-paliaText/80 leading-relaxed">Palia is a live game, constantly evolving through patches and community feedback. This page explains how to read patch notes, highlights key developer answers, and outlines the expected future of Palia based on official communications.</p>
+  </div>
+
+  <!-- How to Read Patch Notes -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-file-text-o text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">📄 Understanding Official Patch Notes</h2></div>
+    <p>Patch notes are released on the official Palia website, Discord, and launcher. They typically contain:</p>
+    <ul class="list-disc pl-5 mt-2 space-y-1">
+      <li><strong>New content</strong> – zones, quests, animals, furniture, events.</li>
+      <li><strong>Balance changes</strong> – skill XP rates, item values, recipe adjustments.</li>
+      <li><strong>Bug fixes</strong> – quest blockers, performance issues, visual glitches.</li>
+      <li><strong>Quality of life</strong> – UI improvements, hotkey changes, settings additions.</li>
+      <li><strong>Known issues</strong> – acknowledged bugs that are being worked on.</li>
+    </ul>
+    <p class="mt-2 text-sm">To quickly scan a patch: look for “New” and “Fixed” headings. If you’re experiencing a bug, check “Known Issues” first before reporting.</p>
+    <div class="bg-paliaPrimary/10 p-2 rounded mt-2 text-sm">💡 Patch notes are usually posted on <strong>Tuesdays or Wednesdays</strong>. Major updates happen every 4–6 weeks, with smaller hotfixes in between.</div>
+  </div>
+
+  <!-- Developer Q&A Highlights (Community Responses) -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-comments text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">🎙️ Notable Developer Q&A Answers</h2></div>
+    <p>Singularity 6 frequently answers player questions on Discord and live streams. Below are the most impactful clarifications:</p>
+    <ul class="list-disc pl-5 space-y-2">
+      <li><strong>Will there be more romanceable NPCs?</strong> – Yes, the team plans to add more romance options, including some currently non‑romanceable characters (e.g., Tish, Zeki). No ETA.</li>
+      <li><strong>Is there a plan for mounts?</strong> – Not currently; fast travel and gliders are the primary movement tools, but the team may revisit if demand is high.</li>
+      <li><strong>Can we expect player housing upgrades?</strong> – Yes, more room types, larger plot sizes, and new building sets are in development.</li>
+      <li><strong>Will there be PvP?</strong> – No. Palia is strictly cozy, cooperative, no combat or PvP planned.</li>
+      <li><strong>Are there plans to add more skills?</strong> – Possibly. “Scavenging” was a test; more may come if it fits the cozy theme.</li>
+      <li><strong>Cross‑progression between PC and Switch is fully supported – any chance for mobile?</strong> – Not announced, but the engine could support mobile in theory. No official plans.</li>
+    </ul>
+  </div>
+
+  <!-- Future Content Roadmap (Based on Official Statements) -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-map text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">🗺️ Future Content Roadmap (Official + Speculative)</h2></div>
+    <div class="space-y-3">
+      <p>The following features have been confirmed or strongly hinted by developers:</p>
+      <ul class="list-disc pl-5">
+        <li><strong>New region: “Elder Woods”</strong> – A dense forest zone north of Kilima, with new foragables, animals, and puzzles. Expected 2025.</li>
+        <li><strong>More temple dungeons</strong> – At least one more temple after the three main ones, focused on “time” or “memory” mechanics.</li>
+        <li><strong>Advanced farming systems</strong> – Greenhouses, sprinklers, and crop mutations (hybrid crops).</li>
+        <li><strong>Pet companions</strong> – Cosmetic pets that follow you (not functional, like a cat or bird).</li>
+        <li><strong>Weather system expansion</strong> – Fog, wind, and seasonal events beyond rain and snow.</li>
+        <li><strong>More NPC story arcs</strong> – Continuing the main story with the Watcher and ancient civilization.</li>
+      </ul>
+      <p><strong>Speculative (community wishes, not yet confirmed):</strong></p>
+      <ul class="list-disc pl-5">
+        <li>Underwater exploration / diving</li>
+        <li>Additional skills: “Brewing” (potions) or “Tailoring” (clothes)</li>
+        <li>Player‑run stalls to sell items directly to other players</li>
+      </ul>
+    </div>
+    <div class="bg-paliaPrimary/10 p-2 rounded mt-2 text-sm">⚠️ All dates are approximate and subject to change. Follow official channels for announcements.</div>
+  </div>
+
+  <!-- Where to Find Official News -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-link text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">🔗 Official News Sources</h2></div>
+    <ul class="list-disc pl-5 space-y-1">
+      <li><strong>Official Website:</strong> <a href="https://playpalia.com/news" class="text-paliaPrimary underline" target="_blank">playpalia.com/news</a> – all patch notes and dev blogs.</li>
+      <li><strong>Official Discord:</strong> #announcements and #patch-notes channels (most up‑to‑date).</li>
+      <li><strong>X (Twitter):</strong> @PlayPalia – short updates and event announcements.</li>
+      <li><strong>YouTube:</strong> Palia’s channel – dev diaries and update overviews.</li>
+    </ul>
+  </div>
+
+  <!-- How to Give Feedback -->
+  <div class="section-card bg-paliaCard rounded-2xl shadow-card p-6">
+    <div class="flex items-center gap-2 mb-3"><i class="fa fa-commenting text-paliaPrimary text-xl"></i><h2 class="text-xl font-bold">📣 How to Influence Development</h2></div>
+    <ul class="list-disc pl-5 space-y-1">
+      <li><strong>In‑game feedback tool:</strong> Press Esc → “Submit Feedback” – the team reads these.</li>
+      <li><strong>Discord suggestions channel:</strong> #feedback-and-suggestions – upvote ideas you like.</li>
+      <li><strong>Official surveys:</strong> Occasionally sent via email or posted on Discord.</li>
+      <li><strong>Community voting:</strong> Sometimes features are voted on (e.g., next furniture set theme).</li>
+    </ul>
+    <p class="mt-2 text-sm">The developers actively respond to popular community requests – your voice matters.</p>
+  </div>
+
+  <!-- Summary -->
+  <div class="bg-paliaPrimary/5 rounded-2xl p-6 text-center border border-paliaAccent/20">
+    <i class="fa fa-arrow-circle-left text-3xl text-paliaPrimary mb-2 block"></i>
+    <p class="text-paliaText/80">Return to the main hub or continue to the next official news page.</p>
+    <div class="mt-4">
+      <a href="index.html" class="inline-block bg-paliaPrimary text-white px-6 py-2 rounded-full hover:bg-paliaPrimaryDeep transition">← Back to Main Hub</a>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-white/70 border-t border-paliaAccent/20 mt-12 py-6 text-center text-sm text-paliaText/70">
+  <p>Palia Guide Hub · Official News & Roadmap · Your window to the future</p>
+  <p class="mt-1"><i class="fa fa-leaf text-paliaPrimary"></i> The best is yet to come</p>
+</footer>
+</body>
+</html>
